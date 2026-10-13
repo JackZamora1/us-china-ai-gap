@@ -2269,7 +2269,7 @@ Gemini 2.0 Pro,aider_polyglot,Coding,35.6,,,Epoch AI benchmark data (aider_polyg
 Gemini 2.5 Flash (Apr 2025),aider_polyglot,Coding,47.1,,,Epoch AI benchmark data (aider_polyglot_external.csv),independent,https://aider.chat/docs/leaderboards/#polyglot-leaderboard,2026-10-13
 Gemini 2.5 Flash (May 2025),aider_polyglot,Coding,55.1,,,Epoch AI benchmark data (aider_polyglot_external.csv),independent,https://aider.chat/docs/leaderboards/#polyglot-leaderboard,2026-10-13
 Gemini 2.5 Pro (Jun 2025),aider_polyglot,Coding,83.1,,,Epoch AI benchmark data (aider_polyglot_external.csv),independent,https://aider.chat/docs/leaderboards/#polyglot-leaderboard,2026-10-13
-Gemini 2.5 Pro (Mar 2025),aider_polyglot,Coding,72.9,,,Epoch AI benchmark data (aider_polyglot_external.csv),independent,https://aider.chat/docs/leaderboards/,2026-10-13
+Gemini 2.5 Pro (Mar 2025),aider_polyglot,Coding,72.9,,,Epoch AI benchmark data (aider_polyglot_external.csv),independent,https://aider.chat/docs/leaderboards/#polyglot-leaderboard,2026-10-13
 Gemini 2.5 Pro (May 2025),aider_polyglot,Coding,76.9,,,Epoch AI benchmark data (aider_polyglot_external.csv),independent,https://aider.chat/docs/leaderboards/#polyglot-leaderboard,2026-10-13
 Gemma 3 27B,aider_polyglot,Coding,4.9,,,Epoch AI benchmark data (aider_polyglot_external.csv),independent,https://aider.chat/docs/leaderboards/#polyglot-leaderboard,2026-10-13
 Grok 3,aider_polyglot,Coding,53.3,,,Epoch AI benchmark data (aider_polyglot_external.csv),independent,https://aider.chat/docs/leaderboards/#polyglot-leaderboard,2026-10-13
@@ -2285,7 +2285,7 @@ Qwen3-235B-A22B,aider_polyglot,Coding,59.6,,,Epoch AI benchmark data (aider_poly
 Qwen3-235B-A22B-Instruct (Jul 2025),aider_polyglot,Coding,59.6,,,Epoch AI benchmark data (aider_polyglot_external.csv),independent,https://aider.chat/docs/leaderboards/,2026-10-13
 Qwen3-32B,aider_polyglot,Coding,40.0,,,Epoch AI benchmark data (aider_polyglot_external.csv),independent,https://aider.chat/docs/leaderboards/#polyglot-leaderboard,2026-10-13
 Yi-Lightning,aider_polyglot,Coding,12.9,,,Epoch AI benchmark data (aider_polyglot_external.csv),independent,https://aider.chat/docs/leaderboards/#polyglot-leaderboard,2026-10-13
-gpt-oss-120b,aider_polyglot,Coding,41.8,,,Epoch AI benchmark data (aider_polyglot_external.csv),independent,https://aider.chat/docs/leaderboards/,2026-10-13
+gpt-oss-120b,aider_polyglot,Coding,41.8,,,Epoch AI benchmark data (aider_polyglot_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 o1,aider_polyglot,Coding,61.7,,,Epoch AI benchmark data (aider_polyglot_external.csv),independent,https://aider.chat/docs/leaderboards/#polyglot-leaderboard,2026-10-13
 o1-mini,aider_polyglot,Coding,32.9,,,Epoch AI benchmark data (aider_polyglot_external.csv),independent,https://aider.chat/docs/leaderboards/,2026-10-13
 o3,aider_polyglot,Coding,81.3,,,Epoch AI benchmark data (aider_polyglot_external.csv),independent,https://aider.chat/docs/leaderboards/#polyglot-leaderboard,2026-10-13
@@ -2460,7 +2460,7 @@ Claude Haiku 4.5,arc_agi,Puzzles and games,0.4767,,,Epoch AI benchmark data (arc
 Claude Opus 4,arc_agi,Puzzles and games,0.3567,,,Epoch AI benchmark data (arc_agi_external.csv),independent,https://arcprize.org/leaderboard,2026-10-13
 Claude Opus 4.5,arc_agi,Puzzles and games,0.8,,,Epoch AI benchmark data (arc_agi_external.csv),independent,https://arcprize.org/leaderboard,2026-10-13
 Claude Opus 4.6,arc_agi,Puzzles and games,0.94,,,Epoch AI benchmark data (arc_agi_external.csv),independent,https://arcprize.org/leaderboard,2026-10-13
-Claude Opus 4.7,arc_agi,Puzzles and games,0.935,,,Epoch AI benchmark data (arc_agi_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
+Claude Opus 4.7,arc_agi,Puzzles and games,0.935,,,Epoch AI benchmark data (arc_agi_external.csv),independent,https://arcprize.org/leaderboard,2026-10-13
 Claude Opus 4.8,arc_agi,Puzzles and games,0.925,,,Epoch AI benchmark data (arc_agi_external.csv),independent,https://arcprize.org/leaderboard,2026-10-13
 Claude Opus 5,arc_agi,Puzzles and games,0.975,,,Epoch AI benchmark data (arc_agi_external.csv),independent,https://arcprize.org/leaderboard,2026-10-13
 Claude Opus 5.5,arc_agi,Puzzles and games,0.985,,,Epoch AI benchmark data (arc_agi_external.csv),independent,https://arcprize.org/leaderboard,2026-10-13
@@ -2487,7 +2487,7 @@ GPT-5 nano,arc_agi,Puzzles and games,0.2071,,,Epoch AI benchmark data (arc_agi_e
 GPT-5.1,arc_agi,Puzzles and games,0.7283,,,Epoch AI benchmark data (arc_agi_external.csv),independent,https://arcprize.org/leaderboard,2026-10-13
 GPT-5.2,arc_agi,Puzzles and games,0.862,,,Epoch AI benchmark data (arc_agi_external.csv),independent,https://arcprize.org/leaderboard,2026-10-13
 GPT-5.2 Pro,arc_agi,Puzzles and games,0.905,,,Epoch AI benchmark data (arc_agi_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
-GPT-5.4,arc_agi,Puzzles and games,0.9367,,,Epoch AI benchmark data (arc_agi_external.csv),independent,https://arcprize.org/leaderboard,2026-10-13
+GPT-5.4,arc_agi,Puzzles and games,0.9367,,,Epoch AI benchmark data (arc_agi_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 GPT-5.4 Mini,arc_agi,Puzzles and games,0.6367,,,Epoch AI benchmark data (arc_agi_external.csv),independent,https://arcprize.org/leaderboard,2026-10-13
 GPT-5.4 Nano,arc_agi,Puzzles and games,0.515,,,Epoch AI benchmark data (arc_agi_external.csv),independent,https://arcprize.org/leaderboard,2026-10-13
 GPT-5.4 Pro,arc_agi,Puzzles and games,0.945,,,Epoch AI benchmark data (arc_agi_external.csv),independent,https://arcprize.org/leaderboard,2026-10-13
@@ -2519,7 +2519,7 @@ Grok 4 Fast,arc_agi,Puzzles and games,0.485,,,Epoch AI benchmark data (arc_agi_e
 Grok 4.20,arc_agi,Puzzles and games,0.895,,,Epoch AI benchmark data (arc_agi_external.csv),independent,https://arcprize.org/leaderboard,2026-10-13
 Grok 4.5,arc_agi,Puzzles and games,0.8717,,,Epoch AI benchmark data (arc_agi_external.csv),independent,https://arcprize.org/leaderboard,2026-10-13
 Grok 4.6,arc_agi,Puzzles and games,0.875,,,Epoch AI benchmark data (arc_agi_external.csv),independent,https://arcprize.org/leaderboard,2026-10-13
-Grok-3 mini,arc_agi,Puzzles and games,0.165,,,Epoch AI benchmark data (arc_agi_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
+Grok-3 mini,arc_agi,Puzzles and games,0.165,,,Epoch AI benchmark data (arc_agi_external.csv),independent,https://arcprize.org/leaderboard,2026-10-13
 Inkling,arc_agi,Puzzles and games,0.795,,,Epoch AI benchmark data (arc_agi_external.csv),independent,https://arcprize.org/leaderboard,2026-10-13
 Inkling-Small,arc_agi,Puzzles and games,0.84,,,Epoch AI benchmark data (arc_agi_external.csv),independent,https://arcprize.org/leaderboard,2026-10-13
 Kimi K2.5,arc_agi,Puzzles and games,0.6533,,,Epoch AI benchmark data (arc_agi_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
@@ -4921,7 +4921,7 @@ Claude Fable 5.1,gso,Coding,0.8824,,,Epoch AI benchmark data (gso_external.csv),
 Claude Opus 4,gso,Coding,0.069,,,Epoch AI benchmark data (gso_external.csv),independent,https://gso-bench.github.io/leaderboard.html,2026-10-13
 Claude Opus 4.5,gso,Coding,0.265,,,Epoch AI benchmark data (gso_external.csv),independent,https://gso-bench.github.io/leaderboard.html,2026-10-13
 Claude Opus 4.6,gso,Coding,0.412,,,Epoch AI benchmark data (gso_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
-Claude Opus 4.7,gso,Coding,0.4412,,,Epoch AI benchmark data (gso_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
+Claude Opus 4.7,gso,Coding,0.4412,,,Epoch AI benchmark data (gso_external.csv),independent,https://gso-bench.github.io/index.html,2026-10-13
 Claude Opus 4.8,gso,Coding,0.4706,,,Epoch AI benchmark data (gso_external.csv),independent,https://gso-bench.github.io/index.html,2026-10-13
 Claude Sonnet 4,gso,Coding,0.049,,,Epoch AI benchmark data (gso_external.csv),independent,https://gso-bench.github.io/leaderboard.html,2026-10-13
 Claude Sonnet 4.5,gso,Coding,0.1471,,,Epoch AI benchmark data (gso_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
@@ -4942,7 +4942,7 @@ Gemini 3.1 Pro,gso,Coding,0.2255,,,Epoch AI benchmark data (gso_external.csv),in
 Kimi K2 (Jul 2025),gso,Coding,0.049,,,Epoch AI benchmark data (gso_external.csv),independent,https://gso-bench.github.io/leaderboard.html,2026-10-13
 Qwen3-Coder-480B-A35B,gso,Coding,0.049,,,Epoch AI benchmark data (gso_external.csv),independent,https://gso-bench.github.io/leaderboard.html,2026-10-13
 o3,gso,Coding,0.088,,,Epoch AI benchmark data (gso_external.csv),independent,https://gso-bench.github.io/leaderboard.html,2026-10-13
-o3-mini,gso,Coding,0.013,,,Epoch AI benchmark data (gso_external.csv),independent,https://gso-bench.github.io/leaderboard.html,2026-10-13
+o3-mini,gso,Coding,0.013,,,Epoch AI benchmark data (gso_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 o4-mini,gso,Coding,0.036,,,Epoch AI benchmark data (gso_external.csv),independent,https://gso-bench.github.io/leaderboard.html,2026-10-13
 Claude 3 Haiku,lmca,Frontier reasoning and science,8.84,3.75,13.93,Epoch AI benchmark data (lmca_external.csv),unknown,https://conceptualreasoning.ai/lmca,2026-10-13
 Claude 3 Opus,lmca,Frontier reasoning and science,17.0,12.02,21.98,Epoch AI benchmark data (lmca_external.csv),unknown,https://conceptualreasoning.ai/lmca,2026-10-13
@@ -5277,17 +5277,17 @@ Gemma 2 9B,mmlu,Knowledge and hallucination,0.721,,,Epoch AI benchmark data (mml
 Gemma 2B,mmlu,Knowledge and hallucination,0.423,,,Epoch AI benchmark data (mmlu_external.csv),unknown,https://arxiv.org/pdf/2403.08295,2026-10-13
 Gemma 7B,mmlu,Knowledge and hallucination,0.643,,,Epoch AI benchmark data (mmlu_external.csv),self_reported,http://arxiv.org/abs/2402.16819,2026-10-13
 Gemma 7B,mmlu,Knowledge and hallucination,0.661,,,Epoch AI benchmark data (mmlu_external.csv),unknown,https://crfm.stanford.edu/helm/lite/latest/#/leaderboard/mmlu,2026-10-13
-Gopher (280B),mmlu,Knowledge and hallucination,0.6,,,Epoch AI benchmark data (mmlu_external.csv),unknown,http://arxiv.org/abs/2302.13971,2026-10-13
+Gopher (280B),mmlu,Knowledge and hallucination,0.6,,,Epoch AI benchmark data (mmlu_external.csv),unknown,http://arxiv.org/abs/2112.11446,2026-10-13
 INTELLECT-1,mmlu,Knowledge and hallucination,0.4989,,,Epoch AI benchmark data (mmlu_external.csv),self_reported,https://arxiv.org/abs/2412.01152,2026-10-13
 Inflection-1,mmlu,Knowledge and hallucination,0.727,,,Epoch AI benchmark data (mmlu_external.csv),unknown,https://inflection.ai/blog/inflection-1,2026-10-13
-InstructGPT 175B,mmlu,Knowledge and hallucination,0.439,,,Epoch AI benchmark data (mmlu_external.csv),unknown,http://arxiv.org/abs/2112.11446,2026-10-13
+InstructGPT 175B,mmlu,Knowledge and hallucination,0.439,,,Epoch AI benchmark data (mmlu_external.csv),unknown,http://arxiv.org/abs/2302.13971,2026-10-13
 LLaMA-13B,mmlu,Knowledge and hallucination,0.477,,,Epoch AI benchmark data (mmlu_external.csv),self_reported,https://arxiv.org/pdf/2309.16609,2026-10-13
 LLaMA-13B,mmlu,Knowledge and hallucination,0.469,,,Epoch AI benchmark data (mmlu_external.csv),unknown,http://arxiv.org/abs/2307.09288,2026-10-13
 LLaMA-33B,mmlu,Knowledge and hallucination,0.587,,,Epoch AI benchmark data (mmlu_external.csv),self_reported,https://arxiv.org/pdf/2309.16609,2026-10-13
-LLaMA-33B,mmlu,Knowledge and hallucination,0.578,,,Epoch AI benchmark data (mmlu_external.csv),unknown,http://arxiv.org/abs/2302.13971,2026-10-13
+LLaMA-33B,mmlu,Knowledge and hallucination,0.578,,,Epoch AI benchmark data (mmlu_external.csv),unknown,http://arxiv.org/abs/2307.09288,2026-10-13
 LLaMA-65B,mmlu,Knowledge and hallucination,0.634,,,Epoch AI benchmark data (mmlu_external.csv),unknown,http://arxiv.org/abs/2307.09288,2026-10-13
 LLaMA-7B,mmlu,Knowledge and hallucination,0.356,,,Epoch AI benchmark data (mmlu_external.csv),self_reported,https://arxiv.org/pdf/2309.16609,2026-10-13
-LLaMA-7B,mmlu,Knowledge and hallucination,0.351,,,Epoch AI benchmark data (mmlu_external.csv),unknown,http://arxiv.org/abs/2307.09288,2026-10-13
+LLaMA-7B,mmlu,Knowledge and hallucination,0.351,,,Epoch AI benchmark data (mmlu_external.csv),unknown,http://arxiv.org/abs/2309.10305,2026-10-13
 Llama 2-13B,mmlu,Knowledge and hallucination,0.548,,,Epoch AI benchmark data (mmlu_external.csv),self_reported,http://arxiv.org/abs/2402.16819,2026-10-13
 Llama 2-13B,mmlu,Knowledge and hallucination,0.556,,,Epoch AI benchmark data (mmlu_external.csv),unknown,https://arxiv.org/pdf/2401.04088,2026-10-13
 Llama 2-34B,mmlu,Knowledge and hallucination,0.626,,,Epoch AI benchmark data (mmlu_external.csv),self_reported,https://arxiv.org/pdf/2309.16609,2026-10-13
@@ -5764,13 +5764,13 @@ Claude 3.5 Sonnet (October 2024),simplebench,Frontier reasoning and science,0.41
 Claude 3.7 Sonnet,simplebench,Frontier reasoning and science,0.464,,,Epoch AI benchmark data (simplebench_external.csv),independent,https://simple-bench.com/,2026-10-13
 Claude Fable 5,simplebench,Frontier reasoning and science,0.8190000000000001,,,Epoch AI benchmark data (simplebench_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Claude Opus 4,simplebench,Frontier reasoning and science,0.588,,,Epoch AI benchmark data (simplebench_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
-Claude Opus 4.1,simplebench,Frontier reasoning and science,0.6,,,Epoch AI benchmark data (simplebench_external.csv),independent,https://simple-bench.com/,2026-10-13
+Claude Opus 4.1,simplebench,Frontier reasoning and science,0.6,,,Epoch AI benchmark data (simplebench_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Claude Opus 4.5,simplebench,Frontier reasoning and science,0.62,,,Epoch AI benchmark data (simplebench_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Claude Opus 4.6,simplebench,Frontier reasoning and science,0.6759999999999999,,,Epoch AI benchmark data (simplebench_external.csv),independent,https://simple-bench.com/,2026-10-13
 Claude Opus 4.7,simplebench,Frontier reasoning and science,0.617,,,Epoch AI benchmark data (simplebench_external.csv),independent,https://lmcouncil.ai/benchmarks,2026-10-13
 Claude Opus 4.8,simplebench,Frontier reasoning and science,0.648,,,Epoch AI benchmark data (simplebench_external.csv),independent,https://lmcouncil.ai/benchmarks,2026-10-13
 Claude Opus 5,simplebench,Frontier reasoning and science,0.8059999999999999,,,Epoch AI benchmark data (simplebench_external.csv),independent,https://lmcouncil.ai/benchmarks,2026-10-13
-Claude Sonnet 4,simplebench,Frontier reasoning and science,0.455,,,Epoch AI benchmark data (simplebench_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
+Claude Sonnet 4,simplebench,Frontier reasoning and science,0.455,,,Epoch AI benchmark data (simplebench_external.csv),independent,https://simple-bench.com/,2026-10-13
 Claude Sonnet 4.5,simplebench,Frontier reasoning and science,0.543,,,Epoch AI benchmark data (simplebench_external.csv),independent,https://simple-bench.com/,2026-10-13
 Claude Sonnet 5,simplebench,Frontier reasoning and science,0.606,,,Epoch AI benchmark data (simplebench_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Command R+,simplebench,Frontier reasoning and science,0.174,,,Epoch AI benchmark data (simplebench_external.csv),independent,https://simple-bench.com/,2026-10-13
@@ -5782,7 +5782,7 @@ DeepSeek-V3 (Mar 2025),simplebench,Frontier reasoning and science,0.272,,,Epoch 
 DeepSeek-V3.1,simplebench,Frontier reasoning and science,0.4,,,Epoch AI benchmark data (simplebench_external.csv),independent,https://simple-bench.com/,2026-10-13
 DeepSeek-V3.2-Speciale,simplebench,Frontier reasoning and science,0.526,,,Epoch AI benchmark data (simplebench_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 DeepSeek-V4-Flash,simplebench,Frontier reasoning and science,0.4629999999999999,,,Epoch AI benchmark data (simplebench_external.csv),independent,https://lmcouncil.ai/benchmarks,2026-10-13
-GLM-4.7,simplebench,Frontier reasoning and science,0.477,,,Epoch AI benchmark data (simplebench_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
+GLM-4.7,simplebench,Frontier reasoning and science,0.477,,,Epoch AI benchmark data (simplebench_external.csv),independent,https://simple-bench.com/,2026-10-13
 GLM-5,simplebench,Frontier reasoning and science,0.532,,,Epoch AI benchmark data (simplebench_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 GLM-5.1,simplebench,Frontier reasoning and science,0.551,,,Epoch AI benchmark data (simplebench_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 GLM-5.2,simplebench,Frontier reasoning and science,0.588,,,Epoch AI benchmark data (simplebench_external.csv),independent,https://lmcouncil.ai/benchmarks,2026-10-13
@@ -5801,7 +5801,7 @@ GPT-5.5,simplebench,Frontier reasoning and science,0.6900000000000001,,,Epoch AI
 GPT-5.5 Pro,simplebench,Frontier reasoning and science,0.7690000000000001,,,Epoch AI benchmark data (simplebench_external.csv),independent,https://lmcouncil.ai/benchmarks,2026-10-13
 GPT-5.6 Luna,simplebench,Frontier reasoning and science,0.468,,,Epoch AI benchmark data (simplebench_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 GPT-5.6 Sol,simplebench,Frontier reasoning and science,0.7170000000000001,,,Epoch AI benchmark data (simplebench_external.csv),independent,https://lmcouncil.ai/benchmarks,2026-10-13
-GPT-5.6 Terra,simplebench,Frontier reasoning and science,0.489,,,Epoch AI benchmark data (simplebench_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
+GPT-5.6 Terra,simplebench,Frontier reasoning and science,0.489,,,Epoch AI benchmark data (simplebench_external.csv),independent,https://lmcouncil.ai/benchmarks,2026-10-13
 Gemini 1.5 Pro (Sept 2024),simplebench,Frontier reasoning and science,0.271,,,Epoch AI benchmark data (simplebench_external.csv),independent,https://simple-bench.com/,2026-10-13
 Gemini 2.0 Flash (Dec 2024),simplebench,Frontier reasoning and science,0.311,,,Epoch AI benchmark data (simplebench_external.csv),independent,https://simple-bench.com/,2026-10-13
 Gemini 2.0 Flash Thinking (Jan 2025),simplebench,Frontier reasoning and science,0.307,,,Epoch AI benchmark data (simplebench_external.csv),independent,https://simple-bench.com/,2026-10-13
@@ -6032,7 +6032,7 @@ Qwen2-72B,the_agent_company,Agentic and real-world work,0.011,,,Epoch AI benchma
 Qwen2.5-72B,the_agent_company,Agentic and real-world work,0.057,,,Epoch AI benchmark data (the_agent_company_external.csv),independent,https://github.com/TheAgentCompany/experiments/tree/main/evaluation/1.0.0/20241217_OpenHands-0.14.2-qwen2.5-72b,2026-10-13
 Claude Fable 5,vending_bench_2,Agentic and real-world work,5680.258,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Claude Fable 5.1,vending_bench_2,Agentic and real-world work,5421.556666666666,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
-Claude Haiku 4.5,vending_bench_2,Agentic and real-world work,458.88599999999985,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
+Claude Haiku 4.5,vending_bench_2,Agentic and real-world work,458.8859999999999,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Claude Opus 4.5,vending_bench_2,Agentic and real-world work,4967.056666666668,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Claude Opus 4.6,vending_bench_2,Agentic and real-world work,8017.594,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Claude Opus 4.7,vending_bench_2,Agentic and real-world work,10936.763333333334,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
@@ -6051,7 +6051,7 @@ GLM-5.2,vending_bench_2,Agentic and real-world work,8313.778333333335,,,Epoch AI
 GLM-5.3,vending_bench_2,Agentic and real-world work,8163.609999999998,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 GPT-5 mini,vending_bench_2,Agentic and real-world work,-31.18399999999995,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 GPT-5.1,vending_bench_2,Agentic and real-world work,1473.432,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
-GPT-5.2,vending_bench_2,Agentic and real-world work,3591.3259999999996,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
+GPT-5.2,vending_bench_2,Agentic and real-world work,3591.326,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 GPT-5.3 Codex,vending_bench_2,Agentic and real-world work,5940.124000000002,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 GPT-5.4,vending_bench_2,Agentic and real-world work,6144.176,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 GPT-5.5,vending_bench_2,Agentic and real-world work,7523.843999999999,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
@@ -6071,7 +6071,7 @@ Gemini 4 Argon,vending_bench_2,Agentic and real-world work,13718.158333333333,,,
 Grok 4.1 Fast,vending_bench_2,Agentic and real-world work,1106.6280000000002,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Grok 4.20,vending_bench_2,Agentic and real-world work,4662.846666666667,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Grok 4.3 Beta,vending_bench_2,Agentic and real-world work,35.26166666666665,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
-Grok 4.5,vending_bench_2,Agentic and real-world work,3887.4259999999986,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
+Grok 4.5,vending_bench_2,Agentic and real-world work,3887.425999999999,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Grok 4.6,vending_bench_2,Agentic and real-world work,9047.0325,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Grok 4.7,vending_bench_2,Agentic and real-world work,10536.831666666669,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Kimi K2.5,vending_bench_2,Agentic and real-world work,1198.458,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
@@ -6082,13 +6082,13 @@ MiniMax-M2,vending_bench_2,Agentic and real-world work,160.5959999999999,,,Epoch
 MiniMax-M2.5,vending_bench_2,Agentic and real-world work,-23.15999999999999,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 MiniMax-M3,vending_bench_2,Agentic and real-world work,2157.7716666666665,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Muse Spark 1.1,vending_bench_2,Agentic and real-world work,6520.474999999999,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
-Qwen 3.5 Flash (hosted 35B-A3B),vending_bench_2,Agentic and real-world work,462.68500000000023,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
+Qwen 3.5 Flash (hosted 35B-A3B),vending_bench_2,Agentic and real-world work,462.6850000000002,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Qwen 3.5 Plus (hosted 397B-A17B),vending_bench_2,Agentic and real-world work,0.5440000000000417,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Qwen 3.6 Max (Preview),vending_bench_2,Agentic and real-world work,4254.1866666666665,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Qwen 3.6 Plus,vending_bench_2,Agentic and real-world work,5114.872000000001,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Qwen3-235B-A22B-Thinking (Jul 2025),vending_bench_2,Agentic and real-world work,-11.340000000000078,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Qwen3-Max,vending_bench_2,Agentic and real-world work,71.56500000000018,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
-Qwen3.5-27B,vending_bench_2,Agentic and real-world work,201.9759999999999,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
+Qwen3.5-27B,vending_bench_2,Agentic and real-world work,201.97599999999997,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 gpt-oss-120b,vending_bench_2,Agentic and real-world work,-21.532000000000053,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Aria,video_mme,Multimodal,0.676,,,Epoch AI benchmark data (video_mme_external.csv),independent,https://video-mme.github.io/home_page.html#leaderboard,2026-10-13
 ByteVideoLLM-14B,video_mme,Multimodal,0.646,,,Epoch AI benchmark data (video_mme_external.csv),independent,https://video-mme.github.io/home_page.html#leaderboard,2026-10-13
@@ -6259,7 +6259,7 @@ Qwen3-235B-A22B-Thinking (Jul 2025),weirdml,Coding,0.4104,0.3868122886598683,0.3
 Qwen3-30B-A3B,weirdml,Coding,0.2975,,,Epoch AI benchmark data (weirdml_external.csv),independent,https://htihle.github.io/weirdml.html,2026-10-13
 Qwen3-Coder-480B-A35B,weirdml,Coding,0.4117,0.4115127672640862,0.4118872327359138,Epoch AI benchmark data (weirdml_external.csv),independent,https://htihle.github.io/weirdml.html,2026-10-13
 Qwen3.5-27B,weirdml,Coding,0.3953,0.3949435042329772,0.3956564957670228,Epoch AI benchmark data (weirdml_external.csv),independent,https://htihle.github.io/weirdml.html,2026-10-13
-gpt-oss-120b,weirdml,Coding,0.4817,0.4813627365707621,0.4820372634292379,Epoch AI benchmark data (weirdml_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
+gpt-oss-120b,weirdml,Coding,0.4817,0.4813627365707621,0.4820372634292379,Epoch AI benchmark data (weirdml_external.csv),independent,https://htihle.github.io/weirdml.html,2026-10-13
 gpt-oss-20b,weirdml,Coding,0.4093,0.4091209502303973,0.4094790497696027,Epoch AI benchmark data (weirdml_external.csv),independent,https://htihle.github.io/weirdml.html,2026-10-13
 grok-code-fast-1,weirdml,Coding,0.3506,0.35031767968928873,0.3508823203107113,Epoch AI benchmark data (weirdml_external.csv),independent,https://htihle.github.io/weirdml.html,2026-10-13
 o1,weirdml,Coding,0.4608,0.4605959940359116,0.46100400596408836,Epoch AI benchmark data (weirdml_external.csv),independent,https://htihle.github.io/weirdml.html,2026-10-13
