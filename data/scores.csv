@@ -6032,7 +6032,7 @@ Qwen2-72B,the_agent_company,Agentic and real-world work,0.011,,,Epoch AI benchma
 Qwen2.5-72B,the_agent_company,Agentic and real-world work,0.057,,,Epoch AI benchmark data (the_agent_company_external.csv),independent,https://github.com/TheAgentCompany/experiments/tree/main/evaluation/1.0.0/20241217_OpenHands-0.14.2-qwen2.5-72b,2026-10-13
 Claude Fable 5,vending_bench_2,Agentic and real-world work,5680.258,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Claude Fable 5.1,vending_bench_2,Agentic and real-world work,5421.556666666666,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
-Claude Haiku 4.5,vending_bench_2,Agentic and real-world work,458.88599999999985,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
+Claude Haiku 4.5,vending_bench_2,Agentic and real-world work,458.8859999999999,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Claude Opus 4.5,vending_bench_2,Agentic and real-world work,4967.056666666668,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Claude Opus 4.6,vending_bench_2,Agentic and real-world work,8017.594,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Claude Opus 4.7,vending_bench_2,Agentic and real-world work,10936.763333333334,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
@@ -6051,7 +6051,7 @@ GLM-5.2,vending_bench_2,Agentic and real-world work,8313.778333333335,,,Epoch AI
 GLM-5.3,vending_bench_2,Agentic and real-world work,8163.609999999998,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 GPT-5 mini,vending_bench_2,Agentic and real-world work,-31.18399999999995,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 GPT-5.1,vending_bench_2,Agentic and real-world work,1473.432,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
-GPT-5.2,vending_bench_2,Agentic and real-world work,3591.3259999999996,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
+GPT-5.2,vending_bench_2,Agentic and real-world work,3591.326,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 GPT-5.3 Codex,vending_bench_2,Agentic and real-world work,5940.124000000002,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 GPT-5.4,vending_bench_2,Agentic and real-world work,6144.176,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 GPT-5.5,vending_bench_2,Agentic and real-world work,7523.843999999999,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
@@ -6071,7 +6071,7 @@ Gemini 4 Argon,vending_bench_2,Agentic and real-world work,13718.158333333333,,,
 Grok 4.1 Fast,vending_bench_2,Agentic and real-world work,1106.6280000000002,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Grok 4.20,vending_bench_2,Agentic and real-world work,4662.846666666667,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Grok 4.3 Beta,vending_bench_2,Agentic and real-world work,35.26166666666665,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
-Grok 4.5,vending_bench_2,Agentic and real-world work,3887.4259999999986,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
+Grok 4.5,vending_bench_2,Agentic and real-world work,3887.425999999999,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Grok 4.6,vending_bench_2,Agentic and real-world work,9047.0325,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Grok 4.7,vending_bench_2,Agentic and real-world work,10536.831666666669,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Kimi K2.5,vending_bench_2,Agentic and real-world work,1198.458,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
@@ -6082,13 +6082,13 @@ MiniMax-M2,vending_bench_2,Agentic and real-world work,160.5959999999999,,,Epoch
 MiniMax-M2.5,vending_bench_2,Agentic and real-world work,-23.15999999999999,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 MiniMax-M3,vending_bench_2,Agentic and real-world work,2157.7716666666665,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Muse Spark 1.1,vending_bench_2,Agentic and real-world work,6520.474999999999,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
-Qwen 3.5 Flash (hosted 35B-A3B),vending_bench_2,Agentic and real-world work,462.68500000000023,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
+Qwen 3.5 Flash (hosted 35B-A3B),vending_bench_2,Agentic and real-world work,462.6850000000002,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Qwen 3.5 Plus (hosted 397B-A17B),vending_bench_2,Agentic and real-world work,0.5440000000000417,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Qwen 3.6 Max (Preview),vending_bench_2,Agentic and real-world work,4254.1866666666665,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Qwen 3.6 Plus,vending_bench_2,Agentic and real-world work,5114.872000000001,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Qwen3-235B-A22B-Thinking (Jul 2025),vending_bench_2,Agentic and real-world work,-11.340000000000078,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Qwen3-Max,vending_bench_2,Agentic and real-world work,71.56500000000018,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
-Qwen3.5-27B,vending_bench_2,Agentic and real-world work,201.9759999999999,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
+Qwen3.5-27B,vending_bench_2,Agentic and real-world work,201.97599999999997,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 gpt-oss-120b,vending_bench_2,Agentic and real-world work,-21.532000000000053,,,Epoch AI benchmark data (vending_bench_2_external.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Aria,video_mme,Multimodal,0.676,,,Epoch AI benchmark data (video_mme_external.csv),independent,https://video-mme.github.io/home_page.html#leaderboard,2026-10-13
 ByteVideoLLM-14B,video_mme,Multimodal,0.646,,,Epoch AI benchmark data (video_mme_external.csv),independent,https://video-mme.github.io/home_page.html#leaderboard,2026-10-13
