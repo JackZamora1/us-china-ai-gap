@@ -1,0 +1,847 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>US–China AI capability gap</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  color-scheme: light;
+  --bg: #f2f4f7; --surface: #ffffff; --ink: #16202e; --ink-2: #4a5568; --ink-3: #6f7c8f; --rule: #dce1e8;
+  --us: #2a78d6; --cn: #eb6834; --uso: #1baf7a;
+  --heat-0: #eef1f5; --heat-pos: #134a8e; --heat-neg: #b3400f;
+  --sans: "Schibsted Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --serif: "Newsreader", Georgia, "Times New Roman", serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --bg: #0b1119; --surface: #151d28; --ink: #f1f4f8; --ink-2: #b4becc; --ink-3: #8794a6; --rule: #263242;
+    --us: #3987e5; --cn: #d95926; --uso: #199e70;
+    --heat-0: #1b2431; --heat-pos: #9ec5f4; --heat-neg: #f3a680;
+  }
+}
+/* The hero band is dark in both themes, so it carries its own tokens. */
+.hero { --surface: #0f1b2d; --ink: #f1f4f8; --ink-2: #b9c4d3; --ink-3: #8795a8; --rule: #25344b; --us: #4a93ec; --cn: #f0763f; }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 16px/1.5 var(--sans); }
+a { color: inherit; text-decoration-color: var(--ink-3); text-underline-offset: 3px; }
+a:hover { text-decoration-color: currentColor; }
+:focus-visible { outline: 2px solid var(--us); outline-offset: 2px; border-radius: 4px; }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+h2 { font: 700 1.45rem/1.2 var(--sans); letter-spacing: -0.012em; margin: 0; }
+.sub { font-size: 14px; color: var(--ink-3); margin: 6px 0 0; max-width: 80ch; }
+section.block { margin-top: 56px; }
+.sec-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 12px 20px; margin-bottom: 16px; }
+
+/* Hero */
+.hero { background: var(--surface); color: var(--ink); padding: 22px 0 30px; }
+.masthead { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; font-size: 14px; color: var(--ink-2); }
+.masthead strong { color: var(--ink); font-weight: 700; font-size: 15px; }
+.hero-top { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 20px 32px; padding: 40px 0 22px; }
+h1 { font: 800 clamp(1.9rem, 4.2vw, 3.2rem)/1.06 var(--sans); letter-spacing: -0.025em; margin: 0; max-width: 21ch; text-wrap: balance; }
+.hero-top p { font: 400 clamp(1.02rem, 1.3vw, 1.15rem)/1.5 var(--serif); color: var(--ink-2); max-width: 58ch; margin: 16px 0 0; }
+.hero-top p b { font-weight: 500; color: var(--ink); }
+#calendar { display: block; width: 100%; touch-action: pan-y; }
+#calendar text { font-family: var(--sans); fill: var(--ink-3); font-size: 12px; }
+#calendar .row-hit { fill: transparent; cursor: pointer; }
+#calendar .row-on { fill: #ffffff; opacity: .055; }
+#calendar .tick { stroke: var(--rule); stroke-width: 1; }
+#calendar .track { stroke: var(--rule); stroke-width: 1; }
+#calendar .today { stroke: var(--us); stroke-width: 2; }
+#calendar text.today-lab { fill: var(--us); font-weight: 700; }
+#calendar text.area { fill: var(--ink); font-size: 15px; font-weight: 600; }
+#calendar text.big { fill: var(--ink); font-size: 17px; font-weight: 700; }
+#calendar .bench { fill: var(--ink-2); stroke: var(--surface); stroke-width: 1.5; }
+#calendar .bench.ahead { fill: var(--cn); }
+#calendar .med { fill: var(--cn); stroke: var(--surface); stroke-width: 2.5; }
+#calendar .alt { fill: none; stroke: var(--cn); stroke-width: 1.5; stroke-dasharray: 2 2; }
+#calendar .off text.area, #calendar .off text.big { fill: var(--ink-3); }
+#calendar .low text.area, #calendar .low text.big { fill: var(--ink-2); font-weight: 500; }
+#calendar .low .med { fill: var(--surface); stroke: var(--cn); stroke-width: 2.5; }
+#calendar .low .bench { opacity: .7; }
+#calendar tspan.lowtag { font-size: 12px; font-weight: 400; fill: var(--ink-3); }
+#calendar .fbband { fill: none; stroke: var(--ink-2); stroke-width: 1.5; stroke-dasharray: 4 3; }
+#calendar text.fb { fill: var(--ink-2); }
+.notice { font-size: 13.5px; color: var(--ink-2); border-left: 3px solid var(--cn); padding: 2px 0 2px 12px; margin: 14px 0 0; max-width: 90ch; }
+.notice b { color: var(--ink); font-weight: 600; }
+.hero-key { display: flex; flex-wrap: wrap; gap: 6px 20px; font-size: 13px; color: var(--ink-2); margin-top: 10px; }
+.hero-key span { display: inline-flex; align-items: center; gap: 7px; }
+.hero-key i { display: inline-block; border-radius: 50%; flex: none; }
+
+/* Controls */
+button, select { font: 500 13px/1 var(--sans); color: var(--ink-2); }
+.seg { display: inline-flex; gap: 6px; flex-wrap: wrap; }
+.seg button, .chips button, .toggles button, .more { background: transparent; cursor: pointer; border: 1px solid var(--rule);
+  border-radius: 999px; padding: 8px 13px; display: inline-flex; align-items: center; gap: 7px; }
+.seg button[aria-pressed="true"], .toggles button[aria-pressed="true"], .chips button[aria-pressed="true"] { color: var(--ink); border-color: var(--ink-3); background: var(--bg); }
+.hero .seg button[aria-pressed="true"] { background: #ffffff14; }
+.toggles { display: flex; flex-wrap: wrap; gap: 6px; }
+.toggles button[aria-pressed="false"] { opacity: .55; }
+.toggles svg { width: 11px; height: 11px; fill: currentColor; }
+select { background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 8px 12px; color: var(--ink); max-width: 100%; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chips button b { font-weight: 700; color: var(--ink); }
+.chips button.off { opacity: .6; border-style: dashed; }
+.chips button.lowc { border-style: dashed; }
+.chips button.lowc b { font-weight: 500; color: var(--ink-2); }
+.chips button small { font-size: 11.5px; color: var(--ink-3); font-weight: 400; }
+.tabs { display: flex; gap: 22px; border-bottom: 1px solid var(--rule); margin: 18px 0 18px; }
+.tabs button { background: none; border: 0; border-bottom: 2px solid transparent; padding: 0 0 10px; font-size: 15px; font-weight: 600; color: var(--ink-3); cursor: pointer; margin-bottom: -1px; }
+.tabs button[aria-selected="true"] { color: var(--ink); border-color: var(--ink); }
+
+.logo { display: inline-flex; align-items: center; justify-content: center; flex: none; width: 26px; height: 26px;
+  border-radius: 50%; background: #fff; box-shadow: 0 0 0 1px var(--rule); vertical-align: -6px; overflow: hidden;
+  font: 700 12px/1 var(--sans); color: #16202e; }
+.logo.sm { width: 20px; height: 20px; vertical-align: -5px; }
+
+/* Explorer */
+.panel { background: var(--surface); border-radius: 16px; box-shadow: 0 0 0 1px var(--rule); padding: 22px; }
+.ex-head h2 { font-size: 1.7rem; }
+.ex-head p { font: 400 1.08rem/1.5 var(--serif); color: var(--ink-2); margin: 8px 0 0; max-width: 72ch; }
+.ex-head p b { font-weight: 500; color: var(--ink); }
+.bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 20px; margin-bottom: 10px; }
+.key { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 13px; color: var(--ink-2); }
+.key span { display: inline-flex; align-items: center; gap: 7px; }
+.key i { display: inline-block; flex: none; }
+label.inline { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; color: var(--ink-3); }
+svg.plot { display: block; width: 100%; touch-action: pan-y; }
+svg.plot text { font-family: var(--sans); fill: var(--ink-3); font-size: 12px; }
+svg.plot .grid { stroke: var(--rule); stroke-width: 1; }
+svg.plot .zero { stroke: var(--ink-3); stroke-width: 1; }
+svg.plot .line { fill: none; stroke-width: 2; stroke-linejoin: round; }
+svg.plot .faint { fill: none; stroke: var(--ink-3); stroke-width: 1; opacity: .4; }
+svg.plot .dot { stroke: var(--surface); stroke-width: 2; }
+svg.plot .badge circle { fill: #fff; stroke-width: 1.75; }
+svg.plot .ev-rule { stroke: var(--ink-3); stroke-width: 1; stroke-dasharray: 2 3; opacity: .45; }
+svg.plot .ev-mark { fill: var(--ink-2); stroke: var(--surface); stroke-width: 1.5; }
+svg.plot .ev.on .ev-rule { opacity: 1; stroke: var(--ink); }
+svg.plot .ev.on .ev-mark { fill: var(--ink); }
+svg.plot .gap { stroke: var(--ink); stroke-width: 1.5; stroke-dasharray: 5 4; }
+svg.plot text.end-name { fill: var(--ink); font-weight: 700; font-size: 13.5px; }
+svg.plot text.end-sub { fill: var(--ink-2); font-size: 12px; }
+svg.plot .cross { stroke: var(--ink-3); stroke-width: 1; }
+svg.plot .thin { fill: var(--ink-3); opacity: .09; }
+svg.plot text.thinlab { font-size: 11.5px; fill: var(--ink-3); font-style: italic; }
+svg.plot .cell.lowc { fill-opacity: .38; }
+svg.plot .cell { stroke: var(--bg); stroke-width: 2; cursor: pointer; }
+svg.plot text.rowlab { fill: var(--ink); font-size: 14px; font-weight: 500; }
+svg.plot text.cellnum { font-size: 12.5px; font-weight: 600; pointer-events: none; }
+.note { font-size: 13px; color: var(--ink-3); margin: 10px 2px 0; max-width: 92ch; }
+.callout { font-size: 14px; color: var(--ink-2); border-left: 3px solid var(--ink-3); padding: 2px 0 2px 12px; margin: 14px 2px 2px; max-width: 80ch; }
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px 24px; margin: 16px 2px 14px; font-size: 14px; }
+.facts div > span.k { display: block; color: var(--ink-3); font-size: 13px; margin-bottom: 2px; }
+.facts div b { font-weight: 600; }
+.trio { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin: 0 0 6px; }
+.trio div { border: 1px solid var(--rule); border-radius: 12px; padding: 12px 14px; font-size: 14px; color: var(--ink-2); }
+.trio div b { display: block; font-size: 20px; color: var(--ink); line-height: 1.2; margin: 2px 0; }
+.trio div small { color: var(--ink-3); }
+details.all { margin-top: 14px; font-size: 14px; }
+details.all summary { cursor: pointer; color: var(--ink-2); font-weight: 500; }
+.scroll-x { overflow-x: auto; }
+#open-table { min-width: 560px; margin-top: 10px; }
+
+.tip { position: fixed; pointer-events: none; z-index: 5; min-width: 180px; max-width: 330px; background: #fff; color: #16202e;
+  border-radius: 10px; padding: 10px 12px; box-shadow: 0 0 0 1px #dce1e8, 0 10px 28px rgba(10, 20, 35, .22); font-size: 13px; line-height: 1.4;
+  --rule: #dce1e8; }
+.tip[hidden] { display: none; }
+.tip .when { color: #6f7c8f; margin-bottom: 6px; }
+.tip .row { display: flex; align-items: center; gap: 8px; margin-top: 5px; }
+.tip .row .sw { width: 10px; height: 2px; flex: none; }
+.tip .row .name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tip .row .v { font-weight: 700; }
+.tip .title { font-weight: 700; margin-bottom: 4px; }
+.tip .body { color: #4a5568; }
+
+/* Estimates */
+.est { display: grid; grid-template-columns: minmax(180px, 290px) minmax(0, 1fr) minmax(150px, 230px); column-gap: 22px; align-items: center; }
+.est > div { padding: 10px 0; border-top: 1px solid var(--rule); min-height: 56px; display: flex; flex-direction: column; justify-content: center; }
+.est .who { font-weight: 600; line-height: 1.25; } .est .who small { display: block; font-weight: 400; font-size: 13px; color: var(--ink-3); }
+.est .nums { font-size: 13.5px; color: var(--ink-2); } .est .nums b { color: var(--ink); }
+.est .track { position: relative; height: 34px; }
+.est .track i { position: absolute; }
+.est .track .g { top: 0; bottom: 0; width: 1px; background: var(--rule); }
+.est .track .pub { top: 6px; height: 8px; border-radius: 4px; background: var(--ink-3); opacity: .45; }
+.est .track .p { top: 3px; width: 4px; height: 14px; margin-left: -2px; background: var(--ink); border-radius: 2px; }
+.est .track .my { top: 21px; height: 8px; border-radius: 4px; background: var(--us); opacity: .3; }
+.est .track .m { top: 18px; width: 4px; height: 14px; margin-left: -2px; background: var(--us); border-radius: 2px; }
+.est > div.scale { position: relative; height: 22px; font-size: 12px; color: var(--ink-3); min-height: 0; padding: 4px 0 0; display: block; }
+.est .scale span { position: absolute; transform: translateX(-50%); white-space: nowrap; }
+
+/* Reference */
+table { width: 100%; border-collapse: collapse; font-size: 15px; }
+th { text-align: left; font-weight: 500; font-size: 13px; color: var(--ink-3); padding: 0 10px 8px 0; border-bottom: 1px solid var(--rule); vertical-align: bottom; }
+td { padding: 11px 10px 11px 0; border-bottom: 1px solid var(--rule); vertical-align: middle; }
+th.num, td.num { text-align: right; }
+td.model { display: flex; align-items: center; gap: 11px; }
+td.model .name { font-weight: 600; line-height: 1.25; }
+td.model .lab { font-size: 13px; color: var(--ink-3); }
+td.strong { font-weight: 700; }
+td.date { color: var(--ink-2); white-space: nowrap; }
+.country { display: inline-flex; align-items: center; gap: 7px; white-space: nowrap; }
+.country i { width: 9px; height: 9px; border-radius: 50%; }
+.flagged { color: var(--ink-3); font-size: 12px; border: 1px solid var(--rule); border-radius: 999px; padding: 1px 7px; margin-left: 6px; white-space: nowrap; cursor: help; font-weight: 400; }
+.more { margin-top: 16px; }
+.ref-body { margin-top: 18px; max-width: 860px; }
+.events { list-style: none; margin: 0; padding: 0; }
+.events .year { font: 700 13px/1 var(--sans); color: var(--ink-3); padding: 18px 0 8px; }
+.events .year:first-child { padding-top: 0; }
+.events details { border-bottom: 1px solid var(--rule); }
+.events summary { list-style: none; cursor: pointer; display: grid; grid-template-columns: 16px 52px 1fr; gap: 8px; align-items: baseline; padding: 10px 0; }
+.events summary::-webkit-details-marker { display: none; }
+.events summary svg { width: 10px; height: 10px; fill: var(--ink-2); align-self: center; }
+.events summary time { font-size: 13px; color: var(--ink-3); white-space: nowrap; }
+.events summary span { font-weight: 500; line-height: 1.3; }
+.events details p { margin: 0 0 12px 76px; font-size: 14px; color: var(--ink-2); max-width: 60ch; }
+.checks { padding-left: 18px; color: var(--ink-2); font-size: 14px; margin: 0; }
+.checks li { margin: 6px 0; } .checks li b { color: var(--ink); font-weight: 600; }
+.foot { margin: 48px 0 64px; padding-top: 18px; border-top: 1px solid var(--rule); font-size: 13.5px; color: var(--ink-3); max-width: 95ch; }
+.foot p { margin: 0 0 8px; }
+
+@media (max-width: 880px) {
+  .wrap { padding: 0 16px; }
+  .hero-top { padding: 26px 0 14px; }
+  .panel { padding: 16px 12px; }
+  .hide-sm { display: none; }
+  .events details p { margin-left: 24px; }
+  .est { grid-template-columns: minmax(0, 1fr); }
+  .est > div { border-top: 0; padding: 2px 0; min-height: 0; }
+  .est > div.first { border-top: 1px solid var(--rule); padding-top: 12px; }
+  .est > div.last { padding-bottom: 12px; }
+  .est > div.scale.pad { display: none; }
+  .tabs { gap: 16px; }
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="masthead"><strong>US–China AI capability gap</strong><span id="asof"></span></div>
+    <div class="hero-top">
+      <div><h1 id="headline"></h1><p id="lede"></p></div>
+      <div class="seg" id="variant" aria-label="Which scores to use"></div>
+    </div>
+    <svg id="calendar" role="img" aria-label="For each capability area, the date the US reached China's current level"></svg>
+    <p class="notice" id="lapse" hidden></p>
+    <div class="hero-key">
+      <span><i style="width:14px;height:14px;background:var(--cn)"></i>Where China is now on the US calendar (median of the area's benchmarks)</span>
+      <span><i style="width:10px;height:10px;border:2.5px solid var(--cn)"></i>Low confidence: fewer than 3 benchmarks, or benchmarks that disagree on direction</span>
+      <span><i style="width:18px;height:12px;border:1.5px dashed var(--ink-2);border-radius:3px"></i>A published estimate, shown where this data has fewer than 2 benchmarks</span>
+      <span><i style="width:8px;height:8px;background:var(--ink-2)"></i>One benchmark</span>
+      <span><i style="width:12px;height:12px;border:1.5px dashed var(--cn)"></i>Median under the other source setting, where it differs</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="block" id="explorer">
+    <div class="chips" id="area-chips" aria-label="Capability area"></div>
+    <div class="panel" style="margin-top:14px">
+      <div class="ex-head"><h2 id="ex-title"></h2><p id="ex-lede"></p><p class="notice" id="ex-extra" hidden></p></div>
+      <div class="tabs" role="tablist" id="tabs">
+        <button type="button" role="tab" data-t="history">History</button>
+        <button type="button" role="tab" data-t="bench">Benchmarks</button>
+        <button type="button" role="tab" data-t="open">Open weights</button>
+      </div>
+
+      <div id="tab-history">
+        <div class="bar">
+          <label class="inline">Show<select id="lag-pick"></select></label>
+          <div class="toggles" id="toggles" aria-label="Events shown on the chart"></div>
+        </div>
+        <div class="key" id="lag-key"></div>
+        <svg class="plot" id="lag" role="img" aria-label="Lag in months over time with export-control and chip events marked"></svg>
+        <p class="callout">Events are marked for reference only. A change in the lag after an export control or a chip milestone does not show that one caused the other. The lag also moves for unrelated reasons: models are released in bursts, and benchmarks enter and leave the calculation as they gain coverage or saturate.</p>
+      </div>
+
+      <div id="tab-bench" hidden>
+        <div class="chips bench-chips"></div>
+        <div class="facts" id="bench-facts"></div>
+        <svg class="plot" id="steps" role="img" aria-label="Best score to date for US and Chinese models on the selected benchmark"></svg>
+        <p class="note" id="bench-note"></p>
+      </div>
+
+      <div id="tab-open" hidden>
+        <div class="trio" id="open-trio"></div>
+        <div class="chips bench-chips" style="margin-top:16px"></div>
+        <svg class="plot" id="open" role="img" aria-label="Best score to date for US closed, US open and Chinese open-weight models" style="margin-top:10px"></svg>
+        <p class="note" id="open-note"></p>
+        <details class="all"><summary>All areas</summary><div class="scroll-x"><table id="open-table"></table></div></details>
+      </div>
+      <p class="note">The shaded years have limited Chinese coverage. Before 2025 Epoch scored only open-weight Chinese models, and Arena and Artificial Analysis rated few Chinese models of any kind, so lags shown for 2023 and 2024 are less reliable than later ones.</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="sec-head"><div><h2>Every area since 2023</h2>
+      <p class="sub">Median lag in months at the end of each quarter, using only the benchmarks that had enough recent Chinese scores at the time. The last column is the current quarter to date. Blank means none qualified. Select a cell to open that area.</p></div></div>
+    <svg class="plot" id="heat" role="img" aria-label="Quarterly lag by capability area since 2023"></svg>
+    <div class="key" style="margin-top:12px">
+      <span><i style="width:22px;height:14px;border-radius:3px;background:var(--heat-pos);opacity:.38"></i>Faded: low confidence (fewer than 3 benchmarks, or benchmarks that disagree on direction)</span>
+      <span><i style="width:22px;height:14px;border-radius:3px;background:var(--ink-3);opacity:.2"></i>Shaded years: before 2025 only open-weight Chinese models were widely scored, so the early lag is less reliable</span>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="sec-head"><div><h2>Published estimates beside this data</h2>
+      <p class="sub">Grey is what the publisher reported. Blue is the same quantity recomputed here for the same date, where this data can measure it. Methods and model sets differ, so expect them to differ. Hover a row for detail.</p></div></div>
+    <div class="est" id="est"></div>
+  </section>
+
+  <section class="block">
+    <div class="sec-head"><div><h2>Reference</h2></div><div class="seg" id="ref-tabs"></div></div>
+    <div class="ref-body" id="ref-releases" hidden>
+      <div class="seg" id="seg" aria-label="Filter releases by country" style="margin-bottom:14px"></div>
+      <table>
+        <thead><tr><th>Model</th><th>Country</th><th class="hide-sm">Weights</th><th class="num">ECI</th><th class="num hide-sm">Benchmarks</th><th class="num">Released</th></tr></thead>
+        <tbody id="releases"></tbody>
+      </table>
+      <button class="more" id="more" type="button">Show 15 more</button>
+    </div>
+    <div class="ref-body" id="ref-events" hidden><ol class="events" id="events"></ol></div>
+    <div class="ref-body" id="ref-checks" hidden><ul class="checks" id="checklist"></ul></div>
+  </section>
+
+  <footer class="foot">
+    <p>Every lag uses one rule: take China's best score released by a date, find the earliest US model that scored at least as high, and count the time since that model's release. If no US model has, China leads and the lag is negative. All figures are as of the build date; rebuild to move them forward.</p>
+    <p>Scores: <a href="https://epoch.ai/benchmarks">Epoch AI</a> benchmark data and Epoch Capabilities Index (CC BY 4.0); <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset">Arena leaderboard dataset</a> by LMArena (CC BY 4.0), which measures human preference; <span id="aa-credit"></span><a href="https://metr.org/time-horizons/">METR</a> time horizons (closed series).</p>
+    <p id="built"></p>
+  </footer>
+</main>
+<div class="tip" id="tip" hidden></div>
+
+<script>
+const DATA = /*__DATA__*/null;
+const KINDS = {
+  export_control: { label: "US export controls", shape: "M0,-5 L5,4 L-5,4 Z", flip: true },
+  entity_list: { label: "Entity List", shape: "M-4.2,-4.2 H4.2 V4.2 H-4.2 Z" },
+  china_chip: { label: "Chinese chips", shape: "M0,-5.5 L5.5,0 L0,5.5 L-5.5,0 Z" },
+};
+const VARIANT_LABEL = { independent: "Independent sources only", all: "All sources" };
+const SHORT = { "Agentic and real-world work": "Agentic work", "Frontier reasoning and science": "Reasoning, science", "Knowledge and hallucination": "Knowledge", "Cyber and security": "Cyber", "Puzzles and games": "Puzzles, games" };
+const STATUS = { yes: "", stale: "Stale", saturated: "Saturated", historical: "Closed series", no_china: "No Chinese scores" };
+const DAY = 864e5, MONTH = 365.25 / 12;
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const day = (s) => new Date(s + "T00:00:00");
+const fmt = (d, o) => d.toLocaleDateString("en-GB", o || { day: "numeric", month: "short", year: "numeric" });
+const monthOf = (d) => fmt(d, { month: "long", year: "numeric" });
+const one = (n) => Math.abs(n).toFixed(1);
+const css = (v, el) => getComputedStyle(el || document.documentElement).getPropertyValue(v).trim();
+const START = day(DATA.start), TODAY = day(DATA.built), THIN = day(DATA.thin_until);
+const events = DATA.events.map((e) => ({ ...e, t: day(e.date) }));
+const benchInfo = Object.fromEntries(DATA.benchmarks.map((b) => [b.id, b]));
+const idsOf = (d) => DATA.benchmarks.filter((b) => b.domain === d).map((b) => b.id);
+const state = { variant: "independent", area: "Overall", tab: "history", bench: "eci", lagPick: "area", ref: null, shown: new Set(Object.keys(KINDS)), country: "All", limit: 15 };
+const V = () => DATA.variants[state.variant];
+const otherKey = () => state.variant === "all" ? "independent" : "all";
+const lagText = (m) => m == null ? "no data" : m < 0 ? `China ahead ${one(m)} mo` : `${one(m)} mo`;
+const score = (v) => Math.abs(v) >= 1000 ? Math.round(v).toLocaleString("en-GB") : Math.abs(v) >= 10 ? v.toFixed(1) : v.toFixed(3).replace(/0+$/, "").replace(/\.$/, "");
+// A span of lags in words: "4.1 to 8.2 mo", "China ahead 2.9 to 5.7 behind", "China ahead 5.8 to 8.0 mo".
+const rangeText = (a, b) => a < 0 && b < 0 ? `China ahead ${one(b)} to ${one(a)} mo` : a < 0 ? `China ahead ${one(a)} to ${one(b)} behind` : `${one(a)} to ${one(b)} mo`;
+// The calendar date the US was at China's current level, given a lag in months.
+const usDate = (m) => new Date(+TODAY - m * MONTH * DAY);
+
+// Labs are shown as a lettered badge, not a logo.
+function logoChip(lab, cls) {
+  return `<span class="logo ${cls || ""}" title="${esc(lab)}">${esc((lab || "?").trim()[0].toUpperCase())}</span>`;
+}
+const who = (p) => p ? `${logoChip(p[3], "sm")} <b>${esc(p[2])}</b>` : "";
+// An area's profile, or null when it has no counted benchmark.
+const P = (v, d) => { const p = v.profile[d]; return p && p.m != null ? p : null; };
+const whyLow = (p) => p.low.map((k) => DATA.why[k]).join("; ");
+
+// ---------- tooltip (shared) ----------
+const tip = $("tip");
+function showTip(html, x, y) {
+  tip.innerHTML = html; tip.hidden = false;
+  const w = tip.offsetWidth, h = tip.offsetHeight;
+  tip.style.left = Math.max(8, x + 14 + w > innerWidth - 8 ? x - w - 14 : x + 14) + "px";
+  tip.style.top = Math.max(8, Math.min(y - 10, innerHeight - h - 8)) + "px";
+}
+function hideTip() { tip.hidden = true; }
+addEventListener("scroll", hideTip, { passive: true });
+
+// ---------- hero: China on the US calendar ----------
+function drawHeadline() {
+  $("asof").textContent = "As of " + fmt(TODAY);
+  const rows = DATA.domains.filter((d) => d !== "Overall").map((d) => ({ d, s: P(V(), d) })).filter((r) => r.s);
+  if (!rows.length) { $("headline").textContent = "No benchmark has enough recent Chinese scores to measure the gap."; $("lede").textContent = ""; return; }
+  rows.sort((a, b) => a.s.m - b.s.m);
+  // The headline uses only areas that are not low confidence.
+  const solid = rows.filter((r) => !r.s.low.length), nm = (d) => (SHORT[d] || d).toLowerCase();
+  if (solid.length < 2) { $("headline").textContent = "Too few capability areas have enough agreeing benchmarks for a headline."; $("lede").textContent = ""; return; }
+  const near = solid[0], far = solid[solid.length - 1], nLow = rows.length - solid.length;
+  $("headline").textContent = near.s.m < 0
+    ? `China is ahead of the US in ${nm(near.d)}. In ${nm(far.d)}, it is where the US was in ${monthOf(usDate(far.s.m))}.`
+    : `In ${nm(near.d)}, China is where the US was in ${monthOf(usDate(near.s.m))}. In ${nm(far.d)}, ${monthOf(usDate(far.s.m))}.`;
+  const overall = DATA.overall.map((id) => ({ b: benchInfo[id], l: V().bench[id] && V().bench[id].lag })).filter((o) => o.b && o.l);
+  const parts = overall.map((o) => `<b>${one(o.l.m)}</b> on ${esc(o.b.name.replace(" (style-controlled)", ""))}${o.b.kind === "preference" ? " (human preference)" : ""}`);
+  $("lede").innerHTML = `Each row places China's best models on the US timeline: the date a US model first scored as high. The lag runs from <b>${lagText(near.s.m).replace(" mo", " months")}</b> (${esc(nm(near.d))}) to <b>${one(far.s.m)} months</b> (${esc(nm(far.d))}) across the ${solid.length} areas with at least three benchmarks that agree on direction.${nLow ? ` ${nLow} more are shown faded as low confidence.` : ""}` +
+    (parts.length ? ` Overall measures, in months: ${parts.join(", ").replace(/, ([^,]*)$/, " and $1")}.` : "");
+}
+let cal = null;
+function drawCalendar() {
+  const svg = $("calendar"), W = svg.clientWidth || 900, narrow = W < 700;
+  const live = (v, d) => idsOf(d).filter((id) => v.bench[id].status === "yes" && v.bench[id].lag);
+  let maxLag = 6, maxAhead = 0;
+  for (const v of Object.values(DATA.variants)) for (const d of DATA.domains) for (const id of live(v, d)) {
+    const m = v.bench[id].lag.m; maxLag = Math.max(maxLag, m); maxAhead = Math.max(maxAhead, -m);
+  }
+  const B = Math.ceil(maxLag) + 1, A = maxAhead > 0 ? Math.ceil(maxAhead) + 1 : 0.8;
+  const L = narrow ? 4 : 270, R = narrow ? 4 : 200, top = 46, rh = narrow ? 64 : 48;
+  const x0 = L, x1 = W - R, per = (x1 - x0) / (A + B), xT = x1 - A * per, x = (m) => xT - m * per;
+  const H = top + rh * DATA.domains.length + 8;
+  let s = "";
+  // Calendar ticks: the first of each month, placed by how long ago it was.
+  const first = new Date(TODAY.getFullYear(), TODAY.getMonth(), 1);
+  for (let k = 0; k < B + 1; k++) {
+    const d = new Date(first.getFullYear(), first.getMonth() - k, 1), m = (TODAY - d) / DAY / MONTH;
+    if (m > B) break;
+    const label = narrow ? k % 3 === 0 : k % 2 === 0;
+    s += `<line class="tick" x1="${x(m)}" x2="${x(m)}" y1="${top - (label ? 8 : 4)}" y2="${H - 8}"/>`;
+    if (label && x(m) < xT - 46) s += `<text x="${x(m)}" y="${top - 14}" text-anchor="middle">${fmt(d, { month: "short", year: "numeric" })}</text>`;
+  }
+  s += `<line class="today" x1="${xT}" x2="${xT}" y1="${top - 10}" y2="${H - 8}"/><text class="today-lab" x="${xT}" y="${top - 30}" text-anchor="${maxAhead > 0 ? "middle" : "end"}">US today</text>`;
+  if (maxAhead > 0) s += `<text x="${x1}" y="${top - 14}" text-anchor="end">China ahead</text>`;
+  const dots = [], fbs = [], other = DATA.variants[otherKey()];
+  DATA.domains.forEach((d, r) => {
+    const sm = P(V(), d), o = P(other, d), raw = V().profile[d] || {}, ids = live(V(), d), y0 = top + r * rh, cy = narrow ? y0 + 44 : y0 + rh / 2;
+    const low = sm && sm.low.length > 0, fb = raw.fallback;
+    s += `<g class="${sm ? (low ? "low" : "") : "off"}">` + (state.area === d ? `<rect class="row-on" x="0" y="${y0 + 2}" width="${W}" height="${rh - 4}" rx="8"/>` : "");
+    const count = sm ? `${sm.n} benchmark${sm.n === 1 ? "" : "s"}${sm.low.includes("split") ? " that disagree" : ""}` : "";
+    const meta = sm ? (low ? `low confidence: ${count}` : count) : "no counted benchmark";
+    if (narrow) {
+      s += `<text class="area" x="${x0}" y="${y0 + 20}">${esc(SHORT[d] || d)}${low || !sm ? `<tspan class="lowtag" dx="6">${sm ? "low confidence" : "no data"}</tspan>` : ""}</text>`;
+      s += `<text class="big" x="${x1}" y="${y0 + 20}" text-anchor="end">${sm ? lagText(sm.m) : "no data"}</text>`;
+    } else {
+      s += `<text class="area" x="12" y="${cy - 1}">${esc(d)}</text><text x="12" y="${cy + 15}">${meta}</text>`;
+      s += `<text class="big" x="${W - 12}" y="${cy - 1}" text-anchor="end">${sm ? lagText(sm.m) : "No current data"}</text>`;
+      if (sm) {
+        const differs = o && (Math.abs(o.m - sm.m) >= 0.05 || o.n !== sm.n);
+        const second = fb ? `${fb.publisher} published ${fb.low != null ? `${fb.low} to ${fb.high}` : fb.point} mo`
+          : differs ? `${state.variant === "all" ? "independent" : "all sources"}: ${one(o.m)} mo`
+          : sm.low.includes("split") ? "median of a lead and a lag"
+          : sm.m >= 0 ? "US level of " + fmt(usDate(sm.m), { month: "short", year: "numeric" }) : "ahead of every US model";
+        s += `<text class="${fb ? "fb" : ""}" x="${W - 12}" y="${cy + 15}" text-anchor="end">${esc(second)}</text>`;
+      } else if (fb) s += `<text class="fb" x="${W - 12}" y="${cy + 15}" text-anchor="end">${esc(fb.publisher)} published ${fb.low != null ? `${fb.low} to ${fb.high}` : fb.point} mo</text>`;
+    }
+    s += `<line class="track" x1="${x0}" x2="${x1}" y1="${cy}" y2="${cy}"/>`;
+    // A published estimate, drawn as a grey bracket, where this data is too thin.
+    if (fb) { const a = x(fb.high ?? fb.point), b = x(fb.low ?? fb.point);
+      s += `<rect class="fbband" x="${a}" y="${cy - 9}" width="${Math.max(b - a, 4)}" height="18" rx="4"/>`;
+      fbs.push({ a, b, cy, d }); }
+    if (sm) {
+      const gid = `g${r}`, a = Math.min(x(sm.m), xT), b = Math.max(x(sm.m), xT);
+      s += `<defs><linearGradient id="${gid}" x1="${x(sm.m)}" x2="${xT}" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="${css("--cn", svg)}"/><stop offset="1" stop-color="${css("--us", svg)}"/></linearGradient></defs>`;
+      s += `<rect x="${a}" y="${cy - 3}" width="${Math.max(b - a, 1)}" height="6" rx="3" fill="url(#${gid})" opacity="${low ? ".3" : ".8"}"/>`;
+      // Benchmarks that share a date fan out vertically so each stays visible.
+      const placed = [];
+      for (const id of [...ids].sort((p, q) => V().bench[q].lag.m - V().bench[p].lag.m)) {
+        const m = V().bench[id].lag.m, cx = x(m), n = placed.filter((p) => Math.abs(p - cx) < 9).length;
+        placed.push(cx);
+        const dy = n === 0 ? 0 : (n % 2 ? -1 : 1) * Math.ceil(n / 2) * 9;
+        s += `<circle class="bench${m < 0 ? " ahead" : ""}" cx="${cx}" cy="${cy + dy}" r="4"/>`;
+        dots.push({ cx, cy: cy + dy, id });
+      }
+      if (o && Math.abs(o.m - sm.m) >= 0.05) s += `<circle class="alt" cx="${x(o.m)}" cy="${cy}" r="7"/>`;
+      s += `<circle class="med" cx="${x(sm.m)}" cy="${cy}" r="8"/>`;
+    }
+    s += `<rect class="row-hit" data-d="${esc(d)}" x="0" y="${y0}" width="${W}" height="${rh}"/></g>`;
+  });
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`); svg.setAttribute("height", H); svg.innerHTML = s;
+  cal = { dots, fbs, top, rh };
+  // Notices: areas about to lose their last counted benchmark.
+  const lapses = DATA.domains.map((d) => ({ d, l: (V().profile[d] || {}).lapse })).filter((r) => r.l);
+  $("lapse").innerHTML = lapses.map((r) => `<b>${esc(r.d)}</b> will have no counted benchmark from ${fmt(day(r.l.date))} unless a newer Chinese model is scored on ${esc(r.l.benchmarks.join(", "))}.`).join(" ");
+  $("lapse").hidden = !lapses.length;
+}
+function pairTip(id) {
+  const b = benchInfo[id], l = V().bench[id].lag, behind = l.m >= 0;
+  const range = l.lo != null && l.hi != null && l.hi - l.lo >= 0.05 ? ` (${rangeText(l.lo, l.hi)})` : "";
+  return `<div class="title">${esc(b.name)}${b.kind === "preference" ? " (human preference)" : ""}</div>` +
+    `<div class="row"><i class="sw" style="background:#eb6834"></i>${logoChip(l.trail[3], "sm")}<span class="name">${esc(l.trail[2])}</span><span class="v">${score(l.trail[1])}</span></div>` +
+    (l.match ? `<div class="when" style="margin:6px 0 0">${behind ? "first matched by the US with" : "ahead; China first passed the US best with"}</div>` +
+      `<div class="row"><i class="sw" style="background:${behind ? "#2a78d6" : "#eb6834"}"></i>${logoChip(l.match[3], "sm")}<span class="name">${esc(l.match[2])}</span><span class="v">${fmt(day(l.match[0]))}</span></div>` : "") +
+    `<div class="body" style="margin-top:8px"><b style="color:#16202e">${lagText(l.m).replace(" mo", " months")}</b>${range}</div>`;
+}
+$("calendar").addEventListener("pointermove", (ev) => {
+  if (!cal) return; const r = $("calendar").getBoundingClientRect(), px = ev.clientX - r.left, py = ev.clientY - r.top;
+  let best = null, bd = 11;
+  for (const d of cal.dots) { const dist = Math.hypot(d.cx - px, d.cy - py); if (dist < bd) { bd = dist; best = d; } }
+  if (best) return showTip(pairTip(best.id), ev.clientX, ev.clientY);
+  const d = DATA.domains[Math.floor((py - cal.top) / cal.rh)], sm = d && P(V(), d);
+  if (!d) return hideTip();
+  const fbHit = cal.fbs.find((f) => f.d === d && px >= f.a - 4 && px <= f.b + 4 && Math.abs(py - f.cy) < 12);
+  if (fbHit) { const fb = V().profile[d].fallback;
+    return showTip(`<div class="when">Published estimate, not this data</div><div class="title">${esc(fb.publisher)}, ${fmt(day(fb.date))}</div><div class="body">${esc(fb.estimate)}.<br>Measures: ${esc(fb.measures.toLowerCase())}.</div>`, ev.clientX, ev.clientY); }
+  showTip(`<div class="title">${esc(d)}</div><div class="body">${sm ? `${lagText(sm.m).replace(" mo", " months")}${sm.n > 1 ? `, range ${rangeText(sm.min, sm.max)}` : ""}<br>${sm.n} benchmark${sm.n === 1 ? "" : "s"} counted of ${idsOf(d).length}${sm.low.length ? `<br>Low confidence: ${whyLow(sm)}` : ""}` : "No benchmark has enough recent Chinese scores"}<br>Select to explore</div>`, ev.clientX, ev.clientY);
+});
+$("calendar").addEventListener("pointerleave", hideTip);
+$("calendar").addEventListener("click", (ev) => { const hit = ev.target.closest(".row-hit"); if (hit) { selectArea(hit.dataset.d); $("explorer").scrollIntoView({ behavior: "smooth", block: "start" }); } });
+
+// ---------- explorer ----------
+function defaultBench(d) { const ids = idsOf(d); return ids.find((id) => V().bench[id].status === "yes" && V().bench[id].lag) || ids[0]; }
+function selectArea(d, tab) {
+  state.area = d; state.bench = defaultBench(d); state.lagPick = "area"; if (tab) state.tab = tab;
+  drawCalendar(); drawExplorer();
+}
+function drawExplorer() {
+  const d = state.area, s = P(V(), d), o = P(DATA.variants[otherKey()], d), raw = V().profile[d] || {}, ids = idsOf(d);
+  $("area-chips").innerHTML = DATA.domains.map((x) => { const p = P(V(), x);
+    return `<button type="button" data-d="${esc(x)}" aria-pressed="${x === d}" class="${p ? (p.low.length ? "lowc" : "") : "off"}" title="${p && p.low.length ? "Low confidence: " + esc(whyLow(p)) : ""}">${esc(SHORT[x] || x)}${p ? ` <b>${p.m < 0 ? "+" + one(p.m) : one(p.m)}</b>` : ""}${p && p.low.length ? "<small>low confidence</small>" : ""}</button>`; }).join("");
+  $("ex-title").textContent = d;
+  const off = ids.length - (s ? s.n : 0);
+  $("ex-lede").innerHTML = s
+    ? (s.low.includes("split") ? `The median lag is <b>${lagText(s.m).replace(" mo", " months")}</b>, but it does not describe either benchmark.`
+       : s.m >= 0 ? `China is <b>${one(s.m)} months</b> behind: its best matches where the US was in <b>${monthOf(usDate(s.m))}</b>.` : `China is <b>${one(s.m)} months ahead</b> of the US.`) +
+      (s.n > 1 ? ` Across ${s.n} benchmarks the lag runs ${rangeText(s.min, s.max).replace(" mo", " months")}.` : "") +
+      (s.low.length ? ` <b>Low confidence</b>: ${esc(whyLow(s))}.` : "") + (raw.split_note ? " " + esc(raw.split_note) : "") +
+      (off ? ` ${off} more ${off === 1 ? "is" : "are"} not counted (stale, saturated or without Chinese scores).` : "") +
+      (o && (Math.abs(o.m - s.m) >= 0.05 || o.n !== s.n) ? ` With ${VARIANT_LABEL[otherKey()].toLowerCase()} it is ${one(o.m)} months across ${o.n}.` : "")
+    : `No benchmark in this area has enough recent Chinese scores to measure a current lag.`;
+  const fb = raw.fallback, extra = [];
+  if (fb) extra.push(`For comparison, <a href="${esc(fb.url)}">${esc(fb.publisher)}</a> published ${fb.low != null ? `${fb.low} to ${fb.high}` : fb.point} months on ${fmt(day(fb.date))}. That is a published estimate, not this data, and it measures ${esc(fb.measures.charAt(0).toLowerCase() + fb.measures.slice(1))}.`);
+  if (raw.lapse) extra.push(`${esc(raw.lapse.benchmarks.join(", "))} stops counting on ${fmt(day(raw.lapse.date))} unless a newer Chinese model is scored, which would leave this area with no current figure.`);
+  $("ex-extra").innerHTML = extra.join(" "); $("ex-extra").hidden = !extra.length;
+  $("tabs").querySelectorAll("button").forEach((b) => b.setAttribute("aria-selected", b.dataset.t === state.tab));
+  for (const t of ["history", "bench", "open"]) $("tab-" + t).hidden = t !== state.tab;
+  const chips = ids.map((id) => { const x = V().bench[id], on = x.status === "yes";
+    return `<button type="button" data-b="${id}" aria-pressed="${id === state.bench}" class="${on ? "" : "off"}" title="${on ? "Counted" : esc(STATUS[x.status]) + ", not counted"}">${esc(benchInfo[id].name)}${x.lag ? ` <b>${x.lag.m < 0 ? "+" + one(x.lag.m) : one(x.lag.m)}</b>` : ""}</button>`; }).join("");
+  document.querySelectorAll(".bench-chips").forEach((el) => { el.innerHTML = chips; });
+  if (state.tab === "history") {
+    $("lag-pick").innerHTML = `<option value="area">Whole area, median</option><option value="each">Whole area, every benchmark</option>` + ids.map((id) => `<option value="${id}">${esc(benchInfo[id].name)}</option>`).join("");
+    $("lag-pick").value = state.lagPick; drawLag();
+  } else if (state.tab === "bench") drawBench();
+  else drawOpen();
+}
+$("area-chips").addEventListener("click", (ev) => { const b = ev.target.closest("button"); if (b) selectArea(b.dataset.d); });
+$("tabs").addEventListener("click", (ev) => { const b = ev.target.closest("button"); if (b) { state.tab = b.dataset.t; drawExplorer(); } });
+document.addEventListener("click", (ev) => { const b = ev.target.closest(".bench-chips button"); if (b) { state.bench = b.dataset.b; drawExplorer(); } });
+$("lag-pick").addEventListener("change", (ev) => { state.lagPick = ev.target.value; drawLag(); });
+
+// ---------- shared chart pieces ----------
+function frame(svg, yMin, yMax, opt) {
+  const W = svg.clientWidth || 900, narrow = W < 620, H = opt.h || (narrow ? 340 : 430);
+  const m = { l: 40, r: opt.r != null ? (narrow ? opt.rNarrow : opt.r) : 20, t: opt.lanes ? 64 : 16, b: 28 };
+  const x = (t) => m.l + (t - START) / (TODAY - START) * (W - m.l - m.r);
+  const y = (v) => H - m.b - (v - yMin) / (yMax - yMin) * (H - m.t - m.b);
+  // 2023 and 2024: Chinese models were thinly covered, so the period is shaded.
+  let s = `<rect class="thin" x="${x(START)}" y="${m.t}" width="${x(THIN) - x(START)}" height="${H - m.b - m.t}"/>` +
+          `<text class="thinlab" x="${x(START) + 8}" y="${m.t + 16}">limited Chinese coverage</text>`;
+  for (let yr = START.getFullYear(); day(yr + "-01-01") <= TODAY; yr++) {
+    const xx = x(day(yr + "-01-01"));
+    s += `<line class="grid" x1="${xx}" x2="${xx}" y1="${H - m.b}" y2="${H - m.b + 5}"/><text x="${xx}" y="${H - 8}" text-anchor="${yr === START.getFullYear() ? "start" : "middle"}">${yr}</text>`;
+  }
+  return { W, H, m, x, y, narrow, s };
+}
+function eventLayer(f) {
+  const lanes = {}; Object.keys(KINDS).forEach((k, i) => { lanes[k] = 14 + i * 16; });
+  const evs = events.filter((e) => state.shown.has(e.kind) && KINDS[e.kind] && e.t >= START && e.t <= TODAY);
+  let s = "";
+  evs.forEach((e, i) => {
+    const k = KINDS[e.kind], xx = f.x(e.t), yy = lanes[e.kind];
+    s += `<g class="ev" data-i="${i}"><line class="ev-rule" x1="${xx}" x2="${xx}" y1="${yy}" y2="${f.H - f.m.b}"/>` +
+         `<path class="ev-mark" d="${k.shape}" transform="translate(${xx},${yy})${k.flip ? " rotate(180)" : ""}"/></g>`;
+  });
+  return { s, evs, lanes };
+}
+function eventHover(svg, f, layer, px, py, ev) {
+  svg.querySelectorAll(".ev.on").forEach((g) => g.classList.remove("on"));
+  let near = -1, nd = 12;
+  layer.evs.forEach((e, i) => { const d = Math.hypot(f.x(e.t) - px, layer.lanes[e.kind] - py); if (d < nd) { nd = d; near = i; } });
+  if (near < 0) return false;
+  const e = layer.evs[near]; svg.querySelector(`.ev[data-i="${near}"]`).classList.add("on");
+  showTip(`<div class="when">${fmt(e.t)}, ${esc(KINDS[e.kind].label)}</div><div class="title">${esc(e.title)}</div><div class="body">${esc(e.text)}</div>`, ev.clientX, ev.clientY);
+  return true;
+}
+
+// ---------- history tab: lag over time ----------
+let lagGeom = null;
+// Expand breakpoints [dayIndex, lagDays] into the sawtooth: between jumps the lag grows a day per day.
+function sawtooth(series) {
+  const end = Math.round((TODAY - START) / DAY), pts = [];
+  series.forEach(([d, v], i) => {
+    const next = i + 1 < series.length ? series[i + 1][0] : end;
+    pts.push([d, v], [next, v + (v >= 0 ? 1 : -1) * (next - d)]);
+  });
+  return pts;
+}
+const lagAt = (series, d) => { let hit = null; for (const p of series) { if (p[0] > d) break; hit = p; } return hit ? hit[1] + (hit[1] >= 0 ? 1 : -1) * (d - hit[0]) : null; };
+function drawLag() {
+  const svg = $("lag"), pick = state.lagPick, isArea = pick === "area" || pick === "each", name = state.area;
+  const ids = isArea ? (pick === "each" ? idsOf(name) : []) : [pick];
+  const lines = ids.map((id) => ({ id, series: V().bench[id].series })).filter((l) => l.series.length);
+  const med = isArea ? V().heat[name].map((c, i) => c && [Math.round((day(DATA.months[i]) - START) / DAY), c.m]).filter(Boolean) : [];
+  const vals = lines.flatMap((l) => sawtooth(l.series).map((p) => p[1] / MONTH)).concat(med.map((p) => p[1]));
+  const yMin = Math.min(0, Math.floor(Math.max(Math.min(...vals, 0), -24) / 6) * 6), yMax = Math.max(6, Math.ceil(Math.min(Math.max(...vals, 6), 30) / 6) * 6);
+  const f = frame(svg, yMin, yMax, { lanes: true, r: 20, rNarrow: 12 }), layer = eventLayer(f);
+  const X = (d) => f.x(new Date(+START + d * DAY)), clampY = (v) => f.y(Math.max(yMin, Math.min(yMax, v)));
+  let s = f.s;
+  for (let v = yMin; v <= yMax; v += 6) s += `<line class="${v === 0 ? "zero" : "grid"}" x1="${f.m.l}" x2="${f.W - f.m.r}" y1="${f.y(v)}" y2="${f.y(v)}"/><text x="${f.m.l - 8}" y="${f.y(v) + 4}" text-anchor="end">${v}</text>`;
+  s += layer.s;
+  for (const l of lines) {
+    const d = sawtooth(l.series).map((p, i) => `${i ? "L" : "M"}${X(p[0]).toFixed(1)},${clampY(p[1] / MONTH).toFixed(1)}`).join("");
+    s += isArea ? `<path class="faint" d="${d}"/>` : `<path class="line" style="stroke:var(--us)" d="${d}"/>`;
+  }
+  if (med.length) s += `<path class="line" style="stroke:var(--us);stroke-width:2.5" d="${med.map((p, i) => `${i ? "L" : "M"}${X(p[0]).toFixed(1)},${clampY(p[1]).toFixed(1)}`).join("")}"/>`;
+  if (!med.length && !lines.length) s += `<text x="${f.W / 2}" y="${f.H / 2}" text-anchor="middle">No history to show for this selection</text>`;
+  s += `<line class="cross" id="lag-cross" y1="${f.m.t - 14}" y2="${f.H - f.m.b}" visibility="hidden"/>`;
+  svg.setAttribute("viewBox", `0 0 ${f.W} ${f.H}`); svg.setAttribute("height", f.H); svg.innerHTML = s;
+  lagGeom = { f, layer, lines, isArea, name };
+  $("lag-key").innerHTML = isArea
+    ? `<span><i style="width:18px;border-top:2.5px solid var(--us)"></i>Months behind the US: median of the benchmarks that qualified each month</span>` + (pick === "each" ? `<span><i style="width:18px;border-top:1px solid var(--ink-3)"></i>Each benchmark</span>` : "")
+    : `<span><i style="width:18px;border-top:2px solid var(--us)"></i>${esc(benchInfo[pick].name)}: months behind the US. It climbs a day per day until China posts a better score; negative means China is ahead</span>`;
+}
+$("lag").addEventListener("pointermove", (ev) => {
+  if (!lagGeom) return; const svg = $("lag"), r = svg.getBoundingClientRect(), { f, layer, lines, isArea, name } = lagGeom;
+  const px = ev.clientX - r.left, py = ev.clientY - r.top, cross = $("lag-cross");
+  if (eventHover(svg, f, layer, px, py, ev)) { cross.setAttribute("visibility", "hidden"); return; }
+  if (px < f.m.l || px > f.W - f.m.r || py < f.m.t - 14 || py > f.H - f.m.b) { hideTip(); cross.setAttribute("visibility", "hidden"); return; }
+  const d = Math.round((px - f.m.l) / (f.W - f.m.l - f.m.r) * (TODAY - START) / DAY), t = new Date(+START + d * DAY);
+  cross.setAttribute("x1", px); cross.setAttribute("x2", px); cross.setAttribute("visibility", "visible");
+  let body = "";
+  if (isArea) {
+    const i = DATA.months.findIndex((m) => day(m) >= t), c = i >= 0 && V().heat[name][i];
+    body = c ? `<div class="row"><span class="name">Median (${c.n} benchmark${c.n === 1 ? "" : "s"})</span><span class="v">${lagText(c.m)}</span></div>` : `<div class="body">No benchmark qualified this month</div>`;
+  }
+  const rows = lines.map((l) => ({ l, v: lagAt(l.series, d) })).filter((x) => x.v != null).sort((a, b) => b.v - a.v).slice(0, 9);
+  body += rows.map((x) => `<div class="row"><span class="name">${esc(benchInfo[x.l.id].name)}</span><span class="v">${lagText(x.v / MONTH)}</span></div>`).join("");
+  showTip(`<div class="when">${fmt(t)}</div>${body || '<div class="body">No data yet</div>'}`, ev.clientX, ev.clientY);
+});
+$("lag").addEventListener("pointerleave", () => { hideTip(); const c = $("lag-cross"); if (c) c.setAttribute("visibility", "hidden"); });
+
+// ---------- step charts ----------
+const geoms = {};
+function stepChart(id, lines, opt) {
+  const svg = $(id), all = lines.flatMap((l) => l.pts).filter((p) => day(p[0]) >= START);
+  if (!all.length) { svg.innerHTML = `<text x="12" y="24">No scores to chart</text>`; svg.setAttribute("viewBox", "0 0 400 40"); svg.setAttribute("height", 40); geoms[id] = null; return; }
+  const lo = Math.min(...all.map((p) => p[1])), hi = Math.max(...all.map((p) => p[1])), pad = (hi - lo || 1) * 0.07;
+  const f = frame(svg, lo - pad, hi + pad, { r: 158, rNarrow: 128 }), R = f.narrow ? 10 : 12, tx = (p) => f.x(Math.max(day(p[0]), START));
+  let s = f.s;
+  const span = hi - lo || 1, step = Math.pow(10, Math.floor(Math.log10(span / 4))), nice = [1, 2, 5, 10].map((k) => k * step).find((k) => span / k <= 6);
+  for (let v = Math.ceil((lo - pad) / nice) * nice; v <= hi + pad; v += nice) s += `<line class="grid" x1="${f.m.l}" x2="${f.W - f.m.r}" y1="${f.y(v)}" y2="${f.y(v)}"/><text x="${f.m.l - 8}" y="${f.y(v) + 4}" text-anchor="end">${score(+v.toPrecision(6))}</text>`;
+  if (opt.gap) { const gy = f.y(opt.gap.level); s += `<line class="gap" x1="${f.x(day(opt.gap.from))}" x2="${f.x(day(opt.gap.to))}" y1="${gy}" y2="${gy}"/>`; }
+  for (const l of lines) {
+    if (!l.pts.length) continue;
+    const vis = l.pts.filter((p) => day(p[0]) >= START), before = l.pts.filter((p) => day(p[0]) < START).pop();
+    const startPts = before ? [[DATA.start, before[1]]].concat(vis) : vis;
+    if (!startPts.length) continue;
+    let d = `M${tx(startPts[0])},${f.y(startPts[0][1])}`;
+    for (const p of startPts.slice(1)) d += `H${tx(p)}V${f.y(p[1])}`;
+    s += `<path class="line" style="stroke:var(${l.colour})${l.dash ? ";stroke-dasharray:6 3" : ""}" d="${d}H${f.x(TODAY)}"/>`;
+    for (const p of vis) s += `<circle class="dot" style="fill:var(${l.colour})" cx="${tx(p)}" cy="${f.y(p[1])}" r="4"/>`;
+  }
+  const placed = [], want = lines.flatMap((l) => l.pts.filter((p) => day(p[0]) >= START).map((p, i, a) => ({ p, l, last: i === a.length - 1 })))
+    .sort((a, b) => b.last - a.last || day(b.p[0]) - day(a.p[0]));
+  for (const w of want) {
+    const cx = tx(w.p), cy = f.y(w.p[1]);
+    if (placed.some((q) => Math.hypot(q.cx - cx, q.cy - cy) < R * 2 + 5)) continue;
+    placed.push({ cx, cy, ...w });
+  }
+  for (const b of placed.reverse()) {
+    s += `<g class="badge"><circle style="stroke:var(${b.l.colour})" cx="${b.cx}" cy="${b.cy}" r="${R}"/>` +
+      `<text x="${b.cx}" y="${b.cy + 4}" text-anchor="middle" style="fill:#16202e;font-weight:700">${esc((b.p[3] || "?").trim()[0].toUpperCase())}</text></g>`;
+  }
+  const ends = lines.filter((l) => l.pts.length).map((l) => ({ l, p: l.pts[l.pts.length - 1], yy: f.y(l.pts[l.pts.length - 1][1]) })).sort((a, b) => a.yy - b.yy);
+  const gapPx = f.narrow ? 18 : 34;
+  for (let i = 1; i < ends.length; i++) if (ends[i].yy - ends[i - 1].yy < gapPx) ends[i].yy = ends[i - 1].yy + gapPx;
+  const over = ends.length ? ends[ends.length - 1].yy - (f.H - f.m.b - 4) : 0;
+  if (over > 0) ends.forEach((e) => { e.yy -= over; });
+  for (const e of ends) {
+    const ex = f.x(TODAY) + R + 6;
+    s += `<text class="end-name" x="${ex}" y="${e.yy + 1}">${esc(f.narrow ? e.l.short : e.l.label)} ${score(e.p[1])}</text>`;
+    if (!f.narrow) s += `<text class="end-sub" x="${ex}" y="${e.yy + 16}">${esc(e.p[2].length > 22 ? e.p[2].slice(0, 21) + "…" : e.p[2])}</text>`;
+  }
+  s += `<line class="cross" y1="${f.m.t}" y2="${f.H - f.m.b}" visibility="hidden"/>`;
+  svg.setAttribute("viewBox", `0 0 ${f.W} ${f.H}`); svg.setAttribute("height", f.H); svg.innerHTML = s;
+  geoms[id] = { f, lines };
+}
+function stepHover(id) {
+  const svg = $(id);
+  svg.addEventListener("pointermove", (ev) => {
+    const g = geoms[id]; if (!g) return; const r = svg.getBoundingClientRect(), px = ev.clientX - r.left, py = ev.clientY - r.top, { f, lines } = g, cross = svg.querySelector(".cross");
+    if (px < f.m.l || px > f.W - f.m.r || py > f.H - f.m.b) { hideTip(); cross.setAttribute("visibility", "hidden"); return; }
+    const t = new Date(+START + (px - f.m.l) / (f.W - f.m.l - f.m.r) * (TODAY - START));
+    cross.setAttribute("x1", px); cross.setAttribute("x2", px); cross.setAttribute("visibility", "visible");
+    const rows = lines.map((l) => { const p = l.pts.filter((q) => day(q[0]) <= t).pop();
+      return `<div class="row"><i class="sw" style="background:${css(l.colour)}"></i>` + (p ? `${logoChip(p[3], "sm")}<span class="name">${esc(p[2])}</span><span class="v">${score(p[1])}</span>` : `<span class="name">No ${esc(l.label)} score yet</span>`) + `</div>`; });
+    showTip(`<div class="when">Best to date on ${fmt(t)}</div>${rows.join("")}`, ev.clientX, ev.clientY);
+  });
+  svg.addEventListener("pointerleave", () => { hideTip(); const c = svg.querySelector(".cross"); if (c) c.setAttribute("visibility", "hidden"); });
+}
+function drawBench() {
+  const id = state.bench, b = benchInfo[id], x = V().bench[id], l = x.lag, behind = l && l.m >= 0, facts = [];
+  if (l) {
+    const range = l.lo != null && l.hi != null && l.hi - l.lo >= 0.05 ? ` (${rangeText(l.lo, l.hi)} across the score's confidence interval)` : "";
+    facts.push(`<div><span class="k">Lag today</span><b>${lagText(l.m).replace(" mo", " months")}</b>${range}</div>`);
+    facts.push(`<div><span class="k">China's best</span>${who(l.trail)} ${score(l.trail[1])}, ${fmt(day(l.trail[0]))}</div>`);
+    facts.push(`<div><span class="k">US best</span>${who(l.lead)} ${score(l.lead[1])}, ${fmt(day(l.lead[0]))}</div>`);
+    if (l.match) facts.push(`<div><span class="k">${behind ? "US first reached China's level with" : "China first reached the US level with"}</span>${who(l.match)}, ${fmt(day(l.match[0]))}</div>`);
+  } else facts.push(`<div><span class="k">Lag today</span><b>Not measurable</b>: ${x.n_cn ? "no US score yet" : "no Chinese model has a score"}</div>`);
+  let why = x.status === "yes" ? "Yes" : "No: " + STATUS[x.status].toLowerCase();
+  if (x.status === "stale" && x.latest_cn) why += `, latest Chinese score ${fmt(day(x.latest_cn))}`;
+  if (x.status === "saturated") why += x.sat ? ` since ${fmt(day(x.sat))}` : " (on the saturated list)";
+  if (x.status === "historical" && b.until) why += `, ended ${fmt(day(b.until))}`;
+  facts.push(`<div><span class="k">Counts toward the area</span>${why}</div>`);
+  facts.push(`<div><span class="k">Models scored</span>${x.n_us} US, ${x.n_cn} Chinese</div>`);
+  $("bench-facts").innerHTML = facts.join("");
+  const gap = l && l.match && behind ? { level: l.trail[1], from: l.match[0] < DATA.start ? DATA.start : l.match[0], to: l.trail[0] } : null;
+  stepChart("steps", [{ label: "US", short: "US", colour: "--us", pts: x.us }, { label: "China", short: "China", colour: "--cn", pts: x.cn }], { gap });
+  $("bench-note").innerHTML = `${esc(b.name)}, from ${esc(b.source)}${b.url ? ` (<a href="${esc(b.url)}">source</a>)` : ""}. ${b.kind === "preference" ? "This is a human-preference rating, not a capability test. " : ""}` +
+    `${esc(b.basis)}.${b.ceiling ? ` Ceiling ${score(b.ceiling)}.` : ""}${b.notes ? " " + esc(b.notes) + "." : ""} The dashed line carries China's current best back to the date the US first reached it.`;
+}
+function drawOpen() {
+  const id = state.bench, b = benchInfo[id], o = V().bench[id].open, area = V().open[state.area];
+  const card = (s, label) => `<div>${label}<b>${s ? (s.m < 0 ? `${one(s.m)} months ahead` : `${one(s.m)} months behind`) : "No data"}</b><small>${s ? `${s.n} benchmark${s.n === 1 ? "" : "s"}${s.n > 1 ? `, ${rangeText(s.min, s.max)}` : ""}` : "no counted benchmark has both groups"}</small></div>`;
+  $("open-trio").innerHTML = card(area.cno_usc, "China open against US closed") + card(area.uso_usc, "US open against US closed") + card(area.cno_uso, "China open against US open");
+  stepChart("open", [{ label: "US closed", short: "US closed", colour: "--us", pts: o.usc }, { label: "US open", short: "US open", colour: "--uso", pts: o.uso, dash: true }, { label: "China open", short: "CN open", colour: "--cn", pts: o.cno }], {});
+  const say = (h, a, bb) => h ? (h.m >= 0 ? `${bb} is ${one(h.m)} months behind ${a}` : `${bb} is ${one(h.m)} months ahead of ${a}`) : `${bb} against ${a} cannot be measured`;
+  $("open-note").textContent = `${b.name}: ${say(o.cno_usc, "US closed", "China open")}; ${say(o.uso_usc, "US closed", "US open")}; ${say(o.cno_uso, "US open", "China open")}. Models with unknown weights are left out.`;
+  const cell = (s) => s ? `<td class="num strong">${lagText(s.m)}<div style="font-weight:400;font-size:12.5px;color:var(--ink-3)">${s.n} benchmark${s.n === 1 ? "" : "s"}${s.n > 1 ? `, ${rangeText(s.min, s.max)}` : ""}</div></td>` : `<td class="num" style="color:var(--ink-3)">no data</td>`;
+  $("open-table").innerHTML = `<thead><tr><th>Area</th><th class="num">China open behind US closed</th><th class="num">US open behind US closed</th><th class="num">China open behind US open</th></tr></thead><tbody>` +
+    DATA.domains.map((d) => { const v = V().open[d]; return `<tr><td>${esc(d)}</td>${cell(v.cno_usc)}${cell(v.uso_usc)}${cell(v.cno_uso)}</tr>`; }).join("") + `</tbody>`;
+}
+
+// ---------- quarterly heatmap ----------
+function rgbMix(a, b, t) {
+  const p = (h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16));
+  const x = p(a), y = p(b); return x.map((v, i) => Math.round(v + (y[i] - v) * t));
+}
+function heatFill(m) {
+  const c = rgbMix(css("--heat-0"), css(m < 0 ? "--heat-neg" : "--heat-pos"), Math.pow(Math.min(Math.abs(m) / 12, 1), 0.8));
+  const lum = (0.2126 * c[0] + 0.7152 * c[1] + 0.0722 * c[2]) / 255;
+  return { fill: `rgb(${c.join(",")})`, ink: lum > 0.55 ? "#16202e" : "#ffffff" };
+}
+// The last month end in each quarter (or the current month for the quarter in progress).
+const QUARTERS = (() => { const q = {}; DATA.months.forEach((m, i) => { q[m.slice(0, 4) + "Q" + Math.ceil(+m.slice(5, 7) / 3)] = i; }); return Object.entries(q).map(([k, i]) => ({ k, i })); })();
+let heatGeom = null;
+function drawHeat() {
+  const svg = $("heat"), W = svg.clientWidth || 900, narrow = W < 700, L = narrow ? 112 : 240, top = 58, rh = narrow ? 30 : 38;
+  const cw = (W - L) / QUARTERS.length, H = top + rh * DATA.domains.length + 4;
+  let s = "";
+  const nThin = QUARTERS.filter((q) => day(DATA.months[q.i]) < THIN).length, last = QUARTERS.length - 1;
+  const partial = DATA.months[QUARTERS[last].i] === DATA.built && !/-(03-31|06-30|09-30|12-31)$/.test(DATA.built);
+  if (nThin) s += `<rect class="thin" x="${L}" y="${top - 20}" width="${nThin * cw}" height="${H - top + 20}" rx="6"/><text class="thinlab" x="${L + 8}" y="${top - 6}">limited Chinese coverage</text>`;
+  QUARTERS.forEach((q, i) => {
+    if (q.k.endsWith("Q1") || i === 0) s += `<text x="${L + i * cw + 2}" y="14" style="font-weight:600;fill:var(--ink-2)">${q.k.slice(0, 4)}</text>`;
+    if (!narrow) s += `<text x="${i === last && partial ? W : L + i * cw + cw / 2}" y="32" text-anchor="${i === last && partial ? "end" : "middle"}"${i === last && partial ? ' style="fill:var(--ink);font-weight:600"' : ""}>${q.k.slice(4)}${i === last && partial ? " to date" : ""}</text>`;
+  });
+  if (narrow && partial) s += `<text x="${W}" y="32" text-anchor="end" style="fill:var(--ink);font-weight:600">${QUARTERS[last].k.slice(4)} to date</text>`;
+  DATA.domains.forEach((d, r) => {
+    s += `<text class="rowlab" x="0" y="${top + r * rh + rh / 2 + 5}">${esc(narrow ? (SHORT[d] || d) : d)}</text>`;
+    QUARTERS.forEach((q, i) => {
+      const c = V().heat[d][q.i]; if (!c) return;
+      const h = heatFill(c.m);
+      const lowc = c.low.length > 0;
+      s += `<rect class="cell${lowc ? " lowc" : ""}" x="${L + i * cw}" y="${top + r * rh}" width="${cw}" height="${rh}" rx="5" fill="${h.fill}"/>`;
+      if (cw >= 30) s += `<text class="cellnum" x="${L + i * cw + cw / 2}" y="${top + r * rh + rh / 2 + 4}" text-anchor="middle" style="fill:${lowc ? "var(--ink-2)" : h.ink};font-weight:${lowc ? 400 : 600}">${c.m < 0 ? "+" + Math.abs(c.m).toFixed(0) : c.m.toFixed(cw >= 46 ? 1 : 0)}</text>`;
+    });
+  });
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`); svg.setAttribute("height", H); svg.innerHTML = s;
+  heatGeom = { L, top, rh, cw };
+}
+function heatCell(ev) {
+  const r = $("heat").getBoundingClientRect(), g = heatGeom;
+  const i = Math.floor((ev.clientX - r.left - g.L) / g.cw), row = Math.floor((ev.clientY - r.top - g.top) / g.rh);
+  return { d: DATA.domains[row], q: QUARTERS[i] };
+}
+$("heat").addEventListener("pointermove", (ev) => {
+  if (!heatGeom) return; const { d, q } = heatCell(ev);
+  if (!d || !q) return hideTip();
+  const c = V().heat[d][q.i];
+  showTip(`<div class="when">${q.k.slice(4)} ${q.k.slice(0, 4)}, as of ${fmt(day(DATA.months[q.i]))}</div><div class="title">${esc(d)}</div>` +
+    (c ? `<div class="body">${lagText(c.m).replace(" mo", " months")}${c.n > 1 ? `, range ${rangeText(c.min, c.max)}` : ""}<br>${c.n} benchmark${c.n === 1 ? "" : "s"}${c.low.length ? `<br>Low confidence: ${whyLow(c)}` : ""}${day(DATA.months[q.i]) < THIN ? "<br>Limited Chinese coverage in this period" : ""}</div>` : `<div class="body">No benchmark qualified</div>`), ev.clientX, ev.clientY);
+});
+$("heat").addEventListener("pointerleave", hideTip);
+$("heat").addEventListener("click", (ev) => { if (!heatGeom) return; const { d } = heatCell(ev); if (d) { selectArea(d, "history"); $("explorer").scrollIntoView({ behavior: "smooth", block: "start" }); } });
+
+// ---------- published estimates ----------
+function drawEstimates() {
+  const hi = 18, x = (m) => Math.max(0, Math.min(hi, m)) / hi * 100, grid = [0, 6, 12, 18].map((m) => `<i class="g" style="left:${x(m)}%"></i>`).join("");
+  let html = "";
+  DATA.assessments.forEach((a, i) => {
+    const mine = V().mine[i], pct = a.unit === "percent";
+    const title = `${a.estimate}. Method: ${a.method}.${mine ? " This data: " + mine.label + "." : " This data cannot measure it for that date."}${a.notes ? " " + a.notes + "." : ""}`;
+    html += `<div class="first" title="${esc(title)}"><div class="who"><a href="${esc(a.source_url)}">${esc(a.publisher)}</a>${a.flag ? `<span class="flagged" title="${esc(a.flag + ": " + a.notes)}">check</span>` : ""}<small>${fmt(day(a.date))}, ${esc(a.domain.toLowerCase())}</small></div></div>`;
+    if (pct) html += `<div title="${esc(title)}"><div class="nums">A percentage gap in Arena rating, not a time lag</div></div><div class="last"><div class="nums"><b>${esc(a.point)}%</b> published${mine ? `, <b>${mine.m}%</b> here` : ""}</div></div>`;
+    else {
+      const lo = a.low !== "" ? +a.low : +a.point, up = a.high !== "" ? +a.high : +a.point;
+      let t = grid + (up > lo ? `<i class="pub" style="left:${x(lo)}%;width:${x(up) - x(lo)}%"></i>` : "") + (a.point !== "" ? `<i class="p" style="left:${x(+a.point)}%"></i>` : "");
+      if (mine) t += (mine.lo != null && mine.hi != null && mine.hi > mine.lo ? `<i class="my" style="left:${x(mine.lo)}%;width:${x(mine.hi) - x(mine.lo)}%"></i>` : "") + `<i class="m" style="left:${x(mine.m)}%"></i>`;
+      const pub = a.low !== "" ? `${a.low} to ${a.high}` : `about ${a.point}`;
+      html += `<div title="${esc(title)}"><div class="track">${t}</div></div><div class="last"><div class="nums"><b>${pub}</b> months published${mine ? `, <b>${one(mine.m)}</b> here` : ", not measurable here"}</div></div>`;
+    }
+  });
+  html += `<div class="scale pad"></div><div class="scale">${[0, 6, 12, 18].map((m) => `<span style="left:${x(m)}%">${m}${m === 12 ? " months" : ""}</span>`).join("")}</div><div class="scale pad"></div>`;
+  $("est").innerHTML = html;
+}
+
+// ---------- reference ----------
+function drawReleases() {
+  const rows = DATA.releases.filter((m) => state.country === "All" || m.country === state.country);
+  $("releases").innerHTML = rows.slice(0, state.limit).map((m) => {
+    const name = m.url ? `<a href="${esc(m.url)}">${esc(m.name)}</a>` : esc(m.name);
+    const flag = m.flag ? `<span class="flagged" title="${esc(m.flag + (m.notes ? ": " + m.notes : ""))}">check</span>` : "";
+    return `<tr><td class="model">${logoChip(m.lab)}<div><div class="name">${name}${flag}</div><div class="lab">${esc(m.lab)}</div></div></td>` +
+      `<td><span class="country"><i style="background:var(${m.country === "US" ? "--us" : "--cn"})"></i>${m.country}</span></td>` +
+      `<td class="hide-sm">${m.weights === "open" ? "Open" : m.weights === "closed" ? "Closed" : "Unknown"}</td>` +
+      `<td class="num strong">${m.eci == null ? '<span style="font-weight:400;color:var(--ink-3)">none</span>' : m.eci.toFixed(1)}</td><td class="num hide-sm">${m.n}</td><td class="num date">${fmt(day(m.date))}</td></tr>`;
+  }).join("");
+  $("more").hidden = rows.length <= state.limit;
+}
+function drawEvents() {
+  let year = "", html = "";
+  for (const e of [...events].sort((a, b) => b.t - a.t)) {
+    const yr = e.date.slice(0, 4), k = KINDS[e.kind] || KINDS.export_control;
+    if (yr !== year) { html += `<li class="year">${yr}</li>`; year = yr; }
+    html += `<li><details><summary><svg viewBox="-6 -6 12 12" aria-label="${esc(k.label)}"><title>${esc(k.label)}</title><path d="${k.shape}"${k.flip ? ' transform="rotate(180)"' : ""}/></svg>` +
+      `<time datetime="${e.date}">${fmt(e.t, { day: "numeric", month: "short" })}</time><span>${esc(e.title)}${e.flag ? `<span class="flagged" title="${esc(e.flag + ": " + e.notes)}">check</span>` : ""}</span></summary>` +
+      `<p>${esc(e.text)} <a href="${esc(e.src)}">Source</a></p></details></li>`;
+  }
+  $("events").innerHTML = html;
+}
+function drawRef() {
+  const fb = DATA.benchmarks.filter((b) => /guess|could not|not documented|does not say|No source|estimate/i.test(b.notes + " " + b.basis));
+  const fe = events.filter((e) => e.flag), fa = DATA.assessments.filter((a) => a.flag), fm = DATA.flagged_models;
+  const n = fb.length + fe.length + fa.length + fm.length;
+  const tabs = { releases: `Recent releases (${DATA.n_models})`, events: `Export controls and chip milestones (${events.length})`, checks: `Data to check (${n})` };
+  $("ref-tabs").innerHTML = Object.entries(tabs).map(([k, v]) => `<button type="button" data-r="${k}" aria-pressed="${state.ref === k}">${v}</button>`).join("");
+  for (const k of Object.keys(tabs)) $("ref-" + k).hidden = state.ref !== k;
+  $("checklist").innerHTML =
+    fb.map((b) => `<li><b>${esc(b.name)}</b>. ${esc([b.notes, b.basis].filter(Boolean).join(". "))}</li>`).join("") +
+    fa.map((a) => `<li><b>${esc(a.publisher)}</b> (${a.date}). ${esc(a.flag)}: ${esc(a.notes)}</li>`).join("") +
+    fe.map((e) => `<li><b>${esc(e.title)}</b> (${e.date}). ${esc(e.flag)}: ${esc(e.notes)}</li>`).join("") +
+    fm.map((m) => `<li><b>${esc(m.name)}</b> (${m.date}). ${esc(m.flag)}: ${esc(m.notes)}</li>`).join("");
+}
+$("ref-tabs").addEventListener("click", (ev) => { const b = ev.target.closest("button"); if (!b) return; state.ref = state.ref === b.dataset.r ? null : b.dataset.r; drawRef(); });
+
+// ---------- controls ----------
+function drawAll() { drawHeadline(); drawCalendar(); drawExplorer(); drawHeat(); drawEstimates(); }
+$("variant").innerHTML = Object.entries(VARIANT_LABEL).map(([k, v]) => `<button type="button" data-v="${k}" aria-pressed="${k === state.variant}">${v}</button>`).join("");
+$("variant").addEventListener("click", (ev) => { const b = ev.target.closest("button"); if (!b) return; state.variant = b.dataset.v;
+  $("variant").querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", x === b)); drawAll(); });
+$("toggles").innerHTML = Object.entries(KINDS).map(([k, v]) => `<button type="button" data-k="${k}" aria-pressed="true"><svg viewBox="-6 -6 12 12"><path d="${v.shape}"${v.flip ? ' transform="rotate(180)"' : ""}/></svg>${v.label}</button>`).join("");
+$("toggles").addEventListener("click", (ev) => { const b = ev.target.closest("button"); if (!b) return; const k = b.dataset.k;
+  state.shown.has(k) ? state.shown.delete(k) : state.shown.add(k); b.setAttribute("aria-pressed", state.shown.has(k)); drawLag(); });
+$("seg").innerHTML = ["All", "US", "China"].map((c) => `<button type="button" aria-pressed="${c === "All"}">${c}</button>`).join("");
+$("seg").addEventListener("click", (ev) => { const b = ev.target.closest("button"); if (!b) return; state.country = b.textContent; state.limit = 15;
+  $("seg").querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", x === b)); drawReleases(); });
+$("more").addEventListener("click", () => { state.limit += 15; drawReleases(); });
+stepHover("steps"); stepHover("open");
+$("aa-credit").innerHTML = DATA.has_aa ? `<a href="https://artificialanalysis.ai/">Artificial Analysis</a>; ` : "";
+$("built").textContent = `Built ${fmt(TODAY)} from ${DATA.n_scores.toLocaleString("en-GB")} scores for ${DATA.n_models} US and Chinese models on ${DATA.benchmarks.length} benchmarks.`;
+
+state.bench = defaultBench(state.area);
+drawAll(); drawReleases(); drawEvents(); drawRef();
+const redraw = () => { drawCalendar(); drawHeat(); drawExplorer(); };
+let raf; addEventListener("resize", () => { cancelAnimationFrame(raf); raf = requestAnimationFrame(redraw); });
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(redraw);
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change", redraw);
+</script>
+</body>
+</html>

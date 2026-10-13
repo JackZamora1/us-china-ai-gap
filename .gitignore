@@ -1,0 +1,7 @@
+data/raw/
+__pycache__/
+*.pyc
+.env
+.venv/
+.DS_Store
+.playwright-mcp/

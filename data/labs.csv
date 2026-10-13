@@ -1,0 +1,80 @@
+lab,country,aliases,notes
+OpenAI,US,openai,
+Anthropic,US,anthropic,
+Google DeepMind,US,google|Google|Google Research|deepmind,Epoch lists Google DeepMind as US; pre-merger DeepMind models are UK in Epoch's own rows
+Meta,US,meta|Meta AI,
+xAI,US,xai|SpaceXAI,
+Microsoft,US,microsoft|Microsoft Research|microsoft-ai,
+Amazon,US,amazon,
+Nvidia,US,nvidia|NVIDIA,
+IBM,US,ibm,
+Thinking Machines,US,thinky,
+Allen Institute for AI,US,Ai2|allenai|AllenAI/UW,
+Perplexity,US,perplexity,
+Databricks,US,MosaicML,
+Hugging Face,US,HuggingFace,
+Inception,US,inception-ai|Inception Labs,
+Poolside,US,poolside,
+Liquid AI,US,,
+Nous Research,US,NousResearch,
+Arcee AI,US,,
+Prime Intellect,US,,
+Reka AI,US,,
+Snowflake,US,,
+ServiceNow,US,,
+Deep Cogito,US,,
+Cognition,US,,
+Cursor,US,,
+Salesforce,US,Salesforce Research,
+Cerebras Systems,US,,
+Inflection AI,US,,
+EleutherAI,US,,
+LMSYS,US,UC Berkeley|Large Model Systems Organization,
+NexusFlow,US,Nexusflow,
+Together AI,US,,
+Nomic AI,US,,
+Stanford,US,Princeton|UW|LLaVA,University research groups on Arena
+Cognitive Computations,US,,
+Diffbot,US,diffbot,
+OpenChat,China,,Student team at Tsinghua University (project README)
+RWKV,Unknown,,No source found for the project's location
+OpenAssistant,Other,,LAION (Germany)
+Alibaba,China,alibaba|Aliaba,
+DeepSeek,China,deepseek,
+Moonshot,China,moonshot|Kimi,
+Zhipu AI,China,zai|Z AI|Z.ai (Zhipu AI)|Zhipu|Tsinghua,Arena lists the early ChatGLM models under Tsinghua
+MiniMax,China,minimax,
+Xiaomi,China,xiaomi|Xiaomi Corp,
+Tencent,China,tencent,
+ByteDance,China,bytedance|Bytedance|ByteDance Seed,
+Baidu,China,baidu,
+StepFun,China,stepfun,
+Ant Group,China,ant-group|InclusionAI,
+Meituan,China,meituan|LongCat,
+Kuaishou,China,KwaiKAT,
+01.AI,China,01 AI,
+Baichuan,China,,
+China Mobile,China,,
+OpenBMB,China,,Tsinghua-affiliated
+Shanghai AI Lab,China,InternLM|OpenGVLab,
+Nanbeige,China,,"Nanbeige LLM Lab at BOSS Zhipin, Beijing (Hugging Face profile)"
+AI9Stars,Unknown,,No source found for the team's location
+Nex AGI,China,,"Shanghai, per secondary coverage and ModelScope; no primary source found"
+Apodex,US,,"Redwood City, California (company press release)"
+Celeris,US,,San Francisco (company press release)
+Mistral AI,Other,mistral|Mistral,France
+Cohere,Other,cohere,Canada
+AI21 Labs,Other,,Israel
+Upstage,Other,upstage|Upstage AI,South Korea
+LG AI Research,Other,,South Korea
+Korea Telecom,Other,,South Korea
+SK Telecom,Other,,South Korea
+Naver,Other,,South Korea
+Motif Technologies,Other,,South Korea
+Trillion Labs,Other,,South Korea
+Sarvam,Other,,India
+Technology Innovation Institute,Other,TII|TII UAE,United Arab Emirates
+Institute of Foundation Models,Other,,"United Arab Emirates: part of MBZUAI, Abu Dhabi (MBZUAI announcement)"
+Stability AI,Other,,United Kingdom
+Multiverse Computing,Other,,Spain
+Swiss AI Initiative,Other,,Switzerland

@@ -1,0 +1,30 @@
+{
+ "built": "2026-10-13",
+ "scores": 6271,
+ "medians": {
+  "independent": {
+   "Overall": 7.3,
+   "Agentic and real-world work": 5.0,
+   "Coding": 4.3,
+   "Frontier reasoning and science": 5.7,
+   "Research math": 7.3,
+   "Knowledge and hallucination": 9.0,
+   "Long context": 1.4,
+   "Multimodal": 10.1,
+   "Cyber and security": 7.8,
+   "Puzzles and games": 7.9
+  },
+  "all": {
+   "Overall": 7.3,
+   "Agentic and real-world work": 5.0,
+   "Coding": 4.3,
+   "Frontier reasoning and science": 7.3,
+   "Research math": 7.3,
+   "Knowledge and hallucination": 9.0,
+   "Long context": 1.4,
+   "Multimodal": 10.1,
+   "Cyber and security": 7.8,
+   "Puzzles and games": 7.9
+  }
+ }
+}
