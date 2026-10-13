@@ -37,6 +37,11 @@ EPOCH_MODELS_DB = "https://epoch.ai/data/all_ai_models.csv"
 ARENA_REPO = "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset"
 AA_API = "https://artificialanalysis.ai/api/v2/data/llms/models"
 METR_YAML = "https://metr.org/assets/benchmark_results_1_1.yaml"
+CHIP_OWNERS_ZIP = "https://epoch.ai/data/ai_chip_owners.zip"
+ML_HARDWARE_CSV = "https://epoch.ai/data/ml_hardware.csv"
+# Chip designers headquartered in China; everything else in Epoch's hardware table is treated as non-Chinese.
+CHINESE_CHIP_MAKERS = {"Huawei", "Cambricon", "Kunlunxin Baidu", "MetaX", "Iluvatar CoreX", "Moore Threads (Tencent)",
+                       "Biren", "Hygon", "Alibaba", "Sunway", "National University of Defense Technology"}
 
 DOMAINS = [
     "Overall", "Agentic and real-world work", "Coding", "Frontier reasoning and science",
@@ -401,6 +406,18 @@ def load_aa(reg: Registry) -> tuple[list[dict], list[dict]]:
             name = reg.add(base, name_keys(m["name"], loose=False), lab=lab, country=country, release_date=m.get("release_date") or "",
                            weights="unknown", date_source="Artificial Analysis API")
         reg.alias(name, m["name"])
+        price = m.get("pricing") or {}
+        if price.get("price_1m_blended_3_to_1"):  # zero or missing means no list price
+            PRICES.append({
+                "model": name, "aa_name": m["name"], "lab": reg.models[name]["lab"], "country": reg.models[name]["country"],
+                "release_date": reg.models[name]["release_date"],
+                "aa_intelligence_index": (m.get("evaluations") or {}).get("artificial_analysis_intelligence_index"),
+                "price_blended_usd_per_1m": price["price_1m_blended_3_to_1"],
+                "price_input_usd_per_1m": price.get("price_1m_input_tokens"),
+                "price_output_usd_per_1m": price.get("price_1m_output_tokens"),
+                "output_tokens_per_second": m.get("median_output_tokens_per_second") or "",
+                "source_url": "https://artificialanalysis.ai/",
+            })
         for field, value in (m.get("evaluations") or {}).items():
             if value is None:
                 continue
@@ -585,6 +602,57 @@ def add_release_urls(reg: Registry) -> None:
 
 
 BENCH: dict[str, dict] = {}
+PRICES: list[dict] = []
+
+
+def load_compute() -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Epoch's chip-owner estimates and hardware specifications, as tidy tables."""
+    raw = fetch(CHIP_OWNERS_ZIP)
+    (RAW / "epoch").mkdir(parents=True, exist_ok=True)
+    (RAW / "epoch" / "ai_chip_owners.zip").write_bytes(raw)
+    owners = pd.read_csv(zipfile.ZipFile(io.BytesIO(raw)).open("cumulative_by_designer.csv"))
+    stock = pd.DataFrame({
+        "quarter_end": owners["End date"], "owner": owners["Owner"], "chip_designer": owners["Chip manufacturer"],
+        "h100e": owners["Compute estimate in H100e (median)"], "h100e_p5": owners["H100e (5th percentile)"],
+        "h100e_p95": owners["H100e (95th percentile)"], "units": owners["Number of Units (median)"],
+        "power_mw": owners["Power in MW (median)"], "incomplete": owners["Incomplete"].fillna(False).astype(bool),
+        "notes": owners["Notes"].fillna(""), "source_url": CHIP_OWNERS_ZIP,
+    }).sort_values(["quarter_end", "owner", "chip_designer"])
+
+    body = fetch(ML_HARDWARE_CSV)
+    (RAW / "epoch" / "ml_hardware.csv").write_bytes(body)
+    hw = pd.read_csv(io.BytesIO(body))
+    num = lambda col: pd.to_numeric(hw[col], errors="coerce")
+    chips = pd.DataFrame({
+        "name": hw["Hardware name"], "designer": hw["Manufacturer"],
+        "country": ["China" if m in CHINESE_CHIP_MAKERS else "Other" for m in hw["Manufacturer"]],
+        "type": hw["Type"], "release_date": hw["Release date"],
+        # 16-bit: the better of tensor-core FP16/BF16 and plain FP16. 8-bit: the better of FP8 and INT8.
+        "perf_16bit_flop_s": pd.concat([num("Tensor-FP16/BF16 performance (FLOP/s)"), num("FP16 (half precision) performance (FLOP/s)")], axis=1).max(axis=1),
+        "perf_8bit_op_s": pd.concat([num("FP8 performance (FLOP/s)"), num("INT8 performance (OP/s)")], axis=1).max(axis=1),
+        "tdp_w": num("TDP (W)"), "datasheet_url": hw["Link to datasheet"], "source_url": ML_HARDWARE_CSV,
+    })
+    chips["flag"] = ["no release date" if not isinstance(d, str) else "" for d in chips.release_date]
+    chips = chips.dropna(subset=["name"]).sort_values(["release_date", "name"])
+    return stock, chips
+
+
+def write_prices() -> int:
+    """Today's list prices, plus a log that grows only when a price changes."""
+    cols = ["model", "aa_name", "lab", "country", "release_date", "aa_intelligence_index", "price_blended_usd_per_1m",
+            "price_input_usd_per_1m", "price_output_usd_per_1m", "output_tokens_per_second", "source_url"]
+    prices = pd.DataFrame(PRICES, columns=cols).sort_values("aa_name")
+    prices.to_csv(DATA / "prices.csv", index=False, float_format="%.10g")
+    log_path, log_cols = DATA / "price_history.csv", ["date", "aa_name", "price_blended_usd_per_1m", "price_input_usd_per_1m", "price_output_usd_per_1m"]
+    log = pd.read_csv(log_path) if log_path.exists() else pd.DataFrame(columns=log_cols)
+    last = log.sort_values("date").groupby("aa_name").last() if len(log) else pd.DataFrame()
+    key = lambda r: tuple(round(float(r[c]), 6) if pd.notna(r[c]) else None for c in log_cols[2:])
+    new = [dict(date=TODAY.isoformat(), **{c: r[c] for c in log_cols[1:]}) for _, r in prices.iterrows()
+           if r["aa_name"] not in last.index or key(r) != key(last.loc[r["aa_name"]])]
+    if new:
+        log = pd.concat([log, pd.DataFrame(new, columns=log_cols)], ignore_index=True)
+        log.sort_values(["date", "aa_name"]).to_csv(log_path, index=False, float_format="%.10g")
+    return len(prices)
 
 
 def main() -> None:
@@ -606,6 +674,13 @@ def main() -> None:
         sys.exit(f"refresh failed: no rows from {', '.join(empty)}; tables left unchanged")
     print("rows per source:", ", ".join(f"{k} {n}" for k, n in counts.items()))
     add_release_urls(reg)
+    stock, chips = load_compute()
+    counts["chip owners"], counts["chip specifications"] = len(stock), len(chips)
+    if os.environ.get("AA_API_KEY"):
+        counts["prices"] = len(PRICES)
+    empty = [k for k in ("chip owners", "chip specifications", "prices") if counts.get(k) == 0]
+    if empty:
+        sys.exit(f"refresh failed: no rows from {', '.join(empty)}; tables left unchanged")
 
     models = pd.DataFrame(reg.models.values())
     models["aliases"] = models.aliases.map(lambda a: "|".join(sorted(a)))
@@ -645,6 +720,11 @@ def main() -> None:
     pd.DataFrame(inventory).sort_values(["source", "cn_models_last_12m"], ascending=[True, False]).to_csv(DATA / "inventory.csv", index=False)
     benches = bench_table(table, models)
     benches.to_csv(DATA / "benchmarks.csv", index=False)
+    stock.to_csv(DATA / "compute_stock.csv", index=False, float_format="%.10g")
+    chips.to_csv(DATA / "chips.csv", index=False, float_format="%.10g")
+    if PRICES:
+        write_prices()
+    print(f"compute: {len(stock)} chip-owner rows, {len(chips)} chips; prices: {len(PRICES)}")
 
     print(f"models {len(models)}  scores {len(table)}  benchmarks {len(benches)}  raw copies in {RAW.relative_to(ROOT)}")
     print(benches.groupby("eligible", observed=True).size().to_string())

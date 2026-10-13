@@ -1,6 +1,6 @@
 # US–China frontier AI capability gap
 
-A single-page dashboard that shows how far Chinese AI models are behind US models in each capability area, measured in months, and how that has changed since 2023.
+A single-page dashboard that shows how far China trails the US in AI, measured in months wherever that is meaningful: by capability area, in AI chip stock, chip design and training compute, with a comparison of what models cost to use.
 
 **Live page:** https://jackzamora1.github.io/us-china-ai-gap/ (refreshed daily). Or open `index.html` locally.
 
@@ -23,6 +23,22 @@ Lag in months (median across the area's counted benchmarks; range in brackets).
 
 Overall is three measures that disagree: 7.3 months on Epoch's Capabilities Index, 4.1 on the Artificial Analysis Intelligence Index and 8.2 on Arena text, which measures human preference.
 
+## Compute and cost on 2026-10-13
+
+| Measure | China against the US | Detail |
+|---|---|---|
+| AI chip stock (to 2025-12-31) | 13.6 times smaller; at least 21.0 months behind | China 1,155,114 H100e against 15,746,640 for seven US companies. With Epoch's smuggling estimate: 8.7 times, 18.0 months |
+| Best chip, 16-bit performance | 22.9 months behind | Biren BR100 was matched by NVIDIA B200. Huawei's best (Huawei Ascend 920) is 48.8 months behind |
+| Largest disclosed training run | 27.8 months behind | Doubao-pro was matched by Claude 3.5 Sonnet. US disclosure is patchy |
+| Cheapest model scoring 20+ on the AA index | US price is 2.0 times the Chinese price | Hy3-preview (Reasoning) at $0.1 against Claude Haiku 5.5 (High) at $0.2 per million tokens |
+| Cheapest model scoring 30+ on the AA index | US price is 1.1 times the Chinese price | MiMo-V2.6-Flash at $0.175 against Claude Haiku 5.5 (High) at $0.2 per million tokens |
+| Cheapest model scoring 40+ on the AA index | US price is 0.8 times the Chinese price | GLM-5.3-Flash at $0.237 against Claude Haiku 5.5 (Max) at $0.2 per million tokens |
+| Cheapest model scoring 45+ on the AA index | US price is 3.7 times the Chinese price | MiMo-V2.6-Pro at $0.544 against Muse Spark 1.3 (Max) at $2 per million tokens |
+
+## The site
+
+One static page with six tabs, each with its own link: `#overview`, `#capabilities`, `#compute`, `#cost`, `#policy` and `#methods`. The overview gives one headline per dimension and no single overall number. Each tab shows its "as of" date and sources at the bottom.
+
 ## How to read it
 
 - **Lag at date t:** take China's best score among models released by t. Find the earliest US model, released by t, that scored at least that high. The lag is t minus that model's release date.
@@ -35,7 +51,38 @@ Overall is three measures that disagree: 7.3 months on Epoch's Capabilities Inde
 - **History:** the heatmap and history charts apply the same coverage and saturation rules as of each month end.
 - **Open and closed weights:** the same rule between three groups (China open, US open, US closed). Models with unknown weights are left out.
 
-One implementation, in `gap.py`, produces every number on the page.
+One implementation, in `gap.py`, produces every number on the page, including the compute lags below.
+
+### Compute
+
+All compute data is from Epoch AI (CC BY 4.0).
+
+| Source | What it measures | Table |
+|---|---|---|
+| AI chip owners (`ai_chip_owners.zip`, file `cumulative_by_designer.csv`) | Cumulative AI chips acquired since Q1 2022 by owner and chip designer, in H100-equivalents, units and power, with 5th and 95th percentiles | `data/compute_stock.csv` |
+| ML hardware (`ml_hardware.csv`) | Specifications of 178 accelerators, including 50 from Chinese designers | `data/chips.csv` |
+| Model training compute | Epoch's estimate of each model's training compute, already in `data/models.csv` | `data/models.csv` |
+
+- **Chip stock.** The rule is applied to cumulative H100-equivalents at each quarter end, up to Epoch's last complete quarter (quarters Epoch marks incomplete are dropped). The lag therefore moves in three-month steps. The page also shows the ratio, because a lag of nearly two years on an exponential curve is easier to read as "13.6 times smaller".
+- **What "China" is.** Epoch's bucket for chips it infers were sold to companies based in China (A100, A800, H800, H20, MI308X) plus Chinese-designed chips (Huawei Ascend 910B and 910C, Cambricon Siyuan 590). It does not mean government ownership.
+- **Smuggling.** The file has a separate owner, "China (smuggled)", from Q1 2024: Epoch's own model of diverted and resold Nvidia chips, which Epoch calls speculative. The page leaves it out by default and adds it with a toggle.
+- **No US total.** The owners are companies. "Seven US companies" is the sum of the ones Epoch names (Amazon, CoreWeave, Google, Meta, Microsoft, Oracle, xAI), all headquartered in the US. It understates the US, so the lag against it is a minimum. "Everything outside China" adds Epoch's "Other" owner, which mixes smaller US buyers with buyers elsewhere, so it is not called "US".
+- **Best chip.** The rule is applied to the best 16-bit performance of any chip released to date: Nvidia against Chinese designers. 16-bit is used because both sides report it (32 dated Chinese chips have a 16-bit figure; only 4 have an 8-bit floating-point figure). The value is the higher of Epoch's tensor-core FP16/BF16 column and its plain FP16 column.
+- **Huawei Ascend chips are in Epoch's table** (20 rows), so none were added by hand. Twelve Chinese chips have no release date there and are left out, including the Ascend 950PR, 950DT, 960 and 970.
+- **Training compute.** The rule is applied to the largest training run with an estimate, by country. A scatter shows Epoch Capabilities Index score against training compute.
+- **Disclosure bias.** Of ECI-scored models released in 2026, 3 of 46 US models have a compute estimate against 9 of 33 Chinese ones (2025: 12 of 46 against 20 of 23). The US side is limited to models that disclose, so "China achieves more per unit of compute" is suggestive, not proven. The page shows this coverage table beside the charts.
+- **No map.** Epoch's data-centre dataset lists 77 US sites and 4 Chinese sites with no coordinates, so a map would show a coverage gap, not a compute gap. It could be added later if coverage improves.
+
+### Cost
+
+Prices come from the Artificial Analysis API response already used for scores: blended price (three parts input to one part output), input price, output price and output speed, per model configuration. `data/prices.csv` holds today's table, joined to `models.csv` for lab and country.
+
+- **The months-behind rule is not applied.** The API gives only today's prices, so there is nothing to look back through. The page says so and compares prices directly.
+- **Cheapest model at a level.** For index scores of 20, 30, 40 and 45, the cheapest US and cheapest Chinese configuration that reaches the score, and the ratio.
+- **Price frontier.** For each country, the configurations that are cheaper than every configuration scoring at least as high.
+- **History starts 2026-10-13.** `data/price_history.csv` logs a row whenever a configuration's price first appears or changes, so the committed file builds a time series from that date.
+- **List prices, not costs.** They show what a user pays per token. Some providers price below cost, and models that use more tokens per task cost more than their per-token price suggests.
+- **Zero prices are treated as missing.** 264 of 699 configurations have a blended price of zero in the API, which means no list price, not free.
 
 ### Low-confidence areas
 
@@ -83,8 +130,8 @@ python3 build.py                         # recompute every lag as of today, writ
 python3 scripts/check.py                 # optional: compare with the last commit
 ```
 
-- `scripts/refresh.py` downloads all four sources and rewrites `inventory.csv`, `models.csv`, `scores.csv`, `benchmarks.csv` and `arena_text_tops.csv`. It stops without changing anything if a source returns no rows.
-- Without `AA_API_KEY` it skips Artificial Analysis and the rest still works, with fewer benchmarks.
+- `scripts/refresh.py` downloads every source and rewrites `inventory.csv`, `models.csv`, `scores.csv`, `benchmarks.csv`, `arena_text_tops.csv`, `compute_stock.csv`, `chips.csv`, `prices.csv` and `price_history.csv`. It stops without changing anything if a source returns no rows.
+- Without `AA_API_KEY` it skips Artificial Analysis and the rest still works, with fewer benchmarks and no cost tab data.
 - The key is read from the environment only. It is not written to any file here.
 - `build.py` needs only the standard library. All lags are as of the day you run it, so rerun it to move "today" forward. It also writes `data/profile.json`, a small summary of the area medians.
 - Edit the page's design in `template.html`. `index.html` is overwritten on each build.
@@ -98,9 +145,11 @@ Each run:
 1. Installs the requirements and runs `scripts/refresh.py`, then `build.py`.
 2. Runs `scripts/check.py`. The run fails, and nothing is committed or published, if:
    - any source returns no rows (or the `AA_API_KEY` secret is missing),
-   - the total number of scores is more than 15% below the committed version, or
-   - any area's median lag moved more than 4 months since the committed version.
-3. Commits the processed CSVs, `data/profile.json` and `index.html` with the message "Data refresh YYYY-MM-DD", only if something changed. The page changes daily because every lag grows by a day.
+   - the total number of scores is more than 15% below the committed version,
+   - any area's median lag moved more than 4 months since the committed version,
+   - the chip-owner, chip-specification or price table is empty, or
+   - China's chip stock changed by more than 50% since the committed version.
+3. Commits the processed CSVs (including today's prices and any price changes), `data/profile.json` and `index.html` with the message "Data refresh YYYY-MM-DD", only if something changed. The page changes daily because every lag grows by a day.
 4. Deploys `index.html` to GitHub Pages.
 
 An area gaining or losing its last counted benchmark is printed as a note and does not fail the run.
@@ -144,7 +193,11 @@ git show <commit>:data/profile.json
 | `data/scores.csv` | Long format: model, benchmark, domain, score, CI, source, source type, source URL, retrieved date | refresh; rows whose `source` starts with `manual` are kept |
 | `data/benchmarks.csv` | Benchmark, area, ceiling, saturation date, status, coverage counts, notes | refresh |
 | `data/inventory.csv` | Every benchmark found in every source, with coverage and why it was or was not used | refresh |
-| `data/profile.json` | Area medians and score count from the last build | build |
+| `data/compute_stock.csv` | Epoch's chip-owner estimates: quarter, owner, chip designer, H100e with percentiles, units, power | refresh |
+| `data/chips.csv` | Epoch's accelerator specifications: designer, country, release date, 16-bit and 8-bit performance | refresh |
+| `data/prices.csv` | Today's list prices and index score per Artificial Analysis model configuration | refresh |
+| `data/price_history.csv` | A row each time a configuration's price first appears or changes | refresh (append only) |
+| `data/profile.json` | Area medians, score count and China's chip stock from the last build | build |
 | `data/labs.csv` | Lab, country and the names each source uses for it | you |
 | `data/events.csv` | Export controls, Entity List actions, chip milestones | you |
 | `data/assessments.csv` | Published gap estimates | you |
@@ -328,11 +381,36 @@ No event row was dropped.
 33. **Refreshes are made reproducible so the daily commit shows only real changes.** Scores are written with ten significant digits, ties between equal scores are broken by source, and a score keeps the date it was first retrieved.
 34. **The `AA_API_KEY` repository secret was set from the key supplied in the session,** using `gh secret set` with the key piped in, so the first run could be verified. It is stored only as an encrypted GitHub secret. Replace it the same way if you rotate the key.
 
+35. **Seven named US companies stand in for the US in chip stock.** Epoch has no US total. Using only named US-headquartered owners understates the US and makes the lag a minimum; adding "Other" would mix in non-US buyers.
+36. **Chip stock is measured to Epoch's last complete quarter,** not to today. Quarters Epoch flags as incomplete are dropped, and cumulative figures carry forward for an owner with no row in a quarter.
+37. **China's percentile range is the sum of each designer's 5th and 95th percentiles.** That is wider than the true range of the total; it is used only for the bracketed lag range.
+38. **The smuggling estimate is off by default,** because Epoch calls it speculative and it starts only in 2024.
+39. **Chips are compared on 16-bit performance,** the higher of Epoch's tensor-core and plain FP16 columns, because that is the precision both sides report. All Chinese designers are compared with Nvidia; Huawei is also shown alone because it supplies most Chinese-designed chips in the stock estimate.
+40. **Chip performance is a specification, not a production count.** China's best 16-bit figure is Biren's BR100 from 2022, which is not among the chip types in Epoch's China stock. The page shows Huawei's line beside it for that reason.
+41. **Training compute uses every model with an Epoch estimate, including ones without benchmark scores.** China's largest is ByteDance's Doubao-pro. The coverage table counts only ECI-scored models.
+42. **Cost uses model configurations, not models.** A configuration's index score and price come from the same row, so reasoning-effort variants of one model appear separately.
+43. **Price history is a change log,** not a daily snapshot, so it grows only when prices change.
+44. **The site is split into six tabs with hash links.** A tab's charts are drawn when it is first shown, so they are sized from a visible container. The policy timeline shows each area's lag at the month end on or after each event, and China's chip stock at the last quarter end on or before it.
+45. **The sanity checks also fail a run if the chip-owner, chip-specification or price table is empty, or if China's chip stock changes by more than 50%.** A new quarter of Epoch data would raise the stock by far less than that.
+
 ## Spot check
 
 Ten random rows of `scores.csv` (seed 20261013) were compared with freshly downloaded sources through a separate code path: 10 of 10 matched. This confirms values are copied correctly. It does not confirm that each alias was matched to the right model.
 
+A second spot check on 2026-10-13 covered the new tables: 4 random rows of `compute_stock.csv`, 3 of `chips.csv` and 3 of `prices.csv` (seed 1013) against fresh downloads. 10 of 10 matched.
+
 ## Data points still to check by hand
+
+**Compute and cost**
+
+- **Claude Haiku 5.5's price.** The API lists it at $0.10 input and $0.50 output per million tokens, which sets the cheapest US model at index scores of 20, 30 and 40. If that is an error in the source, the US looks cheaper than it is.
+- **Biren BR100.** It sets China's best-chip figure (1,024 TFLOP/s, August 2022). Whether it was produced in volume is not in the data.
+- **Ascend 950PR and later Huawei chips** have no release date in Epoch's table, so they are not in the chip comparison even though the 950PR was reported in production in 2026.
+- **Chip-maker countries** are a hand-kept list in `scripts/refresh.py` (`CHINESE_CHIP_MAKERS`); a new Chinese designer in Epoch's table would be treated as non-Chinese until added.
+- **xAI and CoreWeave** have rows for only some quarters in Epoch's file; their cumulative figures are carried forward between them.
+- **Training compute for recent US closed models** is mostly absent, so the 27.8-month lag and the scatter rest on the few that disclose.
+
+**Capabilities**
 
 1. **Cyber rests on one benchmark that expires on 2026-10-20.** After that the area shows only the UK AISI estimate.
 2. **LMCA's evaluator.** If Redwood Research runs every model itself, LMCA should be independent, which would move reasoning from 5.7 to 7.3 months in the default view.
@@ -351,7 +429,8 @@ Ten random rows of `scores.csv` (seed 20261013) were compared with freshly downl
 ## Sources
 
 - Epoch AI, benchmark data and Epoch Capabilities Index, https://epoch.ai/benchmarks (CC BY 4.0).
+- Epoch AI, AI chip owners, https://epoch.ai/data/ai-chip-owners, and ML hardware, https://epoch.ai/data/ml_hardware.csv (CC BY 4.0).
 - LMArena, leaderboard dataset, https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset (CC BY 4.0). Measures human preference, not capability.
-- Artificial Analysis, https://artificialanalysis.ai/ (free API; attribution required and shown on the page).
+- Artificial Analysis, https://artificialanalysis.ai/ (free API, scores and list prices; attribution required and shown on the page).
 - METR, time horizons 1.1, https://metr.org/assets/benchmark_results_1_1.yaml (closed historical series).
 - Events and published estimates: linked per row.

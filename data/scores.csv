@@ -4648,6 +4648,7 @@ Gemini 3.1 Pro,furniture_assembly,Multimodal,0.2666666667,0.1562565768,0.3770767
 Gemini 3.6 Flash,furniture_assembly,Multimodal,0.2333333333,0.1279521671,0.3387144996,Epoch AI benchmark data (furniture_assembly.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Gemini 3.7 Flash,furniture_assembly,Multimodal,0.2666666667,0.1562565768,0.3770767565,Epoch AI benchmark data (furniture_assembly.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Gemini 3.8 Flash,furniture_assembly,Multimodal,0.3166666667,0.2002755797,0.4330577536,Epoch AI benchmark data (furniture_assembly.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
+Gemini 4 Argon,furniture_assembly,Multimodal,0.725,0.6146923409,0.8353076591,Epoch AI benchmark data (furniture_assembly.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Grok 4.5,furniture_assembly,Multimodal,0.225,0.1197261575,0.3302738425,Epoch AI benchmark data (furniture_assembly.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Grok 4.6,furniture_assembly,Multimodal,0.4,0.277182051,0.522817949,Epoch AI benchmark data (furniture_assembly.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Grok 4.7,furniture_assembly,Multimodal,0.2083333333,0.1060218651,0.3106448016,Epoch AI benchmark data (furniture_assembly.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
@@ -5891,6 +5892,7 @@ Gemini 3.5 Flash,simpleqa_verified,Knowledge and hallucination,0.662,0.632666717
 Gemini 3.6 Flash,simpleqa_verified,Knowledge and hallucination,0.662,0.632666717,0.691333283,Epoch AI benchmark data (simpleqa_verified.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Gemini 3.7 Flash,simpleqa_verified,Knowledge and hallucination,0.692,0.6633712931,0.7206287069,Epoch AI benchmark data (simpleqa_verified.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Gemini 3.8 Flash,simpleqa_verified,Knowledge and hallucination,0.697,0.6685022199,0.7254977801,Epoch AI benchmark data (simpleqa_verified.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
+Gemini 4 Argon,simpleqa_verified,Knowledge and hallucination,0.76,0.733515868,0.786484132,Epoch AI benchmark data (simpleqa_verified.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Gemma 4 31B IT,simpleqa_verified,Knowledge and hallucination,0.104,0.08507028821,0.1229297118,Epoch AI benchmark data (simpleqa_verified.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Grok 4.20,simpleqa_verified,Knowledge and hallucination,0.302,0.2735288827,0.3304711173,Epoch AI benchmark data (simpleqa_verified.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13
 Grok 4.3 Beta,simpleqa_verified,Knowledge and hallucination,0.332,0.3027967894,0.3612032106,Epoch AI benchmark data (simpleqa_verified.csv),independent,https://epoch.ai/data/benchmark_data.zip,2026-10-13

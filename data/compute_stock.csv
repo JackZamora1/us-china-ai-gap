@@ -1,0 +1,216 @@
+quarter_end,owner,chip_designer,h100e,h100e_p5,h100e_p95,units,power_mw,incomplete,notes,source_url
+2022-03-31,Amazon,Nvidia,5639,3345,9665,17885,7.15,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2022-03-31,China,Nvidia,9414,6099,14600,29857,11.94,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2022-03-31,Google,Nvidia,5700,3369,9523,18078,7.23,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2022-03-31,Meta,Nvidia,7759,4573,13410,24610,9.84,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2022-03-31,Microsoft,Nvidia,14769,8717,24931,46839,18.74,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2022-03-31,Oracle,Nvidia,1606,754,3440,5093,2.04,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2022-03-31,Other,Nvidia,17812,9801,31720,55719,22.29,False,"Excludes Microsoft, Meta, Amazon, Google, Oracle, China, xAI, CoreWeave. Estimates generated on: 04-22-2026 11:57",https://epoch.ai/data/ai_chip_owners.zip
+2022-06-30,Amazon,Nvidia,11699,7187,19627,37104,14.84,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2022-06-30,China,Nvidia,19474,12617,30202,61763,24.71,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2022-06-30,Google,Nvidia,11735,7065,19265,37219,14.89,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2022-06-30,Meta,Nvidia,16161,9624,27114,51256,20.5,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2022-06-30,Microsoft,Nvidia,30865,18616,50664,97887,39.16,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2022-06-30,Oracle,Nvidia,3381,1645,6947,10722,4.29,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2022-06-30,Other,Nvidia,36718,20597,66587,115818,46.33,False,"Excludes Microsoft, Meta, Amazon, Google, Oracle, China, xAI, CoreWeave. Estimates generated on: 04-22-2026 11:57",https://epoch.ai/data/ai_chip_owners.zip
+2022-09-30,Amazon,Nvidia,18041,11294,29599,56139,22.61,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2022-09-30,China,Nvidia,22922,14851,35549,72697,29.08,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2022-09-30,Google,Nvidia,18074,11132,29327,56193,22.63,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2022-09-30,Meta,Nvidia,24766,15131,40870,77013,31.01,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2022-09-30,Microsoft,Nvidia,47526,29041,77527,147835,59.55,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2022-09-30,Oracle,Nvidia,5223,2578,10392,16239,6.54,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2022-09-30,Other,Nvidia,65544,40138,107190,200219,80.84,False,"Excludes Microsoft, Meta, Amazon, Google, Oracle, China, xAI, CoreWeave. Estimates generated on: 04-22-2026 11:57",https://epoch.ai/data/ai_chip_owners.zip
+2022-12-31,Amazon,Nvidia,24716,16189,38598,70046,29.16,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2022-12-31,China,Nvidia,31906,23018,45398,101190,40.48,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2022-12-31,Google,Nvidia,24738,16145,38304,70060,29.19,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2022-12-31,Meta,Nvidia,33959,21827,53582,96088,40.06,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2022-12-31,Microsoft,Nvidia,64868,41836,101945,184172,76.6,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2022-12-31,Oracle,Nvidia,7841,4209,14540,21492,9.07,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2022-12-31,Other,Nvidia,90033,57760,141264,258884,107.7,False,"Excludes Microsoft, Meta, Amazon, Google, Oracle, China, xAI, CoreWeave. Estimates generated on: 04-22-2026 11:57",https://epoch.ai/data/ai_chip_owners.zip
+2023-03-31,Amazon,Nvidia,32566,22324,48476,82174,35.82,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2023-03-31,China,Nvidia,48731,37496,64577,138410,57.6,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2023-03-31,CoreWeave,Nvidia,4611,4611,4611,4611,3.23,False,Estimates generated on: 04-22-2026 12:04,https://epoch.ai/data/ai_chip_owners.zip
+2023-03-31,Google,Google,38948,30098,49282,271365,80,False,Estimates generated on: 03-27-2026 18:13,https://epoch.ai/data/ai_chip_owners.zip
+2023-03-31,Google,Nvidia,32539,22231,47956,82119,35.73,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2023-03-31,Meta,Nvidia,44785,30280,67241,112805,49.15,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2023-03-31,Microsoft,Nvidia,85346,57644,128118,215687,93.78,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2023-03-31,Oracle,Nvidia,11350,6418,19875,26874,12.02,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2023-03-31,Other,Nvidia,110437,71927,165945,289475,123.85,False,"Excludes Microsoft, Meta, Amazon, Google, Oracle, China, xAI, CoreWeave. Estimates generated on: 04-22-2026 11:57",https://epoch.ai/data/ai_chip_owners.zip
+2023-06-30,Amazon,Nvidia,50599,35940,71195,104781,49.62,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2023-06-30,China,Nvidia,89153,71698,111263,196998,90.64,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2023-06-30,CoreWeave,Nvidia,12112,12112,12112,12112,8.48,False,Estimates generated on: 04-22-2026 12:04,https://epoch.ai/data/ai_chip_owners.zip
+2023-06-30,Google,Google,72128,56163,91134,458372,130,False,Estimates generated on: 03-27-2026 18:13,https://epoch.ai/data/ai_chip_owners.zip
+2023-06-30,Google,Nvidia,50483,35866,70692,104447,49.48,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2023-06-30,Meta,Nvidia,69484,49238,98877,144055,68.2,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2023-06-30,Microsoft,Nvidia,132543,93993,188611,274566,130.07,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2023-06-30,Oracle,Nvidia,19084,11499,31968,36809,17.98,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2023-06-30,Other,Nvidia,156986,105401,229765,350732,160.66,False,"Excludes Microsoft, Meta, Amazon, Google, Oracle, China, xAI, CoreWeave. Estimates generated on: 04-22-2026 11:57",https://epoch.ai/data/ai_chip_owners.zip
+2023-09-30,Amazon,Nvidia,79486,57977,108615,137390,70.9,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2023-09-30,China,Nvidia,154710,125911,190160,282236,141.73,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2023-09-30,CoreWeave,Nvidia,24312,24312,24312,24312,17.02,False,Estimates generated on: 04-22-2026 12:04,https://epoch.ai/data/ai_chip_owners.zip
+2023-09-30,Google,Google,123735,95464,157323,721396,190,False,Estimates generated on: 03-27-2026 18:13,https://epoch.ai/data/ai_chip_owners.zip
+2023-09-30,Google,Nvidia,79606,58032,108635,137796,71,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2023-09-30,Meta,Nvidia,108866,79876,150500,189253,97.18,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2023-09-30,Microsoft,Nvidia,208155,151564,287576,361006,185.61,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2023-09-30,Oracle,Nvidia,31633,19606,52027,50984,27.26,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2023-09-30,Other,Nvidia,232789,158771,333744,439488,216.82,False,"Excludes Microsoft, Meta, Amazon, Google, Oracle, China, xAI, CoreWeave. Estimates generated on: 04-22-2026 11:57",https://epoch.ai/data/ai_chip_owners.zip
+2023-12-31,Amazon,Nvidia,117030,86854,157238,176432,97.46,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2023-12-31,China,Nvidia,177662,144649,217763,311236,159.4,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2023-12-31,CoreWeave,Nvidia,44157,44157,44157,44157,30.91,False,Estimates generated on: 04-22-2026 12:04,https://epoch.ai/data/ai_chip_owners.zip
+2023-12-31,Google,Google,208719,158962,264463,1129462,287,False,Estimates generated on: 03-27-2026 18:13,https://epoch.ai/data/ai_chip_owners.zip
+2023-12-31,Google,Nvidia,117444,86728,158456,177067,97.96,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2023-12-31,Meta,Nvidia,161382,120060,218522,243220,134.13,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2023-12-31,Microsoft,Nvidia,307857,227090,417365,463383,256.49,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2023-12-31,Oracle,Nvidia,54642,35017,85520,74520,43.43,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2023-12-31,Other,Nvidia,387854,275801,529857,598832,326.76,False,"Excludes Microsoft, Meta, Amazon, Google, Oracle, China, xAI, CoreWeave. Estimates generated on: 04-22-2026 11:57",https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,Amazon,Amazon,32836,18425,62883,125513,40.5,False,Estimates generated on: 03-10-2026 10:46,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,Amazon,Nvidia,168926,126063,224946,228052,133.73,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,China,Cambricon,142,136,153,547,0.109,False,Quarterly allocation proportional to reported quarterly revenue; estimates generated from Cambricon methodology,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,China,Huawei,45028,,,112500,49,False,,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,China,Nvidia,198811,161989,242673,451712,215.6,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,China (smuggled),Nvidia,27761,11183,72928,29899,19.78,False,"Ran 4/30/26. Estimates from Epoch AI Monte Carlo model of compute smuggled to China (diversion + resale, 60/40 weighted).",https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,CoreWeave,Nvidia,71468,60979,86873,71468,50.03,False,Estimates generated on: 04-22-2026 12:04,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,Google,Google,331115,256020,417549,1634542,427,False,Estimates generated on: 03-27-2026 18:13,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,Google,Nvidia,168548,126024,225603,228645,133.46,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,Meta,AMD,17633,11667,26496,13345,10.01,False,Estimates generated on: 04-03-2026 12:25,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,Meta,Nvidia,233151,173496,311258,314224,184.58,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,Microsoft,AMD,11166,7566,16244,8450,6.34,False,Estimates generated on: 04-03-2026 12:25,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,Microsoft,Nvidia,442128,329789,592145,598383,350.81,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,Oracle,AMD,4460,3035,6591,3376,2.53,False,Estimates generated on: 04-03-2026 12:25,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,Oracle,Nvidia,88506,58910,134235,108954,67.35,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,Other,AMD,21378,14168,30585,43259,24.85,False,"Excludes Microsoft, Meta, Oracle, China. Estimates generated on: 04-03-2026 12:25",https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,Other,Nvidia,558179,402589,764933,768581,444.43,False,"Excludes Microsoft, Meta, Amazon, Google, Oracle, China, xAI, CoreWeave. Estimates generated on: 04-22-2026 11:57",https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,Amazon,Amazon,78230,47616,138875,270423,90.3,False,Estimates generated on: 03-10-2026 10:46,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,Amazon,Nvidia,231843,173684,305890,291121,177.87,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,China,Cambricon,357,343,386,1379,0.276,False,Quarterly allocation proportional to reported quarterly revenue; estimates generated from Cambricon methodology,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,China,Huawei,90056,,,225000,98,False,,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,China,Nvidia,232471,189732,283105,676259,305.36,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,China (smuggled),Nvidia,63970,25768,168047,68896,45.58,False,"Ran 4/30/26. Estimates from Epoch AI Monte Carlo model of compute smuggled to China (diversion + resale, 60/40 weighted).",https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,CoreWeave,Nvidia,111466,96239,128969,111466,78.03,False,Estimates generated on: 04-22-2026 12:04,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,Google,Google,475485,371254,595920,2164984,592,False,Estimates generated on: 03-27-2026 18:13,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,Google,Nvidia,231631,173762,307656,291351,177.69,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,Meta,AMD,59128,42289,81522,44749,33.56,False,Estimates generated on: 04-03-2026 12:25,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,Meta,Nvidia,319766,238892,425870,401356,245.05,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,Microsoft,AMD,37428,27654,50208,28326,21.24,False,Estimates generated on: 04-03-2026 12:25,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,Microsoft,Nvidia,606713,456120,807608,764422,466.3,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,Oracle,AMD,14971,11120,19987,11330,8.5,False,Estimates generated on: 04-03-2026 12:25,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,Oracle,Nvidia,130525,88036,193838,150441,96.67,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,Other,AMD,61532,41741,83655,81827,52.25,False,"Excludes Microsoft, Meta, Oracle, China. Estimates generated on: 04-03-2026 12:25",https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,Other,Nvidia,734948,535661,1005553,958654,575.03,False,"Excludes Microsoft, Meta, Amazon, Google, Oracle, China, xAI, CoreWeave. Estimates generated on: 04-22-2026 11:57",https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,Amazon,Amazon,154207,101611,246659,461032,163.5,False,Estimates generated on: 03-10-2026 10:46,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,Amazon,Nvidia,308917,231884,405725,367788,231.77,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,China,Cambricon,1020,980,1102,3944,0.789,False,Quarterly allocation proportional to reported quarterly revenue; estimates generated from Cambricon methodology,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,China,Huawei,135084,,,337500,146,False,,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,China,Nvidia,273417,222791,333572,949364,414.47,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,China (smuggled),Nvidia,106643,42957,280148,114855,75.98,False,"Ran 4/30/26. Estimates from Epoch AI Monte Carlo model of compute smuggled to China (diversion + resale, 60/40 weighted).",https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,CoreWeave,Nvidia,166849,149559,182703,166849,116.79,False,Estimates generated on: 04-22-2026 12:04,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,Google,Google,662148,522343,821325,2739185,779,False,Estimates generated on: 03-27-2026 18:13,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,Google,Nvidia,308689,232768,407715,368434,231.78,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,Meta,AMD,108051,79650,145936,81774,61.33,False,Estimates generated on: 04-03-2026 12:25,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,Meta,Nvidia,425278,318444,562657,506935,319.24,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,Microsoft,AMD,68445,51710,89630,51800,38.85,False,Estimates generated on: 04-03-2026 12:25,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,Microsoft,Nvidia,805946,612339,1075458,963228,606.48,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,Oracle,AMD,27430,20697,35989,20759,15.57,False,Estimates generated on: 04-03-2026 12:25,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,Oracle,Nvidia,181677,123695,265502,201630,132.37,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,Other,AMD,138658,104100,176564,155121,106.59,False,"Excludes Microsoft, Meta, Oracle, China. Estimates generated on: 04-03-2026 12:25",https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,Other,Nvidia,954945,690461,1314849,1068064,654.28,False,"Excludes Microsoft, Meta, Amazon, Google, Oracle, China, xAI, CoreWeave. Estimates generated on: 04-22-2026 11:57",https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,xAI,Nvidia,100000,,,100000,70,False,"See Epoch's Frontier AI Data Centers data. Because this is based on deployed data centers, this is a lumpy and lagging estimate of delivered chips.",https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Amazon,Amazon,306330,212809,438612,766739,294.7,False,Estimates generated on: 03-10-2026 10:46,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Amazon,Nvidia,458637,347749,597209,477488,321.25,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,China,Cambricon,6468,6209,6985,25000,5,False,Quarterly allocation proportional to reported quarterly revenue; estimates generated from Cambricon methodology,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,China,Huawei,180112,,,450000,195,False,,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,China,Nvidia,322257,261821,395153,1273811,544.17,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,China (smuggled),Nvidia,158675,63917,416836,170895,113.05,False,"Ran 4/30/26. Estimates from Epoch AI Monte Carlo model of compute smuggled to China (diversion + resale, 60/40 weighted).",https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,CoreWeave,Nvidia,241168,241168,241168,241168,168.82,False,Estimates generated on: 04-22-2026 12:04,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Google,Google,951445,756547,1167710,3359641,991,False,Estimates generated on: 03-27-2026 18:13,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Google,Nvidia,434378,329468,569105,460833,307.27,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Meta,AMD,168024,125155,224130,127163,95.37,False,Estimates generated on: 04-03-2026 12:25,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Meta,Nvidia,606402,458678,794350,640355,428.1,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Microsoft,AMD,106473,81344,137677,80580,60.44,False,Estimates generated on: 04-03-2026 12:25,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Microsoft,Nvidia,1130363,861675,1499322,1203375,801.05,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Oracle,AMD,42580,32241,55056,32225,24.17,False,Estimates generated on: 04-03-2026 12:25,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Oracle,Nvidia,268779,188551,380146,265760,184.68,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Other,AMD,231095,179337,288776,240928,170.51,False,"Excludes Microsoft, Meta, Oracle, China. Estimates generated on: 04-03-2026 12:25",https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Other,Nvidia,1076751,720464,1569673,1229624,786.54,False,"Excludes Microsoft, Meta, Amazon, Google, Oracle, China, xAI, CoreWeave. Estimates generated on: 04-22-2026 11:57",https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,xAI,Nvidia,100000,,,100000,70,False,"See Epoch's Frontier AI Data Centers data. Because this is based on deployed data centers, this is a lumpy and lagging estimate of delivered chips.",https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Amazon,Amazon,445742,357294,576176,981510,401,False,Estimates generated on: 03-10-2026 10:46,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Amazon,Nvidia,676864,517153,875705,590311,435.29,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,China,Cambricon,11335,10634,13623,43817,8.763,False,Quarterly allocation proportional to reported quarterly revenue; estimates generated from Cambricon methodology,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,China,Huawei,312076,,,650000,320,False,,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,China,Nvidia,376350,305153,463784,1635170,689.45,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,China (smuggled),Nvidia,246884,107326,591890,229860,159.93,False,"Ran 4/30/26. Estimates from Epoch AI Monte Carlo model of compute smuggled to China (diversion + resale, 60/40 weighted).",https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,CoreWeave,Nvidia,290713,288867,292830,277946,198.74,False,Estimates generated on: 04-22-2026 12:04,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Google,Google,1397489,1118953,1691271,3963271,1221,False,Estimates generated on: 03-27-2026 18:13,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Google,Nvidia,614136,468656,800194,553892,400.73,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Meta,AMD,234744,172986,317866,177731,136.78,False,Estimates generated on: 04-03-2026 12:25,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Meta,Nvidia,864363,660425,1123724,774243,563.02,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Microsoft,AMD,143063,106539,190047,108312,83.14,False,Estimates generated on: 04-03-2026 12:25,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Microsoft,Nvidia,1554707,1192549,2048684,1422585,1021.99,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Oracle,AMD,58767,41733,83827,44501,34.22,False,Estimates generated on: 04-03-2026 12:25,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Oracle,Nvidia,420934,307144,579444,343284,263.6,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Other,AMD,270194,192921,351366,272087,195.52,False,"Excludes Microsoft, Meta, Oracle, China. Estimates generated on: 04-03-2026 12:25",https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Other,Nvidia,1299678,829527,1952185,1291680,886.09,False,"Excludes Microsoft, Meta, Amazon, Google, Oracle, China, xAI, CoreWeave. Estimates generated on: 04-22-2026 11:57",https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,xAI,Nvidia,200000,,,200000,140,False,"See Epoch's Frontier AI Data Centers data. Because this is based on deployed data centers, this is a lumpy and lagging estimate of delivered chips.",https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Amazon,Amazon,608627,520165,738597,1226824,524.5,False,Estimates generated on: 03-10-2026 10:46,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Amazon,Nvidia,906477,696759,1173285,697281,554.99,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,China,Cambricon,19084,17681,24190,73770,14.754,False,Quarterly allocation proportional to reported quarterly revenue; estimates generated from Cambricon methodology,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,China,Huawei,444040,,,850000,445,False,,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,China,Nvidia,399155,322860,493527,1788216,750.16,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,China (smuggled),Nvidia,411461,181535,993050,325198,240.13,False,"Ran 4/30/26. Estimates from Epoch AI Monte Carlo model of compute smuggled to China (diversion + resale, 60/40 weighted).",https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,CoreWeave,Nvidia,341580,336712,346855,304242,225.22,False,Estimates generated on: 04-22-2026 12:04,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Google,Google,2029124,1625994,2438930,4662948,1492,False,Estimates generated on: 03-27-2026 18:13,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Google,Nvidia,801715,615371,1038493,642385,499.42,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Meta,AMD,280703,205456,381179,211298,165.54,False,Estimates generated on: 04-03-2026 12:25,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Meta,Nvidia,1135382,872114,1471297,902220,704.85,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Microsoft,AMD,168158,123309,225655,126437,98.63,False,Estimates generated on: 04-03-2026 12:25,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Microsoft,Nvidia,2006379,1545542,2630300,1635032,1258.69,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Oracle,AMD,70004,48078,103514,52669,41.13,False,Estimates generated on: 04-03-2026 12:25,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Oracle,Nvidia,596055,439186,814974,426368,355.36,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Other,AMD,294614,201572,389089,289677,210.32,False,"Excludes Microsoft, Meta, Oracle, China. Estimates generated on: 04-03-2026 12:25",https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Other,Nvidia,1651333,1054253,2460488,1510213,1137.56,False,"Excludes Microsoft, Meta, Amazon, Google, Oracle, China, xAI, CoreWeave. Estimates generated on: 04-22-2026 11:57",https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,xAI,Nvidia,200000,,,200000,140,False,"See Epoch's Frontier AI Data Centers data. Because this is based on deployed data centers, this is a lumpy and lagging estimate of delivered chips.",https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Amazon,Amazon,799373,701270,933147,1517199,669.9,False,Estimates generated on: 03-10-2026 10:46,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Amazon,Nvidia,1162405,896719,1504299,807498,691.91,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,China,Cambricon,26647,24556,34503,103005,20.601,False,Quarterly allocation proportional to reported quarterly revenue; estimates generated from Cambricon methodology,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,China,Huawei,576004,,,1050000,570,False,,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,China,Nvidia,401698,324871,496849,1805354,756.98,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,China (smuggled),Nvidia,547010,244493,1310218,401801,305.25,False,"Ran 4/30/26. Estimates from Epoch AI Monte Carlo model of compute smuggled to China (diversion + resale, 60/40 weighted).",https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,CoreWeave,Nvidia,468554,454177,483858,362908,292.08,False,Estimates generated on: 04-22-2026 12:04,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Google,Google,2836565,2270386,3399699,5451882,1823,False,Estimates generated on: 03-27-2026 18:13,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Google,Nvidia,1010973,777305,1304268,731720,611.1,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Meta,AMD,368954,273690,495231,260857,212.18,False,Estimates generated on: 04-03-2026 12:25,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Meta,Nvidia,1460835,1127760,1891703,1041263,878.6,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Microsoft,AMD,215966,159001,291731,153564,124.19,False,Estimates generated on: 04-03-2026 12:25,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Microsoft,Nvidia,2540995,1961442,3302713,1863052,1543.28,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Oracle,AMD,91249,61223,139164,64683,52.51,False,Estimates generated on: 04-03-2026 12:25,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Oracle,Nvidia,803155,597304,1079986,515374,465.73,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Other,AMD,340829,213495,462631,315484,235.05,False,"Excludes Microsoft, Meta, Oracle, China. Estimates generated on: 04-03-2026 12:25",https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Other,Nvidia,2230688,1456300,3220470,1667728,1346.61,False,"Excludes Microsoft, Meta, Amazon, Google, Oracle, China, xAI, CoreWeave. Estimates generated on: 04-22-2026 11:57",https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,xAI,Nvidia,553714,,,340000,308,False,"See Epoch's Frontier AI Data Centers data. Because this is based on deployed data centers, this is a lumpy and lagging estimate of delivered chips.",https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Amazon,Amazon,1020727,907525,1164343,1856963,840,False,Estimates generated on: 03-10-2026 10:46,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Amazon,Nvidia,1427946,1105764,1839426,914320,832.48,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,China,AMD,10523,8605,12837,31859,23.89,False,Estimates generated on: 04-03-2026 12:25,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,China,Cambricon,34925,32079,45788,135000,27,False,Quarterly allocation proportional to reported quarterly revenue; estimates generated from Cambricon methodology,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,China,Huawei,707968,,,1250000,695,False,,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,China,Nvidia,401698,324871,496849,1805354,756.98,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,China (smuggled),Nvidia,662048,294087,1592327,465762,359.66,False,"Ran 4/30/26. Estimates from Epoch AI Monte Carlo model of compute smuggled to China (diversion + resale, 60/40 weighted).",https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,CoreWeave,Nvidia,832068,785173,882226,511608,484.3,False,Estimates generated on: 04-22-2026 12:04,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Google,Google,3812878,3083116,4537332,6136449,2223,False,Estimates generated on: 03-27-2026 18:13,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Google,Nvidia,1236936,955469,1590655,823812,730.19,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Meta,AMD,459858,344991,612180,303076,259.55,False,Estimates generated on: 04-03-2026 12:25,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Meta,Nvidia,1842317,1426111,2383663,1195289,1079.17,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Microsoft,AMD,264522,195584,358133,175828,149.52,False,Estimates generated on: 04-03-2026 12:25,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Microsoft,Nvidia,3151494,2424281,4075897,2109969,1866.22,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Oracle,AMD,113179,74703,175251,74940,63.88,False,Estimates generated on: 04-03-2026 12:25,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Oracle,Nvidia,1031001,770349,1384504,605816,586.29,False,Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Other,AMD,388586,228136,538546,338109,260.23,False,"Excludes Microsoft, Meta, Oracle, China. Estimates generated on: 04-03-2026 12:25",https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Other,Nvidia,2973994,1999405,4229698,2026657,1813.74,False,"Excludes Microsoft, Meta, Amazon, Google, Oracle, China, xAI, CoreWeave. Estimates generated on: 04-22-2026 11:57",https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,xAI,Nvidia,553714,,,340000,308,False,"See Epoch's Frontier AI Data Centers data. Because this is based on deployed data centers, this is a lumpy and lagging estimate of delivered chips. No quarterly breakdown for the same reason",https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,Amazon,Nvidia,1499427,1160907,1933974,943174,869.52,True,Incomplete: based on Nvidia fiscal quarters ending 1/25/2026. Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,China,Nvidia,401698,324871,496849,1805354,756.98,True,Incomplete: based on Nvidia fiscal quarters ending 1/25/2026. Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,Google,Google,4173802,3383807,4960594,6346520,2372,True,Incomplete: based on Broadcom fiscal quarters ending 2/1/2026. Estimates generated on: 03-27-2026 18:13,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,Google,Nvidia,1298933,1005404,1669709,848756,763.64,True,Incomplete: based on Nvidia fiscal quarters ending 1/25/2026. Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,Meta,Nvidia,1950294,1509815,2521685,1237234,1135.79,True,Incomplete: based on Nvidia fiscal quarters ending 1/25/2026. Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,Microsoft,Nvidia,3323440,2558193,4304925,2177958,1955.22,True,Incomplete: based on Nvidia fiscal quarters ending 1/25/2026. Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,Oracle,Nvidia,1094216,815384,1471064,630366,619.5,True,Incomplete: based on Nvidia fiscal quarters ending 1/25/2026. Estimates generated on: 04-15-2026 18:24,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,Other,Nvidia,3338748,2299624,4704061,2162139,2002.72,True,"Excludes Microsoft, Meta, Amazon, Google, Oracle, China, xAI, CoreWeave. Incomplete: based on Nvidia fiscal quarters ending 1/25/2026. Estimates generated on: 04-22-2026 11:57",https://epoch.ai/data/ai_chip_owners.zip

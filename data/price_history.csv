@@ -1,0 +1,436 @@
+date,aa_name,price_blended_usd_per_1m,price_input_usd_per_1m,price_output_usd_per_1m
+2026-10-13,Apertus 70B Instruct,1.345,0.82,2.92
+2026-10-13,Apertus 8B Instruct,0.125,0.1,0.2
+2026-10-13,Apodex 1.1,0.975,0.3,3.0
+2026-10-13,Celeris-1,0.325,0.2,0.7
+2026-10-13,Claude 3 Haiku,0.5,0.25,1.25
+2026-10-13,Claude 3 Opus,30.0,15.0,75.0
+2026-10-13,Claude 3.5 Sonnet (June '24),6.0,3.0,15.0
+2026-10-13,Claude 3.5 Sonnet (Oct '24),6.0,3.0,15.0
+2026-10-13,Claude 3.7 Sonnet (Non-reasoning),6.0,3.0,15.0
+2026-10-13,Claude 4 Opus (Non-reasoning),30.0,15.0,75.0
+2026-10-13,Claude 4 Opus (Reasoning),30.0,15.0,75.0
+2026-10-13,Claude 4.1 Opus (Non-reasoning),30.0,15.0,75.0
+2026-10-13,Claude 4.1 Opus (Reasoning),30.0,15.0,75.0
+2026-10-13,Claude 4.5 Haiku (Non-reasoning),2.0,1.0,5.0
+2026-10-13,Claude 4.5 Haiku (Reasoning),2.0,1.0,5.0
+2026-10-13,Claude 4.5 Sonnet (Non-reasoning),6.0,3.0,15.0
+2026-10-13,Claude 4.5 Sonnet (Reasoning),6.0,3.0,15.0
+2026-10-13,"Claude Fable 5 (Max, Opus 4.8 Fallback)",20.0,10.0,50.0
+2026-10-13,"Claude Fable 5.1 (High, Default Fallback)",20.0,10.0,50.0
+2026-10-13,"Claude Fable 5.1 (Low, Default Fallback)",20.0,10.0,50.0
+2026-10-13,"Claude Fable 5.1 (Max, Default Fallback)",20.0,10.0,50.0
+2026-10-13,"Claude Fable 5.1 (Medium, Default Fallback)",20.0,10.0,50.0
+2026-10-13,"Claude Fable 5.1 (Xhigh, Default Fallback)",20.0,10.0,50.0
+2026-10-13,Claude Haiku 5.5 (High),0.2,0.1,0.5
+2026-10-13,Claude Haiku 5.5 (Low),0.2,0.1,0.5
+2026-10-13,Claude Haiku 5.5 (Max),0.2,0.1,0.5
+2026-10-13,Claude Haiku 5.5 (Medium),0.2,0.1,0.5
+2026-10-13,Claude Haiku 5.5 (Xhigh),0.2,0.1,0.5
+2026-10-13,Claude Opus 4.5 (Non-reasoning),10.0,5.0,25.0
+2026-10-13,Claude Opus 4.5 (Reasoning),10.0,5.0,25.0
+2026-10-13,Claude Opus 4.6 (Max),10.0,5.0,25.0
+2026-10-13,"Claude Opus 4.6 (Non-reasoning, High)",10.0,5.0,25.0
+2026-10-13,Claude Opus 4.7 (Max),10.0,5.0,25.0
+2026-10-13,"Claude Opus 4.7 (Non-reasoning, High)",10.0,5.0,25.0
+2026-10-13,Claude Opus 4.8 (Max),10.0,5.0,25.0
+2026-10-13,Claude Opus 5 (High),10.0,5.0,25.0
+2026-10-13,Claude Opus 5 (Low),10.0,5.0,25.0
+2026-10-13,Claude Opus 5 (Max),10.0,5.0,25.0
+2026-10-13,Claude Opus 5 (Medium),10.0,5.0,25.0
+2026-10-13,Claude Opus 5 (Xhigh),10.0,5.0,25.0
+2026-10-13,"Claude Opus 5.5 (High, Default Fallback)",8.0,4.0,20.0
+2026-10-13,"Claude Opus 5.5 (Low, Default Fallback)",8.0,4.0,20.0
+2026-10-13,"Claude Opus 5.5 (Max, Default Fallback)",8.0,4.0,20.0
+2026-10-13,"Claude Opus 5.5 (Medium, Default Fallback)",8.0,4.0,20.0
+2026-10-13,"Claude Opus 5.5 (Xhigh, Default Fallback)",8.0,4.0,20.0
+2026-10-13,Claude Sonnet 4.6 (Max),6.0,3.0,15.0
+2026-10-13,"Claude Sonnet 4.6 (Non-reasoning, High)",6.0,3.0,15.0
+2026-10-13,"Claude Sonnet 4.6 (Non-reasoning, Low)",6.0,3.0,15.0
+2026-10-13,Claude Sonnet 5 (High),4.0,2.0,10.0
+2026-10-13,Claude Sonnet 5 (Low),4.0,2.0,10.0
+2026-10-13,Claude Sonnet 5 (Max),4.0,2.0,10.0
+2026-10-13,Claude Sonnet 5 (Medium),4.0,2.0,10.0
+2026-10-13,"Claude Sonnet 5 (Non-reasoning, High)",4.0,2.0,10.0
+2026-10-13,Claude Sonnet 5 (Xhigh),4.0,2.0,10.0
+2026-10-13,"Claude Sonnet 5.5 (High, Default Fallback)",4.0,2.0,10.0
+2026-10-13,"Claude Sonnet 5.5 (Low, Default Fallback)",4.0,2.0,10.0
+2026-10-13,"Claude Sonnet 5.5 (Max, Default Fallback)",4.0,2.0,10.0
+2026-10-13,"Claude Sonnet 5.5 (Medium, Default Fallback)",4.0,2.0,10.0
+2026-10-13,"Claude Sonnet 5.5 (Xhigh, Default Fallback)",4.0,2.0,10.0
+2026-10-13,Cogito v2.1 (Reasoning),1.25,1.25,1.25
+2026-10-13,Command A,4.375,2.5,10.0
+2026-10-13,DeepSeek R1 (Jan '25),2.5,2.0,4.0
+2026-10-13,DeepSeek R1 0528 (May '25),1.763,1.35,3.0
+2026-10-13,DeepSeek R1 Distill Llama 70B,0.8,0.7,1.1
+2026-10-13,DeepSeek V3 (Dec '24),0.463,0.32,0.89
+2026-10-13,DeepSeek V3 0324,0.405,0.24,0.9
+2026-10-13,DeepSeek V3.1 (Non-reasoning),0.84,0.56,1.68
+2026-10-13,DeepSeek V3.1 (Reasoning),0.855,0.58,1.68
+2026-10-13,DeepSeek V3.1 Terminus (Non-reasoning),0.453,0.27,1.0
+2026-10-13,DeepSeek V3.1 Terminus (Reasoning),1.914,1.635,2.75
+2026-10-13,DeepSeek V3.2 (Non-reasoning),0.315,0.28,0.42
+2026-10-13,DeepSeek V3.2 (Reasoning),0.315,0.28,0.42
+2026-10-13,DeepSeek V3.2 Exp (Non-reasoning),0.315,0.28,0.42
+2026-10-13,DeepSeek V3.2 Exp (Reasoning),0.315,0.28,0.42
+2026-10-13,DeepSeek V4 Flash 0420 (High),0.142,0.112,0.234
+2026-10-13,DeepSeek V4 Flash 0420 (Max),0.142,0.112,0.234
+2026-10-13,DeepSeek V4 Flash 0420 (Non-reasoning),0.117,0.094,0.188
+2026-10-13,DeepSeek V4 Flash 0731 (Max),0.66,0.44,1.32
+2026-10-13,DeepSeek V4 Flash Vision (Max),0.66,0.44,1.32
+2026-10-13,DeepSeek V4 Pro 0424 (High),0.544,0.435,0.87
+2026-10-13,DeepSeek V4 Pro 0424 (Max),0.544,0.435,0.87
+2026-10-13,DeepSeek V4 Pro 0424 (Non-reasoning),0.544,0.435,0.87
+2026-10-13,DeepSeek V4 Pro 0813 (Max),1.98,1.32,3.96
+2026-10-13,DeepSeek V4 Pro 0813 (Non-reasoning),1.98,1.32,3.96
+2026-10-13,DeepSeek V4.1 Flash (Max),0.525,0.3,1.2
+2026-10-13,DeepSeek V4.1 Flash (Non-reasoning),0.525,0.3,1.2
+2026-10-13,ERNIE 4.5 300B A47B,0.485,0.28,1.1
+2026-10-13,GLM-4.5-Air,0.372,0.17,0.98
+2026-10-13,GLM-4.5V (Non-reasoning),0.9,0.6,1.8
+2026-10-13,GLM-4.5V (Reasoning),0.9,0.6,1.8
+2026-10-13,GLM-4.6 (Non-reasoning),0.981,0.575,2.2
+2026-10-13,GLM-4.6 (Reasoning),0.963,0.55,2.2
+2026-10-13,GLM-4.6V (Non-reasoning),0.45,0.3,0.9
+2026-10-13,GLM-4.6V (Reasoning),0.45,0.3,0.9
+2026-10-13,GLM-4.7 (Non-reasoning),1.0,0.6,2.2
+2026-10-13,GLM-4.7 (Reasoning),1.0,0.6,2.2
+2026-10-13,GLM-4.7-Flash (Non-reasoning),0.153,0.07,0.4
+2026-10-13,GLM-4.7-Flash (Reasoning),0.153,0.07,0.4
+2026-10-13,GLM-5 (Non-reasoning),1.55,1.0,3.2
+2026-10-13,GLM-5 (Reasoning),1.55,1.0,3.2
+2026-10-13,GLM-5.1 (Non-reasoning),2.135,1.38,4.4
+2026-10-13,GLM-5.1 (Reasoning),1.981,1.285,4.07
+2026-10-13,GLM-5.2 (Max),2.15,1.4,4.4
+2026-10-13,GLM-5.2 (Non-reasoning),2.15,1.4,4.4
+2026-10-13,GLM-5.3 (Low),2.15,1.4,4.4
+2026-10-13,GLM-5.3 (Max),2.15,1.4,4.4
+2026-10-13,GLM-5.3-Flash,0.237,0.15,0.5
+2026-10-13,GPT-3.5 Turbo,0.75,0.5,1.5
+2026-10-13,GPT-4,37.5,30.0,60.0
+2026-10-13,GPT-4 Turbo,15.0,10.0,30.0
+2026-10-13,GPT-4.1,3.5,2.0,8.0
+2026-10-13,GPT-4.1 mini,0.7,0.4,1.6
+2026-10-13,GPT-4.1 nano,0.175,0.1,0.4
+2026-10-13,GPT-4o (Aug '24),4.375,2.5,10.0
+2026-10-13,GPT-4o (May '24),7.5,5.0,15.0
+2026-10-13,GPT-4o (Nov '24),4.375,2.5,10.0
+2026-10-13,GPT-4o mini,0.262,0.15,0.6
+2026-10-13,GPT-5 (High),3.438,1.25,10.0
+2026-10-13,GPT-5 (Low),3.438,1.25,10.0
+2026-10-13,GPT-5 (Medium),3.438,1.25,10.0
+2026-10-13,GPT-5 (Minimal),3.438,1.25,10.0
+2026-10-13,GPT-5 Codex (High),3.438,1.25,10.0
+2026-10-13,GPT-5 mini (High),0.688,0.25,2.0
+2026-10-13,GPT-5 mini (Medium),0.688,0.25,2.0
+2026-10-13,GPT-5 mini (Minimal),0.688,0.25,2.0
+2026-10-13,GPT-5 nano (High),0.138,0.05,0.4
+2026-10-13,GPT-5 nano (Medium),0.138,0.05,0.4
+2026-10-13,GPT-5 nano (Minimal),0.138,0.05,0.4
+2026-10-13,GPT-5.1 (High),3.438,1.25,10.0
+2026-10-13,GPT-5.1 (Non-reasoning),3.438,1.25,10.0
+2026-10-13,GPT-5.1 Codex (High),3.438,1.25,10.0
+2026-10-13,GPT-5.1 Codex mini (High),0.688,0.25,2.0
+2026-10-13,GPT-5.2 (Medium),4.813,1.75,14.0
+2026-10-13,GPT-5.2 (Non-reasoning),4.813,1.75,14.0
+2026-10-13,GPT-5.2 (Xhigh),4.813,1.75,14.0
+2026-10-13,GPT-5.2 Codex (Xhigh),4.813,1.75,14.0
+2026-10-13,GPT-5.3 Codex (Xhigh),4.813,1.75,14.0
+2026-10-13,GPT-5.4 (Low),5.625,2.5,15.0
+2026-10-13,GPT-5.4 (Non-reasoning),5.625,2.5,15.0
+2026-10-13,GPT-5.4 (Xhigh),5.625,2.5,15.0
+2026-10-13,GPT-5.4 Pro (Xhigh),67.5,30.0,180.0
+2026-10-13,GPT-5.4 mini (Medium),1.688,0.75,4.5
+2026-10-13,GPT-5.4 mini (Non-reasoning),1.688,0.75,4.5
+2026-10-13,GPT-5.4 mini (Xhigh),1.688,0.75,4.5
+2026-10-13,GPT-5.4 nano (Medium),0.463,0.2,1.25
+2026-10-13,GPT-5.4 nano (Non-reasoning),0.463,0.2,1.25
+2026-10-13,GPT-5.4 nano (Xhigh),0.463,0.2,1.25
+2026-10-13,GPT-5.5 (High),11.25,5.0,30.0
+2026-10-13,GPT-5.5 (Low),11.25,5.0,30.0
+2026-10-13,GPT-5.5 (Medium),11.25,5.0,30.0
+2026-10-13,GPT-5.5 (Non-reasoning),11.25,5.0,30.0
+2026-10-13,GPT-5.5 (Xhigh),11.25,5.0,30.0
+2026-10-13,GPT-5.5 Instant (June 2026),11.25,5.0,30.0
+2026-10-13,GPT-5.5 Instant (May 2026),11.25,5.0,30.0
+2026-10-13,GPT-5.6 Luna (High),0.45,0.2,1.2
+2026-10-13,GPT-5.6 Luna (Low),0.45,0.2,1.2
+2026-10-13,GPT-5.6 Luna (Max),0.45,0.2,1.2
+2026-10-13,GPT-5.6 Luna (Medium),0.45,0.2,1.2
+2026-10-13,GPT-5.6 Luna (Non-reasoning),0.45,0.2,1.2
+2026-10-13,GPT-5.6 Luna (Xhigh),0.45,0.2,1.2
+2026-10-13,GPT-5.6 Sol (High),8.0,4.0,20.0
+2026-10-13,GPT-5.6 Sol (Low),8.0,4.0,20.0
+2026-10-13,GPT-5.6 Sol (Max),8.0,4.0,20.0
+2026-10-13,GPT-5.6 Sol (Medium),8.0,4.0,20.0
+2026-10-13,GPT-5.6 Sol (Non-reasoning),8.0,4.0,20.0
+2026-10-13,GPT-5.6 Sol (Xhigh),8.0,4.0,20.0
+2026-10-13,GPT-5.6 Terra (High),4.5,2.0,12.0
+2026-10-13,GPT-5.6 Terra (Low),4.5,2.0,12.0
+2026-10-13,GPT-5.6 Terra (Max),4.5,2.0,12.0
+2026-10-13,GPT-5.6 Terra (Medium),4.5,2.0,12.0
+2026-10-13,GPT-5.6 Terra (Non-reasoning),4.5,2.0,12.0
+2026-10-13,GPT-5.6 Terra (Xhigh),4.5,2.0,12.0
+2026-10-13,GPT-6 Astra (High),20.0,10.0,50.0
+2026-10-13,GPT-6 Astra (Low),20.0,10.0,50.0
+2026-10-13,GPT-6 Astra (Max),20.0,10.0,50.0
+2026-10-13,GPT-6 Astra (Medium),20.0,10.0,50.0
+2026-10-13,GPT-6 Astra (Xhigh),20.0,10.0,50.0
+2026-10-13,GPT-6 Luna (High),0.2,0.1,0.5
+2026-10-13,GPT-6 Luna (Low),0.2,0.1,0.5
+2026-10-13,GPT-6 Luna (Max),0.2,0.1,0.5
+2026-10-13,GPT-6 Luna (Medium),0.2,0.1,0.5
+2026-10-13,GPT-6 Luna (Non-reasoning),0.2,0.1,0.5
+2026-10-13,GPT-6 Luna (Xhigh),0.2,0.1,0.5
+2026-10-13,"GPT-6 Sol (Daybreak Blue, max)",4.0,2.0,10.0
+2026-10-13,GPT-6 Sol (High),4.0,2.0,10.0
+2026-10-13,GPT-6 Sol (Low),4.0,2.0,10.0
+2026-10-13,GPT-6 Sol (Max),4.0,2.0,10.0
+2026-10-13,GPT-6 Sol (Medium),4.0,2.0,10.0
+2026-10-13,GPT-6 Sol (Non-reasoning),4.0,2.0,10.0
+2026-10-13,GPT-6 Sol (Xhigh),4.0,2.0,10.0
+2026-10-13,GPT-6.1 Sol (High),4.0,2.0,10.0
+2026-10-13,GPT-6.1 Sol (Low),4.0,2.0,10.0
+2026-10-13,GPT-6.1 Sol (Max),4.0,2.0,10.0
+2026-10-13,GPT-6.1 Sol (Medium),4.0,2.0,10.0
+2026-10-13,GPT-6.1 Sol (Xhigh),4.0,2.0,10.0
+2026-10-13,Gemini 2.5 Flash (Non-reasoning),0.85,0.3,2.5
+2026-10-13,Gemini 2.5 Flash (Reasoning),0.85,0.3,2.5
+2026-10-13,Gemini 2.5 Flash-Lite (Non-reasoning),0.175,0.1,0.4
+2026-10-13,Gemini 2.5 Flash-Lite (Reasoning),0.175,0.1,0.4
+2026-10-13,Gemini 2.5 Flash-Lite Preview (Sep '25) (Non-reasoning),0.175,0.1,0.4
+2026-10-13,Gemini 2.5 Flash-Lite Preview (Sep '25) (Reasoning),0.175,0.1,0.4
+2026-10-13,Gemini 2.5 Pro,3.438,1.25,10.0
+2026-10-13,Gemini 2.5 Pro Preview (May' 25),3.438,1.25,10.0
+2026-10-13,Gemini 3 Flash Preview (Non-reasoning),1.125,0.5,3.0
+2026-10-13,Gemini 3 Flash Preview (Reasoning),1.125,0.5,3.0
+2026-10-13,Gemini 3 Pro Preview (High),4.5,2.0,12.0
+2026-10-13,Gemini 3 Pro Preview (Low),4.5,2.0,12.0
+2026-10-13,Gemini 3.1 Flash-Lite,0.563,0.25,1.5
+2026-10-13,Gemini 3.1 Pro Preview,4.5,2.0,12.0
+2026-10-13,Gemini 3.5 Flash (High),3.375,1.5,9.0
+2026-10-13,Gemini 3.5 Flash (Medium),3.375,1.5,9.0
+2026-10-13,Gemini 3.5 Flash (Minimal),3.375,1.5,9.0
+2026-10-13,Gemini 3.5 Flash-Lite,0.85,0.3,2.5
+2026-10-13,Gemini 3.6 Flash (High),1.5,0.75,3.75
+2026-10-13,Gemini 3.7 Flash (High),1.5,0.75,3.75
+2026-10-13,Gemini 3.7 Flash (Low),1.5,0.75,3.75
+2026-10-13,Gemini 3.7 Flash (Medium),1.5,0.75,3.75
+2026-10-13,Gemini 3.8 Flash (High),1.5,0.75,3.75
+2026-10-13,Gemini 3.8 Flash (Low),1.5,0.75,3.75
+2026-10-13,Gemini 3.8 Flash (Medium),1.5,0.75,3.75
+2026-10-13,Gemini 4 Argon (High),4.0,2.0,10.0
+2026-10-13,Gemma 4 12B (Non-reasoning),0.15,0.1,0.3
+2026-10-13,Gemma 4 12B (Reasoning),0.15,0.1,0.3
+2026-10-13,Gemma 4 26B A4B (Non-reasoning),0.198,0.13,0.4
+2026-10-13,Gemma 4 26B A4B (Reasoning),0.175,0.1,0.4
+2026-10-13,Gemma 4 31B (Non-reasoning),0.224,0.165,0.4
+2026-10-13,Gemma 4 E4B (Non-reasoning),0.04,0.02,0.1
+2026-10-13,Gemma 4 E4B (Reasoning),0.04,0.02,0.1
+2026-10-13,Granite 3.3 8B (Non-reasoning),0.085,0.03,0.25
+2026-10-13,Granite 4.0 H Small,0.107,0.06,0.25
+2026-10-13,Granite 4.2 30B,0.282,0.16,0.65
+2026-10-13,Granite 4.2 3B,0.052,0.03,0.12
+2026-10-13,Granite 4.2 8B,0.107,0.06,0.25
+2026-10-13,Grok 3,6.0,3.0,15.0
+2026-10-13,Grok 3 mini Reasoning (High),0.35,0.3,0.5
+2026-10-13,Grok 4,6.0,3.0,15.0
+2026-10-13,Grok 4 Fast (Non-reasoning),0.275,0.2,0.5
+2026-10-13,Grok 4 Fast (Reasoning),0.275,0.2,0.5
+2026-10-13,Grok 4.20 0309 (Non-reasoning),3.0,2.0,6.0
+2026-10-13,Grok 4.20 0309 (Reasoning),3.0,2.0,6.0
+2026-10-13,Grok 4.20 0309 v2 (Non-reasoning),1.563,1.25,2.5
+2026-10-13,Grok 4.20 0309 v2 (Reasoning),1.563,1.25,2.5
+2026-10-13,Grok 4.3 (High),1.563,1.25,2.5
+2026-10-13,Grok 4.3 (Low),1.563,1.25,2.5
+2026-10-13,Grok 4.3 (Medium),1.563,1.25,2.5
+2026-10-13,Grok 4.3 (Non-reasoning),1.563,1.25,2.5
+2026-10-13,Grok 4.5 (High),3.0,2.0,6.0
+2026-10-13,Grok 4.6 (High),3.0,2.0,6.0
+2026-10-13,Grok 4.6 (Low),3.0,2.0,6.0
+2026-10-13,Grok 4.6 (Medium),3.0,2.0,6.0
+2026-10-13,Grok 4.6 (Xhigh),3.0,2.0,6.0
+2026-10-13,Grok 4.7 (High),3.0,2.0,6.0
+2026-10-13,Grok 4.7 (Low),3.0,2.0,6.0
+2026-10-13,Grok 4.7 (Xhigh),3.0,2.0,6.0
+2026-10-13,Grok Build 0.1 0616,1.25,1.0,2.0
+2026-10-13,Hermes 3 - Llama-3.1 70B,0.7,0.7,0.7
+2026-10-13,Hermes 4 - Llama-3.1 405B (Non-reasoning),1.5,1.0,3.0
+2026-10-13,Hermes 4 - Llama-3.1 405B (Reasoning),1.5,1.0,3.0
+2026-10-13,Hy3,0.241,0.136,0.555
+2026-10-13,Hy3-preview (Non-reasoning),0.1,0.063,0.21
+2026-10-13,Hy3-preview (Reasoning),0.1,0.063,0.21
+2026-10-13,Inkling (Xhigh),1.762,1.0,4.05
+2026-10-13,Inkling Small,0.525,0.3,1.2
+2026-10-13,Jamba 1.5 Large,3.5,2.0,8.0
+2026-10-13,Jamba 1.5 Mini,0.25,0.2,0.4
+2026-10-13,KAT Coder Pro V2,0.525,0.3,1.2
+2026-10-13,Kimi K2,1.002,0.57,2.3
+2026-10-13,Kimi K2 0905,1.075,0.6,2.5
+2026-10-13,Kimi K2 Thinking,1.075,0.6,2.5
+2026-10-13,Kimi K2.5 (Non-reasoning),1.2,0.6,3.0
+2026-10-13,Kimi K2.5 (Reasoning),1.137,0.6,2.75
+2026-10-13,Kimi K2.6 (Non-reasoning),1.712,0.95,4.0
+2026-10-13,Kimi K2.6 (Reasoning),1.712,0.95,4.0
+2026-10-13,Kimi K2.7 Code,1.712,0.95,4.0
+2026-10-13,Kimi K3 (Low),6.0,3.0,15.0
+2026-10-13,Kimi K3 (Max),6.0,3.0,15.0
+2026-10-13,Ling 3.0 Flash,0.111,0.075,0.22
+2026-10-13,Ling 3.1 Flash,0.45,0.3,0.9
+2026-10-13,Ling-2.6-1T,0.85,0.3,2.5
+2026-10-13,Ling-3.0-flash-Fin,0.111,0.075,0.22
+2026-10-13,Ling-flash-2.0,0.247,0.14,0.57
+2026-10-13,Llama 2 Chat 7B,0.1,0.05,0.25
+2026-10-13,Llama 3 Instruct 70B,1.175,0.65,2.75
+2026-10-13,Llama 3 Instruct 8B,0.07,0.045,0.145
+2026-10-13,Llama 3.1 Instruct 70B,0.56,0.56,0.56
+2026-10-13,Llama 3.1 Instruct 8B,0.043,0.035,0.065
+2026-10-13,Llama 3.2 Instruct 11B (Vision),0.345,0.345,0.345
+2026-10-13,Llama 3.3 Instruct 70B,0.712,0.71,0.72
+2026-10-13,Llama 4 Maverick,0.405,0.25,0.87
+2026-10-13,Llama 4 Scout,0.3,0.18,0.66
+2026-10-13,LongCat 2.0,1.3,0.75,2.95
+2026-10-13,Magistral Small 1.2,0.75,0.5,1.5
+2026-10-13,Mercury 2,0.375,0.25,0.75
+2026-10-13,Mercury 2.5,0.375,0.25,0.75
+2026-10-13,MiMo-V2-Flash (Reasoning),0.15,0.1,0.3
+2026-10-13,MiMo-V2.5,0.175,0.14,0.28
+2026-10-13,MiMo-V2.5-Pro (Non-reasoning),0.544,0.435,0.87
+2026-10-13,MiMo-V2.5-Pro (Reasoning),0.544,0.435,0.87
+2026-10-13,MiMo-V2.6-Flash,0.175,0.14,0.28
+2026-10-13,MiMo-V2.6-Pro,0.544,0.435,0.87
+2026-10-13,MiniMax M1 80k,0.963,0.55,2.2
+2026-10-13,MiniMax-M2,0.525,0.3,1.2
+2026-10-13,MiniMax-M2.1,0.525,0.3,1.2
+2026-10-13,MiniMax-M2.5,0.525,0.3,1.2
+2026-10-13,MiniMax-M2.7,0.525,0.3,1.2
+2026-10-13,MiniMax-M3,0.525,0.3,1.2
+2026-10-13,Ministral 3 14B,0.2,0.2,0.2
+2026-10-13,Ministral 3 3B,0.1,0.1,0.1
+2026-10-13,Ministral 3 8B,0.15,0.15,0.15
+2026-10-13,Mistral 7B Instruct,0.162,0.15,0.2
+2026-10-13,Mistral Large (Feb '24),6.0,4.0,12.0
+2026-10-13,Mistral Large 2 (Jul '24),3.0,2.0,6.0
+2026-10-13,Mistral Large 3,0.75,0.5,1.5
+2026-10-13,Mistral Large 4 Preview,2.065,1.36,4.18
+2026-10-13,Mistral Medium 3,0.8,0.4,2.0
+2026-10-13,Mistral Medium 3.5,3.0,1.5,7.5
+2026-10-13,Mistral Small 3,0.058,0.05,0.08
+2026-10-13,Mistral Small 3.1,0.094,0.08,0.135
+2026-10-13,Mistral Small 3.2,0.106,0.075,0.2
+2026-10-13,Mistral Small 4 (Non-reasoning),0.262,0.15,0.6
+2026-10-13,Mistral Small 4 (Reasoning),0.262,0.15,0.6
+2026-10-13,Mixtral 8x7B Instruct,0.512,0.45,0.7
+2026-10-13,Muse Glimmer (High),0.581,0.325,1.35
+2026-10-13,Muse Spark 1.1 (Xhigh),2.0,1.25,4.25
+2026-10-13,Muse Spark 1.2 (Xhigh),2.0,1.25,4.25
+2026-10-13,Muse Spark 1.3 (Max),2.0,1.25,4.25
+2026-10-13,Muse Spark 1.3 (Xhigh),2.0,1.25,4.25
+2026-10-13,Muse Wonder (Max),8.0,4.0,20.0
+2026-10-13,NVIDIA Nemotron 3 Nano 30B A3B (Non-reasoning),0.088,0.05,0.2
+2026-10-13,NVIDIA Nemotron 3 Nano 30B A3B (Reasoning),0.088,0.05,0.2
+2026-10-13,NVIDIA Nemotron Nano 12B v2 VL (Non-reasoning),0.3,0.2,0.6
+2026-10-13,NVIDIA Nemotron Nano 9B V2 (Non-reasoning),0.086,0.05,0.195
+2026-10-13,NVIDIA Nemotron Nano 9B V2 (Reasoning),0.07,0.04,0.16
+2026-10-13,Nemotron 3 Nano Omni 30B A3B Reasoning,0.45,0.3,0.9
+2026-10-13,Nemotron 3 Super 120B A12B (Reasoning),0.45,0.3,0.9
+2026-10-13,Nemotron 3 Ultra 550B A55B (Reasoning),1.075,0.6,2.5
+2026-10-13,Nemotron 3.5 Lightning,0.095,0.06,0.2
+2026-10-13,Nova 2.0 Lite (High),0.935,0.33,2.75
+2026-10-13,Nova 2.0 Lite (Low),0.935,0.33,2.75
+2026-10-13,Nova 2.0 Lite (Medium),0.935,0.33,2.75
+2026-10-13,Nova 2.0 Lite (Non-reasoning),0.935,0.33,2.75
+2026-10-13,Nova 2.0 Omni (Low),0.85,0.3,2.5
+2026-10-13,Nova 2.0 Omni (Medium),0.85,0.3,2.5
+2026-10-13,Nova 2.0 Omni (Non-reasoning),0.85,0.3,2.5
+2026-10-13,Nova 2.0 Pro Preview (Low),3.781,1.375,11.0
+2026-10-13,Nova 2.0 Pro Preview (Medium),3.781,1.375,11.0
+2026-10-13,Nova 2.0 Pro Preview (Non-reasoning),3.781,1.375,11.0
+2026-10-13,Nova Lite,0.105,0.06,0.24
+2026-10-13,Nova Micro,0.061,0.035,0.14
+2026-10-13,Nova Pro,1.4,0.8,3.2
+2026-10-13,Olmo 3 7B Instruct,0.125,0.1,0.2
+2026-10-13,Phi-4,0.219,0.125,0.5
+2026-10-13,Phi-4 Mini Instruct,0.131,0.075,0.3
+2026-10-13,Phi-4 Multimodal Instruct,0.14,0.08,0.32
+2026-10-13,"Quasar 438B (Max, Based on GLM-5.2)",0.9,0.6,1.8
+2026-10-13,Qwen2.5 Instruct 72B,0.48,0.475,0.495
+2026-10-13,Qwen2.5 Turbo,0.088,0.05,0.2
+2026-10-13,Qwen3 14B (Non-reasoning),0.15,0.12,0.24
+2026-10-13,Qwen3 14B (Reasoning),0.15,0.12,0.24
+2026-10-13,Qwen3 235B A22B 2507 (Reasoning),0.747,0.23,2.3
+2026-10-13,Qwen3 235B A22B 2507 Instruct,0.385,0.22,0.88
+2026-10-13,Qwen3 30B A3B (Non-reasoning),0.215,0.12,0.5
+2026-10-13,Qwen3 30B A3B (Reasoning),0.239,0.135,0.55
+2026-10-13,Qwen3 30B A3B 2507 (Reasoning),0.595,0.36,1.3
+2026-10-13,Qwen3 30B A3B 2507 Instruct,0.25,0.2,0.4
+2026-10-13,Qwen3 32B (Non-reasoning),0.262,0.15,0.6
+2026-10-13,Qwen3 32B (Reasoning),0.315,0.24,0.54
+2026-10-13,Qwen3 8B (Non-reasoning),0.2,0.2,0.2
+2026-10-13,Qwen3 Coder 30B A3B Instruct,0.3,0.15,0.748
+2026-10-13,Qwen3 Coder 480B A35B Instruct,0.675,0.3,1.8
+2026-10-13,Qwen3 Coder Next,0.675,0.5,1.2
+2026-10-13,Qwen3 Next 80B A3B (Reasoning),0.412,0.15,1.2
+2026-10-13,Qwen3 Next 80B A3B Instruct,0.388,0.15,1.1
+2026-10-13,Qwen3 Omni 30B A3B (Reasoning),0.43,0.25,0.97
+2026-10-13,Qwen3 Omni 30B A3B Instruct,0.43,0.25,0.97
+2026-10-13,Qwen3 VL 235B A22B Instruct,0.509,0.215,1.39
+2026-10-13,Qwen3 VL 30B A3B (Reasoning),0.5,0.5,0.5
+2026-10-13,Qwen3 VL 30B A3B Instruct,0.412,0.35,0.6
+2026-10-13,Qwen3.5 122B A10B (Non-reasoning),1.1,0.4,3.2
+2026-10-13,Qwen3.5 122B A10B (Reasoning),1.1,0.4,3.2
+2026-10-13,Qwen3.5 27B (Non-reasoning),0.825,0.3,2.4
+2026-10-13,Qwen3.5 27B (Reasoning),0.825,0.3,2.4
+2026-10-13,Qwen3.5 35B A3B (Non-reasoning),0.688,0.25,2.0
+2026-10-13,Qwen3.5 35B A3B (Reasoning),0.688,0.25,2.0
+2026-10-13,Qwen3.5 397B A17B (Non-reasoning),1.35,0.6,3.6
+2026-10-13,Qwen3.5 397B A17B (Reasoning),1.35,0.6,3.6
+2026-10-13,Qwen3.5 4B (Non-reasoning),0.06,0.03,0.15
+2026-10-13,Qwen3.5 4B (Reasoning),0.06,0.03,0.15
+2026-10-13,Qwen3.5 9B (Non-reasoning),0.19,0.17,0.25
+2026-10-13,Qwen3.5 9B (Reasoning),0.151,0.135,0.2
+2026-10-13,Qwen3.5 Omni Flash,0.275,0.1,0.8
+2026-10-13,Qwen3.5 Omni Plus,1.5,0.4,4.8
+2026-10-13,Qwen3.6 27B (Non-reasoning),1.35,0.6,3.6
+2026-10-13,Qwen3.6 27B (Reasoning),1.35,0.6,3.6
+2026-10-13,Qwen3.6 35B A3B (Non-reasoning),0.844,0.375,2.25
+2026-10-13,Qwen3.6 35B A3B (Reasoning),0.844,0.375,2.25
+2026-10-13,Qwen3.6 Plus,1.125,0.5,3.0
+2026-10-13,Qwen3.7 Max,3.75,2.5,7.5
+2026-10-13,Qwen3.7 Plus,0.7,0.4,1.6
+2026-10-13,Qwen3.8 2.4T A95B,3.0,2.0,6.0
+2026-10-13,Qwen3.8 27B (Low),1.125,0.5,3.0
+2026-10-13,Qwen3.8 27B (Medium),1.125,0.5,3.0
+2026-10-13,Qwen3.8 27B (Non-reasoning),1.125,0.5,3.0
+2026-10-13,Qwen3.8 27B (Xhigh),1.125,0.5,3.0
+2026-10-13,Qwen3.8 Max,3.0,2.0,6.0
+2026-10-13,Qwen3.8 Max (0902),3.0,2.0,6.0
+2026-10-13,Qwen3.8-Flash-Next,0.23,0.15,0.47
+2026-10-13,Reka Flash (Sep '24),0.35,0.2,0.8
+2026-10-13,Reka Flash 3,0.35,0.2,0.8
+2026-10-13,Ring-2.6-1T,0.85,0.3,2.5
+2026-10-13,Ring-flash-2.0,0.247,0.14,0.57
+2026-10-13,Sarvam 105B (High),0.074,0.042,0.17
+2026-10-13,Sarvam 30B (High),0.047,0.026,0.11
+2026-10-13,Seed-OSS-36B-Instruct,0.3,0.21,0.57
+2026-10-13,Solar Mini,0.15,0.15,0.15
+2026-10-13,Solar Mini 4,0.175,0.1,0.4
+2026-10-13,Solar Pro 3,0.262,0.15,0.6
+2026-10-13,Solar Pro 4,0.525,0.3,1.2
+2026-10-13,Step 3.5 Flash,0.15,0.1,0.3
+2026-10-13,Step 3.5 Flash 2603,0.15,0.1,0.3
+2026-10-13,Step 3.7 Flash,0.438,0.2,1.15
+2026-10-13,Step 5 Preview,1.425,1.0,2.7
+2026-10-13,Trinity Large Thinking,0.388,0.25,0.8
+2026-10-13,gpt-oss-120b (High),0.26,0.15,0.59
+2026-10-13,gpt-oss-120b (Low),0.237,0.15,0.5
+2026-10-13,gpt-oss-20b (High),0.098,0.07,0.18
+2026-10-13,gpt-oss-20b (Low),0.106,0.07,0.215
+2026-10-13,o1,26.25,15.0,60.0
+2026-10-13,o1-preview,28.875,16.5,66.0
+2026-10-13,o1-pro,262.5,150.0,600.0
+2026-10-13,o3,3.5,2.0,8.0
+2026-10-13,o3-mini,1.925,1.1,4.4
+2026-10-13,o3-mini (High),1.925,1.1,4.4
+2026-10-13,o3-pro,35.0,20.0,80.0
+2026-10-13,o4-mini (High),1.925,1.1,4.4

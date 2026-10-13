@@ -196,6 +196,125 @@ def compare(a: dict, benches: dict[str, Bench], by_domain: dict[str, list[str]],
     return None
 
 
+# The seven companies Epoch names individually are all headquartered in the US.
+US_CHIP_OWNERS = ["Amazon", "CoreWeave", "Google", "Meta", "Microsoft", "Oracle", "xAI"]
+PRICE_THRESHOLDS = [20, 30, 40, 45]
+
+
+def stock_view() -> dict:
+    """AI chip stock by owner group at each complete quarter end, in H100-equivalents."""
+    rows = read_csv("compute_stock.csv")
+    partial = {r["quarter_end"] for r in rows if r["incomplete"] == "True"}
+    quarters = sorted({r["quarter_end"] for r in rows} - partial)
+    # Cumulative figures carry forward through quarters where an owner has no new row.
+    latest: dict[tuple, dict] = {}
+    series = {k: [] for k in ("china", "china_lo", "china_hi", "smuggled", "us_named", "other")}
+    by_quarter: dict[str, list[dict]] = {}
+    for r in rows:
+        by_quarter.setdefault(r["quarter_end"], []).append(r)
+    mix = {}
+    for q in quarters:
+        for r in by_quarter[q]:
+            latest[(r["owner"], r["chip_designer"])] = r
+        total = lambda owners, col="h100e": sum(number(r[col]) or 0 for (o, _), r in latest.items() if o in owners)
+        series["china"].append(total({"China"}))
+        series["china_lo"].append(total({"China"}, "h100e_p5"))
+        series["china_hi"].append(total({"China"}, "h100e_p95"))
+        series["smuggled"].append(total({"China (smuggled)"}))
+        series["us_named"].append(total(set(US_CHIP_OWNERS)))
+        series["other"].append(total({"Other"}))
+        mix = {d: number(r["h100e"]) for (o, d), r in latest.items() if o == "China"}
+    days = [day(q) for q in quarters]
+    asof = days[-1]
+
+    def lag(china: list[float], lo=None, hi=None) -> dict | None:
+        us = gap.records([Point(d, v, model="Seven US companies") for d, v in zip(days, series["us_named"])])
+        cn = gap.records([Point(d, v, lo and lo[i], hi and hi[i], "China") for i, (d, v) in enumerate(zip(days, china))])
+        hit = gap.lag_at(us, cn, asof)
+        return hit and {"m": gap.months(hit["days"]), "lo": gap.months(hit["lo"]), "hi": gap.months(hit["hi"]),
+                        "match": hit["match"].day.isoformat() if hit["match"] else None}
+
+    with_smuggled = [a + b for a, b in zip(series["china"], series["smuggled"])]
+    history = []
+    for i, d in enumerate(days):  # lag and ratio at each quarter end, for the policy timeline
+        us = gap.records([Point(x, v) for x, v in zip(days[:i + 1], series["us_named"][:i + 1])])
+        cn = gap.records([Point(x, v) for x, v in zip(days[:i + 1], series["china"][:i + 1])])
+        hit = gap.lag_at(us, cn, d)
+        history.append({"m": gap.months(hit["days"]) if hit else None,
+                        "ratio": round(series["us_named"][i] / series["china"][i], 1) if series["china"][i] else None})
+    return {
+        "quarters": quarters, "asof": asof.isoformat(), "partial": sorted(partial), "owners": US_CHIP_OWNERS,
+        "china": series["china"], "smuggled": with_smuggled, "has_smuggled": [v > 0 for v in series["smuggled"]],
+        "us_named": series["us_named"], "non_china": [a + b for a, b in zip(series["us_named"], series["other"])],
+        "lag": lag(series["china"], series["china_lo"], series["china_hi"]), "lag_smuggled": lag(with_smuggled),
+        "ratio": round(series["us_named"][-1] / series["china"][-1], 1),
+        "ratio_smuggled": round(series["us_named"][-1] / with_smuggled[-1], 1),
+        "ratio_non_china": round((series["us_named"][-1] + series["other"][-1]) / series["china"][-1], 1),
+        "mix": {k: v for k, v in sorted(mix.items(), key=lambda t: -t[1])}, "history": history,
+    }
+
+
+def chip_view() -> dict:
+    """Best 16-bit performance to date: Nvidia against Chinese designers."""
+    rows = [r for r in read_csv("chips.csv") if day(r["release_date"]) and number(r["perf_16bit_flop_s"])]
+    side = lambda keep: gap.records([Point(day(r["release_date"]), float(r["perf_16bit_flop_s"]), model=r["name"], lab=r["designer"])
+                                     for r in rows if keep(r)])
+    nvidia, china = side(lambda r: r["designer"] == "NVIDIA"), side(lambda r: r["country"] == "China")
+    huawei = side(lambda r: r["designer"] == "Huawei")
+    undated = sorted(r["name"] for r in read_csv("chips.csv") if r["country"] == "China" and not day(r["release_date"]))
+    return {"nvidia": [pt(p) for p in nvidia], "china": [pt(p) for p in china], "huawei": [pt(p) for p in huawei],
+            "lag": lag_out(gap.lag_at(nvidia, china, TODAY)), "lag_huawei": lag_out(gap.lag_at(nvidia, huawei, TODAY)),
+            "undated": undated, "n_china": sum(r["country"] == "China" for r in rows), "n_nvidia": sum(r["designer"] == "NVIDIA" for r in rows)}
+
+
+def training_view(models: dict, eci: dict) -> dict:
+    """Largest disclosed training run to date by country, and capability against compute."""
+    known = [m for m in models.values() if m["country"] in ("US", "China") and day(m["release_date"]) and number(m["training_compute_flop"])]
+    side = lambda c: gap.records([Point(day(m["release_date"]), float(m["training_compute_flop"]), model=m["name"], lab=m["lab"])
+                                  for m in known if m["country"] == c])
+    us, cn = side("US"), side("China")
+    scored = [m for m in models.values() if m["country"] in ("US", "China") and m["name"] in eci and day(m["release_date"]) and day(m["release_date"]) >= START]
+    coverage = []
+    for year in range(START.year, TODAY.year + 1):
+        row = {"year": year}
+        for c, key in (("US", "us"), ("China", "cn")):
+            group = [m for m in scored if m["country"] == c and m["release_date"][:4] == str(year)]
+            row[key] = [sum(1 for m in group if number(m["training_compute_flop"])), len(group)]
+        coverage.append(row)
+    return {"us": [pt(p) for p in us], "cn": [pt(p) for p in cn], "lag": lag_out(gap.lag_at(us, cn, TODAY)),
+            "scatter": [[float(m["training_compute_flop"]), eci[m["name"]], m["country"], m["name"], m["release_date"]]
+                        for m in scored if number(m["training_compute_flop"])],
+            "coverage": coverage}
+
+
+def cost_view() -> dict | None:
+    """List price against capability today. There is no history yet, so no lag."""
+    if not (DATA / "prices.csv").exists():
+        return None
+    rows = [r for r in read_csv("prices.csv") if r["country"] in ("US", "China") and number(r["aa_intelligence_index"]) is not None]
+    pts = [[float(r["aa_intelligence_index"]), float(r["price_blended_usd_per_1m"]), r["country"], r["aa_name"], r["lab"]] for r in rows]
+    frontier = {}
+    for c in ("US", "China"):
+        best, line = -1.0, []
+        for p in sorted((p for p in pts if p[2] == c), key=lambda p: (p[1], -p[0])):  # cheapest first
+            if p[0] > best:
+                best = p[0]
+                line.append(p)
+        frontier[c] = line
+    table = []
+    for t in PRICE_THRESHOLDS:
+        row = {"t": t}
+        for c, key in (("US", "us"), ("China", "cn")):
+            ok = [p for p in pts if p[2] == c and p[0] >= t]
+            row[key] = min(ok, key=lambda p: p[1]) if ok else None
+        row["ratio"] = round(row["us"][1] / row["cn"][1], 1) if row["us"] and row["cn"] else None
+        table.append(row)
+    history = read_csv("price_history.csv") if (DATA / "price_history.csv").exists() else []
+    return {"points": pts, "frontier": frontier, "table": table, "n_priced": len(read_csv("prices.csv")),
+            "n_us": sum(p[2] == "US" for p in pts), "n_cn": sum(p[2] == "China" for p in pts),
+            "history_start": min((r["date"] for r in history), default=TODAY.isoformat())}
+
+
 def main() -> None:
     models = {m["name"]: m for m in read_csv("models.csv")}
     cfgs = read_csv("benchmarks.csv")
@@ -240,7 +359,10 @@ def main() -> None:
 
     events = [{"date": r["date"], "title": r["event"], "kind": r["category"], "text": r["description"],
                "src": r["source_url"], "flag": r["flag"], "notes": r["notes"]} for r in read_csv("events.csv") if r["date"]]
+    stock = stock_view()
     data = {
+        "compute": {"stock": stock, "chips": chip_view(), "training": training_view(models, eci)},
+        "cost": cost_view(),
         "built": TODAY.isoformat(), "start": START.isoformat(), "thin_until": THIN_UNTIL.isoformat(),
         "months": [t.isoformat() for t in months], "domains": domains, "overall": OVERALL, "why": WHY,
         "benchmarks": [{"id": c["benchmark"], "name": c["name"], "domain": c["domain"], "source": c["source"],
@@ -260,6 +382,7 @@ def main() -> None:
 
     # A small dated summary: the automatic refresh compares it with the committed one.
     summary = {"built": TODAY.isoformat(), "scores": len(scores),
+               "compute": {"asof": stock["asof"], "china_h100e": stock["china"][-1]},
                "medians": {v: {d: (p or {}).get("m") for d, p in variants[v]["profile"].items()} for v in VARIANTS}}
     (DATA / "profile.json").write_text(json.dumps(summary, indent=1) + "\n", encoding="utf-8")
 
@@ -273,6 +396,14 @@ def main() -> None:
                 continue
             low = f"  LOW CONFIDENCE: {', '.join(WHY[k] for k in s['low'])}" if s["low"] else ""
             print(f"  {d:34s} {s['m']:5.1f}  ({s['min']} to {s['max']}, n={s['n']}){low}")
+    c = data["compute"]
+    print(f"\ncompute stock at {stock['asof']}: China {stock['china'][-1]:,.0f} H100e, seven US companies {stock['us_named'][-1]:,.0f} "
+          f"({stock['ratio']}x); lag {stock['lag']['m']} months, {stock['lag_smuggled']['m']} with the smuggling estimate ({stock['ratio_smuggled']}x)")
+    print(f"chips (16-bit): all Chinese designers {c['chips']['lag']['m']} months behind Nvidia; Huawei {c['chips']['lag_huawei']['m']}")
+    print(f"training compute: {c['training']['lag']['m']} months")
+    if data["cost"]:
+        for row in data["cost"]["table"]:
+            print(f"  index >= {row['t']}: US {row['us'] and (row['us'][3], row['us'][1])}  China {row['cn'] and (row['cn'][3], row['cn'][1])}  ratio {row['ratio']}")
     for d in domains:
         lapse = (variants["independent"]["profile"][d] or {}).get("lapse")
         if lapse:

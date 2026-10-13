@@ -1,0 +1,243 @@
+name,designer,country,type,release_date,perf_16bit_flop_s,perf_8bit_op_s,tdp_w,datasheet_url,source_url,flag
+NVIDIA GeForce GTX 280,NVIDIA,Other,GPU,2008-06-16,,,236,https://www.techpowerup.com/gpu-specs/geforce-gtx-280.c216,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA GeForce GTX 580,NVIDIA,Other,GPU,2010-11-09,,,244,https://www.techpowerup.com/gpu-specs/geforce-gtx-580.c270,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA Tesla C2050,NVIDIA,Other,GPU,2011-07-25,,,238,,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA Tesla K20X,NVIDIA,Other,GPU,2012-11-12,,,235,,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA Tesla K20c,NVIDIA,Other,GPU,2012-11-12,,,225,https://www.techpowerup.com/gpu-specs/tesla-k20c.c564,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA GeForce GTX TITAN,NVIDIA,Other,GPU,2013-02-19,,,250,https://www.techpowerup.com/gpu-specs/geforce-gtx-titan.c1996,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA Quadro K4000,NVIDIA,Other,GPU,2013-03-01,,,80,https://www.techpowerup.com/gpu-specs/quadro-k4000.c1841,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA GeForce GTX 780,NVIDIA,Other,GPU,2013-05-23,,,250,https://www.techpowerup.com/gpu-specs/geforce-gtx-780.c1701,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA Quadro K6000,NVIDIA,Other,GPU,2013-07-23,,,225,https://www.techpowerup.com/gpu-specs/quadro-k6000.c2426,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA Tesla K40s,NVIDIA,Other,GPU,2013-11-22,,,245,https://www.techpowerup.com/gpu-specs/tesla-k40s.c2528,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA Tesla K40t,NVIDIA,Other,GPU,2013-11-22,,,245,https://www.techpowerup.com/gpu-specs/tesla-k40t.c3403,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA GeForce GTX Titan Black,NVIDIA,Other,GPU,2014-02-18,,,250,https://www.techpowerup.com/gpu-specs/geforce-gtx-titan-black.c2549,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA GeForce GTX 980,NVIDIA,Other,GPU,2014-09-19,,,165,https://www.techpowerup.com/gpu-specs/geforce-gtx-980.c2621,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA Tesla K80,NVIDIA,Other,GPU,2014-11-17,,,300,https://www.techpowerup.com/gpu-specs/tesla-k80.c2616; https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/tesla-product-literature/TeslaK80-datasheet.pdf,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA Quadro K1200,NVIDIA,Other,GPU,2015-01-28,,,45,https://www.techpowerup.com/gpu-specs/quadro-k1200.c2641,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA GeForce GTX TITAN X,NVIDIA,Other,GPU,2015-03-17,,,250,https://www.techpowerup.com/gpu-specs/geforce-gtx-titan-x.c2632,https://epoch.ai/data/ml_hardware.csv,
+Google TPU v1,Google,Other,TPU,2015-05-15,,9.2e+13,75,https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9499913,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA Quadro M4000,NVIDIA,Other,GPU,2015-06-29,,,120,https://www.techpowerup.com/gpu-specs/quadro-m4000.c2757,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA TESLA M60,NVIDIA,Other,GPU,2015-08-30,,,300,https://www.techpowerup.com/gpu-specs/tesla-m60.c2760,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA M40,NVIDIA,Other,GPU,2015-11-10,,,250,https://www.techpowerup.com/gpu-specs/tesla-m40.c2771,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA P100,NVIDIA,Other,GPU,2016-04-05,1.87e+13,,250,https://images.nvidia.com/content/tesla/pdf/nvidia-tesla-p100-PCIe-datasheet.pdf,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA Tesla P100 DGXS,NVIDIA,Other,GPU,2016-04-05,2.122e+13,,300,,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA Tesla P100 SXM2,NVIDIA,Other,GPU,2016-04-05,2.122e+13,,300,,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA GeForce GTX 1080,NVIDIA,Other,GPU,2016-05-27,1.386e+11,,180,https://www.techpowerup.com/gpu-specs/geforce-gtx-1080.c2839,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA P100 PCIe 16GB,NVIDIA,Other,GPU,2016-06-20,1.91e+13,,250,https://www.techpowerup.com/gpu-specs/tesla-p100-pcie-16-gb.c2888,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA Tesla P100 PCIe 12GB,NVIDIA,Other,GPU,2016-06-20,1.905e+13,,250,https://www.techpowerup.com/gpu-specs/tesla-p100-pcie-12-gb.c2915,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA Tesla P100 PCIe 16GB,NVIDIA,Other,GPU,2016-06-20,1.905e+13,,250,https://www.techpowerup.com/gpu-specs/tesla-p100-pcie-16-gb.c2888,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA P40,NVIDIA,Other,GPU,2016-09-13,1.837e+11,,250,https://www.techpowerup.com/gpu-specs/tesla-p40.c2878,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA Tesla P4,NVIDIA,Other,GPU,2016-09-13,8.912e+10,2.2e+13,75,https://www.techpowerup.com/gpu-specs/tesla-p4.c2879,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA Quadro P5000,NVIDIA,Other,GPU,2016-10-01,1.386e+11,,180,https://www.techpowerup.com/gpu-specs/quadro-p5000.c2864,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA Quadro P6000,NVIDIA,Other,GPU,2016-10-01,1.974e+11,,250,https://www.techpowerup.com/gpu-specs/quadro-p6000.c2865,https://epoch.ai/data/ml_hardware.csv,
+MT-2000,National University of Defense Technology,China,,2017-01-01,,,240,https://archive.ph/CdMwe,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA Quadro P4000,NVIDIA,Other,GPU,2017-02-06,8.288e+10,,105,https://www.techpowerup.com/gpu-specs/quadro-p4000.c2930,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA Quadro P600,NVIDIA,Other,GPU,2017-02-07,1.868e+10,,40,https://www.techpowerup.com/gpu-specs/quadro-p600.c2933,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA GeForce GTX 1080 Ti,NVIDIA,Other,GPU,2017-03-10,1.772e+11,,250,https://www.techpowerup.com/gpu-specs/geforce-gtx-1080-ti.c2877,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA TITAN Xp,NVIDIA,Other,GPU,2017-04-06,1.898e+11,,250,https://www.techpowerup.com/gpu-specs/titan-xp.c2948,https://epoch.ai/data/ml_hardware.csv,
+Google TPU v2,Google,Other,TPU,2017-05-01,4.6e+13,,280,https://dl.acm.org/doi/pdf/10.1145/3360307,https://epoch.ai/data/ml_hardware.csv,
+PEZY-SC2,PEZY,Other,,2017-06-01,1.604e+13,,180,"https://archive.ph/yiqZG
+https://en.wikichip.org/wiki/pezy/pezy-scx/pezy-sc2",https://epoch.ai/data/ml_hardware.csv,
+NVIDIA Tesla V100 PCIe 16 GB,NVIDIA,Other,GPU,2017-06-21,1.12e+14,,250,https://www.techpowerup.com/gpu-specs/tesla-v100-pcie-16-gb.c2957,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA Tesla V100 SXM2 16 GB,NVIDIA,Other,GPU,2017-06-21,1.25e+14,,300,https://www.techpowerup.com/gpu-specs/tesla-v100-sxm2-16-gb.c3018,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA V100,NVIDIA,Other,GPU,2017-06-21,1.25e+14,,300,"https://www.techpowerup.com/gpu-specs/tesla-v100-pcie-16-gb.c2957
+https://www.techpowerup.com/gpu-specs/tesla-v100-pcie-32-gb.c3184
+https://www.techpowerup.com/gpu-specs/tesla-v100-sxm2-16-gb.c3471
+https://www.techpowerup.com/gpu-specs/tesla-v100-sxm2-16-gb.c3018
+https://www.techpowerup.com/gpu-specs/tesla-v100-sxm2-32-gb.c3185
+https://www.techpowerup.com/gpu-specs/tesla-v100-sxm3-32-gb.c3472
+https://www.techpowerup.com/gpu-specs/tesla-v100s-pcie-32-gb.c3467",https://epoch.ai/data/ml_hardware.csv,
+NVIDIA Tesla V100 SXM2,NVIDIA,Other,GPU,2017-07-01,1.25e+14,,300,"https://images.nvidia.com/content/technologies/volta/pdf/437317-Volta-V100-DS-NV-US-WEB.pdf
+https://www.techpowerup.com/gpu-specs/tesla-v100-sxm2-16-gb.c3018
+https://images.nvidia.com/content/technologies/volta/pdf/volta-v100-datasheet-update-us-1165301-r5.pdf",https://epoch.ai/data/ml_hardware.csv,
+NVIDIA Titan V,NVIDIA,Other,GPU,2017-12-01,2.98e+13,,250,https://www.techpowerup.com/gpu-specs/titan-v.c3051,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA Tesla V100 DGXS 16 GB,NVIDIA,Other,GPU,2018-03-27,1.25e+14,,250,https://www.techpowerup.com/gpu-specs/tesla-v100-dgxs-16-gb.c3763,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA Tesla V100 DGXS 32 GB,NVIDIA,Other,GPU,2018-03-27,1.25e+14,,250,https://www.techpowerup.com/gpu-specs/tesla-v100-dgxs-32-gb.c3186,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA Tesla V100 PCIe 32 GB,NVIDIA,Other,GPU,2018-03-27,1.12e+14,,250,https://www.techpowerup.com/gpu-specs/tesla-v100-pcie-32-gb.c3184,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA Tesla V100 SXM2 32 GB,NVIDIA,Other,GPU,2018-03-27,1.25e+14,,300,https://www.techpowerup.com/gpu-specs/tesla-v100-sxm2-32-gb.c3185,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA Tesla V100 SXM3 32 GB,NVIDIA,Other,GPU,2018-03-27,1.25e+14,,300,,https://epoch.ai/data/ml_hardware.csv,
+Google TPU v3,Google,Other,TPU,2018-05-18,1.23e+14,,450,"https://cloud.google.com/tpu/docs/system-architecture-tpu-vm
+https://dl.acm.org/doi/pdf/10.1145/3360307 ",https://epoch.ai/data/ml_hardware.csv,
+NVIDIA Quadro RTX 5000,NVIDIA,Other,GPU,2018-08-13,2.23e+13,,230,https://www.techpowerup.com/gpu-specs/quadro-rtx-5000.c3308,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA Quadro RTX 6000,NVIDIA,Other,GPU,2018-08-13,3.262e+13,,260,https://www.techpowerup.com/gpu-specs/quadro-rtx-6000.c3307,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA Quadro RTX 8000,NVIDIA,Other,GPU,2018-08-13,3.262e+13,,260,https://www.techpowerup.com/gpu-specs/quadro-rtx-8000.c3306,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA Tesla T4,NVIDIA,Other,GPU,2018-09-13,6.513e+13,,70,https://www.techpowerup.com/gpu-specs/tesla-t4.c3316,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA GeForce RTX 2080 Ti 11GB,NVIDIA,Other,GPU,2018-09-20,1.138e+14,2.277e+14,250,https://www.techpowerup.com/gpu-specs/geforce-rtx-2080-ti.c3305,https://epoch.ai/data/ml_hardware.csv,
+Huawei Ascend 310,Huawei,China,GPU,2018-10-10,8e+12,1.6e+13,8,https://old.hotchips.org/hc31/HC31_1.11_Huawei.Davinci.HengLiao_v4.0.pdf,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA Quadro RTX 4000,NVIDIA,Other,GPU,2018-11-13,1.424e+13,,160,https://www.techpowerup.com/gpu-specs/quadro-rtx-4000.c3336,https://epoch.ai/data/ml_hardware.csv,
+Baidu Kunlun I,Kunlunxin Baidu,China,XPU,2019-01-01,6.4e+13,2.56e+14,150,,https://epoch.ai/data/ml_hardware.csv,
+Intel Habana GAUDI HL-205,Intel,Other,,2019-06-18,,,300,https://www.new-techeurope.com/2019/06/18/habana-labs-announces-gaudi-ai-training-processor/,https://epoch.ai/data/ml_hardware.csv,
+Cambricon MLU270-F4,Cambricon,China,ASIC,2019-06-20,,1.28e+14,150,,https://epoch.ai/data/ml_hardware.csv,
+Cambricon MLU270-S4,Cambricon,China,ASIC,2019-06-20,,1.28e+14,70,,https://epoch.ai/data/ml_hardware.csv,
+Huawei Ascend 910,Huawei,China,GPU,2019-08-23,2.56e+14,5.12e+14,310,"https://old.hotchips.org/hc31/HC31_1.11_Huawei.Davinci.HengLiao_v4.0.pdf
+https://cset.georgetown.edu/publication/pushing-the-limits-huaweis-ai-chip-tests-u-s-export-controls/",https://epoch.ai/data/ml_hardware.csv,
+Huawei Ascend 910 (320 TFLOPS),Huawei,China,GPU,2019-08-23,3.2e+14,6.4e+14,310,"https://old.hotchips.org/hc31/HC31_1.11_Huawei.Davinci.HengLiao_v4.0.pdf
+https://cset.georgetown.edu/publication/pushing-the-limits-huaweis-ai-chip-tests-u-s-export-controls/",https://epoch.ai/data/ml_hardware.csv,
+Huawei Ascend 910A,Huawei,China,GPU,2019-08-23,2.56e+14,,310,https://www.sciencedirect.com/science/article/pii/S0743731524000480,https://epoch.ai/data/ml_hardware.csv,
+Huawei Ascend 910A Premium,Huawei,China,GPU,2019-08-23,3.2e+14,,,,https://epoch.ai/data/ml_hardware.csv,
+Huawei Ascend 910A Pro,Huawei,China,GPU,2019-08-23,2.88e+14,,,https://www.sciencedirect.com/science/article/pii/S0743731524000480,https://epoch.ai/data/ml_hardware.csv,
+T-Head Hanguang 800,Alibaba,China,NPU,2019-09-25,,8.25e+14,276,,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA Tesla V100S PCIe 32 GB,NVIDIA,Other,GPU,2019-11-26,1.3e+14,,250,https://www.techpowerup.com/gpu-specs/tesla-v100s-pcie-32-gb.c3467,https://epoch.ai/data/ml_hardware.csv,
+Baidu Kunlun K200,Kunlunxin Baidu,China,XPU,2020-01-01,6.4e+13,2.56e+14,150,,https://epoch.ai/data/ml_hardware.csv,
+Google TPU v4i,Google,Other,TPU,2020-01-01,1.38e+14,,175,"https://ieeexplore.ieee.org/document/9499913
+summary here: https://parsa.epfl.ch/course-info/cs723/lectures/hw_accel.pdf ",https://epoch.ai/data/ml_hardware.csv,
+NVIDIA A100,NVIDIA,Other,GPU,2020-03-01,3.12e+14,6.24e+14,400,https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/a100/pdf/nvidia-a100-datasheet-us-nvidia-1758950-r4-web.pdf; https://www.techpowerup.com/gpu-specs/a100-sxm4-80-gb.c3746,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA A100 SXM4 40 GB,NVIDIA,Other,GPU,2020-05-14,3.12e+14,6.24e+14,400,https://www.techpowerup.com/gpu-specs/a100-sxm4-40-gb.c3506,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA A100 PCIe,NVIDIA,Other,GPU,2020-06-22,3.12e+14,6.24e+14,300,"https://www.techpowerup.com/gpu-specs/a100-pcie-80-gb.c3821
+https://www.techpowerup.com/gpu-specs/a100-pcie-40-gb.c3623",https://epoch.ai/data/ml_hardware.csv,
+NVIDIA GeForce RTX 3080,NVIDIA,Other,GPU,2020-09-01,2.977e+13,,320,https://www.techpowerup.com/gpu-specs/geforce-rtx-3080.c3621,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA GeForce RTX 3090,NVIDIA,Other,GPU,2020-09-01,3.558e+13,2.84e+14,350,https://images.nvidia.com/aem-dam/en-zz/Solutions/geforce/ampere/pdf/NVIDIA-ampere-GA102-GPU-Architecture-Whitepaper-V1.pdf#page=38; https://www.techpowerup.com/gpu-specs/geforce-rtx-3090.c3622,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA A40 PCIe,NVIDIA,Other,GPU,2020-10-05,1.497e+14,2.993e+14,300,https://www.techpowerup.com/gpu-specs/a40-pcie.c3700; https://images.nvidia.com/content/Solutions/data-center/a40/nvidia-a40-datasheet.pdf,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA RTX A6000,NVIDIA,Other,GPU,2020-10-05,3.87e+13,,300,https://www.techpowerup.com/gpu-specs/rtx-a6000.c3686,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA A100 SXM4 80 GB,NVIDIA,Other,GPU,2020-11-16,3.12e+14,6.24e+14,400,https://www.techpowerup.com/gpu-specs/a100-sxm4-80-gb.c3746,https://epoch.ai/data/ml_hardware.csv,
+Cambricon MLU290-M5,Cambricon,China,,2021-01-21,,5.12e+14,350,https://perma.cc/CSV7-UNPP,https://epoch.ai/data/ml_hardware.csv,
+Tianshu Zhixin Tiangai 100 (BI-V100),Iluvatar CoreX,China,GPGPU,2021-03-31,1.28e+14,2.56e+14,250,,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA A10 PCIe,NVIDIA,Other,GPU,2021-04-12,3.124e+13,2.5e+14,150,"https://www.techpowerup.com/gpu-specs/a10-pcie.c3793#:~:text=The%20A10%20PCIe%20is%20a,card%20supports%20DirectX%2012%20Ultimate.",https://epoch.ai/data/ml_hardware.csv,
+NVIDIA A10G,NVIDIA,Other,GPU,2021-04-12,3.15e+13,,150,https://www.techpowerup.com/gpu-specs/a10g.c3798,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA RTX A4000,NVIDIA,Other,GPU,2021-04-12,1.917e+13,,140,techpowerup.com/gpu-specs/rtx-a4000.c3756,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA RTX A5000,NVIDIA,Other,GPU,2021-04-12,2.777e+13,,230,https://www.techpowerup.com/gpu-specs/rtx-a5000.c3748,https://epoch.ai/data/ml_hardware.csv,
+Google TPU v4,Google,Other,TPU,2021-05-20,2.75e+14,2.75e+14,340,https://cloud.google.com/tpu/docs/system-architecture-tpu-vm,https://epoch.ai/data/ml_hardware.csv,
+Shensuan-1,Hygon,China,DCU (GPGPU),2021-07-01,2.45e+13,,350,https://hk-official.cmbi.info/upload/b678e2ea-ba52-47b7-bc97-893d2bfdd36d.pdf,https://epoch.ai/data/ml_hardware.csv,
+Baidu Kunlun II,Kunlunxin Baidu,China,XPU-R,2021-08-18,1.28e+14,2.56e+14,150,https://web.archive.org/web/20250505083031/https://news.qq.com/rain/a/20221129A02ZKE00,https://epoch.ai/data/ml_hardware.csv,
+Tesla D1 Dojo,Tesla,Other,GPU,2021-08-21,3.62e+14,,400,https://semianalysis.com/2021/08/25/the-tesla-dojo-chip-is-impressive/,https://epoch.ai/data/ml_hardware.csv,
+Cambricon MLU370-S4,Cambricon,China,,2021-11-03,7.2e+13,1.92e+14,75,https://perma.cc/AS5M-QVCE,https://epoch.ai/data/ml_hardware.csv,
+Cambricon MLU370-S4/S8,Cambricon,China,,2021-11-03,7.2e+13,1.92e+14,75,,https://epoch.ai/data/ml_hardware.csv,
+Cambricon MLU370-S8,Cambricon,China,,2021-11-03,7.2e+13,1.92e+14,75,,https://epoch.ai/data/ml_hardware.csv,
+Cambricon MLU370-X4,Cambricon,China,,2021-11-03,9.6e+13,2.56e+14,150,https://perma.cc/Y6CV-YZFD,https://epoch.ai/data/ml_hardware.csv,
+AMD Radeon Instinct MI250X,AMD,Other,GPU,2021-11-08,3.83e+14,3.83e+14,500,"https://www.amd.com/en/products/accelerators/instinct/mi200/mi250x.html
+https://www.techpowerup.com/gpu-specs/radeon-instinct-mi250x.c3837",https://epoch.ai/data/ml_hardware.csv,
+Baidu Kunlun R100 (100W),Kunlunxin Baidu,China,XPU-R,2022-01-01,8.5e+13,1.7e+14,100,,https://epoch.ai/data/ml_hardware.csv,
+Baidu Kunlun R100 (75W),Kunlunxin Baidu,China,XPU-R,2022-01-01,6.4e+13,1.28e+14,75,,https://epoch.ai/data/ml_hardware.csv,
+Baidu Kunlun R200 (150W),Kunlunxin Baidu,China,XPU-R,2022-01-01,1.28e+14,2.56e+14,150,,https://epoch.ai/data/ml_hardware.csv,
+Baidu Kunlun R200-8F (160W),Kunlunxin Baidu,China,XPU-R,2022-01-01,1.28e+14,2.56e+14,160,,https://epoch.ai/data/ml_hardware.csv,
+Huawei Ascend 910B,Huawei,China,GPU,2022-03-17,3.76e+14,,400,"https://archive.ph/cF945
+https://cset.georgetown.edu/publication/pushing-the-limits-huaweis-ai-chip-tests-u-s-export-controls/#:~:text=Ascend%20910%20models%20range%20from,specially%20designed%20for%20AI%20operations
+https://www.trendforce.com/news/2024/06/11/news-huaweis-self-developed-ai-chip-challenges-nvidia-boasting-its-ascend-910b-to-be-equal-in-match-with-a100/
+
+different sources report different performance (376 TFLOPS vs 220 TFLOPS vs 320 TFLOPS)
+
+as for release date - the earliest mentioning I found is March, 17 2022 (https://r.huaweistatic.com/s/ascendstatic/lst/files/pdf/PR425KI.pdf)
+
+energy source: https://arthurchiao.art/blog/gpu-data-sheets/
+",https://epoch.ai/data/ml_hardware.csv,
+Cambricon MLU370-X8,Cambricon,China,,2022-03-21,9.6e+13,2.56e+14,250,https://perma.cc/H4JT-SZNV,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA GeForce RTX 3090 Ti,NVIDIA,Other,GPU,2022-03-29,1.6e+14,3.2e+14,450,https://www.techpowerup.com/gpu-specs/geforce-rtx-3090-ti.c3829,https://epoch.ai/data/ml_hardware.csv,
+Intel Habana Gaudi2,Intel,Other,,2022-05-10,4.5e+14,8.65e+14,600,https://perma.cc/9SR3-HX6Q,https://epoch.ai/data/ml_hardware.csv,
+MT-3000,National University of Defense Technology,China,Hybrid CPU,2022-07-01,,,256,https://link.springer.com/article/10.1007/s42514-022-00095-y,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA A800 SXM,NVIDIA,Other,GPU,2022-08-11,3.118e+14,6.24e+14,400,https://www.techpowerup.com/gpu-specs/a800-sxm4-80-gb.c3966,https://epoch.ai/data/ml_hardware.csv,
+Biren BR100,Biren,China,GPGPU,2022-08-22,1.024e+15,2.048e+15,550,https://web.archive.org/web/20221004073838/https://www.birentech.com/product_details/1005557637772464128.html; https://hc34.hotchips.org/assets/program/conference/day1/GPU%20HPC/HC2022.BirenTech.MikeHong.LingjieXu.v01.pdf,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA GeForce RTX 4080,NVIDIA,Other,GPU,2022-09-20,4.874e+13,3.9e+14,320,https://www.techpowerup.com/gpu-specs/geforce-rtx-4080.c3888,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA GeForce RTX 4090,NVIDIA,Other,GPU,2022-09-20,3.3e+14,6.606e+14,450,https://www.techpowerup.com/gpu-specs/geforce-rtx-4090.c3889,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA H100 PCIe,NVIDIA,Other,GPU,2022-09-20,7.56e+14,,350,https://www.techpowerup.com/gpu-specs/h100-pcie.c3899,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA H100 SXM5 80GB,NVIDIA,Other,GPU,2022-09-20,9.894e+14,1.979e+15,700,https://resources.nvidia.com/en-us-tensor-core/nvidia-tensor-core-gpu-datasheet; https://www.techpowerup.com/gpu-specs/h100-sxm5.c3900,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA L40,NVIDIA,Other,GPU,2022-10-13,1.81e+14,3.62e+14,300,https://www.techpowerup.com/gpu-specs/l40.c3959; https://www.nvidia.com/content/dam/en-zz/Solutions/design-visualization/support-guide/NVIDIA-L40-Datasheet-January-2023.pdf,https://epoch.ai/data/ml_hardware.csv,
+Amazon Trainium1,Amazon AWS,Other,GPU,2022-10-15,1.9e+14,4.2e+14,,"https://web.archive.org/web/20230518023215/https://awsdocs-neuron.readthedocs-hosted.com/en/v2.9.1/general/arch/neuron-hardware/trainium.html
+
+Note that memory specs are quoted in GiB (1024^3 = ~1.07 billion bytes) not GB.
+
+32 GiB (32 * 1024^3 bytes) of memory ~= 34.36 GB (gigabytes)
+
+820 GiB/sec of memory bandwidth ~= 880.47 GB/sec ",https://epoch.ai/data/ml_hardware.csv,
+GroqChip LPU v1,,Other,LPU,2022-10-15,1.88e+14,7.5e+14,215,https://groq.com/wp-content/uploads/2024/08/GroqChip%E2%84%A2-Processor-Product-Brief-v1.7.pdf,https://epoch.ai/data/ml_hardware.csv,
+AMD Radeon RX 7900 XTX,AMD,Other,GPU,2022-11-03,1.228e+14,,335,https://www.techpowerup.com/gpu-specs/radeon-rx-7900-xtx.c3941,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA A800 PCIe 80 GB,NVIDIA,Other,GPU,2022-11-03,3.12e+14,6.24e+14,250,"https://www.techpowerup.com/gpu-specs/a800-pcie-80-gb.c3965
+https://www.unixcloud.ltd/product/nvidia-a800/# ",https://epoch.ai/data/ml_hardware.csv,
+NVIDIA A800 PCIe 40 GB,NVIDIA,Other,GPU,2022-11-08,3.118e+14,,250,"https://www.techpowerup.com/gpu-specs/a800-pcie-40-gb.c3964
+https://www.techpowerup.com/gpu-specs/a800-pcie-80-gb.c3965
+https://www.techpowerup.com/gpu-specs/a800-sxm4-80-gb.c3966",https://epoch.ai/data/ml_hardware.csv,
+NVIDIA RTX 6000 Ada Generation,NVIDIA,Other,GPU,2022-12-03,9.106e+13,7.29e+14,,"https://perma.cc/63JP-L3WM
+https://www.techpowerup.com/gpu-specs/rtx-6000-ada-generation.c3933",https://epoch.ai/data/ml_hardware.csv,
+Tianshu Zhixin Zhikai 100,Iluvatar CoreX,China,GPU,2022-12-20,9.6e+13,3.84e+14,,,https://epoch.ai/data/ml_hardware.csv,
+Baidu Kunlun RG800,Kunlunxin Baidu,China,XPU-R,2023-01-01,1.28e+14,2.56e+14,130,,https://epoch.ai/data/ml_hardware.csv,
+MetaX MXC500 (OAM),MetaX,China,GPGPU,2023-01-01,2.8e+14,5.6e+14,450,"https://blog.csdn.net/qq_23934063/article/details/132473834
+https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202306151590965492",https://epoch.ai/data/ml_hardware.csv,
+AMD Instinct MI300A,AMD,Other,GPU,2023-01-04,9.806e+14,1.9612e+15,760,https://www.amd.com/content/dam/amd/en/documents/instinct-tech-docs/data-sheets/amd-instinct-mi300a-data-sheet.pdf,https://epoch.ai/data/ml_hardware.csv,
+AMD Radeon Instinct MI300,AMD,Other,GPU,2023-01-04,3.83e+14,,600,https://www.techpowerup.com/gpu-specs/radeon-instinct-mi300.c4019,https://epoch.ai/data/ml_hardware.csv,
+Intel Data Center GPU Max 1100,Intel,Other,GPU,2023-01-10,2.222e+13,,300,https://www.techpowerup.com/gpu-specs/data-center-gpu-max-1100.c4066,https://epoch.ai/data/ml_hardware.csv,
+Intel Data Center GPU Max 1350,Intel,Other,GPU,2023-01-10,4.444e+13,,450,https://www.techpowerup.com/gpu-specs/data-center-gpu-max-1350.c4067,https://epoch.ai/data/ml_hardware.csv,
+Intel Data Center GPU Max 1550,Intel,Other,GPU,2023-01-10,5.243e+13,,600,https://www.techpowerup.com/gpu-specs/data-center-gpu-max-1350.c4067,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA GeForce RTX 4070,NVIDIA,Other,GPU,2023-02-08,2.915e+13,2.33e+14,285,https://www.techpowerup.com/gpu-specs/geforce-rtx-4070.c3924,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA GH100,NVIDIA,Other,GPU,2023-03-21,9.895e+14,1.979e+15,700,"https://www.techpowerup.com/gpu-specs/nvidia-gh100.g1011
+
+https://videocardz.net/gpu/nvidia-gh100",https://epoch.ai/data/ml_hardware.csv,
+NVIDIA H800 SXM5,NVIDIA,Other,GPU,2023-03-21,9.89e+14,1.979e+15,700,https://www.techpowerup.com/gpu-specs/h800-sxm5.c3975,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA L4,NVIDIA,Other,GPU,2023-03-21,1.21e+14,2.42e+14,72,"https://nvdam.widen.net/s/rvq98gbwsw/l4-datasheet-2595652
+https://www.techpowerup.com/gpu-specs/l4.c4091",https://epoch.ai/data/ml_hardware.csv,
+AWS Inferentia2,Amazon AWS,Other,,2023-04-13,1.9e+14,3.8e+14,,https://perma.cc/YED7-PTH6,https://epoch.ai/data/ml_hardware.csv,
+Meta MTIA v1 (MTIA 100),Meta,Other,Other,2023-05-18,5.12e+13,1.024e+14,25,"https://ai.meta.com/blog/meta-training-inference-accelerator-AI-MTIA/
+https://ai.meta.com/blog/next-generation-meta-training-inference-accelerator-AI-MTIA/",https://epoch.ai/data/ml_hardware.csv,
+MetaX MXN100,MetaX,China,GPU,2023-06-07,8e+13,1.6e+14,,https://www.metax-tech.com/ndetail/12469.html,https://epoch.ai/data/ml_hardware.csv,
+MetaX MXC500 (PCIe),MetaX,China,GPGPU,2023-06-13,2.4e+14,4.8e+14,350,"https://blog.csdn.net/qq_23934063/article/details/132473834
+https://data.eastmoney.com/report/zw_industry.jshtml?infocode=AP202306151590965492",https://epoch.ai/data/ml_hardware.csv,
+NVIDIA GH200,NVIDIA,Other,GPU,2023-08-08,9.895e+14,1.979e+15,700,https://resources.nvidia.com/en-us-data-center-overview-mc/en-us-data-center-overview/grace-hopper-superchip-datasheet-partner,https://epoch.ai/data/ml_hardware.csv,
+Google TPU v5e,Google,Other,TPU,2023-08-29,1.97e+14,3.93e+14,225,https://cloud.google.com/tpu/docs/v5e,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA L20 PCle,NVIDIA,Other,GPU,2023-09-16,1.195e+14,2.39e+14,275,"https://www.techpowerup.com/gpu-specs/l20.c4206
+https://wccftech.com/nvidia-china-compliant-h20-gpu-41-percent-fewer-cores-lower-performance-vs-top-hopper-h100/",https://epoch.ai/data/ml_hardware.csv,
+NVIDIA HGX H20,NVIDIA,Other,GPU,2023-11-09,1.48e+14,2.96e+14,400,https://viperatech.com/shop/nvidia-hgx-h20/,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA L2 PCle,NVIDIA,Other,GPU,2023-11-09,9.65e+13,1.93e+14,,"https://viperatech.com/shop/nvidia-l2-pcie/#:~:text=NVIDIA's%20L2%20PCle%2C%20part%20of,handling%20of%20data%2Dintensive%20tasks.",https://epoch.ai/data/ml_hardware.csv,
+Sunway SW26010-Pro,Sunway,China,,2023-11-26,5.5296e+13,,,https://www.tomshardware.com/tech-industry/supercomputers/chinas-secretive-sunway-pro-cpu-quadruples-performance-over-its-predecessor-allowing-the-supercomputer-supercomputer-to-hit-exaflop-speeds,https://epoch.ai/data/ml_hardware.csv,
+AMD Instinct MI300X,AMD,Other,GPU,2023-12-06,1.3074e+15,2.6149e+15,750,"https://www.amd.com/content/dam/amd/en/documents/instinct-tech-docs/data-sheets/amd-instinct-mi300x-data-sheet.pdf
+https://www.techpowerup.com/gpu-specs/radeon-instinct-mi300x.c4179",https://epoch.ai/data/ml_hardware.csv,
+AMD Radeon Instinct MI308X,AMD,Other,GPU,2023-12-06,6.537e+14,,750,https://www.techpowerup.com/gpu-specs/radeon-instinct-mi308x.c4295,https://epoch.ai/data/ml_hardware.csv,
+Google TPU v5p,Google,Other,TPU,2023-12-06,4.59e+14,9.18e+14,540,https://cloud.google.com/tpu/docs/v5p,https://epoch.ai/data/ml_hardware.csv,
+MTT S4000,Moore Threads (Tencent),China,GPU,2023-12-19,1e+14,2e+14,450,"https://en.mthreads.com/product/S4000
+https://www.techpowerup.com/gpu-specs/mtt-s4000.c4261",https://epoch.ai/data/ml_hardware.csv,
+NVIDIA H100 NVL,NVIDIA,Other,GPU,2024-03-14,8.355e+14,,400,"https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/h100/PB-11773-001_v01.pdf
+
+https://www.pny.com/nvidia-h100-nvl",https://epoch.ai/data/ml_hardware.csv,
+Meta MTIA v2 (MTIA 200),Meta,Other,Other,2024-04-10,1.77e+14,3.54e+14,90,https://ai.meta.com/blog/next-generation-meta-training-inference-accelerator-AI-MTIA/,https://epoch.ai/data/ml_hardware.csv,
+Google TPU v6e Trillium,Google,Other,TPU,2024-05-14,9.18e+14,1.836e+15,380,https://cloud.google.com/tpu/docs/v6e,https://epoch.ai/data/ml_hardware.csv,
+Maia 100 (M100),Microsoft,Other,GPU,2024-08-27,8e+14,,500,"https://www.techpowerup.com/326105/microsoft-unveils-new-details-on-maia-100-its-first-custom-ai-chip
+
+https://techcommunity.microsoft.com/blog/azureinfrastructureblog/inside-maia-100-revolutionizing-ai-workloads-with-microsofts-custom-ai-accelerat/4229118",https://epoch.ai/data/ml_hardware.csv,
+Intel Habana Gaudi3,Intel,Other,,2024-09-24,1.678e+15,1.678e+15,900,https://perma.cc/83JH-F3M4,https://epoch.ai/data/ml_hardware.csv,
+AMD Instinct MI325X,AMD,Other,GPU,2024-10-10,1.3074e+15,2.6e+15,1000,https://www.amd.com/en/products/accelerators/instinct/mi300/mi325x.html,https://epoch.ai/data/ml_hardware.csv,
+Huawei Ascend 910C,Huawei,China,GPU,2024-10-15,8e+14,1.504e+15,700,"https://www.trendforce.com/news/2025/03/13/news-huaweis-ascend-910c-takes-on-nvidia-as-chinas-ai-race-heats-up-more-alleged-details/
+https://www.huawei.com/en/news/2025/9/hc-xu-keynote-speech?
+https://newsletter.semianalysis.com/p/huawei-ai-cloudmatrix-384-chinas-answer-to-nvidia-gb200-nvl72
+https://arxiv.org/abs/2506.12708v1 ",https://epoch.ai/data/ml_hardware.csv,
+Cambricon Siyuan 590,Cambricon,China,,2024-10-31,3.45e+14,5.12e+14,200,"https://techbuzzchina.substack.com/p/cambricon-chinas-nvidiaor-nvidia
+
+https://www.linkedin.com/pulse/china-really-closing-ai-chip-gap-skeptics-take-rick-margerison-7crxc",https://epoch.ai/data/ml_hardware.csv,
+NVIDIA B200,NVIDIA,Other,GPU,2024-11-15,2.25e+15,4.5e+15,1000,"https://www.primeline-solutions.com/media/categories/server/nach-gpu/nvidia-hgx-h200/nvidia-blackwell-b200-datasheet.pdf
+https://drive.google.com/file/d/1Wc9tdHdy3UthQ6ttW98RgrdUx8Vva5tU/view",https://epoch.ai/data/ml_hardware.csv,
+NVIDIA H200 SXM,NVIDIA,Other,GPU,2024-11-18,9.895e+14,1.979e+15,700,https://nvdam.widen.net/s/nb5zzzsjdf/hpc-datasheet-sc23-h200-datasheet-3002446,https://epoch.ai/data/ml_hardware.csv,
+Amazon Trainium2,Amazon AWS,Other,GPU,2024-12-03,6.67e+14,1.299e+15,500,"https://semianalysis.com/2024/12/03/amazons-ai-self-sufficiency-trainium2-architecture-networking/
+https://awsdocs-neuron.readthedocs-hosted.com/en/latest/about-neuron/arch/neuron-hardware/trainium2.html",https://epoch.ai/data/ml_hardware.csv,
+NVIDIA GB200,NVIDIA,Other,GPU,2025-02-15,2.5e+15,5e+15,1200,"https://www.nvidia.com/en-us/data-center/gb200-nvl2/#specs
+https://drive.google.com/file/d/1Wc9tdHdy3UthQ6ttW98RgrdUx8Vva5tU/view",https://epoch.ai/data/ml_hardware.csv,
+NVIDIA RTX Pro 6000 Blackwell,NVIDIA,Other,GPU,2025-03-18,5.038e+14,1.0076e+15,600,"https://www.nvidia.com/content/dam/en-zz/Solutions/design-visualization/quadro-product-literature/NVIDIA-RTX-Blackwell-PRO-GPU-Architecture-v1.0.pdf, https://www.techpowerup.com/gpu-specs/rtx-pro-6000-blackwell.c4272",https://epoch.ai/data/ml_hardware.csv,
+AMD Instinct MI350X,AMD,Other,GPU,2025-06-12,2.34e+15,4.614e+15,1000,https://www.amd.com/content/dam/amd/en/documents/instinct-tech-docs/product-briefs/amd-instinct-mi350x-gpu-brochure.pdf ,https://epoch.ai/data/ml_hardware.csv,
+AMD Instinct MI355X,AMD,Other,GPU,2025-06-12,2.5166e+15,5.0332e+15,1400,https://www.amd.com/content/dam/amd/en/documents/instinct-tech-docs/product-briefs/amd-instinct-mi355x-gpu-brochure.pdf,https://epoch.ai/data/ml_hardware.csv,
+NVIDIA B300 (Blackwell Ultra),NVIDIA,Other,GPU,2025-08-22,2.25e+15,4.5e+15,1100,"https://developer.nvidia.com/blog/inside-nvidia-blackwell-ultra-the-chip-powering-the-ai-factory-era/
+
+https://resources.nvidia.com/en-us-blackwell-architecture/blackwell-ultra-datasheet",https://epoch.ai/data/ml_hardware.csv,
+NVIDIA GB300 (Blackwell Ultra),NVIDIA,Other,GPU,2025-08-22,2.5e+15,5e+15,1400,"https://resources.nvidia.com/en-us-dgx-systems/dgx-b300-datasheet
+https://www.nvidia.com/en-us/data-center/gb300-nvl72/",https://epoch.ai/data/ml_hardware.csv,
+Huawei Ascend 920,Huawei,China,NPU,2025-10-01,9e+14,,,https://www.tomshardware.com/pc-components/gpus/huawei-introduces-the-ascend-920-ai-chip-to-fill-the-void-left-by-nvidias-h20,https://epoch.ai/data/ml_hardware.csv,
+Google TPU v7 Ironwood,Google,Other,TPU,2025-11-06,2.307e+15,4.614e+15,960,"https://blog.google/products/google-cloud/ironwood-tpu-age-of-inference/
+https://docs.cloud.google.com/tpu/docs/tpu7x",https://epoch.ai/data/ml_hardware.csv,
+Amazon Trainium3,Amazon AWS,Other,GPU,2025-12-02,6.71e+14,2.517e+15,700,https://awsdocs-neuron.readthedocs-hosted.com/en/latest/about-neuron/arch/neuron-hardware/trainium3.html ,https://epoch.ai/data/ml_hardware.csv,
+Microsoft Maia 200,Microsoft,Other,GPU,2026-01-26,1.268e+15,5.072e+15,750,https://blogs.microsoft.com/blog/2026/01/26/maia-200-the-ai-accelerator-built-for-inference/,https://epoch.ai/data/ml_hardware.csv,
+Meta MTIA 300,Meta,Other,Other,2026-03-11,6e+14,1.2e+15,800,https://ai.meta.com/blog/meta-mtia-scale-ai-chips-for-billions/,https://epoch.ai/data/ml_hardware.csv,
+Google TPU v8i,Google,Other,TPU,2026-08-02,,1.01e+16,,"https://cloud.google.com/blog/products/compute/tpu-8t-and-tpu-8i-technical-deep-dive, https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/eighth-generation-tpu-agentic-era/ ",https://epoch.ai/data/ml_hardware.csv,
+Cambricon Siyuan 690,Cambricon,China,,,,,,,https://epoch.ai/data/ml_hardware.csv,no release date
+Huawei Ascend 800T A2,Huawei,China,GPU,,2.56e+14,5.12e+14,310,https://arxiv.org/pdf/2505.21411,https://epoch.ai/data/ml_hardware.csv,no release date
+Huawei Ascend 910B Pro,Huawei,China,GPU,,2.8e+14,,,"https://cset.georgetown.edu/publication/pushing-the-limits-huaweis-ai-chip-tests-u-s-export-controls/#:~:text=Ascend%20910%20models%20range%20from,specially%20designed%20for%20AI%20operations",https://epoch.ai/data/ml_hardware.csv,no release date
+Huawei Ascend 910B1 (v1),Huawei,China,GPU,,4e+14,,,"https://cset.georgetown.edu/publication/pushing-the-limits-huaweis-ai-chip-tests-u-s-export-controls/#:~:text=Ascend%20910%20models%20range%20from,specially%20designed%20for%20AI%20operations",https://epoch.ai/data/ml_hardware.csv,no release date
+Huawei Ascend 910B1 (v2),Huawei,China,GPU,,,,,"https://cset.georgetown.edu/publication/pushing-the-limits-huaweis-ai-chip-tests-u-s-export-controls/#:~:text=Ascend%20910%20models%20range%20from,specially%20designed%20for%20AI%20operations",https://epoch.ai/data/ml_hardware.csv,no release date
+Huawei Ascend 910B2,Huawei,China,GPU,,3.76e+14,,,"https://cset.georgetown.edu/publication/pushing-the-limits-huaweis-ai-chip-tests-u-s-export-controls/#:~:text=Ascend%20910%20models%20range%20from,specially%20designed%20for%20AI%20operations",https://epoch.ai/data/ml_hardware.csv,no release date
+Huawei Ascend 910B3,Huawei,China,GPU,,3.13e+14,,,"https://cset.georgetown.edu/publication/pushing-the-limits-huaweis-ai-chip-tests-u-s-export-controls/#:~:text=Ascend%20910%20models%20range%20from,specially%20designed%20for%20AI%20operations",https://epoch.ai/data/ml_hardware.csv,no release date
+Huawei Ascend 910B4,Huawei,China,GPU,,2.8e+14,,,"https://cset.georgetown.edu/publication/pushing-the-limits-huaweis-ai-chip-tests-u-s-export-controls/#:~:text=Ascend%20910%20models%20range%20from,specially%20designed%20for%20AI%20operations
+https://perma.cc/9B7N-X5XT",https://epoch.ai/data/ml_hardware.csv,no release date
+Huawei Ascend 950DT,Huawei,China,NPU,,,1e+15,,"https://www.techradar.com/pro/huawei-ascend-950-vs-nvidia-h200-vs-amd-mi300-instinct-how-do-they-compare
+https://www.tomshardware.com/tech-industry/semiconductors/huawei-unveils-ascend-roadmap-backed-by-in-house-hbm",https://epoch.ai/data/ml_hardware.csv,no release date
+Huawei Ascend 950PR,Huawei,China,NPU,,,1e+15,,"https://www.techradar.com/pro/huawei-ascend-950-vs-nvidia-h200-vs-amd-mi300-instinct-how-do-they-compare
+https://www.tomshardware.com/tech-industry/semiconductors/huawei-unveils-ascend-roadmap-backed-by-in-house-hbm",https://epoch.ai/data/ml_hardware.csv,no release date
+Huawei Ascend 960,Huawei,China,NPU,,,2e+15,,"https://www.huawei.com/en/news/2025/9/hc-xu-keynote-speech
+https://www.huaweicentral.com/huawei-reveals-3-year-ascend-ai-chip-roadmap-950-coming-in-2026/",https://epoch.ai/data/ml_hardware.csv,no release date
+Huawei Ascend 970,Huawei,China,NPU,,,4e+15,,"https://www.huawei.com/en/news/2025/9/hc-xu-keynote-speech
+https://www.huaweicentral.com/huawei-reveals-3-year-ascend-ai-chip-roadmap-950-coming-in-2026/",https://epoch.ai/data/ml_hardware.csv,no release date
+NVIDIA Rubin CPX,NVIDIA,Other,GPU,,,,,https://nvidianews.nvidia.com/news/nvidia-unveils-rubin-cpx-a-new-class-of-gpu-designed-for-massive-context-inference,https://epoch.ai/data/ml_hardware.csv,no release date
+NVIDIA VR300 (Rubin Ultra),NVIDIA,Other,GPU,,,,,,https://epoch.ai/data/ml_hardware.csv,no release date
+NVIDIA Vera Rubin Superchip,NVIDIA,Other,GPU,,4e+15,1.75e+16,,https://nvdam.widen.net/s/7hztspzswk/gpu-architecture-datasheet-vera-rubin-nvidia-us-5198950-web,https://epoch.ai/data/ml_hardware.csv,no release date

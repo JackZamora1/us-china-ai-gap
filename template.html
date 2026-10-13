@@ -40,6 +40,7 @@ section.block { margin-top: 56px; }
 
 /* Hero */
 .hero { background: var(--surface); color: var(--ink); padding: 22px 0 30px; }
+.top + .view .hero, .view .hero { margin-top: 0; }
 .masthead { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; font-size: 14px; color: var(--ink-2); }
 .masthead strong { color: var(--ink); font-weight: 700; font-size: 15px; }
 .hero-top { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 20px 32px; padding: 40px 0 22px; }
@@ -202,6 +203,54 @@ td.date { color: var(--ink-2); white-space: nowrap; }
 .foot { margin: 48px 0 64px; padding-top: 18px; border-top: 1px solid var(--rule); font-size: 13.5px; color: var(--ink-3); max-width: 95ch; }
 .foot p { margin: 0 0 8px; }
 
+/* Tabs */
+.top { position: sticky; top: 0; z-index: 4; background: #0f1b2d; color: #f1f4f8; --ink: #f1f4f8; --ink-2: #b9c4d3; --ink-3: #8795a8; --rule: #25344b; }
+.top .masthead { padding-top: 12px; }
+.nav { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+.nav::-webkit-scrollbar { display: none; }
+.nav a { flex: none; padding: 12px 12px 11px; min-height: 44px; display: inline-flex; align-items: center; font-size: 14.5px; font-weight: 600;
+  color: var(--ink-2); text-decoration: none; border-bottom: 3px solid transparent; white-space: nowrap; }
+.nav a:first-child { padding-left: 0; }
+.nav a[aria-current="page"] { color: var(--ink); border-bottom-color: #f0763f; }
+.view[hidden] { display: none; }
+.wrap .wrap { padding: 0; max-width: none; }
+.view { min-height: 70vh; padding-bottom: 64px; }
+.view .hero { padding-top: 4px; }
+.view-head { padding: 36px 0 0; }
+.view-head h1 { font-size: clamp(1.9rem, 3.6vw, 2.7rem); max-width: none; }
+.view-head p { font: 400 clamp(1.02rem, 1.3vw, 1.15rem)/1.5 var(--serif); color: var(--ink-2); max-width: 70ch; margin: 12px 0 0; }
+.srcline { font-size: 13px; color: var(--ink-3); border-top: 1px solid var(--rule); margin: 44px 0 0; padding-top: 14px; max-width: 95ch; }
+.cards { display: grid; grid-template-columns: 1.25fr 1fr 1fr; gap: 18px; margin-top: 28px; align-items: start; }
+.card h2 { font-size: 1.3rem; }
+.card .go { display: inline-block; margin-top: 16px; font-weight: 600; font-size: 14.5px; }
+.mini { display: grid; grid-template-columns: minmax(0, 1fr) 70px auto; gap: 4px 10px; align-items: center; font-size: 14px; margin-top: 14px; }
+.mini .n { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.mini .t { position: relative; height: 8px; background: var(--bg); border-radius: 4px; }
+.mini .t i { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 4px; background: var(--cn); }
+.mini .v { text-align: right; font-weight: 700; white-space: nowrap; }
+.mini .lowc { color: var(--ink-3); font-weight: 400; } .mini .lowc + .t i { opacity: .35; }
+.mini small { font-size: 11.5px; color: var(--ink-3); font-weight: 400; }
+.stat { padding: 12px 0; border-top: 1px solid var(--rule); font-size: 14px; color: var(--ink-2); }
+.stat:first-child { border-top: 0; margin-top: 6px; }
+.stat b { display: block; font-size: 19px; color: var(--ink); line-height: 1.25; margin: 2px 0; }
+h3 { font: 700 1.05rem/1.3 var(--sans); margin: 26px 0 8px; }
+.prose { max-width: 78ch; } .prose h2 { margin: 30px 0 10px; } .prose h2:first-child { margin-top: 0; }
+.prose p, .prose li { color: var(--ink-2); font-size: 15.5px; } .prose li { margin: 7px 0; } .prose b { color: var(--ink); font-weight: 600; }
+.prose ul { padding-left: 20px; }
+.plist { list-style: none; margin: 22px 0 0; padding: 0; }
+.plist .year { font: 700 14px/1 var(--sans); color: var(--ink-3); padding: 26px 0 10px; }
+.plist li.ev-item { border-top: 1px solid var(--rule); padding: 14px 0; display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 4px 16px; }
+.plist time { font-size: 13.5px; color: var(--ink-3); white-space: nowrap; display: flex; align-items: center; gap: 8px; align-self: start; padding-top: 3px; }
+.plist time svg { width: 10px; height: 10px; fill: var(--ink-2); flex: none; }
+.plist .ttl { font-weight: 600; line-height: 1.3; }
+.plist .txt { font-size: 14px; color: var(--ink-2); margin: 4px 0 0; max-width: 78ch; }
+.marks { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 10px; align-items: center; font-size: 12px; color: var(--ink-3); }
+.marks .m { display: inline-flex; align-items: center; gap: 5px; border-radius: 6px; padding: 3px 7px; font-weight: 600; }
+.marks .m.lowc { background: none !important; color: var(--ink-3) !important; border: 1px dashed var(--rule); font-weight: 400; }
+.marks .stock { border: 1px solid var(--rule); border-radius: 6px; padding: 3px 7px; color: var(--ink-2); }
+svg.plot .pt { stroke: var(--surface); stroke-width: 1; opacity: .85; }
+svg.plot text.axlab { font-size: 12.5px; fill: var(--ink-2); }
+
 @media (max-width: 880px) {
   .wrap { padding: 0 16px; }
   .hero-top { padding: 26px 0 14px; }
@@ -214,13 +263,54 @@ td.date { color: var(--ink-2); white-space: nowrap; }
   .est > div.last { padding-bottom: 12px; }
   .est > div.scale.pad { display: none; }
   .tabs { gap: 16px; }
+  .cards { grid-template-columns: 1fr; }
+  .view-head { padding-top: 24px; }
+  .plist li.ev-item { grid-template-columns: 1fr; }
+  .nav a { padding-left: 10px; padding-right: 10px; }
 }
 </style>
 </head>
 <body>
-<header class="hero">
+<header class="top">
+  <div class="wrap masthead"><strong>US–China AI gap</strong><span id="asof"></span></div>
+  <nav class="wrap nav" id="nav" aria-label="Sections">
+    <a href="#overview">Overview</a><a href="#capabilities">Capabilities</a><a href="#compute">Compute</a><a href="#cost">Cost</a><a href="#policy">Policy timeline</a><a href="#methods">Methods and data</a>
+  </nav>
+</header>
+
+<section class="view" id="view-overview">
+  <div class="hero"><div class="wrap">
+    <div class="hero-top"><div><h1 id="ov-headline"></h1><p id="ov-lede"></p></div></div>
+  </div></div>
   <div class="wrap">
-    <div class="masthead"><strong>US–China AI capability gap</strong><span id="asof"></span></div>
+    <div class="cards">
+      <article class="panel card">
+        <h2>Capabilities</h2>
+        <p class="sub">Months since a US model first matched China's best, by capability area. There is no single overall number: the three overall measures disagree.</p>
+        <div id="ov-profile"></div>
+        <a class="go" href="#capabilities">Open capabilities</a>
+      </article>
+      <article class="panel card">
+        <h2>Compute</h2>
+        <p class="sub">AI chips, chip designs and training runs, each measured with the same rule.</p>
+        <div id="ov-compute"></div>
+        <a class="go" href="#compute">Open compute</a>
+      </article>
+      <article class="panel card">
+        <h2>Cost</h2>
+        <p class="sub">The cheapest model from each country that reaches a given score on the Artificial Analysis Intelligence Index, at list price per million tokens.</p>
+        <div id="ov-cost"></div>
+        <a class="go" href="#cost">Open cost</a>
+      </article>
+    </div>
+    <p class="note" style="margin-top:22px">Also here: a <a href="#policy">timeline of export controls and Chinese chip milestones</a> with where each measure stood at the time, and <a href="#methods">how every number is calculated</a>, with the data still to check.</p>
+    <p class="srcline" data-src="Epoch AI (CC BY 4.0), Arena by LMArena (CC BY 4.0), Artificial Analysis, METR"></p>
+  </div>
+</section>
+
+<section class="view" id="view-capabilities" hidden>
+  <div class="hero"><div class="wrap">
+  <div class="wrap">
     <div class="hero-top">
       <div><h1 id="headline"></h1><p id="lede"></p></div>
       <div class="seg" id="variant" aria-label="Which scores to use"></div>
@@ -235,9 +325,8 @@ td.date { color: var(--ink-2); white-space: nowrap; }
       <span><i style="width:12px;height:12px;border:1.5px dashed var(--cn)"></i>Median under the other source setting, where it differs</span>
     </div>
   </div>
-</header>
-
-<main class="wrap">
+  </div></div>
+  <div class="wrap">
   <section class="block" id="explorer">
     <div class="chips" id="area-chips" aria-label="Capability area"></div>
     <div class="panel" style="margin-top:14px">
@@ -251,7 +340,7 @@ td.date { color: var(--ink-2); white-space: nowrap; }
       <div id="tab-history">
         <div class="bar">
           <label class="inline">Show<select id="lag-pick"></select></label>
-          <div class="toggles" id="toggles" aria-label="Events shown on the chart"></div>
+          <div class="toggles ev-toggles" aria-label="Events shown on the chart"></div>
         </div>
         <div class="key" id="lag-key"></div>
         <svg class="plot" id="lag" role="img" aria-label="Lag in months over time with export-control and chip events marked"></svg>
@@ -292,26 +381,158 @@ td.date { color: var(--ink-2); white-space: nowrap; }
     <div class="est" id="est"></div>
   </section>
 
-  <section class="block">
-    <div class="sec-head"><div><h2>Reference</h2></div><div class="seg" id="ref-tabs"></div></div>
-    <div class="ref-body" id="ref-releases" hidden>
-      <div class="seg" id="seg" aria-label="Filter releases by country" style="margin-bottom:14px"></div>
+      <p class="srcline" data-src="Epoch AI benchmark data and Capabilities Index (CC BY 4.0); Arena leaderboard dataset by LMArena (CC BY 4.0), which measures human preference; Artificial Analysis; METR time horizons"></p>
+  </div>
+</section>
+
+<section class="view" id="view-compute" hidden>
+  <div class="wrap">
+    <div class="view-head"><h1>Compute</h1>
+      <p>How much AI computing power each side has, how good its best chips are, and how large its biggest training runs are. Each uses the same rule as the capability lags: when did the US side first reach China's current level?</p></div>
+
+    <section class="block" style="margin-top:28px">
+      <div class="sec-head"><div><h2>AI chip stock</h2>
+        <p class="sub">Cumulative AI chips acquired since the start of 2022, in H100-equivalents, on a log scale. Estimates by Epoch AI, through its last complete quarter.</p></div>
+        <div class="seg" id="smuggle" aria-label="Smuggling estimate"></div></div>
+      <div class="panel">
+        <div class="facts" id="stock-facts"></div>
+        <div class="bar"><div class="key" id="stock-key"></div><div class="toggles ev-toggles" aria-label="Events shown on the chart"></div></div>
+        <svg class="plot" id="stock" role="img" aria-label="AI chip stock in H100-equivalents for China and for US companies, quarterly, log scale"></svg>
+        <p class="note"><b>What "China" means here.</b> It is Epoch's estimate of chips sold to companies based in China (Nvidia's H800, H20 and others, AMD's MI308X) plus Chinese-designed chips (Huawei Ascend, Cambricon). It does not mean government ownership. It excludes smuggled chips unless the smuggling estimate is switched on, and Epoch describes that estimate as speculative.</p>
+        <p class="note"><b>What the US line means.</b> Epoch gives no US total. "Seven US companies" is the sum of the owners it names individually (Amazon, CoreWeave, Google, Meta, Microsoft, Oracle and xAI), so it understates the US. "Everything outside China" adds Epoch's "Other" group, which mixes smaller US buyers with buyers in other countries. The lag is measured against the seven companies and is therefore a minimum.</p>
+        <p class="callout">Events are marked for reference only. A change in the trend after an export control does not show that the control caused it.</p>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="sec-head"><div><h2>Best chip</h2>
+        <p class="sub">Best 16-bit performance of any chip released to date (the higher of tensor-core FP16/BF16 and plain FP16), Nvidia against Chinese designers, log scale. Specifications as published by Epoch AI.</p></div></div>
+      <div class="panel">
+        <div class="facts" id="chip-facts"></div>
+        <svg class="plot" id="chips" role="img" aria-label="Best 16-bit chip performance to date, Nvidia against Chinese designers"></svg>
+        <p class="note" id="chip-note"></p>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="sec-head"><div><h2>Training compute</h2>
+        <p class="sub">The largest training run with a published estimate, by country, in floating-point operations (log scale). Estimates by Epoch AI.</p></div></div>
+      <div class="panel">
+        <div class="facts" id="train-facts"></div>
+        <svg class="plot" id="train" role="img" aria-label="Largest disclosed training run to date by country"></svg>
+        <p class="callout"><b>The US side is incomplete.</b> Chinese open-weight labs publish enough to estimate training compute. Most recent US closed models, including most Claude and Gemini releases, have no estimate. The US line therefore shows only models whose compute is known, and both the lag and the chart below should be read with that in mind.</p>
+        <h3>How many frontier models have an estimate</h3>
+        <div class="scroll-x"><table id="train-cover"></table></div>
+        <h3>Capability against training compute</h3>
+        <p class="sub" style="margin-bottom:8px">Each point is a model with both an Epoch Capabilities Index score and a training-compute estimate, released since 2023.</p>
+        <div class="key"><span><i style="width:10px;height:10px;border-radius:50%;background:var(--us)"></i>US model</span><span><i style="width:10px;height:10px;border-radius:50%;background:var(--cn)"></i>Chinese model</span></div>
+        <svg class="plot" id="tscatter" role="img" aria-label="Epoch Capabilities Index score against training compute, by country"></svg>
+        <p class="note">Chinese models often sit above US models at the same compute. Because the US points are limited to models that disclose, "China achieves more per unit of compute" is suggestive, not proven.</p>
+      </div>
+    </section>
+    <p class="srcline" data-src="Epoch AI: AI chip owners, ML hardware and model training compute (CC BY 4.0)" data-asof="compute"></p>
+  </div>
+</section>
+
+<section class="view" id="view-cost" hidden>
+  <div class="wrap">
+    <div class="view-head"><h1>Cost</h1>
+      <p>What it costs to use a model of a given capability from each country, at today's list prices. The months-behind rule does not apply yet, because there is no price history to look back through.</p></div>
+
+    <section class="block" style="margin-top:28px">
+      <div class="sec-head"><div><h2>Cheapest model at a given level</h2>
+        <p class="sub">For each score on the Artificial Analysis Intelligence Index, the cheapest US and cheapest Chinese model that reaches it. Price is US dollars per million tokens, blended three parts input to one part output.</p></div></div>
+      <div class="panel"><div class="scroll-x"><table id="cost-table"></table></div></div>
+    </section>
+
+    <section class="block">
+      <div class="sec-head"><div><h2>Price against capability</h2>
+        <p class="sub">Each point is one model configuration with a list price. The stepped lines are each country's price frontier: the cheapest way to get at least that score.</p></div></div>
+      <div class="panel">
+        <div class="key" id="cost-key"></div>
+        <svg class="plot" id="cscatter" role="img" aria-label="Blended list price against Artificial Analysis Intelligence Index score, by country"></svg>
+        <p class="callout"><b>These are list prices.</b> They show what a user pays per token, not what it costs to run the model. Some providers price below cost, and a model that uses more tokens per task costs more than its per-token price suggests.</p>
+        <p class="note" id="cost-note"></p>
+      </div>
+    </section>
+    <p class="srcline" data-src="Artificial Analysis (list prices and Intelligence Index)"></p>
+  </div>
+</section>
+
+<section class="view" id="view-policy" hidden>
+  <div class="wrap">
+    <div class="view-head"><h1>Policy timeline</h1>
+      <p>US export controls, Entity List actions and Chinese chip milestones, with where the capability lag and the chip stock stood at the time of each.</p></div>
+    <p class="callout" style="margin-top:18px">Timing alone does not show cause. The lag moves for unrelated reasons: models are released in bursts, and benchmarks enter and leave the calculation. Read the marks as context, not as effects.</p>
+    <div class="bar" style="margin-top:20px"><div class="toggles ev-toggles" aria-label="Kinds of event shown"></div></div>
+    <div class="panel" style="margin-top:10px"><svg class="plot" id="pstrip" role="img" aria-label="Events over time by kind"></svg></div>
+    <ol class="plist" id="plist"></ol>
+    <p class="srcline" data-src="Federal Register, BIS, company filings and press reports, linked per event; lags from this dashboard; chip stock from Epoch AI (CC BY 4.0)"></p>
+  </div>
+</section>
+
+<section class="view" id="view-methods" hidden>
+  <div class="wrap">
+    <div class="view-head"><h1>Methods and data</h1>
+      <p>How every number on this site is calculated, what counts, and what is still uncertain.</p></div>
+
+    <section class="block prose" style="margin-top:28px">
+      <h2>One rule</h2>
+      <p>Take China's best result released by a date. Find the earliest US result, released by that date, that was at least as good. The lag is the time between that US result and the date. If no US result is as good, China leads, and the same rule runs in reverse to give a negative lag.</p>
+      <ul>
+        <li><b>Capabilities:</b> the result is a benchmark score, dated by the model's release. An area's lag is the median across its counted benchmarks.</li>
+        <li><b>Chip stock:</b> the result is cumulative H100-equivalents at each quarter end, so the lag moves in three-month steps and is measured to Epoch's last complete quarter.</li>
+        <li><b>Best chip:</b> the result is a chip's published 16-bit performance, dated by its release.</li>
+        <li><b>Training compute:</b> the result is a model's estimated training compute, dated by its release.</li>
+        <li><b>Cost:</b> the rule is not applied. Prices are known only for today, so the page compares them directly and records them daily to build a history.</li>
+      </ul>
+      <h2>What counts</h2>
+      <ul>
+        <li><b>Counted benchmarks:</b> at least 3 Chinese models released in the last 12 months and one in the last 6, and not saturated or closed.</li>
+        <li><b>Saturated:</b> both countries' best within 5% of the ceiling, or on a hand-kept list of saturated benchmarks.</li>
+        <li><b>Low confidence:</b> an area with fewer than 3 counted benchmarks, or whose benchmarks disagree on direction. Shown faded, never hidden, and left out of headlines.</li>
+        <li><b>Published estimates:</b> shown beside an area with fewer than 2 counted benchmarks, labelled with publisher, date and what they measure.</li>
+        <li><b>Independent sources:</b> results not reported by the model's own developer. The toggle on the capabilities tab switches to all sources.</li>
+        <li><b>Before 2025:</b> shaded on every time chart, because few Chinese models, and almost no closed ones, were scored.</li>
+      </ul>
+      <h2>Caveats specific to compute and cost</h2>
+      <ul>
+        <li><b>The China chip bucket</b> is chips Epoch infers were sold to China-based companies, plus Chinese-designed chips. It is not government ownership and excludes smuggled chips unless that estimate is switched on.</li>
+        <li><b>The smuggling estimate</b> is Epoch's own model output and Epoch calls it speculative. It starts in the first quarter of 2024.</li>
+        <li><b>No US total exists</b> in the chip data. Seven named US companies stand in for the US, which understates it and makes the lag a minimum.</li>
+        <li><b>Chip performance is a specification,</b> not a count of chips made. A chip that was announced but produced in small numbers counts the same as one produced in millions.</li>
+        <li><b>Training compute has disclosure bias:</b> most recent US closed models have no estimate.</li>
+        <li><b>Prices are list prices,</b> not costs, and the history starts on the day this view was added.</li>
+      </ul>
+    </section>
+
+    <section class="block">
+      <div class="sec-head"><div><h2>Data to check</h2><p class="sub">Rows carrying a flag or a note that something could not be confirmed.</p></div></div>
+      <ul class="checks" id="checklist"></ul>
+    </section>
+
+    <section class="block">
+      <div class="sec-head"><h2>Recent releases</h2><div class="seg" id="seg" aria-label="Filter releases by country"></div></div>
       <table>
         <thead><tr><th>Model</th><th>Country</th><th class="hide-sm">Weights</th><th class="num">ECI</th><th class="num hide-sm">Benchmarks</th><th class="num">Released</th></tr></thead>
         <tbody id="releases"></tbody>
       </table>
       <button class="more" id="more" type="button">Show 15 more</button>
-    </div>
-    <div class="ref-body" id="ref-events" hidden><ol class="events" id="events"></ol></div>
-    <div class="ref-body" id="ref-checks" hidden><ul class="checks" id="checklist"></ul></div>
-  </section>
+    </section>
 
-  <footer class="foot">
-    <p>Every lag uses one rule: take China's best score released by a date, find the earliest US model that scored at least as high, and count the time since that model's release. If no US model has, China leads and the lag is negative. All figures are as of the build date; rebuild to move them forward.</p>
-    <p>Scores: <a href="https://epoch.ai/benchmarks">Epoch AI</a> benchmark data and Epoch Capabilities Index (CC BY 4.0); <a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset">Arena leaderboard dataset</a> by LMArena (CC BY 4.0), which measures human preference; <span id="aa-credit"></span><a href="https://metr.org/time-horizons/">METR</a> time horizons (closed series).</p>
-    <p id="built"></p>
-  </footer>
-</main>
+    <section class="block prose">
+      <h2>Sources and attribution</h2>
+      <ul>
+        <li><a href="https://epoch.ai/benchmarks">Epoch AI</a>: benchmark data, Epoch Capabilities Index, <a href="https://epoch.ai/data/ai-chip-owners">AI chip owners</a>, <a href="https://epoch.ai/data/machine-learning-hardware">ML hardware</a> and model training compute. Licensed CC BY 4.0.</li>
+        <li><a href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset">Arena leaderboard dataset</a> by LMArena. Licensed CC BY 4.0. Measures human preference, not capability.</li>
+        <li id="aa-credit"></li>
+        <li><a href="https://metr.org/time-horizons/">METR</a> time horizons, a closed series.</li>
+        <li>Events and published estimates are linked to their sources row by row.</li>
+      </ul>
+      <p id="built"></p>
+    </section>
+  </div>
+</section>
 <div class="tip" id="tip" hidden></div>
 
 <script>
@@ -336,7 +557,7 @@ const START = day(DATA.start), TODAY = day(DATA.built), THIN = day(DATA.thin_unt
 const events = DATA.events.map((e) => ({ ...e, t: day(e.date) }));
 const benchInfo = Object.fromEntries(DATA.benchmarks.map((b) => [b.id, b]));
 const idsOf = (d) => DATA.benchmarks.filter((b) => b.domain === d).map((b) => b.id);
-const state = { variant: "independent", area: "Overall", tab: "history", bench: "eci", lagPick: "area", ref: null, shown: new Set(Object.keys(KINDS)), country: "All", limit: 15 };
+const state = { variant: "independent", area: "Overall", tab: "history", bench: "eci", lagPick: "area", view: null, smuggle: false, shown: new Set(Object.keys(KINDS)), country: "All", limit: 15 };
 const V = () => DATA.variants[state.variant];
 const otherKey = () => state.variant === "all" ? "independent" : "all";
 const lagText = (m) => m == null ? "no data" : m < 0 ? `China ahead ${one(m)} mo` : `${one(m)} mo`;
@@ -368,7 +589,6 @@ addEventListener("scroll", hideTip, { passive: true });
 
 // ---------- hero: China on the US calendar ----------
 function drawHeadline() {
-  $("asof").textContent = "As of " + fmt(TODAY);
   const rows = DATA.domains.filter((d) => d !== "Overall").map((d) => ({ d, s: P(V(), d) })).filter((r) => r.s);
   if (!rows.length) { $("headline").textContent = "No benchmark has enough recent Chinese scores to measure the gap."; $("lede").textContent = ""; return; }
   rows.sort((a, b) => a.s.m - b.s.m);
@@ -527,21 +747,35 @@ $("lag-pick").addEventListener("change", (ev) => { state.lagPick = ev.target.val
 // ---------- shared chart pieces ----------
 function frame(svg, yMin, yMax, opt) {
   const W = svg.clientWidth || 900, narrow = W < 620, H = opt.h || (narrow ? 340 : 430);
-  const m = { l: 40, r: opt.r != null ? (narrow ? opt.rNarrow : opt.r) : 20, t: opt.lanes ? 64 : 16, b: 28 };
-  const x = (t) => m.l + (t - START) / (TODAY - START) * (W - m.l - m.r);
-  const y = (v) => H - m.b - (v - yMin) / (yMax - yMin) * (H - m.t - m.b);
-  // 2023 and 2024: Chinese models were thinly covered, so the period is shaded.
-  let s = `<rect class="thin" x="${x(START)}" y="${m.t}" width="${x(THIN) - x(START)}" height="${H - m.b - m.t}"/>` +
+  const t0 = opt.t0 || START, t1 = opt.t1 || TODAY;
+  const m = { l: opt.l || 40, r: opt.r != null ? (narrow ? opt.rNarrow : opt.r) : 20, t: opt.lanes ? 64 : 16, b: 28 };
+  const x = (t) => m.l + (t - t0) / (t1 - t0) * (W - m.l - m.r);
+  const lg = Math.log10, y = opt.log
+    ? (v) => H - m.b - (lg(v) - lg(yMin)) / (lg(yMax) - lg(yMin)) * (H - m.t - m.b)
+    : (v) => H - m.b - (v - yMin) / (yMax - yMin) * (H - m.t - m.b);
+  // 2023 and 2024: Chinese models were thinly covered, so capability charts shade the period.
+  let s = opt.thin === false ? "" : `<rect class="thin" x="${x(START)}" y="${m.t}" width="${x(THIN) - x(START)}" height="${H - m.b - m.t}"/>` +
           `<text class="thinlab" x="${x(START) + 8}" y="${m.t + 16}">limited Chinese coverage</text>`;
-  for (let yr = START.getFullYear(); day(yr + "-01-01") <= TODAY; yr++) {
+  const first = t0.getFullYear() + (t0 > day(t0.getFullYear() + "-01-01") ? 1 : 0), span = t1.getFullYear() - first, every = !narrow ? 1 : span > 7 ? 3 : span > 3 ? 2 : 1;
+  for (let yr = first; day(yr + "-01-01") <= t1; yr++) {
     const xx = x(day(yr + "-01-01"));
-    s += `<line class="grid" x1="${xx}" x2="${xx}" y1="${H - m.b}" y2="${H - m.b + 5}"/><text x="${xx}" y="${H - 8}" text-anchor="${yr === START.getFullYear() ? "start" : "middle"}">${yr}</text>`;
+    s += `<line class="grid" x1="${xx}" x2="${xx}" y1="${H - m.b}" y2="${H - m.b + 5}"/>`;
+    if ((yr - first) % every === 0) s += `<text x="${xx}" y="${H - 8}" text-anchor="${xx < m.l + 12 ? "start" : "middle"}">${yr}</text>`;
   }
-  return { W, H, m, x, y, narrow, s };
+  return { W, H, m, x, y, narrow, s, t0, t1 };
+}
+// Grid lines and labels for a log axis, one per power of ten.
+function logGrid(f, yMin, yMax, label) {
+  let s = "";
+  for (let e = Math.ceil(Math.log10(yMin) - 1e-9); e <= Math.log10(yMax) + 1e-9; e++) {
+    const v = Math.pow(10, e);
+    s += `<line class="grid" x1="${f.m.l}" x2="${f.W - f.m.r}" y1="${f.y(v)}" y2="${f.y(v)}"/><text x="${f.m.l - 8}" y="${f.y(v) + 4}" text-anchor="end">${label(v, e)}</text>`;
+  }
+  return s;
 }
 function eventLayer(f) {
   const lanes = {}; Object.keys(KINDS).forEach((k, i) => { lanes[k] = 14 + i * 16; });
-  const evs = events.filter((e) => state.shown.has(e.kind) && KINDS[e.kind] && e.t >= START && e.t <= TODAY);
+  const evs = events.filter((e) => state.shown.has(e.kind) && KINDS[e.kind] && e.t >= f.t0 && e.t <= f.t1);
   let s = "";
   evs.forEach((e, i) => {
     const k = KINDS[e.kind], xx = f.x(e.t), yy = lanes[e.kind];
@@ -618,25 +852,32 @@ $("lag").addEventListener("pointerleave", () => { hideTip(); const c = $("lag-cr
 // ---------- step charts ----------
 const geoms = {};
 function stepChart(id, lines, opt) {
-  const svg = $(id), all = lines.flatMap((l) => l.pts).filter((p) => day(p[0]) >= START);
-  if (!all.length) { svg.innerHTML = `<text x="12" y="24">No scores to chart</text>`; svg.setAttribute("viewBox", "0 0 400 40"); svg.setAttribute("height", 40); geoms[id] = null; return; }
-  const lo = Math.min(...all.map((p) => p[1])), hi = Math.max(...all.map((p) => p[1])), pad = (hi - lo || 1) * 0.07;
-  const f = frame(svg, lo - pad, hi + pad, { r: 158, rNarrow: 128 }), R = f.narrow ? 10 : 12, tx = (p) => f.x(Math.max(day(p[0]), START));
+  const svg = $(id), t0 = opt.t0 || START, show = opt.fmt || score;
+  const all = lines.flatMap((l) => l.pts).filter((p) => day(p[0]) >= t0);
+  if (!all.length) { svg.innerHTML = `<text x="12" y="24">Nothing to chart</text>`; svg.setAttribute("viewBox", "0 0 400 40"); svg.setAttribute("height", 40); geoms[id] = null; return; }
+  let lo = Math.min(...all.map((p) => p[1])), hi = Math.max(...all.map((p) => p[1]));
+  if (opt.log) { lo = Math.pow(10, Math.floor(Math.log10(lo))); hi = Math.pow(10, Math.ceil(Math.log10(hi) + 0.05)); }
+  else { const pad = (hi - lo || 1) * 0.07; lo -= pad; hi += pad; }
+  const f = frame(svg, lo, hi, { r: 158, rNarrow: 128, t0, log: opt.log, thin: opt.thin, l: opt.l }), R = f.narrow ? 10 : 12, tx = (p) => f.x(Math.max(day(p[0]), t0));
   let s = f.s;
-  const span = hi - lo || 1, step = Math.pow(10, Math.floor(Math.log10(span / 4))), nice = [1, 2, 5, 10].map((k) => k * step).find((k) => span / k <= 6);
-  for (let v = Math.ceil((lo - pad) / nice) * nice; v <= hi + pad; v += nice) s += `<line class="grid" x1="${f.m.l}" x2="${f.W - f.m.r}" y1="${f.y(v)}" y2="${f.y(v)}"/><text x="${f.m.l - 8}" y="${f.y(v) + 4}" text-anchor="end">${score(+v.toPrecision(6))}</text>`;
+  if (opt.log) s += logGrid(f, lo, hi, opt.tick || ((v) => show(v)));
+  else {
+    const span = hi - lo || 1, step = Math.pow(10, Math.floor(Math.log10(span / 4))), nice = [1, 2, 5, 10].map((k) => k * step).find((k) => span / k <= 6);
+    for (let v = Math.ceil(lo / nice) * nice; v <= hi; v += nice) s += `<line class="grid" x1="${f.m.l}" x2="${f.W - f.m.r}" y1="${f.y(v)}" y2="${f.y(v)}"/><text x="${f.m.l - 8}" y="${f.y(v) + 4}" text-anchor="end">${score(+v.toPrecision(6))}</text>`;
+  }
   if (opt.gap) { const gy = f.y(opt.gap.level); s += `<line class="gap" x1="${f.x(day(opt.gap.from))}" x2="${f.x(day(opt.gap.to))}" y1="${gy}" y2="${gy}"/>`; }
   for (const l of lines) {
     if (!l.pts.length) continue;
-    const vis = l.pts.filter((p) => day(p[0]) >= START), before = l.pts.filter((p) => day(p[0]) < START).pop();
-    const startPts = before ? [[DATA.start, before[1]]].concat(vis) : vis;
+    const vis = l.pts.filter((p) => day(p[0]) >= t0), before = l.pts.filter((p) => day(p[0]) < t0).pop();
+    const startPts = before ? [[t0, before[1]]].concat(vis) : vis;
     if (!startPts.length) continue;
-    let d = `M${tx(startPts[0])},${f.y(startPts[0][1])}`;
-    for (const p of startPts.slice(1)) d += `H${tx(p)}V${f.y(p[1])}`;
-    s += `<path class="line" style="stroke:var(${l.colour})${l.dash ? ";stroke-dasharray:6 3" : ""}" d="${d}H${f.x(TODAY)}"/>`;
+    const px = (p) => p[0] instanceof Date ? f.x(p[0]) : tx(p);
+    let d = `M${px(startPts[0])},${f.y(startPts[0][1])}`;
+    for (const p of startPts.slice(1)) d += `H${px(p)}V${f.y(p[1])}`;
+    s += `<path class="line" style="stroke:var(${l.colour})${l.dash ? ";stroke-dasharray:6 3" : ""}" d="${d}H${f.x(f.t1)}"/>`;
     for (const p of vis) s += `<circle class="dot" style="fill:var(${l.colour})" cx="${tx(p)}" cy="${f.y(p[1])}" r="4"/>`;
   }
-  const placed = [], want = lines.flatMap((l) => l.pts.filter((p) => day(p[0]) >= START).map((p, i, a) => ({ p, l, last: i === a.length - 1 })))
+  const placed = [], want = lines.flatMap((l) => l.pts.filter((p) => day(p[0]) >= t0).map((p, i, a) => ({ p, l, last: i === a.length - 1 })))
     .sort((a, b) => b.last - a.last || day(b.p[0]) - day(a.p[0]));
   for (const w of want) {
     const cx = tx(w.p), cy = f.y(w.p[1]);
@@ -653,23 +894,23 @@ function stepChart(id, lines, opt) {
   const over = ends.length ? ends[ends.length - 1].yy - (f.H - f.m.b - 4) : 0;
   if (over > 0) ends.forEach((e) => { e.yy -= over; });
   for (const e of ends) {
-    const ex = f.x(TODAY) + R + 6;
-    s += `<text class="end-name" x="${ex}" y="${e.yy + 1}">${esc(f.narrow ? e.l.short : e.l.label)} ${score(e.p[1])}</text>`;
+    const ex = f.x(f.t1) + R + 6;
+    s += `<text class="end-name" x="${ex}" y="${e.yy + 1}">${esc(f.narrow ? e.l.short : e.l.label)}${" " + (opt.endFmt || show)(e.p[1])}</text>`;
     if (!f.narrow) s += `<text class="end-sub" x="${ex}" y="${e.yy + 16}">${esc(e.p[2].length > 22 ? e.p[2].slice(0, 21) + "…" : e.p[2])}</text>`;
   }
   s += `<line class="cross" y1="${f.m.t}" y2="${f.H - f.m.b}" visibility="hidden"/>`;
   svg.setAttribute("viewBox", `0 0 ${f.W} ${f.H}`); svg.setAttribute("height", f.H); svg.innerHTML = s;
-  geoms[id] = { f, lines };
+  geoms[id] = { f, lines, show };
 }
 function stepHover(id) {
   const svg = $(id);
   svg.addEventListener("pointermove", (ev) => {
-    const g = geoms[id]; if (!g) return; const r = svg.getBoundingClientRect(), px = ev.clientX - r.left, py = ev.clientY - r.top, { f, lines } = g, cross = svg.querySelector(".cross");
+    const g = geoms[id]; if (!g) return; const r = svg.getBoundingClientRect(), px = ev.clientX - r.left, py = ev.clientY - r.top, { f, lines, show } = g, cross = svg.querySelector(".cross");
     if (px < f.m.l || px > f.W - f.m.r || py > f.H - f.m.b) { hideTip(); cross.setAttribute("visibility", "hidden"); return; }
-    const t = new Date(+START + (px - f.m.l) / (f.W - f.m.l - f.m.r) * (TODAY - START));
+    const t = new Date(+f.t0 + (px - f.m.l) / (f.W - f.m.l - f.m.r) * (f.t1 - f.t0));
     cross.setAttribute("x1", px); cross.setAttribute("x2", px); cross.setAttribute("visibility", "visible");
     const rows = lines.map((l) => { const p = l.pts.filter((q) => day(q[0]) <= t).pop();
-      return `<div class="row"><i class="sw" style="background:${css(l.colour)}"></i>` + (p ? `${logoChip(p[3], "sm")}<span class="name">${esc(p[2])}</span><span class="v">${score(p[1])}</span>` : `<span class="name">No ${esc(l.label)} score yet</span>`) + `</div>`; });
+      return `<div class="row"><i class="sw" style="background:${css(l.colour)}"></i>` + (p ? `${logoChip(p[3], "sm")}<span class="name">${esc(p[2])}</span><span class="v">${show(p[1])}</span>` : `<span class="name">Nothing from ${esc(l.label)} yet</span>`) + `</div>`; });
     showTip(`<div class="when">Best to date on ${fmt(t)}</div>${rows.join("")}`, ev.clientX, ev.clientY);
   });
   svg.addEventListener("pointerleave", () => { hideTip(); const c = svg.querySelector(".cross"); if (c) c.setAttribute("visibility", "hidden"); });
@@ -781,7 +1022,236 @@ function drawEstimates() {
   $("est").innerHTML = html;
 }
 
-// ---------- reference ----------
+// ---------- number formats ----------
+const SUP = "⁰¹²³⁴⁵⁶⁷⁸⁹";
+const pow10 = (e) => "10" + String(e).split("").map((c) => c === "-" ? "⁻" : SUP[+c]).join("");
+const sci = (v) => { const e = Math.floor(Math.log10(v) + 1e-9), m = v / Math.pow(10, e); return (Math.abs(m - 1) < 0.05 ? "" : m.toFixed(1).replace(/\.0$/, "") + "×") + pow10(e); };
+const big = (v) => v >= 1e6 ? (v / 1e6).toFixed(v >= 1e7 ? 1 : 2) + "M" : v >= 1e3 ? Math.round(v / 1e3) + "K" : String(Math.round(v));
+const tflop = (v) => (v / 1e12 >= 100 ? Math.round(v / 1e12).toLocaleString("en-GB") : (v / 1e12).toFixed(1)) + " TFLOP/s";
+const usd = (v) => "$" + (v >= 10 ? v.toFixed(0) : v >= 1 ? v.toFixed(2) : v.toFixed(3).replace(/0$/, ""));
+const monthsText = (m) => m == null ? "not measurable" : m < 0 ? `${one(m)} months ahead` : `${one(m)} months behind`;
+const C = DATA.compute, COST = DATA.cost;
+
+// ---------- overview ----------
+function solidAreas() {
+  return DATA.domains.filter((d) => d !== "Overall").map((d) => ({ d, s: P(V(), d) })).filter((r) => r.s && !r.s.low.length).sort((a, b) => a.s.m - b.s.m);
+}
+function drawOverview() {
+  drawHeadline();
+  $("ov-headline").textContent = $("headline").textContent;
+  const solid = solidAreas(), st = C.stock, parts = [];
+  if (solid.length >= 2) parts.push(`Across the ${solid.length} capability areas with solid coverage, China's best models trail the US by <b>${one(solid[0].s.m)} to ${one(solid[solid.length - 1].s.m)} months</b>.`);
+  parts.push(`China's known stock of AI chips is <b>${st.ratio} times smaller</b> than that of seven US companies, a level those companies passed at least ${one(st.lag.m)} months earlier.`);
+  if (COST) { const rows = COST.table.filter((r) => r.ratio != null), k = rows.filter((r) => r.ratio > 1).length;
+    parts.push(`At list prices, the cheapest Chinese model undercuts the cheapest US one at <b>${k} of ${rows.length}</b> capability levels compared.`); }
+  $("ov-lede").innerHTML = parts.join(" ");
+
+  const all = DATA.domains.map((d) => ({ d, s: P(V(), d) })), top = Math.max(...all.map((r) => r.s ? r.s.m : 0), 1);
+  $("ov-profile").innerHTML = `<div class="mini">` + all.map((r) => {
+    const low = !r.s || r.s.low.length > 0;
+    return `<span class="n ${low ? "lowc" : ""}">${esc(SHORT[r.d] || r.d)}${r.s && low ? " <small>low confidence</small>" : ""}</span>` +
+      `<span class="t"><i style="width:${r.s ? Math.max(0, r.s.m) / top * 100 : 0}%"></i></span>` +
+      `<span class="v ${low ? "lowc" : ""}">${r.s ? lagText(r.s.m) : "no data"}</span>`;
+  }).join("") + `</div>`;
+
+  const ch = C.chips, tr = C.training;
+  $("ov-compute").innerHTML =
+    `<div class="stat">AI chip stock, to ${fmt(day(st.asof), { month: "short", year: "numeric" })}<b>${st.ratio}× smaller</b>China ${big(st.china[st.china.length - 1])} H100-equivalents against ${big(st.us_named[st.us_named.length - 1])} for seven US companies: at least ${one(st.lag.m)} months behind.</div>` +
+    `<div class="stat">Best chip, 16-bit performance<b>${ch.lag ? monthsText(ch.lag.m) : "not measurable"}</b>${ch.lag ? `${esc(ch.lag.trail[2])} against Nvidia.` : ""}${ch.lag_huawei ? ` Huawei's best is ${one(ch.lag_huawei.m)} months behind.` : ""}</div>` +
+    `<div class="stat">Largest disclosed training run<b>${tr.lag ? monthsText(tr.lag.m) : "not measurable"}</b>${tr.lag ? `${esc(tr.lag.trail[2])} against ${esc(tr.lag.match ? tr.lag.match[2] : tr.lag.lead[2])}.` : ""} Most recent US closed models disclose nothing.</div>`;
+
+  $("ov-cost").innerHTML = COST
+    ? `<table style="margin-top:12px;font-size:14px"><thead><tr><th>Score at least</th><th class="num">China</th><th class="num">US</th></tr></thead><tbody>` +
+      COST.table.map((r) => `<tr><td>${r.t}</td><td class="num strong">${r.cn ? usd(r.cn[1]) : "none"}</td><td class="num strong">${r.us ? usd(r.us[1]) : "none"}</td></tr>`).join("") +
+      `</tbody></table><p class="note">List prices per million tokens. The cost trend starts on ${fmt(day(COST.history_start))}; there is no earlier history.</p>`
+    : `<p class="note">No price data in this build (the Artificial Analysis key was not set).</p>`;
+}
+
+// ---------- capabilities ----------
+function drawCapabilities() { drawHeadline(); drawCalendar(); drawExplorer(); drawHeat(); drawEstimates(); }
+
+// ---------- compute: chip stock ----------
+let stockGeom = null;
+function drawStock() {
+  const st = C.stock, svg = $("stock"), Q = st.quarters.map(day), n = Q.length - 1, on = state.smuggle;
+  const cn = on ? st.smuggled : st.china, lag = on ? st.lag_smuggled : st.lag, ratio = on ? st.ratio_smuggled : st.ratio;
+  $("smuggle").innerHTML = [[false, "Without smuggling estimate"], [true, "With smuggling estimate"]].map(([v, t]) => `<button type="button" data-s="${v}" aria-pressed="${v === on}">${t}</button>`).join("");
+  const range = lag && lag.lo != null && lag.hi != null && lag.hi - lag.lo >= 0.05 ? ` (${one(lag.lo)} to ${one(lag.hi)} across Epoch's 5th to 95th percentile)` : "";
+  $("stock-facts").innerHTML =
+    `<div><span class="k">China${on ? ", including the smuggling estimate" : ""}</span><b>${big(cn[n])} H100e</b> at ${fmt(Q[n])}</div>` +
+    `<div><span class="k">Seven US companies</span><b>${big(st.us_named[n])} H100e</b>, ${ratio} times as much</div>` +
+    `<div><span class="k">Lag, at minimum</span><b>${lag ? one(lag.m) + " months" : "not measurable"}</b>${range}${lag && lag.match ? `: the seven companies passed China's level by ${fmt(day(lag.match))}` : ""}</div>` +
+    `<div><span class="k">Where China's chips came from</span>${Object.entries(st.mix).map(([k, v]) => `${esc(k)} ${big(v)}`).join(", ")}${on ? `, plus ${big(st.smuggled[n] - st.china[n])} smuggled (estimate)` : ""}</div>`;
+  $("stock-key").innerHTML =
+    `<span><i style="width:18px;border-top:2px solid var(--us)"></i>Seven US companies</span><span><i style="width:18px;border-top:2px dashed var(--us)"></i>Everything outside China</span>` +
+    `<span><i style="width:18px;border-top:2px solid var(--cn)"></i>China</span>` + (on ? `<span><i style="width:18px;border-top:2px dashed var(--cn)"></i>China with the smuggling estimate</span>` : "");
+  const lines = [
+    { label: "Seven US companies", short: "US 7", colour: "--us", v: st.us_named },
+    { label: "Outside China", short: "Non-China", colour: "--us", v: st.non_china, dash: true },
+    { label: "China", short: "China", colour: "--cn", v: st.china },
+  ];
+  if (on) lines.push({ label: "China + smuggled", short: "+smuggled", colour: "--cn", v: st.smuggled.map((v, i) => st.has_smuggled[i] ? v : null), dash: true });
+  const vals = lines.flatMap((l) => l.v).filter((v) => v > 0);
+  const lo = Math.pow(10, Math.floor(Math.log10(Math.min(...vals)))), hi = Math.pow(10, Math.ceil(Math.log10(Math.max(...vals))));
+  const f = frame(svg, lo, hi, { lanes: true, t0: day("2022-01-01"), log: true, thin: false, r: 196, rNarrow: 112, l: 48 }), layer = eventLayer(f);
+  let s = f.s + logGrid(f, lo, hi, (v) => big(v)) + layer.s;
+  s += `<line class="grid" x1="${f.x(Q[n])}" x2="${f.x(Q[n])}" y1="${f.m.t}" y2="${f.H - f.m.b}" stroke-dasharray="3 3"/><text x="${f.x(Q[n]) - 6}" y="${f.H - f.m.b - 8}" text-anchor="end">${f.narrow ? "estimates end" : "Epoch's estimates end here"}</text>`;
+  if (lag && lag.match) { const gy = f.y(cn[n]); s += `<line class="gap" x1="${f.x(day(lag.match))}" x2="${f.x(Q[n])}" y1="${gy}" y2="${gy}"/>`; }
+  for (const l of lines) {
+    const pts = l.v.map((v, i) => v > 0 ? [f.x(Q[i]), f.y(v)] : null).filter(Boolean);
+    s += `<path class="line" style="stroke:var(${l.colour})${l.dash ? ";stroke-dasharray:6 3" : ""}" d="${pts.map((p, i) => `${i ? "L" : "M"}${p[0].toFixed(1)},${p[1].toFixed(1)}`).join("")}"/>`;
+  }
+  const ends = lines.map((l) => ({ l, v: l.v[n], yy: f.y(l.v[n]) })).sort((a, b) => a.yy - b.yy);
+  for (let i = 1; i < ends.length; i++) if (ends[i].yy - ends[i - 1].yy < 16) ends[i].yy = ends[i - 1].yy + 16;
+  for (const e of ends) s += `<text class="end-name" x="${f.x(Q[n]) + 8}" y="${e.yy + 4}">${esc(f.narrow ? e.l.short : e.l.label)} ${big(e.v)}</text>`;
+  s += `<line class="cross" y1="${f.m.t - 14}" y2="${f.H - f.m.b}" visibility="hidden"/>`;
+  svg.setAttribute("viewBox", `0 0 ${f.W} ${f.H}`); svg.setAttribute("height", f.H); svg.innerHTML = s;
+  stockGeom = { f, layer, Q, lines, cn };
+}
+$("stock").addEventListener("pointermove", (ev) => {
+  if (!stockGeom) return; const svg = $("stock"), r = svg.getBoundingClientRect(), { f, layer, Q, lines, cn } = stockGeom;
+  const px = ev.clientX - r.left, py = ev.clientY - r.top, cross = svg.querySelector(".cross");
+  if (eventHover(svg, f, layer, px, py, ev)) { cross.setAttribute("visibility", "hidden"); return; }
+  if (px < f.m.l || px > f.x(Q[Q.length - 1]) + 6 || py < f.m.t - 14 || py > f.H - f.m.b) { hideTip(); cross.setAttribute("visibility", "hidden"); return; }
+  let i = 0; Q.forEach((q, k) => { if (Math.abs(f.x(q) - px) < Math.abs(f.x(Q[i]) - px)) i = k; });
+  cross.setAttribute("x1", f.x(Q[i])); cross.setAttribute("x2", f.x(Q[i])); cross.setAttribute("visibility", "visible");
+  const h = C.stock.history[i];
+  showTip(`<div class="when">Cumulative to ${fmt(Q[i])}</div>` + lines.filter((l) => l.v[i] > 0).map((l) => `<div class="row"><i class="sw" style="background:${css(l.colour)}"></i><span class="name">${esc(l.label)}</span><span class="v">${big(l.v[i])}</span></div>`).join("") +
+    `<div class="when" style="margin:8px 0 0">Seven US companies hold ${(C.stock.us_named[i] / cn[i]).toFixed(1)} times China's stock${h.m != null && !state.smuggle ? `; lag ${one(h.m)} months` : ""}</div>`, ev.clientX, ev.clientY);
+});
+$("stock").addEventListener("pointerleave", () => { hideTip(); const c = $("stock").querySelector(".cross"); if (c) c.setAttribute("visibility", "hidden"); });
+$("smuggle").addEventListener("click", (ev) => { const b = ev.target.closest("button"); if (b) { state.smuggle = b.dataset.s === "true"; drawStock(); } });
+
+// ---------- generic scatter ----------
+const scat = {};
+function niceTicks(lo, hi, n) {
+  const span = hi - lo || 1, step = Math.pow(10, Math.floor(Math.log10(span / n))), k = [1, 2, 5, 10].map((m) => m * step).find((m) => span / m <= n + 1), out = [];
+  for (let v = Math.ceil(lo / k) * k; v <= hi + 1e-9; v += k) out.push(+v.toPrecision(10));
+  return out;
+}
+function scatter(id, pts, opt) {
+  const svg = $(id), W = svg.clientWidth || 900, narrow = W < 620, H = narrow ? 340 : 440, m = { l: 54, r: 16, t: 22, b: 46 };
+  const lg = Math.log10, ext = (vals, log) => log ? [Math.pow(10, Math.floor(lg(Math.min(...vals)))), Math.pow(10, Math.ceil(lg(Math.max(...vals))))]
+    : [Math.min(...vals) - (Math.max(...vals) - Math.min(...vals)) * 0.04, Math.max(...vals) + (Math.max(...vals) - Math.min(...vals)) * 0.04];
+  const [x0, x1] = ext(pts.map((p) => p.x), opt.logX), [y0, y1] = ext(pts.map((p) => p.y), opt.logY);
+  const sc = (v, a, b, log) => log ? (lg(v) - lg(a)) / (lg(b) - lg(a)) : (v - a) / (b - a);
+  const X = (v) => m.l + sc(v, x0, x1, opt.logX) * (W - m.l - m.r), Y = (v) => H - m.b - sc(v, y0, y1, opt.logY) * (H - m.t - m.b);
+  const decades = (a, b) => { const out = []; for (let e = Math.ceil(lg(a) - 1e-9); e <= lg(b) + 1e-9; e++) out.push(Math.pow(10, e)); return out; };
+  let s = "";
+  for (const v of opt.logY ? decades(y0, y1) : niceTicks(y0, y1, 5)) s += `<line class="grid" x1="${m.l}" x2="${W - m.r}" y1="${Y(v)}" y2="${Y(v)}"/><text x="${m.l - 8}" y="${Y(v) + 4}" text-anchor="end">${opt.fmtY(v)}</text>`;
+  const xt = opt.logX ? decades(x0, x1) : niceTicks(x0, x1, narrow ? 4 : 7);
+  for (const v of xt) s += `<line class="grid" x1="${X(v)}" x2="${X(v)}" y1="${H - m.b}" y2="${H - m.b + 5}"/><text x="${X(v)}" y="${H - m.b + 19}" text-anchor="middle">${opt.fmtX(v)}</text>`;
+  s += `<text class="axlab" x="${(m.l + W - m.r) / 2}" y="${H - 6}" text-anchor="middle">${esc(opt.xLabel)}</text><text class="axlab" x="0" y="12">${esc(opt.yLabel)}</text>`;
+  for (const l of opt.lines || []) {
+    if (!l.pts.length) continue;
+    let d = `M${X(l.pts[0][0])},${Y(l.pts[0][1])}`;
+    for (const p of l.pts.slice(1)) d += `H${X(p[0])}V${Y(p[1])}`;
+    s += `<path class="line" style="stroke:var(${l.colour})" d="${d}"/>`;
+  }
+  const order = [...pts].sort((a, b) => (a.c === "China") - (b.c === "China")), placed = [];
+  for (const p of order) { const cx = X(p.x), cy = Y(p.y); placed.push({ cx, cy, p });
+    s += `<circle class="pt" cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="${narrow ? 3.5 : 4.5}" style="fill:var(${p.c === "China" ? "--cn" : "--us"})"/>`; }
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`); svg.setAttribute("height", H); svg.innerHTML = s;
+  scat[id] = placed;
+}
+function scatterHover(id) {
+  const svg = $(id);
+  svg.addEventListener("pointermove", (ev) => {
+    const r = svg.getBoundingClientRect(), px = ev.clientX - r.left, py = ev.clientY - r.top;
+    let best = null, bd = 16;
+    for (const q of scat[id] || []) { const d = Math.hypot(q.cx - px, q.cy - py); if (d < bd) { bd = d; best = q; } }
+    if (!best) return hideTip();
+    showTip(`<div class="title">${esc(best.p.label)}</div><div class="when" style="margin:0 0 4px">${esc(best.p.who)}</div><div class="body">${best.p.detail}</div>`, ev.clientX, ev.clientY);
+  });
+  svg.addEventListener("pointerleave", hideTip);
+}
+
+// ---------- compute: chips and training ----------
+function drawCompute() {
+  drawStock();
+  const ch = C.chips, tr = C.training, old = day("2017-01-01");
+  const gapOf = (l) => l && l.match && l.m >= 0 ? { level: l.trail[1], from: l.match[0], to: l.trail[0] } : null;
+  const fact = (label, l, extra) => `<div><span class="k">${label}</span>` + (l ? `<b>${monthsText(l.m)}</b>: ${who(l.trail)} (${fmt(day(l.trail[0]))}) ${l.m >= 0 && l.match ? `was matched by ${who(l.match)} on ${fmt(day(l.match[0]))}` : "is ahead of every rival"}` : "<b>Not measurable</b>") + (extra || "") + `</div>`;
+  $("chip-facts").innerHTML = fact("Best chip from any Chinese designer", ch.lag) + fact("Best Huawei chip", ch.lag_huawei) +
+    `<div><span class="k">Chips compared</span>${ch.n_nvidia} Nvidia and ${ch.n_china} Chinese chips with a release date and a 16-bit figure</div>`;
+  stepChart("chips", [
+    { label: "Nvidia", short: "Nvidia", colour: "--us", pts: ch.nvidia },
+    { label: "Chinese designers", short: "China", colour: "--cn", pts: ch.china },
+    { label: "Huawei only", short: "Huawei", colour: "--cn", pts: ch.huawei, dash: true },
+  ], { t0: old, log: true, thin: false, fmt: tflop, endFmt: (v) => Math.round(v / 1e12).toLocaleString("en-GB"), tick: (v) => (v / 1e12).toLocaleString("en-GB"), gap: gapOf(ch.lag), l: 52 });
+  $("chip-note").innerHTML = `The vertical axis is trillions of 16-bit floating-point operations per second (TFLOP/s). This compares published specifications, not how many chips were made: a design that was announced but produced in small numbers counts the same as one produced in millions. ` +
+    `Huawei's line is drawn separately because Huawei chips make up most of the Chinese-designed chips in the stock estimate above. ` +
+    (ch.undated.length ? `${ch.undated.length} Chinese chips in Epoch's table have no release date and are left out: ${esc(ch.undated.join(", "))}.` : "");
+
+  $("train-facts").innerHTML = fact("Largest disclosed Chinese training run", tr.lag) +
+    `<div><span class="k">Largest disclosed US run</span>${tr.lag ? `${who(tr.lag.lead)}, ${sci(tr.lag.lead[1])} FLOP, ${fmt(day(tr.lag.lead[0]))}` : "none"}</div>` +
+    `<div><span class="k">Ratio</span>${tr.lag ? `The largest US run is about ${Math.round(tr.lag.lead[1] / tr.lag.trail[1])} times the largest Chinese one` : ""}</div>`;
+  stepChart("train", [
+    { label: "US", short: "US", colour: "--us", pts: tr.us },
+    { label: "China", short: "China", colour: "--cn", pts: tr.cn },
+  ], { log: true, thin: false, fmt: sci, tick: (v, e) => pow10(e), gap: gapOf(tr.lag), l: 52 });
+  const pct = (c) => c[1] ? `${c[0]} of ${c[1]} <span style="color:var(--ink-3)">(${Math.round(c[0] / c[1] * 100)}%)</span>` : "none scored";
+  $("train-cover").innerHTML = `<thead><tr><th>Release year</th><th class="num">US models with an estimate</th><th class="num">Chinese models with an estimate</th></tr></thead><tbody>` +
+    tr.coverage.map((r) => `<tr><td>${r.year}</td><td class="num">${pct(r.us)}</td><td class="num">${pct(r.cn)}</td></tr>`).join("") +
+    `</tbody>`;
+  scatter("tscatter", tr.scatter.map((p) => ({ x: p[0], y: p[1], c: p[2], label: p[3], who: `${p[2]}, released ${fmt(day(p[4]))}`, detail: `ECI ${p[1].toFixed(1)}<br>${sci(p[0])} FLOP` })),
+    { logX: true, xLabel: "Training compute, floating-point operations (log scale)", yLabel: "ECI score", fmtX: (v) => pow10(Math.round(Math.log10(v))), fmtY: (v) => String(v) });
+}
+
+// ---------- cost ----------
+function drawCost() {
+  if (!COST) { $("cost-table").innerHTML = `<tbody><tr><td>No price data in this build: the Artificial Analysis key was not set.</td></tr></tbody>`; $("cscatter").innerHTML = ""; return; }
+  const cell = (p) => p ? `<td>${esc(p[3])}<div class="lab" style="font-size:13px;color:var(--ink-3)">${esc(p[4])}, index ${p[0].toFixed(1)}</div></td><td class="num strong">${usd(p[1])}</td>` : `<td style="color:var(--ink-3)">none reaches it</td><td></td>`;
+  $("cost-table").innerHTML = `<thead><tr><th>Score at least</th><th>Cheapest Chinese model</th><th class="num">Price</th><th>Cheapest US model</th><th class="num">Price</th><th class="num">US price ÷ Chinese price</th></tr></thead><tbody>` +
+    COST.table.map((r) => `<tr><td class="strong">${r.t}</td>${cell(r.cn)}${cell(r.us)}<td class="num strong">${r.ratio == null ? "" : r.ratio + "×"}</td></tr>`).join("") + `</tbody>`;
+  $("cost-table").style.minWidth = "640px";
+  $("cost-key").innerHTML = `<span><i style="width:10px;height:10px;border-radius:50%;background:var(--us)"></i>US model</span><span><i style="width:10px;height:10px;border-radius:50%;background:var(--cn)"></i>Chinese model</span><span><i style="width:18px;border-top:2px solid var(--ink-2)"></i>Each country's price frontier</span>`;
+  const line = (c) => COST.frontier[c].map((p) => [p[0], p[1]]);
+  scatter("cscatter", COST.points.map((p) => ({ x: p[0], y: p[1], c: p[2], label: p[3], who: `${p[4]}, ${p[2]}`, detail: `Index ${p[0].toFixed(1)}<br>${usd(p[1])} per million tokens` })),
+    { logY: true, xLabel: "Artificial Analysis Intelligence Index", yLabel: "US dollars per million tokens (log scale)", fmtX: (v) => String(v), fmtY: (v) => usd(v),
+      lines: [{ pts: line("US"), colour: "--us" }, { pts: line("China"), colour: "--cn" }] });
+  $("cost-note").textContent = `${COST.n_us} US and ${COST.n_cn} Chinese model configurations have both a list price and an index score. The price trend starts on ${fmt(day(COST.history_start))}: the source gives only current prices, so this site records them at every daily refresh and a history will build from that date.`;
+}
+
+// ---------- policy timeline ----------
+let polGeom = null;
+function drawPolicy() {
+  const svg = $("pstrip"), series = V().heat.Overall || [], pts = series.map((c, i) => c && [day(DATA.months[i]), c.m]).filter(Boolean);
+  const hi = Math.max(12, Math.ceil(Math.max(...pts.map((p) => p[1]), 6) / 6) * 6);
+  const f = frame(svg, 0, hi, { lanes: true, h: 250, t0: day("2022-07-01"), thin: false }), layer = eventLayer(f);
+  let s = f.s;
+  for (let v = 0; v <= hi; v += 6) s += `<line class="${v === 0 ? "zero" : "grid"}" x1="${f.m.l}" x2="${f.W - f.m.r}" y1="${f.y(v)}" y2="${f.y(v)}"/><text x="${f.m.l - 8}" y="${f.y(v) + 4}" text-anchor="end">${v}</text>`;
+  s += layer.s;
+  if (pts.length) s += `<path class="line" style="stroke:var(--us)" d="${pts.map((p, i) => `${i ? "L" : "M"}${f.x(p[0]).toFixed(1)},${f.y(p[1]).toFixed(1)}`).join("")}"/><text x="${f.m.l + 6}" y="${f.m.t + 14}">Overall capability lag, months</text>`;
+  svg.setAttribute("viewBox", `0 0 ${f.W} ${f.H}`); svg.setAttribute("height", f.H); svg.innerHTML = s;
+  polGeom = { f, layer };
+
+  const st = C.stock, Q = st.quarters;
+  let year = "", html = "";
+  for (const e of events.filter((x) => state.shown.has(x.kind)).sort((a, b) => b.t - a.t)) {
+    const yr = e.date.slice(0, 4), k = KINDS[e.kind] || KINDS.export_control;
+    if (yr !== year) { html += `<li class="year">${yr}</li>`; year = yr; }
+    const mi = DATA.months.findIndex((m) => m >= e.date);
+    const lags = mi < 0 ? [] : DATA.domains.map((d) => ({ d, c: V().heat[d][mi] })).filter((r) => r.c);
+    let marks = lags.length
+      ? `<span>Lag at ${fmt(day(DATA.months[mi]), { month: "short", year: "numeric" })} month end:</span>` + lags.map((r) => { const h = heatFill(r.c.m);
+          return `<span class="m ${r.c.low.length ? "lowc" : ""}" style="background:${h.fill};color:${h.ink}" title="${esc(r.d)}: ${lagText(r.c.m)}, ${r.c.n} benchmark${r.c.n === 1 ? "" : "s"}${r.c.low.length ? ", low confidence" : ""}">${esc(SHORT[r.d] || r.d)} ${r.c.m < 0 ? "+" + one(r.c.m) : one(r.c.m)}</span>`; }).join("")
+      : `<span>No capability lag is measurable at this date.</span>`;
+    let qi = -1; Q.forEach((q, i) => { if (q <= e.date) qi = i; });
+    if (qi >= 0) marks += `<span class="stock" title="Epoch AI estimate, cumulative since 2022, excluding smuggled chips">China chip stock ${big(st.china[qi])} H100e at ${fmt(day(Q[qi]), { month: "short", year: "numeric" })}, ${st.history[qi].ratio}× below seven US companies</span>`;
+    html += `<li class="ev-item"><time datetime="${e.date}"><svg viewBox="-6 -6 12 12"><title>${esc(k.label)}</title><path d="${k.shape}"${k.flip ? ' transform="rotate(180)"' : ""}/></svg>${fmt(e.t, { day: "numeric", month: "short" })}</time>` +
+      `<div><div class="ttl">${esc(e.title)}${e.flag ? `<span class="flagged" title="${esc(e.flag + ": " + e.notes)}">check</span>` : ""}</div>` +
+      `<p class="txt">${esc(e.text)} <a href="${esc(e.src)}">Source</a></p><div class="marks">${marks}</div></div></li>`;
+  }
+  $("plist").innerHTML = html || `<li class="year">No events of the selected kinds.</li>`;
+}
+$("pstrip").addEventListener("pointermove", (ev) => {
+  if (!polGeom) return; const svg = $("pstrip"), r = svg.getBoundingClientRect();
+  if (!eventHover(svg, polGeom.f, polGeom.layer, ev.clientX - r.left, ev.clientY - r.top, ev)) hideTip();
+});
+$("pstrip").addEventListener("pointerleave", hideTip);
+
+// ---------- methods and data ----------
 function drawReleases() {
   const rows = DATA.releases.filter((m) => state.country === "All" || m.country === state.country);
   $("releases").innerHTML = rows.slice(0, state.limit).map((m) => {
@@ -794,51 +1264,66 @@ function drawReleases() {
   }).join("");
   $("more").hidden = rows.length <= state.limit;
 }
-function drawEvents() {
-  let year = "", html = "";
-  for (const e of [...events].sort((a, b) => b.t - a.t)) {
-    const yr = e.date.slice(0, 4), k = KINDS[e.kind] || KINDS.export_control;
-    if (yr !== year) { html += `<li class="year">${yr}</li>`; year = yr; }
-    html += `<li><details><summary><svg viewBox="-6 -6 12 12" aria-label="${esc(k.label)}"><title>${esc(k.label)}</title><path d="${k.shape}"${k.flip ? ' transform="rotate(180)"' : ""}/></svg>` +
-      `<time datetime="${e.date}">${fmt(e.t, { day: "numeric", month: "short" })}</time><span>${esc(e.title)}${e.flag ? `<span class="flagged" title="${esc(e.flag + ": " + e.notes)}">check</span>` : ""}</span></summary>` +
-      `<p>${esc(e.text)} <a href="${esc(e.src)}">Source</a></p></details></li>`;
-  }
-  $("events").innerHTML = html;
-}
-function drawRef() {
+function drawMethods() {
+  drawReleases();
   const fb = DATA.benchmarks.filter((b) => /guess|could not|not documented|does not say|No source|estimate/i.test(b.notes + " " + b.basis));
   const fe = events.filter((e) => e.flag), fa = DATA.assessments.filter((a) => a.flag), fm = DATA.flagged_models;
-  const n = fb.length + fe.length + fa.length + fm.length;
-  const tabs = { releases: `Recent releases (${DATA.n_models})`, events: `Export controls and chip milestones (${events.length})`, checks: `Data to check (${n})` };
-  $("ref-tabs").innerHTML = Object.entries(tabs).map(([k, v]) => `<button type="button" data-r="${k}" aria-pressed="${state.ref === k}">${v}</button>`).join("");
-  for (const k of Object.keys(tabs)) $("ref-" + k).hidden = state.ref !== k;
   $("checklist").innerHTML =
+    `<li><b>Chip stock.</b> Epoch gives no US total; seven named US companies stand in for it. The smuggling estimate is Epoch's own and described as speculative.</li>` +
+    (C.chips.undated.length ? `<li><b>Chips without a release date</b> (left out of the chip comparison): ${esc(C.chips.undated.join(", "))}.</li>` : "") +
+    `<li><b>Training compute.</b> ${C.training.coverage.map((r) => `${r.year}: ${r.us[0]} of ${r.us[1]} US and ${r.cn[0]} of ${r.cn[1]} Chinese scored models have an estimate`).join("; ")}.</li>` +
     fb.map((b) => `<li><b>${esc(b.name)}</b>. ${esc([b.notes, b.basis].filter(Boolean).join(". "))}</li>`).join("") +
     fa.map((a) => `<li><b>${esc(a.publisher)}</b> (${a.date}). ${esc(a.flag)}: ${esc(a.notes)}</li>`).join("") +
     fe.map((e) => `<li><b>${esc(e.title)}</b> (${e.date}). ${esc(e.flag)}: ${esc(e.notes)}</li>`).join("") +
     fm.map((m) => `<li><b>${esc(m.name)}</b> (${m.date}). ${esc(m.flag)}: ${esc(m.notes)}</li>`).join("");
 }
-$("ref-tabs").addEventListener("click", (ev) => { const b = ev.target.closest("button"); if (!b) return; state.ref = state.ref === b.dataset.r ? null : b.dataset.r; drawRef(); });
 
-// ---------- controls ----------
-function drawAll() { drawHeadline(); drawCalendar(); drawExplorer(); drawHeat(); drawEstimates(); }
+// ---------- tabs and controls ----------
+const VIEWS = { overview: drawOverview, capabilities: drawCapabilities, compute: drawCompute, cost: drawCost, policy: drawPolicy, methods: drawMethods };
+const TITLES = { overview: "Overview", capabilities: "Capabilities", compute: "Compute", cost: "Cost", policy: "Policy timeline", methods: "Methods and data" };
+// Each tab has its own hash. A tab is drawn only once it is visible, so its charts get a real width.
+function route() {
+  const want = location.hash.slice(1), v = VIEWS[want] ? want : "overview", changed = state.view !== v;
+  state.view = v;
+  for (const name of Object.keys(VIEWS)) $("view-" + name).hidden = name !== v;
+  $("nav").querySelectorAll("a").forEach((a) => {
+    const on = a.getAttribute("href") === "#" + v;
+    if (on) { a.setAttribute("aria-current", "page"); if (changed) $("nav").scrollLeft = Math.max(0, a.offsetLeft - 16); } else a.removeAttribute("aria-current");
+  });
+  document.title = `${TITLES[v]} · US–China AI gap`;
+  hideTip(); VIEWS[v]();
+  if (changed) scrollTo(0, 0);
+}
+addEventListener("hashchange", route);
+const redraw = () => VIEWS[state.view]();
+
 $("variant").innerHTML = Object.entries(VARIANT_LABEL).map(([k, v]) => `<button type="button" data-v="${k}" aria-pressed="${k === state.variant}">${v}</button>`).join("");
 $("variant").addEventListener("click", (ev) => { const b = ev.target.closest("button"); if (!b) return; state.variant = b.dataset.v;
-  $("variant").querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", x === b)); drawAll(); });
-$("toggles").innerHTML = Object.entries(KINDS).map(([k, v]) => `<button type="button" data-k="${k}" aria-pressed="true"><svg viewBox="-6 -6 12 12"><path d="${v.shape}"${v.flip ? ' transform="rotate(180)"' : ""}/></svg>${v.label}</button>`).join("");
-$("toggles").addEventListener("click", (ev) => { const b = ev.target.closest("button"); if (!b) return; const k = b.dataset.k;
-  state.shown.has(k) ? state.shown.delete(k) : state.shown.add(k); b.setAttribute("aria-pressed", state.shown.has(k)); drawLag(); });
+  $("variant").querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", x === b)); redraw(); });
+document.querySelectorAll(".ev-toggles").forEach((el) => {
+  el.innerHTML = Object.entries(KINDS).map(([k, v]) => `<button type="button" data-k="${k}" aria-pressed="true"><svg viewBox="-6 -6 12 12"><path d="${v.shape}"${v.flip ? ' transform="rotate(180)"' : ""}/></svg>${v.label}</button>`).join("");
+  el.addEventListener("click", (ev) => { const b = ev.target.closest("button"); if (!b) return; const k = b.dataset.k;
+    state.shown.has(k) ? state.shown.delete(k) : state.shown.add(k);
+    document.querySelectorAll(`.ev-toggles button[data-k="${k}"]`).forEach((x) => x.setAttribute("aria-pressed", state.shown.has(k)));
+    state.view === "capabilities" ? drawLag() : redraw(); });
+});
 $("seg").innerHTML = ["All", "US", "China"].map((c) => `<button type="button" aria-pressed="${c === "All"}">${c}</button>`).join("");
 $("seg").addEventListener("click", (ev) => { const b = ev.target.closest("button"); if (!b) return; state.country = b.textContent; state.limit = 15;
   $("seg").querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", x === b)); drawReleases(); });
 $("more").addEventListener("click", () => { state.limit += 15; drawReleases(); });
-stepHover("steps"); stepHover("open");
-$("aa-credit").innerHTML = DATA.has_aa ? `<a href="https://artificialanalysis.ai/">Artificial Analysis</a>; ` : "";
+["steps", "open", "chips", "train"].forEach(stepHover);
+["tscatter", "cscatter"].forEach(scatterHover);
+
+$("asof").textContent = "As of " + fmt(TODAY);
+$("aa-credit").innerHTML = DATA.has_aa ? `<a href="https://artificialanalysis.ai/">Artificial Analysis</a>: Intelligence Index, evaluation scores and list prices.` : "Artificial Analysis data is not in this build.";
 $("built").textContent = `Built ${fmt(TODAY)} from ${DATA.n_scores.toLocaleString("en-GB")} scores for ${DATA.n_models} US and Chinese models on ${DATA.benchmarks.length} benchmarks.`;
+document.querySelectorAll(".srcline").forEach((el) => {
+  const extra = el.dataset.asof === "compute" ? `; chip stock through ${fmt(day(C.stock.asof))}, Epoch's last complete quarter` : "";
+  el.textContent = `As of ${fmt(TODAY)}${extra}. Sources: ${el.dataset.src}.`;
+});
 
 state.bench = defaultBench(state.area);
-drawAll(); drawReleases(); drawEvents(); drawRef();
-const redraw = () => { drawCalendar(); drawHeat(); drawExplorer(); };
+route();
 let raf; addEventListener("resize", () => { cancelAnimationFrame(raf); raf = requestAnimationFrame(redraw); });
 if (document.fonts && document.fonts.ready) document.fonts.ready.then(redraw);
 matchMedia("(prefers-color-scheme: dark)").addEventListener("change", redraw);

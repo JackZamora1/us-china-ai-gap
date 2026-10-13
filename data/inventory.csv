@@ -36,7 +36,7 @@ LMCA,Epoch,lmca_external.csv,80,45,28,2026-09-09,2026-09-22,68.23,55.51,85.0,0.8
 ProofBench,Epoch,proofbench_external.csv,53,24,24,2026-09-21,2026-09-30,1.0,0.87,1.0,1.0,independent 79,proofbench,Research math,
 Mystery Game Puzzles,Epoch,mystery_game_puzzles.csv,50,25,23,2026-09-09,2026-10-07,0.84,0.43,1.0,0.84,independent 137,mystery_game_puzzles,Puzzles and games,
 FrontierMath-Tiers-1-3-v2-Private,Epoch,frontiermath_tiers_1_3_v2.csv,60,23,22,2026-09-09,2026-10-07,0.9368,0.7474,1.0,0.937,independent 116,frontiermath_t13,Research math,
-SimpleQA Verified,Epoch,simpleqa_verified.csv,57,22,20,2026-09-09,2026-10-07,0.756,0.5577,1.0,0.756,independent 89,simpleqa_verified,Knowledge and hallucination,
+SimpleQA Verified,Epoch,simpleqa_verified.csv,58,22,20,2026-09-09,2026-10-07,0.76,0.5577,1.0,0.76,independent 90,simpleqa_verified,Knowledge and hallucination,
 vending_bench_2_external.csv,Epoch,vending_bench_2_external.csv,39,21,18,2026-08-14,2026-09-30,15514.7017,8313.7783,,,independent 66,vending_bench_2,Agentic and real-world work,
 WeirdML,Epoch,weirdml_external.csv,93,32,17,2026-08-14,2026-09-03,0.9357,0.8257,1.0,0.936,independent 173,weirdml,Coding,
 APEX-Agents,Epoch,apex_agents_external.csv,35,14,14,2026-09-21,2026-09-30,0.822,0.633,1.0,0.822,independent 52,apex_agents,Agentic and real-world work,
@@ -57,7 +57,7 @@ DeepSWE,Epoch,deepswe_external.csv,20,6,6,2026-08-20,2026-09-03,0.7412,0.6896,1.
 gdp_pdf_external.csv,Epoch,gdp_pdf_external.csv,29,6,6,2026-09-09,2026-09-22,0.342,0.232,,,independent 52,gdp_pdf,Long context,
 FrontierSWE,Epoch,frontierswe_external.csv,14,5,5,2026-09-01,2026-09-30,0.6551,0.3018,1.0,0.655,independent 19,frontierswe,Coding,
 forecastbench_external.csv,Epoch,forecastbench_external.csv,59,14,4,2026-07-16,2026-06-30,62.5,61.4,,,unknown 82,,,Forecasting is outside the domain list
-Furniture Assembly,Epoch,furniture_assembly.csv,27,4,4,2026-09-09,2026-10-07,0.8333,0.3417,1.0,0.833,independent 31,furniture_assembly,Multimodal,
+Furniture Assembly,Epoch,furniture_assembly.csv,28,4,4,2026-09-09,2026-10-07,0.8333,0.3417,1.0,0.833,independent 32,furniture_assembly,Multimodal,
 EBR-bench,Epoch,ebr_bench.csv,23,3,3,2026-06-16,2026-10-12,0.7619,0.0952,1.0,0.762,independent 26,,,Could not confirm what it measures
 ExploitBench,Epoch,exploitbench_external.csv,6,3,3,2026-04-20,2026-04-23,0.738,0.184,1.0,0.738,independent 20,exploitbench,Cyber and security,
 OSWorld 2.0,Epoch,osworld_2_external.csv,6,3,3,2026-06-02,2026-07-24,0.3143,0.046,1.0,0.314,independent 16,osworld_2,Agentic and real-world work,

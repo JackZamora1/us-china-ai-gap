@@ -7,6 +7,8 @@ and exits with an error, so nothing is published, if:
   - a source that had rows in the committed scores now has none
   - the total number of scores fell by more than 15%
   - any area's median lag moved by more than 4 months in one run
+  - the chip-owner, chip-specification or price table is empty
+  - China's chip stock changed by more than 50% in one run
 """
 
 from __future__ import annotations
@@ -22,6 +24,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 MAX_SCORE_DROP = 0.15
 MAX_MEDIAN_MOVE = 4.0
+MAX_STOCK_CHANGE = 0.50
+NEW_TABLES = ["compute_stock.csv", "chips.csv", "prices.csv"]
 
 
 def committed(path: str) -> str | None:
@@ -60,6 +64,20 @@ def main() -> None:
                 continue
             if abs(after - before) > MAX_MEDIAN_MOVE:
                 problems.append(f"{area} ({variant}): median moved from {before} to {after} months")
+
+    for name in NEW_TABLES:
+        path = ROOT / "data" / name
+        rows = sum(1 for _ in csv.DictReader(path.open(encoding="utf-8"))) if path.exists() else 0
+        # Prices need the Artificial Analysis key; they are required once a committed version has them.
+        required = name != "prices.csv" or committed("data/prices.csv") is not None
+        if rows == 0 and required:
+            problems.append(f"data/{name} has no rows")
+    before = (json.loads(old_profile).get("compute") or {}).get("china_h100e")
+    after = (new_profile.get("compute") or {}).get("china_h100e")
+    if before and after and abs(after - before) / before > MAX_STOCK_CHANGE:
+        problems.append(f"China's chip stock changed from {before:,.0f} to {after:,.0f} H100e (more than {MAX_STOCK_CHANGE:.0%})")
+    elif before and not after:
+        problems.append("China's chip stock is missing from this build")
 
     print(f"scores: {total_old} committed, {total_new} now")
     for n in notes:
