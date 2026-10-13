@@ -623,7 +623,8 @@ def main() -> None:
     table = pd.DataFrame(scores)
     table["retrieved_date"] = TODAY.isoformat()
     # One row per model, benchmark and source type: the best score of that type.
-    table = table.sort_values("score").groupby(["model", "benchmark", "source_type"], as_index=False).last()
+    # Ties are broken by source so the same row wins on every run.
+    table = table.sort_values(["score", "source_url", "source"], kind="stable").groupby(["model", "benchmark", "source_type"], as_index=False).last()
     table = table[table.model.isin(models.name)].reindex(columns=SCORE_COLS)
     path = DATA / "scores.csv"
     if path.exists():
