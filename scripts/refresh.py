@@ -263,7 +263,7 @@ def load_epoch(reg: Registry) -> tuple[list[dict], list[dict], dict]:
         reg.models[group]["aliases"].update(str(v) for v in g.model_version)
         if "," in first("country"):
             reg.models[group]["flag"] = "country mixed"
-            reg.models[group]["notes"] = f"Epoch lists countries: {first('country')}"
+            reg.models[group]["notes"] = "Epoch lists countries: " + ", ".join(sorted(c.strip() for c in first("country").split(",")))
 
     def canonical(version: str, row) -> str | None:
         group = group_of.get(version)
@@ -628,6 +628,10 @@ def main() -> None:
     path = DATA / "scores.csv"
     if path.exists():
         old = pd.read_csv(path, keep_default_na=False)
+        # A score keeps the date it was first retrieved, so a refresh only changes rows whose value changed.
+        seen = {(r.model, r.benchmark, r.source_type, round(float(r.score), 9)): r.retrieved_date for r in old.itertuples()}
+        table["retrieved_date"] = [seen.get((r.model, r.benchmark, r.source_type, round(float(r.score), 9)), r.retrieved_date)
+                                   for r in table.itertuples()]
         manual = old[old.source.str.startswith("manual")] if "source" in old.columns else old.iloc[0:0]
         if len(manual):
             table = pd.concat([table, manual.reindex(columns=SCORE_COLS)], ignore_index=True)

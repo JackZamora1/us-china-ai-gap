@@ -25,7 +25,7 @@ GPT-3 XL (babbage),OpenAI,US,2020-06-22,unknown,2.38e+21,,babbage,Epoch model_me
 GPT-Neo-2.7B,EleutherAI,US,2021-03-30,open,7.9e+21,https://github.com/EleutherAI/gpt-neo,gpt-neo-2.7B,Epoch model_metadata,,,refresh
 Codex,OpenAI,US,2021-07-07,closed,7.34e+22,"https://openai.com/blog/openai-codex/
 https://arxiv.org/abs/2107.03374",code-cushman-002|o,Epoch model_metadata,,,refresh
-GPT-J-6B,"EleutherAI,LAION",Other,2021-08-05,open,1.5e+22,https://arankomatsuzaki.wordpress.com/2021/06/04/gpt-j/,gpt-j-6b,Epoch model_metadata,country mixed,"Epoch lists countries: Germany,United States of America",refresh
+GPT-J-6B,"EleutherAI,LAION",Other,2021-08-05,open,1.5e+22,https://arankomatsuzaki.wordpress.com/2021/06/04/gpt-j/,gpt-j-6b,Epoch model_metadata,country mixed,"Epoch lists countries: Germany, United States of America",refresh
 Megatron-Turing NLG 530B,"Microsoft,Nvidia",US,2021-10-11,closed,8.59e+23,https://arxiv.org/abs/2201.11990,Megatron-Turing NLG 530B,Epoch model_metadata,,,refresh
 Gopher (280B),DeepMind,Other,2021-12-08,closed,6.31e+23,https://arxiv.org/abs/2112.11446,Gopher (280B),Epoch model_metadata,,,refresh
 GLaM,Google,US,2021-12-13,closed,3.64e+23,https://arxiv.org/abs/2112.06905,GLaM (MoE),Epoch model_metadata,,,refresh
@@ -42,7 +42,7 @@ OPT-175B,Meta AI,US,2022-05-02,open,4.3e+23,https://arxiv.org/abs/2205.01068,opt
 OPT-66B,Meta AI,US,2022-05-03,open,1.1e+23,https://arxiv.org/abs/2205.01068,opt-66b,Epoch model_metadata,,,refresh
 OPT-1.3B,Meta AI,US,2022-05-11,open,,https://arxiv.org/abs/2205.01068,opt-1.3b,Epoch model_metadata,,,refresh
 opt-13b,,Unknown,2022-05-11,unknown,,,opt-13b,Epoch model_metadata,,,refresh
-BLOOM-176B,"Hugging Face,BigScience",Other,2022-07-06,open,3.66e+23,https://arxiv.org/abs/2211.05100,bloom,Epoch model_metadata,country mixed,"Epoch lists countries: France,United States of America",refresh
+BLOOM-176B,"Hugging Face,BigScience",Other,2022-07-06,open,3.66e+23,https://arxiv.org/abs/2211.05100,bloom,Epoch model_metadata,country mixed,"Epoch lists countries: France, United States of America",refresh
 davinci-003,OpenAI,US,2022-11-28,unknown,,,text-davinci-003,Epoch model_metadata,,,refresh
 BLIP-2 (Q-Former),Salesforce Research,US,2023-02-06,open,1.2e+21,https://arxiv.org/abs/2301.12597,blip2-opt-2.7b,Epoch model_metadata,,,refresh
 LLaMA-13B,Meta AI,US,2023-02-24,open,7.8e+22,https://arxiv.org/abs/2302.13971,LLaMA-13B|llama-13b,Epoch model_metadata,,,refresh
@@ -419,12 +419,12 @@ https://assets.amazon.science/96/7d/0d3e59514abf8fdcfafcdc574300/nova-tech-repor
 Nova Lite,Amazon,US,2024-12-03,unknown,,,,Artificial Analysis API,,,refresh
 Nova Micro,Amazon,US,2024-12-03,unknown,,,,Artificial Analysis API,,,refresh
 Nova Pro,Amazon,US,2024-12-03,unknown,,,,Artificial Analysis API,,,refresh
-InternVL2_5-78B,"Shanghai AI Lab,SenseTime,Tsinghua University,Nanjing University,Fudan University,Chinese University of Hong Kong (CUHK),Shanghai Jiao Tong University",Other,2024-12-06,open,,https://arxiv.org/abs/2412.05271,InternVL2_5-78B,Epoch model_metadata,country mixed,"Epoch lists countries: Hong Kong,China",refresh
+InternVL2_5-78B,"Shanghai AI Lab,SenseTime,Tsinghua University,Nanjing University,Fudan University,Chinese University of Hong Kong (CUHK),Shanghai Jiao Tong University",Other,2024-12-06,open,,https://arxiv.org/abs/2412.05271,InternVL2_5-78B,Epoch model_metadata,country mixed,"Epoch lists countries: China, Hong Kong",refresh
 LinVT,,Unknown,2024-12-06,unknown,,,LinVT,Epoch model_metadata,,,refresh
 Llama 3.3 70B,Meta AI,US,2024-12-06,open,6.86e+24,https://www.llama.com/docs/model-cards-and-prompt-formats/llama3_3/,Llama-3.3-70B-Instruct|Llama-3.3-70B-Instruct-Q8_0-GGUF-draft|llama-3.3-70b-instruct|llama3.3:70b-instruct-q8_0,Epoch model_metadata,,,refresh
 Llama 3.3 Instruct 70B,Meta,US,2024-12-06,unknown,,,,Artificial Analysis API,,,refresh
 DeepSeek-V2.5 (Dec 2024),DeepSeek,China,2024-12-10,open,1.79e+24,,DeepSeek-V2.5|DeepSeek-V2.5 (Dec '24)|DeepSeek-V2.5-1210|deepseek-v2.5|deepseek-v2.5-1210,Epoch model_metadata,,,refresh
-NVILA 8B,"Nvidia,Massachusetts Institute of Technology (MIT),University of California (UC) Berkeley,University of California San Diego,University of Washington,Tsinghua University",Other,2024-12-10,open,2.28e+21,https://arxiv.org/abs/2412.04468,NVILA-8B,Epoch model_metadata,country mixed,"Epoch lists countries: China,United States of America",refresh
+NVILA 8B,"Nvidia,Massachusetts Institute of Technology (MIT),University of California (UC) Berkeley,University of California San Diego,University of Washington,Tsinghua University",Other,2024-12-10,open,2.28e+21,https://arxiv.org/abs/2412.04468,NVILA-8B,Epoch model_metadata,country mixed,"Epoch lists countries: China, United States of America",refresh
 Gemini 2.0 Flash (Dec 2024),"Google DeepMind,Google",US,2024-12-11,closed,,,Gemini 2.0 Flash (Feb '25)|Gemini 2.0 Flash (experimental)|gemini-2.0-flash-exp|gemini-exp-1206,Epoch model_metadata,,,refresh
 Grok 2,xAI,US,2024-12-12,closed,,,Grok 2 (Dec '24)|grok-2-2024-08-13,Artificial Analysis API,,,refresh
 Grok-2 (Dec 2024),xAI,US,2024-12-12,closed,2.96e+25,,grok-2-1212|grok-2-vision-1212,Epoch model_metadata,,,refresh
@@ -440,7 +440,7 @@ nvila-internal-15b-v1,Nvidia,US,2024-12-22,open,,,,First Arena appearance,releas
 qwen2.5-plus-1127,Alibaba,China,2024-12-22,closed,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 DeepSeek-V3,DeepSeek,China,2024-12-26,open,3.3e+24,https://arxiv.org/abs/2412.19437,DeepSeek V3 (Dec '24)|DeepSeek-V3|DeepSeek-V3-Base|deepseek-v3,Epoch model_metadata,,,refresh
 smollm2-1.7b-instruct,Hugging Face,US,2024-12-30,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
-Eurus-2-7B-PRIME,"Tsinghua University,University of Illinois Urbana-Champaign (UIUC),Shanghai AI Lab,Peking University,Shanghai Jiao Tong University,CUHK Shenzhen Research Institute",Other,2024-12-31,open,4.02e+20,https://arxiv.org/abs/2502.01456,Eurus-2-7B-PRIME,Epoch model_metadata,country mixed,"Epoch lists countries: China,United States of America",refresh
+Eurus-2-7B-PRIME,"Tsinghua University,University of Illinois Urbana-Champaign (UIUC),Shanghai AI Lab,Peking University,Shanghai Jiao Tong University,CUHK Shenzhen Research Institute",Other,2024-12-31,open,4.02e+20,https://arxiv.org/abs/2502.01456,Eurus-2-7B-PRIME,Epoch model_metadata,country mixed,"Epoch lists countries: China, United States of America",refresh
 OLMo 2 Furious 13B,"Allen Institute for AI,University of Washington,New York University (NYU)",US,2024-12-31,open,4.6e+23,https://arxiv.org/abs/2501.00656,OLMo-2-1124-13B-Instruct,Epoch model_metadata,,,refresh
 llama-3.1-tulu-3-70b,Allen Institute for AI,US,2025-01-05,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 llama-3.1-tulu-3-8b,Allen Institute for AI,US,2025-01-05,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
@@ -562,7 +562,7 @@ Gemma 3n E4B Instruct Preview,Google DeepMind,US,2025-05-20,unknown,,,Gemma 3n E
 Llama 3.1 Nemotron Nano 4B v1.1,Nvidia,US,2025-05-20,unknown,,,Llama 3.1 Nemotron Nano 4B v1.1 (Reasoning),Artificial Analysis API,,,refresh
 Solar Pro 2,Upstage,Other,2025-05-20,unknown,,,Solar Pro 2 (Non-reasoning)|Solar Pro 2 (Preview) (Non-reasoning)|Solar Pro 2 (Preview) (Reasoning)|Solar Pro 2 (Reasoning),Artificial Analysis API,,,refresh
 gemma-3n-e4b-it,Google DeepMind,US,2025-05-20,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
-Devstral Small,"Mistral AI,All Hands AI",Other,2025-05-21,open,,https://mistral.ai/news/devstral,Devstral Small (Jul '25)|Devstral Small (May '25)|devstral-small-2505,Epoch model_metadata,country mixed,"Epoch lists countries: France,United States of America",refresh
+Devstral Small,"Mistral AI,All Hands AI",Other,2025-05-21,open,,https://mistral.ai/news/devstral,Devstral Small (Jul '25)|Devstral Small (May '25)|devstral-small-2505,Epoch model_metadata,country mixed,"Epoch lists countries: France, United States of America",refresh
 Claude 4 Opus,Anthropic,US,2025-05-22,unknown,,,Claude 4 Opus (Non-reasoning)|Claude 4 Opus (Reasoning),Artificial Analysis API,,,refresh
 Claude 4 Sonnet,Anthropic,US,2025-05-22,unknown,,,Claude 4 Sonnet (Non-reasoning)|Claude 4 Sonnet (Reasoning),Artificial Analysis API,,,refresh
 Claude Opus 4,Anthropic,US,2025-05-22,closed,,"https://www.anthropic.com/claude/opus

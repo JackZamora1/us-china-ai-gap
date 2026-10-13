@@ -2,7 +2,7 @@
 
 A single-page dashboard that shows how far Chinese AI models are behind US models in each capability area, measured in months, and how that has changed since 2023.
 
-Open `index.html` to view it.
+**Live page:** https://jackzamora1.github.io/us-china-ai-gap/ (refreshed daily). Or open `index.html` locally.
 
 ## Gap profile on 2026-10-13
 
@@ -88,6 +88,53 @@ python3 scripts/check.py                 # optional: compare with the last commi
 - The key is read from the environment only. It is not written to any file here.
 - `build.py` needs only the standard library. All lags are as of the day you run it, so rerun it to move "today" forward. It also writes `data/profile.json`, a small summary of the area medians.
 - Edit the page's design in `template.html`. `index.html` is overwritten on each build.
+
+## Automatic refresh
+
+A GitHub Actions workflow (`.github/workflows/refresh.yml`) refreshes and publishes the page every day at 09:17 UTC. It can also be started by hand.
+
+Each run:
+
+1. Installs the requirements and runs `scripts/refresh.py`, then `build.py`.
+2. Runs `scripts/check.py`. The run fails, and nothing is committed or published, if:
+   - any source returns no rows (or the `AA_API_KEY` secret is missing),
+   - the total number of scores is more than 15% below the committed version, or
+   - any area's median lag moved more than 4 months since the committed version.
+3. Commits the processed CSVs, `data/profile.json` and `index.html` with the message "Data refresh YYYY-MM-DD", only if something changed. The page changes daily because every lag grows by a day.
+4. Deploys `index.html` to GitHub Pages.
+
+An area gaining or losing its last counted benchmark is printed as a note and does not fail the run.
+
+### The Artificial Analysis key
+
+The workflow reads the key from a repository secret named `AA_API_KEY`. It is never stored in a file. To add or replace it:
+
+- **In the browser:** open the repository on GitHub, then Settings > Secrets and variables > Actions > New repository secret. Name it `AA_API_KEY`, paste the key as the value, and save.
+- **From a terminal:** run `gh secret set AA_API_KEY` in this folder and paste the key when prompted.
+
+### Run it by hand
+
+- **On GitHub:** Actions > Refresh and publish > Run workflow.
+- **From a terminal:** `gh workflow run refresh.yml`, then `gh run watch` to follow it.
+
+### When a run fails
+
+GitHub emails the repository owner when a scheduled run fails. The published page stays at the last good version.
+
+1. Open the failed run (Actions tab, or `gh run view --log-failed`) and read the step that failed.
+2. **"Check the Artificial Analysis key is set":** the secret is missing or was deleted. Add it as above.
+3. **"Pull every source":** a source was unreachable or changed format. Rerun later; if it keeps failing, run `python3 scripts/refresh.py` locally to see the error.
+4. **"Sanity checks":** the log names the source that dropped or the area that moved. If the change is real (for example, a source retired a benchmark, or a major Chinese release closed a gap by more than 4 months), run the three commands under "Refresh by hand" locally, review the result, then commit and push. The next scheduled run compares against that commit and passes.
+5. If a lab is reported as missing from `data/labs.csv`, add it and push; the run does not fail for this, but that lab's models are ignored until you do.
+
+### Past headlines
+
+`data/raw/` is not committed, so the dated git history is the record of past figures. To see what the page said on a given day, check out that day's "Data refresh" commit and open `index.html`, or read `data/profile.json` from it:
+
+```bash
+git log --oneline -- data/profile.json
+git show <commit>:data/profile.json
+```
 
 ## Data files
 
