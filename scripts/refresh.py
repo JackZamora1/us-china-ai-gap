@@ -640,7 +640,8 @@ def main() -> None:
     table = table.sort_values(["benchmark", "model", "source_type"])
 
     models.to_csv(DATA / "models.csv", index=False)
-    table.to_csv(DATA / "scores.csv", index=False)
+    # Ten significant digits: enough for every source, and identical across machines.
+    table.to_csv(DATA / "scores.csv", index=False, float_format="%.10g")
     pd.DataFrame(inventory).sort_values(["source", "cn_models_last_12m"], ascending=[True, False]).to_csv(DATA / "inventory.csv", index=False)
     benches = bench_table(table, models)
     benches.to_csv(DATA / "benchmarks.csv", index=False)
