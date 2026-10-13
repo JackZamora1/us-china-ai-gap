@@ -325,6 +325,8 @@ No event row was dropped.
 30. **Lab logos were replaced with lettered badges** before the page was made public, to avoid relying on each lab's trademark terms. The `assets/logos` folder was deleted.
 31. **Past headlines are reproduced from git history,** not from raw downloads. `data/raw/` is not committed, so each dated commit of the processed CSVs and `data/profile.json` is the record.
 32. **The automatic refresh treats an area gaining or losing its last counted benchmark as a note, not a failure.** Otherwise the expected loss of cyber on 2026-10-20 would block publishing.
+33. **Refreshes are made reproducible so the daily commit shows only real changes.** Scores are written with ten significant digits, ties between equal scores are broken by source, and a score keeps the date it was first retrieved.
+34. **The `AA_API_KEY` repository secret was set from the key supplied in the session,** using `gh secret set` with the key piped in, so the first run could be verified. It is stored only as an encrypted GitHub secret. Replace it the same way if you rotate the key.
 
 ## Spot check
 
