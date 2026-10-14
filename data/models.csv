@@ -973,6 +973,7 @@ DeepSeek V4 Flash Vision,DeepSeek,China,2026-08-21,unknown,,,DeepSeek V4 Flash V
 Granite 4.2 30B,IBM,US,2026-08-25,open,,,granite-4.2-30b,Artificial Analysis API,,,refresh
 Granite 4.2 3B,IBM,US,2026-08-25,open,,,granite-4.2-3b,Artificial Analysis API,,,refresh
 Granite 4.2 8B,IBM,US,2026-08-25,open,,,granite-4.2-8b,Artificial Analysis API,,,refresh
+Agnes 2.5 Pro Beta,Sapiens AI,Unknown,2026-08-26,unknown,,,,Artificial Analysis API,,,refresh
 Qwen3.8 Flash,Alibaba,China,2026-08-26,closed,,,qwen3.8-flash_xhigh,Epoch model_metadata,,,refresh
 Qwen3.8-Flash-Next,Alibaba,China,2026-08-26,open,,,Qwen3.8 Flash Next|qwen3.8-flash-next,Artificial Analysis API,,,refresh
 Tencent Hy4 preview,Tencent,China,2026-08-28,open,,https://hy.tencent.com/hy4-preview,Hy4 preview|hy4-preview|hy4-preview_unknown,Epoch model_metadata,,,refresh

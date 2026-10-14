@@ -5,22 +5,22 @@ Arena WebDev,Arena dataset,webdev,65,49,46,2026-09-21,2026-10-07,1813.0281,1682.
 Arena agent,Arena dataset,agent,39,24,24,2026-09-21,2026-09-30,0.1789,0.0971,,,independent 66,arena_agent,Agentic and real-world work,
 Arena vision (style-controlled),Arena dataset,vision_style_control,101,39,22,2026-09-21,2026-09-29,1309.5032,1300.674,,,independent 154,arena_vision,Multimodal,
 Arena document (style-controlled),Arena dataset,document_style_control,33,5,5,2026-06-02,2026-09-03,1498.8779,1452.5438,,,independent 38,arena_document,Multimodal,
-AA Intelligence Index,Artificial Analysis API,artificial_analysis_intelligence_index,219,155,91,2026-10-01,2026-10-12,57.6,46.3,,,independent 459,aa_index,Overall,
-Humanity's Last Exam (AA),Artificial Analysis API,hle,203,147,91,2026-10-01,2026-10-12,0.614,0.494,1.0,0.614,independent 435,aa_hle,Frontier reasoning and science,
-AA-LCR long-context reasoning,Artificial Analysis API,lcr,142,121,87,2026-10-01,2026-10-12,0.8533,0.8867,1.0,0.887,independent 321,aa_lcr,Long context,
-gpqa,Artificial Analysis API,gpqa,196,144,85,2026-09-10,2026-09-03,0.963,0.935,1.0,0.963,independent 423,,,"Not needed: older or saturated evaluation, or covered by another source"
-ifbench,Artificial Analysis API,ifbench,140,117,68,2026-07-06,2026-07-09,0.8333,0.8286,1.0,0.833,independent 315,,,"Not needed: older or saturated evaluation, or covered by another source"
-terminalbench_hard,Artificial Analysis API,terminalbench_hard,135,111,67,2026-07-06,2026-07-09,0.6591,0.5076,1.0,0.659,independent 301,,,"Not needed: older or saturated evaluation, or covered by another source"
-tau2-bench (AA),Artificial Analysis API,tau2,123,108,66,2026-07-06,2026-07-09,0.9854,0.9912,1.0,0.991,independent 285,aa_tau2,Agentic and real-world work,
-artificial_analysis_coding_index,Artificial Analysis API,artificial_analysis_coding_index,99,63,52,2026-09-11,2026-09-03,81.6,76.2,,,independent 195,,,"Not needed: older or saturated evaluation, or covered by another source"
-terminalbench_v2_1,Artificial Analysis API,terminalbench_v2_1,83,63,52,2026-09-11,2026-09-03,0.9139,0.8876,1.0,0.914,independent 180,,,"Not needed: older or saturated evaluation, or covered by another source"
-tau_banking,Artificial Analysis API,tau_banking,68,56,45,2026-09-11,2026-09-03,0.5072,0.5134,1.0,0.513,independent 154,,,"Not needed: older or saturated evaluation, or covered by another source"
-SciCode (AA),Artificial Analysis API,scicode,68,53,44,2026-10-01,2026-10-12,0.669,0.609,1.0,0.669,independent 150,aa_scicode,Frontier reasoning and science,
+AA Intelligence Index,Artificial Analysis API,artificial_analysis_intelligence_index,219,155,90,2026-10-01,2026-10-12,57.6,46.3,,,independent 460,aa_index,Overall,
+Humanity's Last Exam (AA),Artificial Analysis API,hle,203,147,90,2026-10-01,2026-10-12,0.614,0.494,1.0,0.614,independent 436,aa_hle,Frontier reasoning and science,
+AA-LCR long-context reasoning,Artificial Analysis API,lcr,142,121,86,2026-10-01,2026-10-12,0.8533,0.8867,1.0,0.887,independent 322,aa_lcr,Long context,
+gpqa,Artificial Analysis API,gpqa,196,144,84,2026-09-10,2026-09-03,0.963,0.935,1.0,0.963,independent 424,,,"Not needed: older or saturated evaluation, or covered by another source"
+ifbench,Artificial Analysis API,ifbench,140,117,67,2026-07-06,2026-07-09,0.8333,0.8286,1.0,0.833,independent 315,,,"Not needed: older or saturated evaluation, or covered by another source"
+terminalbench_hard,Artificial Analysis API,terminalbench_hard,135,111,66,2026-07-06,2026-07-09,0.6591,0.5076,1.0,0.659,independent 301,,,"Not needed: older or saturated evaluation, or covered by another source"
+tau2-bench (AA),Artificial Analysis API,tau2,123,108,65,2026-07-06,2026-07-09,0.9854,0.9912,1.0,0.991,independent 285,aa_tau2,Agentic and real-world work,
+artificial_analysis_coding_index,Artificial Analysis API,artificial_analysis_coding_index,99,63,52,2026-09-11,2026-09-03,81.6,76.2,,,independent 196,,,"Not needed: older or saturated evaluation, or covered by another source"
+terminalbench_v2_1,Artificial Analysis API,terminalbench_v2_1,83,63,52,2026-09-11,2026-09-03,0.9139,0.8876,1.0,0.914,independent 181,,,"Not needed: older or saturated evaluation, or covered by another source"
+tau_banking,Artificial Analysis API,tau_banking,68,56,45,2026-09-11,2026-09-03,0.5072,0.5134,1.0,0.513,independent 155,,,"Not needed: older or saturated evaluation, or covered by another source"
+SciCode (AA),Artificial Analysis API,scicode,68,53,44,2026-10-01,2026-10-12,0.669,0.609,1.0,0.669,independent 151,aa_scicode,Frontier reasoning and science,
 Terminal-Bench 4.0 (AA),Artificial Analysis API,terminalbench_v4_0,42,29,29,2026-10-01,2026-10-12,0.6364,0.4192,1.0,0.636,independent 79,aa_terminalbench_4,Coding,
-aime_25,Artificial Analysis API,aime_25,90,68,19,2025-12-23,2025-12-17,0.99,0.9667,1.0,0.99,independent 198,,,"Not needed: older or saturated evaluation, or covered by another source"
-artificial_analysis_math_index,Artificial Analysis API,artificial_analysis_math_index,90,68,19,2025-12-23,2025-12-17,99.0,96.7,,,independent 198,,,"Not needed: older or saturated evaluation, or covered by another source"
-LiveCodeBench (AA),Artificial Analysis API,livecodebench,124,76,19,2025-12-23,2025-12-17,0.917,0.896,1.0,0.917,independent 253,aa_livecodebench,Coding,
-MMLU-Pro (AA),Artificial Analysis API,mmlu_pro,127,77,19,2025-12-23,2026-07-24,0.898,0.875,1.0,0.898,independent 258,aa_mmlu_pro,Knowledge and hallucination,
+aime_25,Artificial Analysis API,aime_25,90,68,18,2025-12-23,2025-12-17,0.99,0.9667,1.0,0.99,independent 198,,,"Not needed: older or saturated evaluation, or covered by another source"
+artificial_analysis_math_index,Artificial Analysis API,artificial_analysis_math_index,90,68,18,2025-12-23,2025-12-17,99.0,96.7,,,independent 198,,,"Not needed: older or saturated evaluation, or covered by another source"
+LiveCodeBench (AA),Artificial Analysis API,livecodebench,124,76,18,2025-12-23,2025-12-17,0.917,0.896,1.0,0.917,independent 253,aa_livecodebench,Coding,
+MMLU-Pro (AA),Artificial Analysis API,mmlu_pro,127,77,18,2025-12-23,2026-07-24,0.898,0.875,1.0,0.898,independent 258,aa_mmlu_pro,Knowledge and hallucination,
 aime,Artificial Analysis API,aime,84,37,0,2025-08-03,2025-09-25,0.9567,0.94,1.0,0.957,independent 150,,,"Not needed: older or saturated evaluation, or covered by another source"
 math_500,Artificial Analysis API,math_500,88,39,0,2025-08-03,2025-09-25,0.994,0.984,1.0,0.994,independent 157,,,"Not needed: older or saturated evaluation, or covered by another source"
 webdev_arena_external.csv,Epoch,webdev_arena_external.csv,62,40,37,2026-09-21,2026-09-30,1820.31,1674.26,,,unknown 135,,,Copy of Arena data; pulled from the Arena dataset instead
@@ -28,9 +28,9 @@ Epoch Capabilities Index,Epoch,eci_scores.csv,159,76,36,2026-09-09,2026-09-29,16
 critpt_external.csv,Epoch,critpt_external.csv,79,46,35,2026-09-21,2026-09-30,0.3229,0.2657,,,independent 225,critpt,Frontier reasoning and science,
 scicode_external.csv,Epoch,scicode_external.csv,70,46,35,2026-09-21,2026-09-30,0.669,0.6088,,,unknown 218,,,Copy of Artificial Analysis data; pulled from their API instead
 ale_bench_external.csv,Epoch,ale_bench_external.csv,64,40,33,2026-09-21,2026-09-28,2951.32,1524.47,,,independent 121,ale_bench,Coding,
-OTIS Mock AIME 2024-2025,Epoch,otis_mock_aime_2024_2025.csv,120,58,33,2026-09-09,2026-10-07,1.0,1.0,1.0,1.0,independent 300,otis_mock_aime,Research math,
+OTIS Mock AIME 2024-2025,Epoch,otis_mock_aime_2024_2025.csv,120,58,33,2026-09-09,2026-10-07,1.0,1.0,1.0,1.0,independent 301,otis_mock_aime,Research math,
 Chess Puzzles,Epoch,chess_puzzles.csv,77,49,32,2026-09-01,2026-09-29,0.72,0.47,1.0,0.72,independent 227,chess_puzzles,Puzzles and games,
-GPQA diamond,Epoch,gpqa_diamond.csv,125,65,32,2026-09-09,2026-10-07,0.9577,0.9312,1.0,0.958,independent 321,gpqa_diamond,Frontier reasoning and science,
+GPQA diamond,Epoch,gpqa_diamond.csv,126,65,32,2026-09-09,2026-10-07,0.964,0.9312,1.0,0.964,independent 323,gpqa_diamond,Frontier reasoning and science,
 DTBench,Epoch,dtbench_external.csv,103,45,28,2026-09-09,2026-09-22,0.9893,0.9387,1.0,0.989,unknown 214,,,Decision-theory multiple choice from the same Conceptual Reasoning Index as LMCA; dropped so one project is not counted twice
 LMCA,Epoch,lmca_external.csv,80,45,28,2026-09-09,2026-09-22,68.23,55.51,85.0,0.803,unknown 176,lmca,Frontier reasoning and science,
 ProofBench,Epoch,proofbench_external.csv,53,24,24,2026-09-21,2026-09-30,1.0,0.87,1.0,1.0,independent 79,proofbench,Research math,
