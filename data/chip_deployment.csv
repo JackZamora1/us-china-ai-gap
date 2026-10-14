@@ -1,0 +1,516 @@
+quarter_end,owner,chip_designer,chip_type,units,units_p5,units_p95,h100e,incomplete,source_url
+2022-03-31,Amazon,Nvidia,A100,17885,10611,30654,5639,False,https://epoch.ai/data/ai_chip_owners.zip
+2022-03-31,China,Nvidia,A100,29857,19344,46304,9414,False,https://epoch.ai/data/ai_chip_owners.zip
+2022-03-31,Google,Nvidia,A100,18078,10686,30202,5700,False,https://epoch.ai/data/ai_chip_owners.zip
+2022-03-31,Meta,Nvidia,A100,24610,14505,42530,7759,False,https://epoch.ai/data/ai_chip_owners.zip
+2022-03-31,Microsoft,Nvidia,A100,46839,27647,79068,14769,False,https://epoch.ai/data/ai_chip_owners.zip
+2022-03-31,Oracle,Nvidia,A100,5093,2393,10910,1606,False,https://epoch.ai/data/ai_chip_owners.zip
+2022-03-31,Other,Nvidia,A100,55719,30261,100315,17812,False,https://epoch.ai/data/ai_chip_owners.zip
+2022-06-30,Amazon,Nvidia,A100,37104,22794,62248,11699,False,https://epoch.ai/data/ai_chip_owners.zip
+2022-06-30,China,Nvidia,A100,61763,40016,95786,19474,False,https://epoch.ai/data/ai_chip_owners.zip
+2022-06-30,Google,Nvidia,A100,37219,22408,61099,11735,False,https://epoch.ai/data/ai_chip_owners.zip
+2022-06-30,Meta,Nvidia,A100,51256,30523,85992,16161,False,https://epoch.ai/data/ai_chip_owners.zip
+2022-06-30,Microsoft,Nvidia,A100,97887,59043,160681,30865,False,https://epoch.ai/data/ai_chip_owners.zip
+2022-06-30,Oracle,Nvidia,A100,10722,5217,22033,3381,False,https://epoch.ai/data/ai_chip_owners.zip
+2022-06-30,Other,Nvidia,A100,115818,65267,208839,36718,False,https://epoch.ai/data/ai_chip_owners.zip
+2022-09-30,Amazon,Nvidia,A100,55611,34519,91678,17534,False,https://epoch.ai/data/ai_chip_owners.zip
+2022-09-30,Amazon,Nvidia,H100/H200,514,296,876,514,False,https://epoch.ai/data/ai_chip_owners.zip
+2022-09-30,China,Nvidia,A100,72697,47100,112744,22922,False,https://epoch.ai/data/ai_chip_owners.zip
+2022-09-30,Google,Nvidia,A100,55715,34113,90432,17567,False,https://epoch.ai/data/ai_chip_owners.zip
+2022-09-30,Google,Nvidia,H100/H200,511,297,878,511,False,https://epoch.ai/data/ai_chip_owners.zip
+2022-09-30,Meta,Nvidia,A100,76280,46302,126308,24051,False,https://epoch.ai/data/ai_chip_owners.zip
+2022-09-30,Meta,Nvidia,H100/H200,703,406,1214,703,False,https://epoch.ai/data/ai_chip_owners.zip
+2022-09-30,Microsoft,Nvidia,A100,146521,89278,239547,46199,False,https://epoch.ai/data/ai_chip_owners.zip
+2022-09-30,Microsoft,Nvidia,H100/H200,1342,778,2304,1342,False,https://epoch.ai/data/ai_chip_owners.zip
+2022-09-30,Oracle,Nvidia,A100,16098,7936,32144,5075,False,https://epoch.ai/data/ai_chip_owners.zip
+2022-09-30,Oracle,Nvidia,H100/H200,142,62,319,142,False,https://epoch.ai/data/ai_chip_owners.zip
+2022-09-30,Other,Nvidia,A100,197592,121010,335798,62972,False,https://epoch.ai/data/ai_chip_owners.zip
+2022-09-30,Other,Nvidia,H100/H200,2544,1704,3801,2571,False,https://epoch.ai/data/ai_chip_owners.zip
+2022-12-31,Amazon,Nvidia,A100,66231,41960,107408,20883,False,https://epoch.ai/data/ai_chip_owners.zip
+2022-12-31,Amazon,Nvidia,H100/H200,3836,2701,5310,3836,False,https://epoch.ai/data/ai_chip_owners.zip
+2022-12-31,China,Nvidia,A100,72697,47100,112744,22922,False,https://epoch.ai/data/ai_chip_owners.zip
+2022-12-31,China,Nvidia,A800,28132,21517,36492,8870,False,https://epoch.ai/data/ai_chip_owners.zip
+2022-12-31,Google,Nvidia,A100,66221,41422,106424,20880,False,https://epoch.ai/data/ai_chip_owners.zip
+2022-12-31,Google,Nvidia,H100/H200,3828,2721,5394,3828,False,https://epoch.ai/data/ai_chip_owners.zip
+2022-12-31,Meta,Nvidia,A100,90758,56293,148018,28617,False,https://epoch.ai/data/ai_chip_owners.zip
+2022-12-31,Meta,Nvidia,H100/H200,5263,3708,7374,5263,False,https://epoch.ai/data/ai_chip_owners.zip
+2022-12-31,Microsoft,Nvidia,A100,174086,108118,281080,54891,False,https://epoch.ai/data/ai_chip_owners.zip
+2022-12-31,Microsoft,Nvidia,H100/H200,10027,7156,14277,10027,False,https://epoch.ai/data/ai_chip_owners.zip
+2022-12-31,Oracle,Nvidia,A100,19946,10056,38483,6289,False,https://epoch.ai/data/ai_chip_owners.zip
+2022-12-31,Oracle,Nvidia,H100/H200,1547,873,2704,1547,False,https://epoch.ai/data/ai_chip_owners.zip
+2022-12-31,Other,Nvidia,A100,245502,151821,395834,77100,False,https://epoch.ai/data/ai_chip_owners.zip
+2022-12-31,Other,Nvidia,H100/H200,12984,9136,18404,12932,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-03-31,Amazon,Nvidia,A100,72320,46373,115618,22803,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-03-31,Amazon,Nvidia,H100/H200,9684,7164,13008,9684,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-03-31,China,Nvidia,A100,72697,47100,112744,22922,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-03-31,China,Nvidia,A800,57439,43933,74508,18111,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-03-31,China,Nvidia,H800,7342,5923,9136,7342,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-03-31,CoreWeave,Nvidia,H100/H200,4611,4611,4611,4611,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-03-31,Google,Google,TPU v4,185089,136257,241790,25719,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-03-31,Google,Google,TPU v4i,30031,18344,45716,2094,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-03-31,Google,Google,TPU v5e,55180,33246,82134,10958,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-03-31,Google,Nvidia,A100,72396,46105,114432,22827,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-03-31,Google,Nvidia,H100/H200,9690,7170,13082,9690,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-03-31,Meta,Nvidia,A100,99235,62687,159754,31290,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-03-31,Meta,Nvidia,H100/H200,13325,9768,17964,13325,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-03-31,Microsoft,Nvidia,A100,190247,120002,302611,59987,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-03-31,Microsoft,Nvidia,H100/H200,25357,18728,34699,25357,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-03-31,Oracle,Nvidia,A100,22710,11798,42665,7160,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-03-31,Oracle,Nvidia,H100/H200,4100,2493,6771,4100,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-03-31,Other,Nvidia,A100,262498,166381,419035,84183,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-03-31,Other,Nvidia,H100/H200,25812,17216,37708,26253,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-06-30,Amazon,Nvidia,A100,78990,51271,124756,24906,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-06-30,Amazon,Nvidia,H100/H200,25448,18851,33538,25448,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-06-30,China,Nvidia,A100,72697,47100,112744,22922,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-06-30,China,Nvidia,A800,83825,64116,108736,26431,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-06-30,China,Nvidia,H800,39258,31670,48855,39258,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-06-30,CoreWeave,Nvidia,H100/H200,12112,12112,12112,12112,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-06-30,Google,Google,TPU v4,250892,182912,327779,34863,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-06-30,Google,Google,TPU v4i,30031,18344,45716,2094,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-06-30,Google,Google,TPU v5e,175931,123451,242330,34937,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-06-30,Google,Nvidia,A100,79023,51036,123513,24916,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-06-30,Google,Nvidia,H100/H200,25355,19009,33816,25355,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-06-30,Meta,Nvidia,A100,108796,69555,172030,34304,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-06-30,Meta,Nvidia,H100/H200,34884,25986,46979,34884,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-06-30,Microsoft,Nvidia,A100,207773,133001,326707,65513,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-06-30,Microsoft,Nvidia,H100/H200,66319,49598,89760,66319,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-06-30,Oracle,Nvidia,A100,25703,13732,47560,8104,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-06-30,Oracle,Nvidia,H100/H200,10972,6777,17834,10972,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-06-30,Other,Nvidia,A100,283507,180216,439327,90924,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-06-30,Other,Nvidia,H100/H200,64949,44095,95143,66062,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-09-30,Amazon,Nvidia,A100,84803,55520,132496,26739,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-09-30,Amazon,Nvidia,H100/H200,52459,38841,69125,52459,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-09-30,China,Nvidia,A100,72697,47100,112744,22922,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-09-30,China,Nvidia,A800,112331,85919,145712,35419,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-09-30,China,Nvidia,H800,95592,77116,118960,95592,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-09-30,CoreWeave,Nvidia,H100/H200,24312,24312,24312,24312,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-09-30,Google,Google,TPU v4,261998,190719,343997,36407,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-09-30,Google,Google,TPU v4i,30031,18344,45716,2094,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-09-30,Google,Google,TPU v5e,427327,309560,567663,84860,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-09-30,Google,Nvidia,A100,84840,55119,131316,26751,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-09-30,Google,Nvidia,H100/H200,52387,39409,69948,52387,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-09-30,Meta,Nvidia,A100,116793,75372,182859,36826,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-09-30,Meta,Nvidia,H100/H200,71981,53963,95903,71981,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-09-30,Microsoft,Nvidia,A100,222882,144174,347660,70277,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-09-30,Microsoft,Nvidia,H100/H200,137133,103021,183188,137133,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-09-30,Oracle,Nvidia,A100,28187,15329,51664,8887,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-09-30,Oracle,Nvidia,H100/H200,22760,14255,36630,22760,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-09-30,Other,Nvidia,A100,300661,192772,471721,96409,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-09-30,Other,Nvidia,H100/H200,134105,90150,195362,136379,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-12-31,Amazon,Nvidia,A100,86410,56669,134707,27246,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-12-31,Amazon,Nvidia,H100/H200,89882,66862,118316,89882,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-12-31,China,Nvidia,A100,72697,47100,112744,22922,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-12-31,China,Nvidia,A800,121421,92871,157504,38285,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-12-31,China,Nvidia,H800,115430,93121,143648,115430,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-12-31,CoreWeave,Nvidia,H100/H200,44157,44157,44157,44157,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-12-31,Google,Google,TPU v4,261998,190719,343997,36407,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-12-31,Google,Google,TPU v4i,30031,18344,45716,2094,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-12-31,Google,Google,TPU v5e,821723,598751,1078880,163182,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-12-31,Google,Google,TPU v5p,14422,7281,22488,6690,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-12-31,Google,Nvidia,A100,86455,56221,133583,27260,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-12-31,Google,Nvidia,H100/H200,89768,67129,119424,89768,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-12-31,Meta,Nvidia,A100,118947,77062,185922,37505,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-12-31,Meta,Nvidia,H100/H200,123565,92978,163742,123565,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-12-31,Microsoft,Nvidia,A100,227034,147063,353206,71586,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-12-31,Microsoft,Nvidia,H100/H200,235326,176657,311284,235326,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-12-31,Oracle,Nvidia,A100,28904,15789,52829,9113,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-12-31,Oracle,Nvidia,H100/H200,45412,29541,69858,45412,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-12-31,Other,Nvidia,A100,305599,194188,476021,97931,False,https://epoch.ai/data/ai_chip_owners.zip
+2023-12-31,Other,Nvidia,H100/H200,285268,206810,391333,289923,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,Amazon,Amazon,Trainium1,111726,49718,250385,23711,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,Amazon,Amazon,Trainium2,12854,6737,23025,8437,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,Amazon,Nvidia,A100,86410,56669,134707,27246,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,Amazon,Nvidia,H100/H200,141425,105270,185317,141425,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,China,Cambricon,Siyuan 590,547,525,591,142,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,China,Huawei,Ascend 910B,100000,87500,125000,35379,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,China,Huawei,Ascend 910C,12500,6250,25000,9649,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,China,Nvidia,A100,72697,47100,112744,22922,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,China,Nvidia,A800,121421,92871,157504,38285,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,China,Nvidia,H20,138719,106730,180461,20748,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,China,Nvidia,H800,115430,93121,143648,115430,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,CoreWeave,Nvidia,H100/H200,71468,60979,86873,71468,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,Google,Google,TPU v4,261998,190719,343997,36407,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,Google,Google,TPU v4i,30031,18344,45716,2094,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,Google,Google,TPU v5e,1240607,909866,1627801,246366,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,Google,Google,TPU v5p,98628,71245,129228,45750,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,Google,Nvidia,A100,86455,56221,133583,27260,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,Google,Nvidia,H100/H200,141015,106088,187666,141015,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,Meta,AMD,Instinct MI300X,13345,8829,20053,17633,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,Meta,Nvidia,A100,118947,77062,185922,37505,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,Meta,Nvidia,H100/H200,194998,146773,257306,194998,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,Microsoft,AMD,Instinct MI300X,8450,5726,12293,11166,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,Microsoft,Nvidia,A100,227034,147063,353206,71586,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,Microsoft,Nvidia,H100/H200,368963,277904,491323,368963,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,Oracle,AMD,Instinct MI300X,3376,2297,4988,4460,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,Oracle,Nvidia,A100,28904,15789,52829,9113,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,Oracle,Nvidia,H100/H200,79268,53201,118882,79268,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,Other,AMD,Instinct MI250X,30379,20431,42785,5879,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,Other,AMD,Instinct MI300A,3562,1119,6350,3530,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,Other,AMD,Instinct MI300X,8980,4490,14840,11866,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,Other,Nvidia,A100,302993,193732,473418,96731,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-03-31,Other,Nvidia,H100/H200,455749,332493,622127,461447,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,Amazon,Amazon,Trainium1,223453,99436,500770,47423,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,Amazon,Amazon,Trainium2,44512,25986,70752,29217,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,Amazon,Nvidia,A100,86410,56669,134707,27246,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,Amazon,Nvidia,H100/H200,204666,153253,266838,204666,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,China,Cambricon,Siyuan 590,1379,1324,1490,357,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,China,Huawei,Ascend 910B,200000,175000,250000,70758,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,China,Huawei,Ascend 910C,25000,12500,50000,19298,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,China,Nvidia,A100,72697,47100,112744,22922,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,China,Nvidia,A800,121421,92871,157504,38285,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,China,Nvidia,H20,361784,278354,470647,54112,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,China,Nvidia,H800,115430,93121,143648,115430,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,CoreWeave,Nvidia,H100/H200,111466,96239,128969,111466,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,Google,Google,TPU v4,261998,190719,343997,36407,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,Google,Google,TPU v4i,30031,18344,45716,2094,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,Google,Google,TPU v5e,1624711,1189620,2122986,322643,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,Google,Google,TPU v5p,245024,178443,318278,113659,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,Google,Nvidia,A100,86455,56221,133583,27260,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,Google,Nvidia,H100/H200,203878,153863,268979,203878,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,Meta,AMD,Instinct MI300X,44749,32005,61697,59128,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,Meta,Nvidia,A100,118947,77062,185922,37505,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,Meta,Nvidia,H100/H200,281569,211424,371365,281569,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,Microsoft,AMD,Instinct MI300X,28326,20929,37998,37428,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,Microsoft,Nvidia,A100,227034,147063,353206,71586,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,Microsoft,Nvidia,H100/H200,534139,404247,705664,534139,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,Oracle,AMD,Instinct MI300X,11330,8416,15127,14971,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,Oracle,Nvidia,A100,28904,15789,52829,9113,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,Oracle,Nvidia,H100/H200,121094,82502,178970,121094,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,Other,AMD,Instinct MI250X,36940,25303,51422,7149,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,Other,AMD,Instinct MI300A,14405,6917,22114,14275,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,Other,AMD,Instinct MI300X,30421,16917,44968,40196,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,Other,Nvidia,A100,306027,193102,479725,96356,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-06-30,Other,Nvidia,H100/H200,639496,453082,877865,638591,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,Amazon,Amazon,Trainium1,335180,149155,751155,71134,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,Amazon,Amazon,Trainium2,122350,78159,175048,80309,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,Amazon,Nvidia,A100,86410,56669,134707,27246,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,Amazon,Nvidia,H100/H200,281626,211673,366322,281626,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,China,Cambricon,Siyuan 590,3944,3786,4260,1020,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,China,Huawei,Ascend 910B,300000,262500,375000,106137,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,China,Huawei,Ascend 910C,37500,18750,75000,28947,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,China,Nvidia,A100,72697,47100,112744,22922,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,China,Nvidia,A800,121421,92871,157504,38285,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,China,Nvidia,H20,634031,487819,824815,94832,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,China,Nvidia,H800,115430,93121,143648,115430,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,CoreWeave,Nvidia,H100/H200,166849,149559,182703,166849,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,Google,Google,TPU v4,261998,190719,343997,36407,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,Google,Google,TPU v4i,30031,18344,45716,2094,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,Google,Google,TPU v5e,1987935,1450820,2601413,394774,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,Google,Google,TPU v5p,406393,298370,531406,188514,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,Google,Google,TPU v6e,40395,16810,72034,37476,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,Google,Nvidia,A100,86455,56221,133583,27260,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,Google,Nvidia,H100/H200,280548,212887,368331,280548,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,Meta,AMD,Instinct MI300X,81774,60280,110447,108051,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,Meta,Nvidia,A100,118947,77062,185922,37505,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,Meta,Nvidia,H100/H200,386911,291247,508623,386911,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,Microsoft,AMD,Instinct MI300X,51800,39135,67833,68445,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,Microsoft,Nvidia,A100,227034,147063,353206,71586,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,Microsoft,Nvidia,H100/H200,733776,557648,973835,733776,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,Oracle,AMD,Instinct MI300X,20759,15663,27237,27430,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,Oracle,Nvidia,A100,28904,15789,52829,9113,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,Oracle,Nvidia,H100/H200,172548,118171,251480,172548,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,Other,AMD,Instinct MI250X,41432,28783,57310,8018,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,Other,AMD,Instinct MI300A,57693,44152,72337,57174,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,Other,AMD,Instinct MI300X,55444,32537,80176,73260,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,Other,Nvidia,A100,301855,198067,477152,106855,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,Other,Nvidia,H100/H200,755414,505333,1063933,848090,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-09-30,xAI,Nvidia,H100/H200,100000,,,100000,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Amazon,Amazon,Trainium1,446907,198873,1001540,94846,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Amazon,Amazon,Trainium2,313693,208323,427571,205905,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Amazon,Nvidia,A100,86410,56669,134707,27246,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Amazon,Nvidia,B200,26573,19315,37026,67138,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Amazon,Nvidia,H100/H200,363037,275275,472568,363037,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,China,Cambricon,Siyuan 590,25000,24000,27000,6468,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,China,Huawei,Ascend 910B,400000,350000,500000,141516,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,China,Huawei,Ascend 910C,50000,25000,100000,38596,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,China,Nvidia,A100,72697,47100,112744,22922,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,China,Nvidia,A800,121421,92871,157504,38285,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,China,Nvidia,H20,958411,737396,1246803,143350,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,China,Nvidia,H800,115430,93121,143648,115430,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,CoreWeave,Nvidia,H100/H200,241168,241168,241168,241168,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Google,Google,TPU v4,261998,190719,343997,36407,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Google,Google,TPU v4i,30031,18344,45716,2094,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Google,Google,TPU v5e,2292053,1668912,3017344,455167,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Google,Google,TPU v5p,543094,402870,705286,251925,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Google,Google,TPU v6e,215722,149214,295520,200134,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Google,Nvidia,A100,86455,56221,133583,27260,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Google,Nvidia,B200,21703,15635,30104,54834,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Google,Nvidia,H100/H200,351180,267158,461583,351180,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Meta,AMD,Instinct MI300X,127163,94719,169625,168024,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Meta,Nvidia,A100,118947,77062,185922,37505,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Meta,Nvidia,B200,31288,22696,43657,79051,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Meta,Nvidia,H100/H200,488451,369212,639015,488451,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Microsoft,AMD,Instinct MI300X,80580,61563,104196,106473,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Microsoft,Nvidia,A100,227034,147063,353206,71586,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Microsoft,Nvidia,B200,55416,40085,77639,140011,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Microsoft,Nvidia,H100/H200,917002,697821,1218295,917002,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Oracle,AMD,Instinct MI300X,32225,24401,41667,42580,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Oracle,Nvidia,A100,28904,15789,52829,9113,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Oracle,Nvidia,B200,14937,10398,21141,37740,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Oracle,Nvidia,H100/H200,221173,153551,315799,221173,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Other,AMD,Instinct MI250X,45023,31815,61621,8713,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Other,AMD,Instinct MI300A,110148,89654,132598,109157,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Other,AMD,Instinct MI300X,85687,50491,122826,113220,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Other,Nvidia,A100,303857,193995,480981,96389,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Other,Nvidia,B200,42381,25191,72149,107727,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,Other,Nvidia,H100/H200,867382,576712,1268938,872634,False,https://epoch.ai/data/ai_chip_owners.zip
+2024-12-31,xAI,Nvidia,H100/H200,100000,,,100000,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Amazon,Amazon,Trainium1,446907,198873,1001540,94846,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Amazon,Amazon,Trainium2,526532,429389,631800,345611,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Amazon,Nvidia,A100,86410,56669,134707,27246,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Amazon,Nvidia,B200,95701,71527,128987,241792,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Amazon,Nvidia,H100/H200,407224,308300,529478,407224,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,China,Cambricon,Siyuan 590,43817,41106,52659,11335,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,China,Huawei,Ascend 910B,450000,387500,566500,158333,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,China,Huawei,Ascend 910C,200000,150000,275000,153743,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,China,Nvidia,A100,72697,47100,112744,22922,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,China,Nvidia,A800,121421,92871,157504,38285,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,China,Nvidia,H20,1320088,1015668,1717311,197446,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,China,Nvidia,H800,115430,93121,143648,115430,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,CoreWeave,Nvidia,B200,8401,7134,9767,21225,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,CoreWeave,Nvidia,H100/H200,269530,267367,271489,269530,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Google,Google,TPU v4,261998,190719,343997,36407,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Google,Google,TPU v4i,30031,18344,45716,2094,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Google,Google,TPU v5e,2391837,1745468,3147874,474983,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Google,Google,TPU v5p,641125,473815,829617,297399,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Google,Google,TPU v6e,625998,468434,800248,580764,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Google,Nvidia,A100,86455,56221,133583,27260,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Google,Nvidia,B200,78359,57747,104796,197978,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Google,Nvidia,H100/H200,386732,294408,507857,386732,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Meta,AMD,Instinct MI300X,163633,121299,220374,216213,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Meta,AMD,Instinct MI325X,13634,7544,24853,17913,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Meta,Nvidia,A100,118947,77062,185922,37505,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Meta,Nvidia,B200,112903,84175,152383,285254,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Meta,Nvidia,H100/H200,539962,409820,705678,539962,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Microsoft,AMD,Instinct MI300X,100577,75550,132714,132895,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Microsoft,AMD,Instinct MI325X,7487,3817,13853,9836,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Microsoft,Nvidia,A100,227034,147063,353206,71586,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Microsoft,Nvidia,B200,189645,141005,254861,479145,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Microsoft,Nvidia,H100/H200,1003644,764637,1329334,1003644,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Oracle,AMD,Instinct MI300X,41082,29571,56862,54283,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Oracle,AMD,Instinct MI325X,3206,1339,7595,4213,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Oracle,Nvidia,A100,28904,15789,52829,9113,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Oracle,Nvidia,B200,64311,46754,88319,162483,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Oracle,Nvidia,H100/H200,249449,175152,352837,249449,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Other,AMD,Instinct MI250X,45023,31815,61621,8713,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Other,AMD,Instinct MI300A,114813,94212,137640,113781,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Other,AMD,Instinct MI300X,104945,56424,155243,138666,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Other,AMD,Instinct MI325X,7105,8,15433,9334,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Other,Nvidia,A100,303447,195789,479589,96380,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Other,Nvidia,B200,149528,93263,241650,380551,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,Other,Nvidia,H100/H200,816773,498271,1249525,822746,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-03-31,xAI,Nvidia,H100/H200,200000,,,200000,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Amazon,Amazon,Trainium1,446907,198873,1001540,94846,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Amazon,Amazon,Trainium2,774150,674807,880957,508146,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Amazon,Nvidia,A100,86410,56669,134707,27246,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Amazon,Nvidia,B200,149578,112435,200029,377915,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Amazon,Nvidia,B300,25142,18163,34869,63523,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Amazon,Nvidia,H100/H200,435022,329780,564748,435022,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,China,Cambricon,Siyuan 590,73770,68336,93504,19084,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,China,Huawei,Ascend 910B,500000,425000,633000,175150,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,China,Huawei,Ascend 910C,350000,275000,450000,268890,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,China,Nvidia,A100,72697,47100,112744,22922,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,China,Nvidia,A800,121421,92871,157504,38285,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,China,Nvidia,H20,1472781,1133149,1915950,220284,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,China,Nvidia,H800,115430,93121,143648,115430,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,CoreWeave,Nvidia,B200,24510,22376,26729,61925,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,CoreWeave,Nvidia,H100/H200,279690,276793,282639,279690,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Google,Google,TPU v4,261998,190719,343997,36407,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Google,Google,TPU v4i,30031,18344,45716,2094,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Google,Google,TPU v5e,2391837,1745468,3147874,474983,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Google,Google,TPU v5p,672187,495021,871267,311807,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Google,Google,TPU v6e,1294704,990138,1605293,1201151,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Google,Nvidia,A100,86455,56221,133583,27260,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Google,Nvidia,B200,122560,91557,162690,309653,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Google,Nvidia,B300,20740,14782,28584,52400,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Google,Nvidia,H100/H200,409791,311781,537981,409791,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Meta,AMD,Instinct MI300X,183618,135176,246822,242618,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Meta,AMD,Instinct MI325X,25280,15183,42835,33213,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Meta,AMD,Instinct MI350X,1729,646,3269,4032,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Meta,Nvidia,A100,118947,77062,185922,37505,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Meta,Nvidia,B200,176636,132538,236081,446277,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Meta,Nvidia,B300,29805,21544,41488,75304,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Meta,Nvidia,H100/H200,573324,435201,748724,573324,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Microsoft,AMD,Instinct MI300X,111248,83000,148601,146994,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Microsoft,AMD,Instinct MI325X,13735,7807,23888,18045,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Microsoft,AMD,Instinct MI350X,925,343,1839,2157,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Microsoft,Nvidia,A100,227034,147063,353206,71586,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Microsoft,Nvidia,B200,295327,221752,393956,746152,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Microsoft,Nvidia,B300,50463,36298,70617,127497,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Microsoft,Nvidia,H100/H200,1059443,807558,1399949,1059443,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Oracle,AMD,Instinct MI300X,46004,32437,65397,60787,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Oracle,AMD,Instinct MI325X,6070,2845,12799,7976,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Oracle,AMD,Instinct MI350X,399,129,1002,931,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Oracle,Nvidia,A100,28904,15789,52829,9113,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Oracle,Nvidia,B200,105416,77014,144249,266338,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Oracle,Nvidia,B300,19509,13394,28668,49291,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Oracle,Nvidia,H100/H200,271240,191206,380939,271240,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Other,AMD,Instinct MI250X,45023,31815,61621,8713,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Other,AMD,Instinct MI300A,114813,94212,137640,113781,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Other,AMD,Instinct MI300X,115176,60013,171962,152185,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Other,AMD,Instinct MI325X,12998,1724,26375,17077,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Other,AMD,Instinct MI350X,862,3,2080,2009,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Other,Nvidia,A100,306969,194508,478974,91032,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Other,Nvidia,B200,247715,158334,381651,588625,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Other,Nvidia,B300,63075,43545,90611,149881,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,Other,Nvidia,H100/H200,873779,528379,1337442,821794,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-06-30,xAI,Nvidia,H100/H200,200000,,,200000,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Amazon,Amazon,Trainium1,446907,198873,1001540,94846,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Amazon,Amazon,Trainium2,1063346,951912,1180306,697972,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Amazon,Nvidia,A100,86410,56669,134707,27246,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Amazon,Nvidia,B200,187230,141825,249152,473043,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Amazon,Nvidia,B300,82994,61527,112387,209687,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Amazon,Nvidia,H100/H200,449302,340621,582751,449302,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,China,Cambricon,Siyuan 590,103005,94914,133370,26647,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,China,Huawei,Ascend 910B,550000,462500,699500,191967,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,China,Huawei,Ascend 910C,500000,400000,625000,384037,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,China,Nvidia,A100,72697,47100,112744,22922,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,China,Nvidia,A800,121421,92871,157504,38285,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,China,Nvidia,H20,1489899,1146319,1938218,222844,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,China,Nvidia,H800,115430,93121,143648,115430,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,CoreWeave,Nvidia,B200,51572,45277,60416,130297,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,CoreWeave,Nvidia,B300,18135,6339,24949,45818,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,CoreWeave,Nvidia,H100/H200,293273,287808,301327,293273,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Google,Google,TPU v4,261998,190719,343997,36407,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Google,Google,TPU v4i,30031,18344,45716,2094,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Google,Google,TPU v5e,2391837,1745468,3147874,474983,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Google,Google,TPU v5p,672187,495021,871267,311807,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Google,Google,TPU v6e,2034427,1563714,2505517,1887421,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Google,Google,TPU v7,51565,23681,79592,120224,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Google,Nvidia,A100,86455,56221,133583,27260,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Google,Nvidia,B200,153099,114946,201829,386809,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Google,Nvidia,B300,67380,50251,90332,170239,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Google,Nvidia,H100/H200,421508,320799,553378,421508,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Meta,AMD,Instinct MI300X,203551,149524,274438,268958,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Meta,AMD,Instinct MI325X,33785,20358,56380,44387,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Meta,AMD,Instinct MI350X,17160,11322,25479,40009,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Meta,AMD,Instinct MI355X,5202,3069,8515,13231,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Meta,Nvidia,A100,118947,77062,185922,37505,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Meta,Nvidia,B200,224763,170364,297602,567872,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Meta,Nvidia,B300,103861,77065,141174,262408,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Meta,Nvidia,H100/H200,591275,448875,770352,591275,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Microsoft,AMD,Instinct MI300X,122313,90526,164383,161616,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Microsoft,AMD,Instinct MI325X,18417,10585,31453,24197,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Microsoft,AMD,Instinct MI350X,9291,5821,14788,21662,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Microsoft,AMD,Instinct MI355X,2865,1568,4895,7287,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Microsoft,Nvidia,A100,227034,147063,353206,71586,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Microsoft,Nvidia,B200,374249,282533,494804,945553,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Microsoft,Nvidia,B300,171630,126890,230907,433629,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Microsoft,Nvidia,H100/H200,1088658,830243,1437884,1088658,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Oracle,AMD,Instinct MI300X,50804,35461,73788,67128,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Oracle,AMD,Instinct MI325X,8189,3901,16561,10759,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Oracle,AMD,Instinct MI350X,4065,2023,8177,9478,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Oracle,AMD,Instinct MI355X,1222,558,2684,3109,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Oracle,Nvidia,A100,28904,15789,52829,9113,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Oracle,Nvidia,B200,135719,100060,183365,342899,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Oracle,Nvidia,B300,66299,48163,91976,167508,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Oracle,Nvidia,H100/H200,282562,200001,395110,282562,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Other,AMD,Instinct MI250X,45023,31815,61621,8713,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Other,AMD,Instinct MI300A,114813,94212,137640,113781,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Other,AMD,Instinct MI300X,125454,62953,189076,165765,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Other,AMD,Instinct MI325X,17373,3077,34520,22824,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Other,AMD,Instinct MI350X,9119,470,16805,21261,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Other,AMD,Instinct MI355X,2740,56,5594,6969,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Other,Nvidia,A100,307961,194855,471170,103141,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Other,Nvidia,B200,200836,84982,372806,538968,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Other,Nvidia,B300,237971,173508,325141,638623,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,Other,Nvidia,H100/H200,894348,550654,1357846,949955,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,xAI,Nvidia,B200,140000,,,350000,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-09-30,xAI,Nvidia,H100/H200,200000,,,200000,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Amazon,Amazon,Trainium1,446907,198873,1001540,94846,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Amazon,Amazon,Trainium2,1400284,1259158,1542491,919135,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Amazon,Nvidia,A100,86410,56669,134707,27246,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Amazon,Nvidia,B200,224373,171014,297876,566887,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Amazon,Nvidia,B300,149129,111708,200190,376781,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Amazon,Nvidia,H100/H200,451830,342471,585636,451830,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,China,AMD,Instinct MI308X,31859,26053,38862,10523,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,China,Cambricon,Siyuan 590,135000,124000,177000,34925,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,China,Huawei,Ascend 910B,600000,500000,766000,208784,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,China,Huawei,Ascend 910C,650000,525000,800000,499184,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,China,Nvidia,A100,72697,47100,112744,22922,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,China,Nvidia,A800,121421,92871,157504,38285,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,China,Nvidia,H20,1489899,1146319,1938218,222844,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,China,Nvidia,H800,115430,93121,143648,115430,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,CoreWeave,Nvidia,B200,103901,92289,117478,262506,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,CoreWeave,Nvidia,B300,105932,90716,120650,267637,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,CoreWeave,Nvidia,H100/H200,301187,294397,311084,301187,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Google,Google,TPU v4,261998,190719,343997,36407,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Google,Google,TPU v4i,30031,18344,45716,2094,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Google,Google,TPU v5e,2391837,1745468,3147874,474983,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Google,Google,TPU v5p,672187,495021,871267,311807,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Google,Google,TPU v6e,2469009,1883810,3052486,2290602,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Google,Google,TPU v7,294531,212950,387130,686694,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Google,Nvidia,A100,86455,56221,133583,27260,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Google,Nvidia,B200,184848,139602,242642,467026,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Google,Nvidia,B300,123764,93354,164918,312694,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Google,Nvidia,H100/H200,423372,322331,555798,423372,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Meta,AMD,Instinct MI300X,208391,152880,280612,275352,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Meta,AMD,Instinct MI325X,39455,24149,64836,51836,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Meta,AMD,Instinct MI350X,32314,22665,46279,75341,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Meta,AMD,Instinct MI355X,21101,14358,30885,53666,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Meta,Nvidia,A100,118947,77062,185922,37505,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Meta,Nvidia,B200,278492,211477,367321,703618,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Meta,Nvidia,B300,199616,149031,269065,504337,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Meta,Nvidia,H100/H200,594470,451396,774476,594470,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Microsoft,AMD,Instinct MI300X,124819,92502,168541,164927,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Microsoft,AMD,Instinct MI325X,21401,12587,36044,28117,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Microsoft,AMD,Instinct MI350X,17417,11629,26537,40608,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Microsoft,AMD,Instinct MI355X,11344,7297,17802,28852,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Microsoft,Nvidia,A100,227034,147063,353206,71586,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Microsoft,Nvidia,B200,459481,348581,605271,1160893,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Microsoft,Nvidia,B300,323881,243490,430834,818295,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Microsoft,Nvidia,H100/H200,1093460,834492,1444563,1093460,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Oracle,AMD,Instinct MI300X,52003,36145,75684,68714,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Oracle,AMD,Instinct MI325X,9621,4723,19063,12641,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Oracle,AMD,Instinct MI350X,7765,4164,14340,18104,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Oracle,AMD,Instinct MI355X,5018,2585,9669,12763,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Oracle,Nvidia,A100,28904,15789,52829,9113,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Oracle,Nvidia,B200,167998,124193,226530,424452,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Oracle,Nvidia,B300,123322,90521,170057,311577,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Oracle,Nvidia,H100/H200,284484,201500,397671,284484,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Other,AMD,Instinct MI250X,45023,31815,61621,8713,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Other,AMD,Instinct MI300A,114813,94212,137640,113781,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Other,AMD,Instinct MI300X,127986,63651,192856,169112,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Other,AMD,Instinct MI325X,20313,3989,39510,26688,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Other,AMD,Instinct MI350X,17002,2973,29975,39641,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Other,AMD,Instinct MI355X,11215,1250,20219,28523,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Other,Nvidia,A100,306041,199104,475237,96405,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Other,Nvidia,B200,325188,173275,526590,820808,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Other,Nvidia,B300,456688,326797,618890,1152728,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,Other,Nvidia,H100/H200,904920,552250,1357167,904051,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,xAI,Nvidia,B200,140000,,,350000,False,https://epoch.ai/data/ai_chip_owners.zip
+2025-12-31,xAI,Nvidia,H100/H200,200000,,,200000,False,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,Amazon,Nvidia,A100,86410,56669,134707,27246,True,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,Amazon,Nvidia,B200,234707,178926,311077,592994,True,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,Amazon,Nvidia,B300,167021,125090,223887,421983,True,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,Amazon,Nvidia,H100/H200,451830,342471,585636,451830,True,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,China,Nvidia,A100,72697,47100,112744,22922,True,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,China,Nvidia,A800,121421,92871,157504,38285,True,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,China,Nvidia,H20,1489899,1146319,1938218,222844,True,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,China,Nvidia,H800,115430,93121,143648,115430,True,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,Google,Google,TPU v4,261998,190719,343997,36407,True,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,Google,Google,TPU v4i,30031,18344,45716,2094,True,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,Google,Google,TPU v5e,2391837,1745468,3147874,474983,True,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,Google,Google,TPU v5p,672187,495021,871267,311807,True,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,Google,Google,TPU v6e,2563261,1947140,3187735,2378043,True,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,Google,Google,TPU v7,410393,299936,536507,956825,True,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,Google,Nvidia,A100,86455,56221,133583,27260,True,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,Google,Nvidia,B200,193779,146484,254967,489589,True,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,Google,Nvidia,B300,139652,105210,185803,352835,True,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,Google,Nvidia,H100/H200,423372,322331,555798,423372,True,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,Meta,Nvidia,A100,118947,77062,185922,37505,True,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,Meta,Nvidia,B200,293821,223474,387564,742349,True,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,Meta,Nvidia,B300,226556,168494,304891,572400,True,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,Meta,Nvidia,H100/H200,594470,451396,774476,594470,True,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,Microsoft,Nvidia,A100,227034,147063,353206,71586,True,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,Microsoft,Nvidia,B200,483597,366519,636666,1221824,True,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,Microsoft,Nvidia,B300,366189,276210,486323,925189,True,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,Microsoft,Nvidia,H100/H200,1093460,834492,1444563,1093460,True,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,Oracle,Nvidia,A100,28904,15789,52829,9113,True,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,Oracle,Nvidia,B200,176920,130918,238711,446994,True,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,Oracle,Nvidia,B300,139086,101598,192422,351404,True,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,Oracle,Nvidia,H100/H200,284484,201500,397671,284484,True,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,Other,Nvidia,A100,306395,197477,476985,96446,True,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,Other,Nvidia,B200,379899,224256,590273,958207,True,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,Other,Nvidia,B300,548582,405198,737869,1383670,True,https://epoch.ai/data/ai_chip_owners.zip
+2026-03-31,Other,Nvidia,H100/H200,901946,551514,1346852,900423,True,https://epoch.ai/data/ai_chip_owners.zip

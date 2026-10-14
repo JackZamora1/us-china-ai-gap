@@ -7,7 +7,7 @@ and exits with an error, so nothing is published, if:
   - a source that had rows in the committed scores now has none
   - the total number of scores fell by more than 15%
   - any area's median lag moved by more than 4 months in one run
-  - the chip-owner, chip-specification or price table is empty
+  - the chip-owner, chip-type, chip-specification or price table is empty
   - China's chip stock changed by more than 50% in one run
 """
 
@@ -25,7 +25,7 @@ ROOT = Path(__file__).resolve().parent.parent
 MAX_SCORE_DROP = 0.15
 MAX_MEDIAN_MOVE = 4.0
 MAX_STOCK_CHANGE = 0.50
-NEW_TABLES = ["compute_stock.csv", "chips.csv", "prices.csv"]
+NEW_TABLES = ["compute_stock.csv", "chip_deployment.csv", "chips.csv", "prices.csv"]
 
 
 def committed(path: str) -> str | None:

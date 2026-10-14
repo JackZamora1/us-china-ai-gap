@@ -6,7 +6,11 @@ Usage:  python scripts/refresh.py            (then: python build.py)
 Sources: Epoch benchmark_data.zip, the Arena leaderboard dataset on Hugging
 Face, the Artificial Analysis API (optional), and METR's time-horizon file.
 Raw copies go to data/raw/YYYY-MM-DD/ so a past build can be reproduced.
-Writes data/inventory.csv, models.csv, scores.csv and benchmarks.csv.
+Writes data/inventory.csv, models.csv, scores.csv and benchmarks.csv, and the
+compute and price tables.
+
+        python scripts/refresh.py --compute-from data/raw/YYYY-MM-DD
+rebuilds only the compute tables from a saved raw folder, offline.
 """
 
 from __future__ import annotations
@@ -605,12 +609,24 @@ BENCH: dict[str, dict] = {}
 PRICES: list[dict] = []
 
 
-def load_compute() -> tuple[pd.DataFrame, pd.DataFrame]:
-    """Epoch's chip-owner estimates and hardware specifications, as tidy tables."""
-    raw = fetch(CHIP_OWNERS_ZIP)
+def load_compute() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    """Download Epoch's chip-owner and hardware files, keep raw copies, and build the tables."""
+    owners_zip, hardware = fetch(CHIP_OWNERS_ZIP), fetch(ML_HARDWARE_CSV)
     (RAW / "epoch").mkdir(parents=True, exist_ok=True)
-    (RAW / "epoch" / "ai_chip_owners.zip").write_bytes(raw)
-    owners = pd.read_csv(zipfile.ZipFile(io.BytesIO(raw)).open("cumulative_by_designer.csv"))
+    (RAW / "epoch" / "ai_chip_owners.zip").write_bytes(owners_zip)
+    (RAW / "epoch" / "ml_hardware.csv").write_bytes(hardware)
+    return compute_tables(owners_zip, hardware)
+
+
+CHIP_COLS = ["name", "designer", "country", "type", "release_date", "perf_16bit_flop_s", "perf_8bit_op_s",
+             "memory_bandwidth_byte_s", "memory_bytes", "tdp_w", "status", "planned", "datasheet_url", "source_url",
+             "flag", "notes", "added_by"]
+
+
+def compute_tables(owners_zip: bytes, hardware: bytes) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    """Epoch's chip-owner estimates (by designer and by chip type) and hardware specifications, as tidy tables."""
+    zf = zipfile.ZipFile(io.BytesIO(owners_zip))
+    owners = pd.read_csv(zf.open("cumulative_by_designer.csv"))
     stock = pd.DataFrame({
         "quarter_end": owners["End date"], "owner": owners["Owner"], "chip_designer": owners["Chip manufacturer"],
         "h100e": owners["Compute estimate in H100e (median)"], "h100e_p5": owners["H100e (5th percentile)"],
@@ -619,9 +635,17 @@ def load_compute() -> tuple[pd.DataFrame, pd.DataFrame]:
         "notes": owners["Notes"].fillna(""), "source_url": CHIP_OWNERS_ZIP,
     }).sort_values(["quarter_end", "owner", "chip_designer"])
 
-    body = fetch(ML_HARDWARE_CSV)
-    (RAW / "epoch" / "ml_hardware.csv").write_bytes(body)
-    hw = pd.read_csv(io.BytesIO(body))
+    # Cumulative units by chip type: which chips each owner actually holds in volume.
+    types = pd.read_csv(zf.open("cumulative_by_chip_type.csv"))
+    deployment = pd.DataFrame({
+        "quarter_end": types["End date"], "owner": types["Owner"], "chip_designer": types["Chip manufacturer"],
+        "chip_type": types["Chip type"], "units": types["Number of Units (median)"],
+        "units_p5": types["Number of Units (5th percentile)"], "units_p95": types["Number of Units (95th percentile)"],
+        "h100e": types["Compute estimate in H100e (median)"], "incomplete": types["Incomplete"].fillna(False).astype(bool),
+        "source_url": CHIP_OWNERS_ZIP,
+    }).sort_values(["quarter_end", "owner", "chip_designer", "chip_type"])
+
+    hw = pd.read_csv(io.BytesIO(hardware))
     num = lambda col: pd.to_numeric(hw[col], errors="coerce")
     chips = pd.DataFrame({
         "name": hw["Hardware name"], "designer": hw["Manufacturer"],
@@ -630,11 +654,32 @@ def load_compute() -> tuple[pd.DataFrame, pd.DataFrame]:
         # 16-bit: the better of tensor-core FP16/BF16 and plain FP16. 8-bit: the better of FP8 and INT8.
         "perf_16bit_flop_s": pd.concat([num("Tensor-FP16/BF16 performance (FLOP/s)"), num("FP16 (half precision) performance (FLOP/s)")], axis=1).max(axis=1),
         "perf_8bit_op_s": pd.concat([num("FP8 performance (FLOP/s)"), num("INT8 performance (OP/s)")], axis=1).max(axis=1),
+        "memory_bandwidth_byte_s": num("Memory bandwidth (byte/s)"), "memory_bytes": num("Memory (bytes)"),
         "tdp_w": num("TDP (W)"), "datasheet_url": hw["Link to datasheet"], "source_url": ML_HARDWARE_CSV,
     })
+    chips["status"] = ["released" if isinstance(d, str) else "no release date" for d in chips.release_date]
     chips["flag"] = ["no release date" if not isinstance(d, str) else "" for d in chips.release_date]
-    chips = chips.dropna(subset=["name"]).sort_values(["release_date", "name"])
-    return stock, chips
+    chips["added_by"] = "refresh"
+    chips = chips.dropna(subset=["name"]).reindex(columns=CHIP_COLS)
+    # Hand-added rows (added_by = manual) replace Epoch's row of the same name.
+    path = DATA / "chips.csv"
+    if path.exists():
+        old = pd.read_csv(path, dtype=str, keep_default_na=False)
+        if "added_by" in old.columns:
+            manual = old[old.added_by == "manual"].reindex(columns=CHIP_COLS).replace("", None)
+            for col in ("perf_16bit_flop_s", "perf_8bit_op_s", "memory_bandwidth_byte_s", "memory_bytes", "tdp_w"):
+                manual[col] = pd.to_numeric(manual[col], errors="coerce")
+            if len(manual):
+                chips = pd.concat([chips[~chips.name.isin(manual.name)], manual], ignore_index=True)
+                print(f"kept {len(manual)} manual chip row(s)")
+    chips = chips.sort_values(["release_date", "name"], key=lambda c: c.fillna("").astype(str))
+    return stock, chips, deployment
+
+
+def write_compute(stock: pd.DataFrame, chips: pd.DataFrame, deployment: pd.DataFrame) -> None:
+    stock.to_csv(DATA / "compute_stock.csv", index=False, float_format="%.10g")
+    deployment.to_csv(DATA / "chip_deployment.csv", index=False, float_format="%.10g")
+    chips.to_csv(DATA / "chips.csv", index=False, float_format="%.10g")
 
 
 def write_prices() -> int:
@@ -655,7 +700,17 @@ def write_prices() -> int:
     return len(prices)
 
 
+def compute_only(raw_dir: Path) -> None:
+    """Rebuild only the compute tables from a saved raw folder, without downloading anything."""
+    stock, chips, deployment = compute_tables((raw_dir / "epoch" / "ai_chip_owners.zip").read_bytes(),
+                                              (raw_dir / "epoch" / "ml_hardware.csv").read_bytes())
+    write_compute(stock, chips, deployment)
+    print(f"compute: {len(stock)} chip-owner rows, {len(deployment)} chip-type rows, {len(chips)} chips (from {raw_dir})")
+
+
 def main() -> None:
+    if len(sys.argv) == 3 and sys.argv[1] == "--compute-from":
+        return compute_only(Path(sys.argv[2]))
     RAW.mkdir(parents=True, exist_ok=True)
     reg = Registry(pd.read_csv(DATA / "labs.csv"))
     scores, inventory, epoch_files = load_epoch(reg)
@@ -674,11 +729,11 @@ def main() -> None:
         sys.exit(f"refresh failed: no rows from {', '.join(empty)}; tables left unchanged")
     print("rows per source:", ", ".join(f"{k} {n}" for k, n in counts.items()))
     add_release_urls(reg)
-    stock, chips = load_compute()
-    counts["chip owners"], counts["chip specifications"] = len(stock), len(chips)
+    stock, chips, deployment = load_compute()
+    counts["chip owners"], counts["chip specifications"], counts["chip types"] = len(stock), len(chips), len(deployment)
     if os.environ.get("AA_API_KEY"):
         counts["prices"] = len(PRICES)
-    empty = [k for k in ("chip owners", "chip specifications", "prices") if counts.get(k) == 0]
+    empty = [k for k in ("chip owners", "chip specifications", "chip types", "prices") if counts.get(k) == 0]
     if empty:
         sys.exit(f"refresh failed: no rows from {', '.join(empty)}; tables left unchanged")
 
@@ -720,11 +775,10 @@ def main() -> None:
     pd.DataFrame(inventory).sort_values(["source", "cn_models_last_12m"], ascending=[True, False]).to_csv(DATA / "inventory.csv", index=False)
     benches = bench_table(table, models)
     benches.to_csv(DATA / "benchmarks.csv", index=False)
-    stock.to_csv(DATA / "compute_stock.csv", index=False, float_format="%.10g")
-    chips.to_csv(DATA / "chips.csv", index=False, float_format="%.10g")
+    write_compute(stock, chips, deployment)
     if PRICES:
         write_prices()
-    print(f"compute: {len(stock)} chip-owner rows, {len(chips)} chips; prices: {len(PRICES)}")
+    print(f"compute: {len(stock)} chip-owner rows, {len(deployment)} chip-type rows, {len(chips)} chips; prices: {len(PRICES)}")
 
     print(f"models {len(models)}  scores {len(table)}  benchmarks {len(benches)}  raw copies in {RAW.relative_to(ROOT)}")
     print(benches.groupby("eligible", observed=True).size().to_string())

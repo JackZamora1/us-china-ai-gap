@@ -1,6 +1,6 @@
 # US–China frontier AI capability gap
 
-A single-page dashboard that shows how far China trails the US in AI, measured in months wherever that is meaningful: by capability area, in AI chip stock, chip design and training compute, with a comparison of what models cost to use.
+A single-page dashboard that shows how far China trails the US in AI, measured in months wherever that is meaningful: by capability area, in AI chip stock and in the best chips each side actually has in use, with the largest disclosed training runs and a comparison of what models cost to use.
 
 **Live page:** https://jackzamora1.github.io/us-china-ai-gap/ (refreshed daily). Or open `index.html` locally.
 
@@ -28,8 +28,10 @@ Overall is three measures that disagree: 7.3 months on Epoch's Capabilities Inde
 | Measure | China against the US | Detail |
 |---|---|---|
 | AI chip stock (to 2025-12-31) | 13.6 times smaller; at least 21.0 months behind | China 1,155,114 H100e against 15,746,640 for seven US companies. With Epoch's smuggling estimate: 8.7 times, 18.0 months |
-| Best chip, 16-bit performance | 22.9 months behind | Biren BR100 was matched by NVIDIA B200. Huawei's best (Huawei Ascend 920) is 48.8 months behind |
-| Largest disclosed training run | 27.8 months behind | Doubao-pro was matched by Claude 3.5 Sonnet. US disclosure is patchy |
+| Best chip deployed in China (any designer), 16-bit performance | 36.0 months behind (30.1 to 39.0 across thresholds) | Nvidia H800 (989 TFLOP/s), deployed at scale from Q2 2023; the seven US companies had deployed the H100 by Q4 2022. Measured to 2025-12-31 |
+| Best Chinese-designed chip deployed in China, 16-bit performance | 36.0 months behind (30.1 to 39.0) | Huawei Ascend 910C (800 TFLOP/s), from Q4 2024; also matched by the H100 in Q4 2022 |
+| Best chip deployed in China (any designer), memory bandwidth | 21.0 months behind (15.0 to 21.0) | Nvidia H20 (4,000 GB/s), from Q1 2024; matched by AMD's MI300X (5,300 GB/s) in Q1 2024 |
+| Best Chinese-designed chip deployed in China, memory bandwidth | 36.0 months behind (30.1 to 39.0) | Ascend 910C (3,200 GB/s); matched by the H100 (3,350 GB/s) in Q4 2022 |
 | Cheapest model scoring 20+ on the AA index | US price is 2.0 times the Chinese price | Hy3-preview (Reasoning) at $0.1 against Claude Haiku 5.5 (High) at $0.2 per million tokens |
 | Cheapest model scoring 30+ on the AA index | US price is 1.1 times the Chinese price | MiMo-V2.6-Flash at $0.175 against Claude Haiku 5.5 (High) at $0.2 per million tokens |
 | Cheapest model scoring 40+ on the AA index | US price is 0.8 times the Chinese price | GLM-5.3-Flash at $0.237 against Claude Haiku 5.5 (Max) at $0.2 per million tokens |
@@ -60,17 +62,24 @@ All compute data is from Epoch AI (CC BY 4.0).
 | Source | What it measures | Table |
 |---|---|---|
 | AI chip owners (`ai_chip_owners.zip`, file `cumulative_by_designer.csv`) | Cumulative AI chips acquired since Q1 2022 by owner and chip designer, in H100-equivalents, units and power, with 5th and 95th percentiles | `data/compute_stock.csv` |
-| ML hardware (`ml_hardware.csv`) | Specifications of 178 accelerators, including 50 from Chinese designers | `data/chips.csv` |
+| AI chip owners (same zip, file `cumulative_by_chip_type.csv`) | The same, split by chip type (H100/H200, H20, Ascend 910C, TPU v7 and so on), in units | `data/chip_deployment.csv` |
+| ML hardware (`ml_hardware.csv`) | Specifications of 178 accelerators, including 50 from Chinese designers: 16-bit and 8-bit performance, memory bandwidth and capacity | `data/chips.csv` |
 | Model training compute | Epoch's estimate of each model's training compute, already in `data/models.csv` | `data/models.csv` |
 
 - **Chip stock.** The rule is applied to cumulative H100-equivalents at each quarter end, up to Epoch's last complete quarter (quarters Epoch marks incomplete are dropped). The lag therefore moves in three-month steps. The page also shows the ratio, because a lag of nearly two years on an exponential curve is easier to read as "13.6 times smaller".
 - **What "China" is.** Epoch's bucket for chips it infers were sold to companies based in China (A100, A800, H800, H20, MI308X) plus Chinese-designed chips (Huawei Ascend 910B and 910C, Cambricon Siyuan 590). It does not mean government ownership.
 - **Smuggling.** The file has a separate owner, "China (smuggled)", from Q1 2024: Epoch's own model of diverted and resold Nvidia chips, which Epoch calls speculative. The page leaves it out by default and adds it with a toggle.
 - **No US total.** The owners are companies. "Seven US companies" is the sum of the ones Epoch names (Amazon, CoreWeave, Google, Meta, Microsoft, Oracle, xAI), all headquartered in the US. It understates the US, so the lag against it is a minimum. "Everything outside China" adds Epoch's "Other" owner, which mixes smaller US buyers with buyers elsewhere, so it is not called "US".
-- **Best chip.** The rule is applied to the best 16-bit performance of any chip released to date: Nvidia against Chinese designers. 16-bit is used because both sides report it (32 dated Chinese chips have a 16-bit figure; only 4 have an 8-bit floating-point figure). The value is the higher of Epoch's tensor-core FP16/BF16 column and its plain FP16 column.
-- **Huawei Ascend chips are in Epoch's table** (20 rows), so none were added by hand. Twelve Chinese chips have no release date there and are left out, including the Ascend 950PR, 950DT, 960 and 970.
-- **Training compute.** The rule is applied to the largest training run with an estimate, by country. A scatter shows Epoch Capabilities Index score against training compute.
-- **Disclosure bias.** Of ECI-scored models released in 2026, 3 of 46 US models have a compute estimate against 9 of 33 Chinese ones (2025: 12 of 46 against 20 of 23). The US side is limited to models that disclose, so "China achieves more per unit of compute" is suggestive, not proven. The page shows this coverage table beside the charts.
+- **Best chip deployed at scale.** This replaces the old spec-sheet headline. A chip type counts as deployed for an owner group (seven US companies; China, any designer; China, Chinese-designed) from the first complete quarter end at which the group's cumulative units pass 10,000 and the chip has been released. Each quarter, the group's best chip is the highest per-chip figure among its deployed types, and the months-behind rule is applied to that, measured to Epoch's last complete quarter (2025-12-31). "China, any designer" includes Nvidia's China-specific H800 and H20 and AMD's MI308X, so it shows what export controls let through. "Chinese-designed" is Huawei and Cambricon. `build.py` writes the result to `data/deployed_chips.csv`.
+- **What it shows.** On 16-bit performance, both China lines are 36.0 months behind: China's best deployed chip is the H800 (989 TFLOP/s) and its best Chinese-designed chip is the Ascend 910C (800 TFLOP/s), and the seven US companies had the H100 (989 TFLOP/s) in volume by Q4 2022. They have since deployed the B200, B300, TPU v7 and MI355X (2,250 to 2,517 TFLOP/s). On memory bandwidth, China's best deployed chip is the H20 (4,000 GB/s), 21.0 months behind; the 910C (3,200 GB/s) is 36.0 months behind; the US best is 8,000 GB/s.
+- **Threshold sensitivity.** At 1,000, 5,000, 10,000, 25,000, 50,000 and 100,000 units, the 16-bit lag is 39.0, 36.0, 36.0, 33.1, 33.1 and 30.1 months for both China lines. Bandwidth for any designer is 21.0, 21.0, 21.0, 21.0, 18.0 and 15.0. The movement comes almost entirely from when the US H100 and MI300X pass the threshold, so the conclusion (about three years on compute, under two years on bandwidth for chips China buys) does not depend on the choice. The page shows this table.
+- **Memory bandwidth** is shown as a toggle on the same chart, because training and serving large models is usually limited by moving data to and from memory, which depends mostly on access to high-bandwidth memory (HBM), more than by peak arithmetic.
+- **Chip type map.** The owner data's chip types are matched to rows of `chips.csv` by `data/chip_type_map.csv`, kept by hand. Every type in today's data maps. Flagged: H100/H200 (one combined type; the H100's figures are used), Ascend 910B (variant mix unknown; Epoch's generic row is used), Siyuan 590 (no bandwidth in Epoch's table) and MI308X (Epoch's bandwidth of 10.3 TB/s is double the MI300X it is cut from; left out of the bandwidth view). `build.py` warns if a new chip type has no mapping.
+- **System-level scaling.** The page notes under the chip views that per-chip comparisons understate Huawei's approach of linking many chips: its Atlas 900 A3 SuperPoD (sold as CloudMatrix 384) joins up to 384 Ascend 910C chips (Huawei Connect keynote, 2025-09-18), and SemiAnalysis (2025-04-16) estimates about 300 PFLOP/s of dense BF16, almost double Nvidia's GB200 NVL72, at about 4.1 times the power.
+- **Chip designs on paper.** The old comparison (best 16-bit performance of any chip released to date, Nvidia against Chinese designers) is kept as the last section of the compute tab, labelled "announced specifications, not deployed chips", and is not on the overview. On it, Biren's BR100 still sets China's line from 2022, although Epoch's chip-owner data shows no Biren chips in China's stock.
+- **Huawei roadmap chips.** Epoch's table has no release date for the Ascend 950PR, 950DT, 960 and 970. They are now hand-kept rows in `chips.csv` (`added_by` = `manual`, kept by every refresh), sourced from Huawei's 2025-09-18 keynote. The 950PR is dated 2026-03-31, the end of the quarter Huawei announced; its FP8 figure (1 PFLOPS) is from the keynote, its 1.6 TB/s bandwidth is Epoch's (citing Tom's Hardware) and is flagged, and Huawei published no 16-bit figure, so it is in no 16-bit comparison. It is not in Epoch's owner data, so it is not in the deployed view. The 950DT, 960 and 970 are marked "announced, not released" with their planned quarters and are kept out of every comparison. Eight other Chinese chips still have no release date and are left out of the spec-sheet view.
+- **Training compute: largest disclosed run.** The compute tab leads this section with the coverage table, then names the largest disclosed run by country and the first disclosed US run as large as China's largest, each with the disclosure caveat beside it. No months-behind figure is shown for it on the page or in the summary above. On disclosed runs only, a US model passed China's largest (Doubao-pro, 2.5×10²⁵ FLOP) in June 2024; that comparison mostly reflects who discloses.
+- **Disclosure bias.** Of ECI-scored models released in 2026, 3 of 46 US models have a compute estimate against 9 of 33 Chinese ones (2025: 12 of 46 against 20 of 23). The US side is limited to models that disclose, so "China achieves more per unit of compute" is suggestive, not proven.
 - **No map.** Epoch's data-centre dataset lists 77 US sites and 4 Chinese sites with no coordinates, so a map would show a coverage gap, not a compute gap. It could be added later if coverage improves.
 
 ### Cost
@@ -83,6 +92,7 @@ Prices come from the Artificial Analysis API response already used for scores: b
 - **History starts 2026-10-13.** `data/price_history.csv` logs a row whenever a configuration's price first appears or changes, so the committed file builds a time series from that date.
 - **List prices, not costs.** They show what a user pays per token. Some providers price below cost, and models that use more tokens per task cost more than their per-token price suggests.
 - **Zero prices are treated as missing.** 264 of 699 configurations have a blended price of zero in the API, which means no list price, not free.
+- **Long-context pricing.** Claude Haiku 5.5, the cheapest US model at index scores of 20, 30 and 40, lists $0.10 input and $0.50 output per million tokens for prompts under 100K tokens and charges five times as much above that, so its blended list price understates the cost of long-context use. The cost tab says so under the table (`PRICE_NOTES` in `build.py`).
 
 ### Low-confidence areas
 
@@ -100,6 +110,8 @@ When an area has fewer than 2 counted benchmarks, the page shows the most recent
 ### Benchmarks about to stop counting
 
 `build.py` prints a warning, and the page shows a notice, when every counted benchmark in an area will lose eligibility within 30 days. Today: cyber and security loses ExploitBench on 2026-10-20 unless a newer Chinese model is scored, after which the area has no current figure.
+
+The transition was tested with `python build.py --as-of 2026-10-21`. Cyber then has no counted benchmark in either view; the timeline row reads "No current data" with the UK AISI bracket (4 to 7 months, labelled as open-weight against closed models); the area explorer gives the same sentence and an empty history after the last month that qualified; the heatmap's quarter-to-date cell is blank; the overview lists cyber as "no data"; and the headline, which already excluded cyber as low confidence, is unchanged. No errors in the build or the browser console.
 
 ### Before 2025
 
@@ -127,10 +139,11 @@ pip install -r requirements.txt          # once: pandas, pyarrow, pyyaml
 export AA_API_KEY=...                    # optional: your Artificial Analysis key
 python3 scripts/refresh.py               # pull every source, rebuild the tables
 python3 build.py                         # recompute every lag as of today, write index.html
+python3 build.py --as-of 2026-10-21      # or as of another date, to test a transition (rebuild without it afterwards)
 python3 scripts/check.py                 # optional: compare with the last commit
 ```
 
-- `scripts/refresh.py` downloads every source and rewrites `inventory.csv`, `models.csv`, `scores.csv`, `benchmarks.csv`, `arena_text_tops.csv`, `compute_stock.csv`, `chips.csv`, `prices.csv` and `price_history.csv`. It stops without changing anything if a source returns no rows.
+- `scripts/refresh.py` downloads every source and rewrites `inventory.csv`, `models.csv`, `scores.csv`, `benchmarks.csv`, `arena_text_tops.csv`, `compute_stock.csv`, `chip_deployment.csv`, `chips.csv` (keeping hand-added rows), `prices.csv` and `price_history.csv`. It stops without changing anything if a source returns no rows. `python3 scripts/refresh.py --compute-from data/raw/YYYY-MM-DD` rebuilds only the compute tables from a saved download, offline.
 - Without `AA_API_KEY` it skips Artificial Analysis and the rest still works, with fewer benchmarks and no cost tab data.
 - The key is read from the environment only. It is not written to any file here.
 - `build.py` needs only the standard library. All lags are as of the day you run it, so rerun it to move "today" forward. It also writes `data/profile.json`, a small summary of the area medians.
@@ -147,7 +160,7 @@ Each run:
    - any source returns no rows (or the `AA_API_KEY` secret is missing),
    - the total number of scores is more than 15% below the committed version,
    - any area's median lag moved more than 4 months since the committed version,
-   - the chip-owner, chip-specification or price table is empty, or
+   - the chip-owner, chip-type, chip-specification or price table is empty, or
    - China's chip stock changed by more than 50% since the committed version.
 3. Commits the processed CSVs (including today's prices and any price changes), `data/profile.json` and `index.html` with the message "Data refresh YYYY-MM-DD", only if something changed. The page changes daily because every lag grows by a day.
 4. Deploys `index.html` to GitHub Pages.
@@ -194,7 +207,10 @@ git show <commit>:data/profile.json
 | `data/benchmarks.csv` | Benchmark, area, ceiling, saturation date, status, coverage counts, notes | refresh |
 | `data/inventory.csv` | Every benchmark found in every source, with coverage and why it was or was not used | refresh |
 | `data/compute_stock.csv` | Epoch's chip-owner estimates: quarter, owner, chip designer, H100e with percentiles, units, power | refresh |
-| `data/chips.csv` | Epoch's accelerator specifications: designer, country, release date, 16-bit and 8-bit performance | refresh |
+| `data/chip_deployment.csv` | Epoch's chip-owner estimates by chip type: quarter, owner, designer, chip type, units with percentiles, H100e | refresh |
+| `data/chips.csv` | Epoch's accelerator specifications: designer, country, release date, 16-bit and 8-bit performance, memory bandwidth and capacity, status; rows with `added_by` = `manual` are kept | refresh, plus you |
+| `data/chip_type_map.csv` | Which `chips.csv` row stands for each chip type in the owner data, whether its bandwidth is used, and flags | you |
+| `data/deployed_chips.csv` | Each chip type counted as deployed, per owner group: first quarter, units, 16-bit performance, bandwidth | build |
 | `data/prices.csv` | Today's list prices and index score per Artificial Analysis model configuration | refresh |
 | `data/price_history.csv` | A row each time a configuration's price first appears or changes | refresh (append only) |
 | `data/profile.json` | Area medians, score count and China's chip stock from the last build | build |
@@ -215,6 +231,10 @@ Add a row to `scores.csv`. `model` must match a `name` in `models.csv` and `benc
 ### Add a lab
 
 If a refresh prints "labs missing from data/labs.csv", add a row with the country and the source's spelling under `aliases` (separate several with `|`). Until then that lab's models are treated as unknown country and ignored.
+
+### Add or map a chip
+
+If `build.py` warns that a chip type has no row in `data/chip_type_map.csv`, add one naming the `chips.csv` row it corresponds to (`use_bandwidth` = `yes` or `no`, and a `flag` and `notes` if the match is approximate). To add a chip Epoch lacks or has no date for, add a row to `chips.csv` with `added_by` = `manual`, a `source_url`, `status` (`released` or `announced, not released`) and `flag` for any value not confirmed from a primary source. Leave a spec blank rather than estimating it.
 
 ### Add an event
 
@@ -386,12 +406,27 @@ No event row was dropped.
 37. **China's percentile range is the sum of each designer's 5th and 95th percentiles.** That is wider than the true range of the total; it is used only for the bracketed lag range.
 38. **The smuggling estimate is off by default,** because Epoch calls it speculative and it starts only in 2024.
 39. **Chips are compared on 16-bit performance,** the higher of Epoch's tensor-core and plain FP16 columns, because that is the precision both sides report. All Chinese designers are compared with Nvidia; Huawei is also shown alone because it supplies most Chinese-designed chips in the stock estimate.
-40. **Chip performance is a specification, not a production count.** China's best 16-bit figure is Biren's BR100 from 2022, which is not among the chip types in Epoch's China stock. The page shows Huawei's line beside it for that reason.
+40. **Chip performance is a specification, not a production count.** China's best 16-bit figure is Biren's BR100 from 2022, which is not among the chip types in Epoch's China stock. Superseded by 46: the spec-sheet view is now secondary and off the overview.
 41. **Training compute uses every model with an Epoch estimate, including ones without benchmark scores.** China's largest is ByteDance's Doubao-pro. The coverage table counts only ECI-scored models.
 42. **Cost uses model configurations, not models.** A configuration's index score and price come from the same row, so reasoning-effort variants of one model appear separately.
 43. **Price history is a change log,** not a daily snapshot, so it grows only when prices change.
 44. **The site is split into six tabs with hash links.** A tab's charts are drawn when it is first shown, so they are sized from a visible container. The policy timeline shows each area's lag at the month end on or after each event, and China's chip stock at the last quarter end on or before it.
 45. **The sanity checks also fail a run if the chip-owner, chip-specification or price table is empty, or if China's chip stock changes by more than 50%.** A new quarter of Epoch data would raise the stock by far less than that.
+46. **The best-chip measure is the best chip deployed at scale, not the best chip announced.** It uses Epoch's units by chip type, so a chip only counts once one side owns it in volume. The spec-sheet comparison is kept, labelled, as the last compute section.
+47. **The deployment threshold is 10,000 cumulative units per owner group.** It is low enough that a chip in its first quarter of real deployment counts, and high enough to exclude pilot quantities. From 1,000 to 100,000 units the 16-bit lag moves between 30.1 and 39.0 months for both China lines, almost entirely through the date the US H100 passes the threshold, so the choice does not change the conclusion. The page and this README show the full table.
+48. **Units are summed across the seven US companies before applying the threshold,** the same group as the chip-stock comparison. A type counts for the US once the seven together hold 10,000, even if no single company does.
+49. **A chip cannot count as deployed before its release date.** Epoch allocates 12,500 Ascend 910C units to Q1 2024 although Epoch's own hardware table dates the 910C to 2024-10-15; the 910C counts from the first quarter end after release (Q4 2024).
+50. **"Chinese-designed" uses the designer's country in `chips.csv`** (the hand-kept `CHINESE_CHIP_MAKERS` list), so the line is Huawei and Cambricon today.
+51. **Combined and ambiguous chip types use the conservative specification.** H100/H200 uses the H100 (same 16-bit, lower bandwidth). A100 uses the 80 GB SXM variant (the highest A100 bandwidth, flagged). Ascend 910B uses Epoch's generic 910B row.
+52. **The MI308X's bandwidth is left out.** Epoch lists 10.3 TB/s, twice the 5.3 TB/s it gives the MI300X this chip is cut down from; third-party databases give 5.32 TB/s and AMD publishes no datasheet. Its 16-bit figure (654 TFLOP/s) is used. Including Epoch's figure would make China's best deployed bandwidth exceed every US chip's from Q4 2025.
+53. **Smuggled chips are not in the deployed view.** Epoch's smuggling estimate has no split by chip type.
+54. **Lags for deployed chips are measured to Epoch's last complete quarter (2025-12-31),** like chip stock. A match in Epoch's first quarter (Q1 2022) would be shown as "at least"; none of today's figures are.
+55. **The 950PR's release date is the end of the quarter Huawei announced (2026-03-31).** Huawei said in September 2025 it would be available in Q1 2026. Secondary reports (Reuters via RTHK, March 2026) put mass production in March or April 2026; no Huawei shipment announcement was found. No spec was filled from memory: 16-bit performance and memory capacity are blank because Huawei did not publish them, and the 1.6 TB/s bandwidth is Epoch's figure, flagged. For the 960 and 970, Epoch's absolute bandwidths (9.6 and 14.4 TB/s) were not used because the keynote gives only ratios.
+56. **The system-scaling note cites Huawei for the 384-chip count and SemiAnalysis for the system comparison.** SemiAnalysis is not a primary source but is the most specific reputable one found; the note attributes the estimate to it.
+57. **The training-compute comparison has no months-behind figure anywhere on the page or in the summary table.** The page gives the largest disclosed run on each side and the date a disclosed US run first matched China's largest, each with the disclosure caveat beside it, below the coverage table.
+58. **Every chart names its unit on the y axis,** and end-of-line labels get a right margin measured from their text, so they are not clipped at any width.
+59. **The overview's cards share four grid rows** (title, introduction, body, link) so they line up. On phones they stack.
+60. **Pricing notes are hand-kept per model** (`PRICE_NOTES` in `build.py`) and shown only while that model sets a row of the cost table.
 
 ## Spot check
 
@@ -399,20 +434,24 @@ Ten random rows of `scores.csv` (seed 20261013) were compared with freshly downl
 
 A second spot check on 2026-10-13 covered the new tables: 4 random rows of `compute_stock.csv`, 3 of `chips.csv` and 3 of `prices.csv` (seed 1013) against fresh downloads. 10 of 10 matched.
 
+A third, of the deployed-chip table, took 5 random rows of `data/deployed_chips.csv` (seed 20261013) and recomputed each from Epoch's raw `cumulative_by_chip_type.csv` and `ml_hardware.csv` with separate code (pivot by owner, carry forward, sum, find the first quarter at or after release with 10,000 units): US MI300X, US MI355X, China H800, China Ascend 910B and China Ascend 910C. 5 of 5 matched on first deployed quarter, units then, units at the last quarter, 16-bit performance and bandwidth.
+
 ## Data points still to check by hand
 
 **Compute and cost**
 
-- **Claude Haiku 5.5's price.** The API lists it at $0.10 input and $0.50 output per million tokens, which sets the cheapest US model at index scores of 20, 30 and 40. If that is an error in the source, the US looks cheaper than it is.
-- **Biren BR100.** It sets China's best-chip figure (1,024 TFLOP/s, August 2022). Whether it was produced in volume is not in the data.
-- **Ascend 950PR and later Huawei chips** have no release date in Epoch's table, so they are not in the chip comparison even though the 950PR was reported in production in 2026.
+- **Ascend 950PR.** Release date (2026-03-31) is Huawei's announced quarter, not a confirmed shipment; its 1.6 TB/s bandwidth is from Epoch, citing Tom's Hardware. Not in Epoch's owner data, so not yet in the deployed view.
+- **MI308X bandwidth.** Epoch's 10.3 TB/s looks like an error (see DECISIONS 52); left out until AMD or Epoch confirms a figure.
+- **Ascend 910B variant mix.** Epoch's owner data does not split 910B variants (280 to 400 TFLOP/s, 0.8 to 1.6 TB/s); the generic row is used. China's headline lines rest on the H800, H20 and 910C, so this does not move them.
+- **Huawei before 2024.** Epoch's Huawei and Cambricon estimates start in Q1 2024, so Ascend chips deployed earlier are not dated earlier. This cannot raise China's lines: the 910B (376 TFLOP/s) is below the H800 China already had.
+- **CloudMatrix 384 comparison.** The 300 PFLOP/s and 4.1 times power figures are SemiAnalysis estimates, not Huawei's.
 - **Chip-maker countries** are a hand-kept list in `scripts/refresh.py` (`CHINESE_CHIP_MAKERS`); a new Chinese designer in Epoch's table would be treated as non-Chinese until added.
 - **xAI and CoreWeave** have rows for only some quarters in Epoch's file; their cumulative figures are carried forward between them.
-- **Training compute for recent US closed models** is mostly absent, so the 27.8-month lag and the scatter rest on the few that disclose.
+- **Training compute for recent US closed models** is mostly absent, so the largest-disclosed-run comparison and the scatter rest on the few that disclose.
 
 **Capabilities**
 
-1. **Cyber rests on one benchmark that expires on 2026-10-20.** After that the area shows only the UK AISI estimate.
+1. **Cyber rests on one benchmark that expires on 2026-10-20.** After that the area shows only the UK AISI estimate (tested with `--as-of 2026-10-21`).
 2. **LMCA's evaluator.** If Redwood Research runs every model itself, LMCA should be independent, which would move reasoning from 5.7 to 7.3 months in the default view.
 3. **Artificial Analysis zeros.** 154 exact-zero scores are ignored as failed runs without confirmation from Artificial Analysis.
 4. **Artificial Analysis index history.** The API does not mark which older scores are estimates; the website marks most pre-2026 models that way.

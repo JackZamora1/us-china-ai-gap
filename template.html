@@ -220,9 +220,13 @@ td.date { color: var(--ink-2); white-space: nowrap; }
 .view-head h1 { font-size: clamp(1.9rem, 3.6vw, 2.7rem); max-width: none; }
 .view-head p { font: 400 clamp(1.02rem, 1.3vw, 1.15rem)/1.5 var(--serif); color: var(--ink-2); max-width: 70ch; margin: 12px 0 0; }
 .srcline { font-size: 13px; color: var(--ink-3); border-top: 1px solid var(--rule); margin: 44px 0 0; padding-top: 14px; max-width: 95ch; }
-.cards { display: grid; grid-template-columns: 1.25fr 1fr 1fr; gap: 18px; margin-top: 28px; align-items: start; }
+.cards { display: grid; grid-template-columns: 1.25fr 1fr 1fr; grid-template-rows: auto auto 1fr auto; column-gap: 18px; row-gap: 0; margin-top: 28px; }
+/* Each card spans the same four rows (title, intro, body, link), so the three line up. */
+.card { display: grid; grid-row: span 4; grid-template-rows: subgrid; row-gap: 0; align-content: start; }
 .card h2 { font-size: 1.3rem; }
-.card .go { display: inline-block; margin-top: 16px; font-weight: 600; font-size: 14.5px; }
+.card .sub { align-self: start; }
+.card .go { display: inline-block; align-self: end; justify-self: start; margin-top: 16px; font-weight: 600; font-size: 14.5px; }
+.caveat { display: block; margin-top: 4px; font-size: 13px; color: var(--ink-2); border-left: 3px solid var(--ink-3); padding-left: 8px; }
 .mini { display: grid; grid-template-columns: minmax(0, 1fr) 70px auto; gap: 4px 10px; align-items: center; font-size: 14px; margin-top: 14px; }
 .mini .n { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .mini .t { position: relative; height: 8px; background: var(--bg); border-radius: 4px; }
@@ -263,7 +267,8 @@ svg.plot text.axlab { font-size: 12.5px; fill: var(--ink-2); }
   .est > div.last { padding-bottom: 12px; }
   .est > div.scale.pad { display: none; }
   .tabs { gap: 16px; }
-  .cards { grid-template-columns: 1fr; }
+  .cards { grid-template-columns: 1fr; grid-template-rows: none; row-gap: 18px; }
+  .card { grid-row: auto; grid-template-rows: none; }
   .view-head { padding-top: 24px; }
   .plist li.ev-item { grid-template-columns: 1fr; }
   .nav a { padding-left: 10px; padding-right: 10px; }
@@ -292,7 +297,7 @@ svg.plot text.axlab { font-size: 12.5px; fill: var(--ink-2); }
       </article>
       <article class="panel card">
         <h2>Compute</h2>
-        <p class="sub">AI chips, chip designs and training runs, each measured with the same rule.</p>
+        <p class="sub">China's AI chip stock and the best chips it actually has in use, against seven US companies, each measured with the same rule.</p>
         <div id="ov-compute"></div>
         <a class="go" href="#compute">Open compute</a>
       </article>
@@ -388,7 +393,7 @@ svg.plot text.axlab { font-size: 12.5px; fill: var(--ink-2); }
 <section class="view" id="view-compute" hidden>
   <div class="wrap">
     <div class="view-head"><h1>Compute</h1>
-      <p>How much AI computing power each side has, how good its best chips are, and how large its biggest training runs are. Each uses the same rule as the capability lags: when did the US side first reach China's current level?</p></div>
+      <p>How much AI computing power each side has, how good the chips it actually uses are, and how large its biggest disclosed training runs are. Chip stock and deployed chips use the same rule as the capability lags: when did the US side first reach China's current level?</p></div>
 
     <section class="block" style="margin-top:28px">
       <div class="sec-head"><div><h2>AI chip stock</h2>
@@ -405,29 +410,45 @@ svg.plot text.axlab { font-size: 12.5px; fill: var(--ink-2); }
     </section>
 
     <section class="block">
-      <div class="sec-head"><div><h2>Best chip</h2>
-        <p class="sub">Best 16-bit performance of any chip released to date (the higher of tensor-core FP16/BF16 and plain FP16), Nvidia against Chinese designers, log scale. Specifications as published by Epoch AI.</p></div></div>
+      <div class="sec-head"><div><h2>Best chip deployed at scale</h2>
+        <p class="sub">The best chip each side actually owns in volume, quarter by quarter. A chip type counts once an owner group's cumulative units pass <span id="dep-threshold"></span>, using Epoch AI's chip-owner estimates through its last complete quarter.</p></div>
+        <div class="seg" id="dep-metric" aria-label="Chip measure"></div></div>
       <div class="panel">
-        <div class="facts" id="chip-facts"></div>
-        <svg class="plot" id="chips" role="img" aria-label="Best 16-bit chip performance to date, Nvidia against Chinese designers"></svg>
-        <p class="note" id="chip-note"></p>
+        <div class="facts" id="dep-facts"></div>
+        <div class="key" id="dep-key"></div>
+        <svg class="plot" id="deployed" role="img" aria-label="Best chip deployed at scale by seven US companies and in China, by quarter"></svg>
+        <p class="note" id="dep-note"></p>
+        <p class="callout" id="dep-bw-why"><b>Why bandwidth.</b> Training and serving large models is usually limited by how fast a chip can move data to and from memory, which depends mostly on access to high-bandwidth memory (HBM), rather than by its peak arithmetic.</p>
+        <p class="callout" id="dep-scale"></p>
+        <h3>How sensitive this is to the threshold</h3>
+        <div class="scroll-x"><table id="dep-sens"></table></div>
+        <details class="all"><summary>Every chip type counted as deployed</summary><div class="scroll-x"><table id="dep-table"></table></div><p class="note" id="dep-flags"></p></details>
       </div>
     </section>
 
     <section class="block">
       <div class="sec-head"><div><h2>Training compute</h2>
-        <p class="sub">The largest training run with a published estimate, by country, in floating-point operations (log scale). Estimates by Epoch AI.</p></div></div>
+        <p class="sub">The largest training run with a published estimate, by country, in floating-point operations (log scale). Estimates by Epoch AI. Disclosure differs so much between the two countries that this is a comparison of what is disclosed, not of what was trained.</p></div></div>
       <div class="panel">
+        <h3 style="margin-top:4px">How many frontier models have an estimate</h3>
+        <div class="scroll-x"><table id="train-cover"></table></div>
         <div class="facts" id="train-facts"></div>
         <svg class="plot" id="train" role="img" aria-label="Largest disclosed training run to date by country"></svg>
-        <p class="callout"><b>The US side is incomplete.</b> Chinese open-weight labs publish enough to estimate training compute. Most recent US closed models, including most Claude and Gemini releases, have no estimate. The US line therefore shows only models whose compute is known, and both the lag and the chart below should be read with that in mind.</p>
-        <h3>How many frontier models have an estimate</h3>
-        <div class="scroll-x"><table id="train-cover"></table></div>
         <h3>Capability against training compute</h3>
         <p class="sub" style="margin-bottom:8px">Each point is a model with both an Epoch Capabilities Index score and a training-compute estimate, released since 2023.</p>
         <div class="key"><span><i style="width:10px;height:10px;border-radius:50%;background:var(--us)"></i>US model</span><span><i style="width:10px;height:10px;border-radius:50%;background:var(--cn)"></i>Chinese model</span></div>
         <svg class="plot" id="tscatter" role="img" aria-label="Epoch Capabilities Index score against training compute, by country"></svg>
         <p class="note">Chinese models often sit above US models at the same compute. Because the US points are limited to models that disclose, "China achieves more per unit of compute" is suggestive, not proven.</p>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="sec-head"><div><h2>Chip designs on paper</h2>
+        <p class="sub"><b>Announced specifications, not deployed chips.</b> Best 16-bit performance of any chip released to date (the higher of tensor-core FP16/BF16 and plain FP16), Nvidia against Chinese designers, log scale. A design made in small numbers counts the same as one made in millions, so this is not a measure of what either side can use.</p></div></div>
+      <div class="panel">
+        <div class="facts" id="chip-facts"></div>
+        <svg class="plot" id="chips" role="img" aria-label="Best announced 16-bit chip performance to date, Nvidia against Chinese designers"></svg>
+        <p class="note" id="chip-note"></p>
       </div>
     </section>
     <p class="srcline" data-src="Epoch AI: AI chip owners, ML hardware and model training compute (CC BY 4.0)" data-asof="compute"></p>
@@ -442,7 +463,7 @@ svg.plot text.axlab { font-size: 12.5px; fill: var(--ink-2); }
     <section class="block" style="margin-top:28px">
       <div class="sec-head"><div><h2>Cheapest model at a given level</h2>
         <p class="sub">For each score on the Artificial Analysis Intelligence Index, the cheapest US and cheapest Chinese model that reaches it. Price is US dollars per million tokens, blended three parts input to one part output.</p></div></div>
-      <div class="panel"><div class="scroll-x"><table id="cost-table"></table></div></div>
+      <div class="panel"><div class="scroll-x"><table id="cost-table"></table></div><p class="callout" id="cost-extra" hidden></p></div>
     </section>
 
     <section class="block">
@@ -482,8 +503,8 @@ svg.plot text.axlab { font-size: 12.5px; fill: var(--ink-2); }
       <ul>
         <li><b>Capabilities:</b> the result is a benchmark score, dated by the model's release. An area's lag is the median across its counted benchmarks.</li>
         <li><b>Chip stock:</b> the result is cumulative H100-equivalents at each quarter end, so the lag moves in three-month steps and is measured to Epoch's last complete quarter.</li>
-        <li><b>Best chip:</b> the result is a chip's published 16-bit performance, dated by its release.</li>
-        <li><b>Training compute:</b> the result is a model's estimated training compute, dated by its release.</li>
+        <li><b>Best deployed chip:</b> the result is the per-chip 16-bit performance (or memory bandwidth) of the best chip type an owner group holds in volume, dated to the quarter its cumulative units passed the threshold.</li>
+        <li><b>Training compute</b> is shown as the largest disclosed run by country, without a months-behind headline, because far fewer recent US models disclose compute.</li>
         <li><b>Cost:</b> the rule is not applied. Prices are known only for today, so the page compares them directly and records them daily to build a history.</li>
       </ul>
       <h2>What counts</h2>
@@ -500,7 +521,9 @@ svg.plot text.axlab { font-size: 12.5px; fill: var(--ink-2); }
         <li><b>The China chip bucket</b> is chips Epoch infers were sold to China-based companies, plus Chinese-designed chips. It is not government ownership and excludes smuggled chips unless that estimate is switched on.</li>
         <li><b>The smuggling estimate</b> is Epoch's own model output and Epoch calls it speculative. It starts in the first quarter of 2024.</li>
         <li><b>No US total exists</b> in the chip data. Seven named US companies stand in for the US, which understates it and makes the lag a minimum.</li>
-        <li><b>Chip performance is a specification,</b> not a count of chips made. A chip that was announced but produced in small numbers counts the same as one produced in millions.</li>
+        <li><b>Deployed chips rest on Epoch's chip-owner estimates,</b> which start in 2022 (2024 for Huawei and Cambricon) and give no US total. Chip types are matched to specifications by a hand-kept table; mismatches are flagged on the compute tab.</li>
+        <li><b>Per-chip figures understate system-level scaling,</b> such as Huawei linking 384 Ascend chips in one system.</li>
+        <li><b>The spec-sheet chart is a specification,</b> not a count of chips made. A chip that was announced but produced in small numbers counts the same as one produced in millions, so it is shown last and never on the overview.</li>
         <li><b>Training compute has disclosure bias:</b> most recent US closed models have no estimate.</li>
         <li><b>Prices are list prices,</b> not costs, and the history starts on the day this view was added.</li>
       </ul>
@@ -745,16 +768,20 @@ document.addEventListener("click", (ev) => { const b = ev.target.closest(".bench
 $("lag-pick").addEventListener("change", (ev) => { state.lagPick = ev.target.value; drawLag(); });
 
 // ---------- shared chart pieces ----------
+// Width of a label in pixels, so end-of-line labels get the margin they need instead of being clipped.
+const textW = (() => { const c = document.createElement("canvas").getContext("2d");
+  return (t, px, weight) => { c.font = `${weight || 400} ${px}px ${css("--sans")}`; return c.measureText(t).width; }; })();
 function frame(svg, yMin, yMax, opt) {
   const W = svg.clientWidth || 900, narrow = W < 620, H = opt.h || (narrow ? 340 : 430);
   const t0 = opt.t0 || START, t1 = opt.t1 || TODAY;
-  const m = { l: opt.l || 40, r: opt.r != null ? (narrow ? opt.rNarrow : opt.r) : 20, t: opt.lanes ? 64 : 16, b: 28 };
+  const m = { l: opt.l || 40, r: opt.r != null ? (narrow ? opt.rNarrow : opt.r) : 20, t: (opt.lanes ? 64 : 16) + (opt.unit ? 20 : 0), b: 28 };
   const x = (t) => m.l + (t - t0) / (t1 - t0) * (W - m.l - m.r);
   const lg = Math.log10, y = opt.log
     ? (v) => H - m.b - (lg(v) - lg(yMin)) / (lg(yMax) - lg(yMin)) * (H - m.t - m.b)
     : (v) => H - m.b - (v - yMin) / (yMax - yMin) * (H - m.t - m.b);
   // 2023 and 2024: Chinese models were thinly covered, so capability charts shade the period.
-  let s = opt.thin === false ? "" : `<rect class="thin" x="${x(START)}" y="${m.t}" width="${x(THIN) - x(START)}" height="${H - m.b - m.t}"/>` +
+  let s = opt.unit ? `<text class="axlab" x="0" y="${m.t - 12}">${esc(opt.unit)}</text>` : "";
+  s += opt.thin === false ? "" : `<rect class="thin" x="${x(START)}" y="${m.t}" width="${x(THIN) - x(START)}" height="${H - m.b - m.t}"/>` +
           `<text class="thinlab" x="${x(START) + 8}" y="${m.t + 16}">limited Chinese coverage</text>`;
   const first = t0.getFullYear() + (t0 > day(t0.getFullYear() + "-01-01") ? 1 : 0), span = t1.getFullYear() - first, every = !narrow ? 1 : span > 7 ? 3 : span > 3 ? 2 : 1;
   for (let yr = first; day(yr + "-01-01") <= t1; yr++) {
@@ -813,7 +840,7 @@ function drawLag() {
   const med = isArea ? V().heat[name].map((c, i) => c && [Math.round((day(DATA.months[i]) - START) / DAY), c.m]).filter(Boolean) : [];
   const vals = lines.flatMap((l) => sawtooth(l.series).map((p) => p[1] / MONTH)).concat(med.map((p) => p[1]));
   const yMin = Math.min(0, Math.floor(Math.max(Math.min(...vals, 0), -24) / 6) * 6), yMax = Math.max(6, Math.ceil(Math.min(Math.max(...vals, 6), 30) / 6) * 6);
-  const f = frame(svg, yMin, yMax, { lanes: true, r: 20, rNarrow: 12 }), layer = eventLayer(f);
+  const f = frame(svg, yMin, yMax, { lanes: true, r: 20, rNarrow: 12, unit: "Months behind the US (negative: China ahead)" }), layer = eventLayer(f);
   const X = (d) => f.x(new Date(+START + d * DAY)), clampY = (v) => f.y(Math.max(yMin, Math.min(yMax, v)));
   let s = f.s;
   for (let v = yMin; v <= yMax; v += 6) s += `<line class="${v === 0 ? "zero" : "grid"}" x1="${f.m.l}" x2="${f.W - f.m.r}" y1="${f.y(v)}" y2="${f.y(v)}"/><text x="${f.m.l - 8}" y="${f.y(v) + 4}" text-anchor="end">${v}</text>`;
@@ -858,12 +885,17 @@ function stepChart(id, lines, opt) {
   let lo = Math.min(...all.map((p) => p[1])), hi = Math.max(...all.map((p) => p[1]));
   if (opt.log) { lo = Math.pow(10, Math.floor(Math.log10(lo))); hi = Math.pow(10, Math.ceil(Math.log10(hi) + 0.05)); }
   else { const pad = (hi - lo || 1) * 0.07; lo -= pad; hi += pad; }
-  const f = frame(svg, lo, hi, { r: 158, rNarrow: 128, t0, log: opt.log, thin: opt.thin, l: opt.l }), R = f.narrow ? 10 : 12, tx = (p) => f.x(Math.max(day(p[0]), t0));
+  const W0 = svg.clientWidth || 900, narrow0 = W0 < 620, R0 = narrow0 ? 10 : 12, endFmt = opt.endFmt || show;
+  const endText = (l) => `${narrow0 ? l.short : l.label} ${endFmt(l.pts[l.pts.length - 1][1])}`;
+  const subText = (l) => { const n = l.pts[l.pts.length - 1][2]; return n.length > 22 ? n.slice(0, 21) + "…" : n; };
+  const need = Math.max(0, ...lines.filter((l) => l.pts.length).map((l) => Math.max(textW(endText(l), 13.5, 700), narrow0 ? 0 : textW(subText(l), 12))));
+  const rr = Math.min(Math.ceil(need + R0 + 14), Math.round(W0 * (narrow0 ? 0.48 : 0.42)));
+  const f = frame(svg, lo, hi, { r: rr, rNarrow: rr, t0, log: opt.log, thin: opt.thin, l: opt.l, unit: opt.unit }), R = f.narrow ? 10 : 12, tx = (p) => f.x(Math.max(day(p[0]), t0));
   let s = f.s;
   if (opt.log) s += logGrid(f, lo, hi, opt.tick || ((v) => show(v)));
   else {
     const span = hi - lo || 1, step = Math.pow(10, Math.floor(Math.log10(span / 4))), nice = [1, 2, 5, 10].map((k) => k * step).find((k) => span / k <= 6);
-    for (let v = Math.ceil(lo / nice) * nice; v <= hi; v += nice) s += `<line class="grid" x1="${f.m.l}" x2="${f.W - f.m.r}" y1="${f.y(v)}" y2="${f.y(v)}"/><text x="${f.m.l - 8}" y="${f.y(v) + 4}" text-anchor="end">${score(+v.toPrecision(6))}</text>`;
+    for (let v = Math.ceil(lo / nice) * nice; v <= hi; v += nice) s += `<line class="grid" x1="${f.m.l}" x2="${f.W - f.m.r}" y1="${f.y(v)}" y2="${f.y(v)}"/><text x="${f.m.l - 8}" y="${f.y(v) + 4}" text-anchor="end">${(opt.tick || score)(+v.toPrecision(6))}</text>`;
   }
   if (opt.gap) { const gy = f.y(opt.gap.level); s += `<line class="gap" x1="${f.x(day(opt.gap.from))}" x2="${f.x(day(opt.gap.to))}" y1="${gy}" y2="${gy}"/>`; }
   for (const l of lines) {
@@ -890,13 +922,14 @@ function stepChart(id, lines, opt) {
   }
   const ends = lines.filter((l) => l.pts.length).map((l) => ({ l, p: l.pts[l.pts.length - 1], yy: f.y(l.pts[l.pts.length - 1][1]) })).sort((a, b) => a.yy - b.yy);
   const gapPx = f.narrow ? 18 : 34;
+  ends.forEach((e) => { e.yy = Math.max(e.yy, f.m.t + 4); });
   for (let i = 1; i < ends.length; i++) if (ends[i].yy - ends[i - 1].yy < gapPx) ends[i].yy = ends[i - 1].yy + gapPx;
   const over = ends.length ? ends[ends.length - 1].yy - (f.H - f.m.b - 4) : 0;
   if (over > 0) ends.forEach((e) => { e.yy -= over; });
   for (const e of ends) {
     const ex = f.x(f.t1) + R + 6;
-    s += `<text class="end-name" x="${ex}" y="${e.yy + 1}">${esc(f.narrow ? e.l.short : e.l.label)}${" " + (opt.endFmt || show)(e.p[1])}</text>`;
-    if (!f.narrow) s += `<text class="end-sub" x="${ex}" y="${e.yy + 16}">${esc(e.p[2].length > 22 ? e.p[2].slice(0, 21) + "…" : e.p[2])}</text>`;
+    s += `<text class="end-name" x="${ex}" y="${e.yy + 1}">${esc(endText(e.l))}</text>`;
+    if (!f.narrow) s += `<text class="end-sub" x="${ex}" y="${e.yy + 16}">${esc(subText(e.l))}</text>`;
   }
   s += `<line class="cross" y1="${f.m.t}" y2="${f.H - f.m.b}" visibility="hidden"/>`;
   svg.setAttribute("viewBox", `0 0 ${f.W} ${f.H}`); svg.setAttribute("height", f.H); svg.innerHTML = s;
@@ -932,15 +965,26 @@ function drawBench() {
   facts.push(`<div><span class="k">Models scored</span>${x.n_us} US, ${x.n_cn} Chinese</div>`);
   $("bench-facts").innerHTML = facts.join("");
   const gap = l && l.match && behind ? { level: l.trail[1], from: l.match[0] < DATA.start ? DATA.start : l.match[0], to: l.trail[0] } : null;
-  stepChart("steps", [{ label: "US", short: "US", colour: "--us", pts: x.us }, { label: "China", short: "China", colour: "--cn", pts: x.cn }], { gap });
+  stepChart("steps", [{ label: "US", short: "US", colour: "--us", pts: x.us }, { label: "China", short: "China", colour: "--cn", pts: x.cn }], { gap, unit: benchUnit(state.bench, x.us.concat(x.cn)) });
   $("bench-note").innerHTML = `${esc(b.name)}, from ${esc(b.source)}${b.url ? ` (<a href="${esc(b.url)}">source</a>)` : ""}. ${b.kind === "preference" ? "This is a human-preference rating, not a capability test. " : ""}` +
     `${esc(b.basis)}.${b.ceiling ? ` Ceiling ${score(b.ceiling)}.` : ""}${b.notes ? " " + esc(b.notes) + "." : ""} The dashed line carries China's current best back to the date the US first reached it.`;
+}
+// The y-axis unit for a benchmark, in the source's own units.
+function benchUnit(id, pts) {
+  const b = benchInfo[id], top = Math.max(0, ...pts.map((p) => p[1]));
+  if (id === "eci") return "Epoch Capabilities Index score";
+  if (id === "aa_index") return "Artificial Analysis Intelligence Index score";
+  if (b.kind === "preference") return "Arena rating (points)";
+  if (id === "metr_horizon") return "50% time horizon, minutes";
+  if (id === "vending_bench_2") return "Money made in the simulation, US dollars";
+  if (id === "ale_bench") return "Contest performance score (no ceiling)";
+  return top <= 1.0001 ? "Score, 0 to 1" : top <= 100 ? "Score, percent" : "Score, in the benchmark's own units";
 }
 function drawOpen() {
   const id = state.bench, b = benchInfo[id], o = V().bench[id].open, area = V().open[state.area];
   const card = (s, label) => `<div>${label}<b>${s ? (s.m < 0 ? `${one(s.m)} months ahead` : `${one(s.m)} months behind`) : "No data"}</b><small>${s ? `${s.n} benchmark${s.n === 1 ? "" : "s"}${s.n > 1 ? `, ${rangeText(s.min, s.max)}` : ""}` : "no counted benchmark has both groups"}</small></div>`;
   $("open-trio").innerHTML = card(area.cno_usc, "China open against US closed") + card(area.uso_usc, "US open against US closed") + card(area.cno_uso, "China open against US open");
-  stepChart("open", [{ label: "US closed", short: "US closed", colour: "--us", pts: o.usc }, { label: "US open", short: "US open", colour: "--uso", pts: o.uso, dash: true }, { label: "China open", short: "CN open", colour: "--cn", pts: o.cno }], {});
+  stepChart("open", [{ label: "US closed", short: "US closed", colour: "--us", pts: o.usc }, { label: "US open", short: "US open", colour: "--uso", pts: o.uso, dash: true }, { label: "China open", short: "CN open", colour: "--cn", pts: o.cno }], { unit: benchUnit(id, o.usc.concat(o.uso, o.cno)) });
   const say = (h, a, bb) => h ? (h.m >= 0 ? `${bb} is ${one(h.m)} months behind ${a}` : `${bb} is ${one(h.m)} months ahead of ${a}`) : `${bb} against ${a} cannot be measured`;
   $("open-note").textContent = `${b.name}: ${say(o.cno_usc, "US closed", "China open")}; ${say(o.uso_usc, "US closed", "US open")}; ${say(o.cno_uso, "US open", "China open")}. Models with unknown weights are left out.`;
   const cell = (s) => s ? `<td class="num strong">${lagText(s.m)}<div style="font-weight:400;font-size:12.5px;color:var(--ink-3)">${s.n} benchmark${s.n === 1 ? "" : "s"}${s.n > 1 ? `, ${rangeText(s.min, s.max)}` : ""}</div></td>` : `<td class="num" style="color:var(--ink-3)">no data</td>`;
@@ -1054,11 +1098,11 @@ function drawOverview() {
       `<span class="v ${low ? "lowc" : ""}">${r.s ? lagText(r.s.m) : "no data"}</span>`;
   }).join("") + `</div>`;
 
-  const ch = C.chips, tr = C.training;
+  const D = C.deployed, dl = (l) => l ? (l.m < 0 ? `${one(l.m)} months ahead` : `${l.floor ? "at least " : ""}${one(l.m)} months behind`) : "not measurable";
   $("ov-compute").innerHTML =
     `<div class="stat">AI chip stock, to ${fmt(day(st.asof), { month: "short", year: "numeric" })}<b>${st.ratio}× smaller</b>China ${big(st.china[st.china.length - 1])} H100-equivalents against ${big(st.us_named[st.us_named.length - 1])} for seven US companies: at least ${one(st.lag.m)} months behind.</div>` +
-    `<div class="stat">Best chip, 16-bit performance<b>${ch.lag ? monthsText(ch.lag.m) : "not measurable"}</b>${ch.lag ? `${esc(ch.lag.trail[2])} against Nvidia.` : ""}${ch.lag_huawei ? ` Huawei's best is ${one(ch.lag_huawei.m)} months behind.` : ""}</div>` +
-    `<div class="stat">Largest disclosed training run<b>${tr.lag ? monthsText(tr.lag.m) : "not measurable"}</b>${tr.lag ? `${esc(tr.lag.trail[2])} against ${esc(tr.lag.match ? tr.lag.match[2] : tr.lag.lead[2])}.` : ""} Most recent US closed models disclose nothing.</div>`;
+    `<div class="stat">Best chip deployed in China, 16-bit performance<b>${dl(D.cn_any_perf)}</b>${D.cn_any_perf ? `${esc(D.cn_any_perf.trail[2])}, including Nvidia's China-specific chips.` : ""}${D.cn_cn_perf ? ` Best Chinese-designed: ${esc(D.cn_cn_perf.trail[2])}, ${dl(D.cn_cn_perf)}.` : ""}</div>` +
+    `<div class="stat">Best deployed chip, memory bandwidth<b>${dl(D.cn_any_bw)}</b>${D.cn_any_bw ? `${esc(D.cn_any_bw.trail[2])} in China.` : ""}${D.cn_cn_bw ? ` Best Chinese-designed: ${esc(D.cn_cn_bw.trail[2])}, ${dl(D.cn_cn_bw)}.` : ""}</div>`;
 
   $("ov-cost").innerHTML = COST
     ? `<table style="margin-top:12px;font-size:14px"><thead><tr><th>Score at least</th><th class="num">China</th><th class="num">US</th></tr></thead><tbody>` +
@@ -1093,7 +1137,9 @@ function drawStock() {
   if (on) lines.push({ label: "China + smuggled", short: "+smuggled", colour: "--cn", v: st.smuggled.map((v, i) => st.has_smuggled[i] ? v : null), dash: true });
   const vals = lines.flatMap((l) => l.v).filter((v) => v > 0);
   const lo = Math.pow(10, Math.floor(Math.log10(Math.min(...vals)))), hi = Math.pow(10, Math.ceil(Math.log10(Math.max(...vals))));
-  const f = frame(svg, lo, hi, { lanes: true, t0: day("2022-01-01"), log: true, thin: false, r: 196, rNarrow: 112, l: 48 }), layer = eventLayer(f);
+  const narrow = (svg.clientWidth || 900) < 620, endLab = (l) => `${narrow ? l.short : l.label} ${big(l.v[n])}`;
+  const rr = Math.ceil(Math.max(...lines.map((l) => textW(endLab(l), 13.5, 700))) + 16);
+  const f = frame(svg, lo, hi, { lanes: true, t0: day("2022-01-01"), log: true, thin: false, r: rr, rNarrow: rr, l: 48, unit: "H100-equivalents (log scale)" }), layer = eventLayer(f);
   let s = f.s + logGrid(f, lo, hi, (v) => big(v)) + layer.s;
   s += `<line class="grid" x1="${f.x(Q[n])}" x2="${f.x(Q[n])}" y1="${f.m.t}" y2="${f.H - f.m.b}" stroke-dasharray="3 3"/><text x="${f.x(Q[n]) - 6}" y="${f.H - f.m.b - 8}" text-anchor="end">${f.narrow ? "estimates end" : "Epoch's estimates end here"}</text>`;
   if (lag && lag.match) { const gy = f.y(cn[n]); s += `<line class="gap" x1="${f.x(day(lag.match))}" x2="${f.x(Q[n])}" y1="${gy}" y2="${gy}"/>`; }
@@ -1103,7 +1149,7 @@ function drawStock() {
   }
   const ends = lines.map((l) => ({ l, v: l.v[n], yy: f.y(l.v[n]) })).sort((a, b) => a.yy - b.yy);
   for (let i = 1; i < ends.length; i++) if (ends[i].yy - ends[i - 1].yy < 16) ends[i].yy = ends[i - 1].yy + 16;
-  for (const e of ends) s += `<text class="end-name" x="${f.x(Q[n]) + 8}" y="${e.yy + 4}">${esc(f.narrow ? e.l.short : e.l.label)} ${big(e.v)}</text>`;
+  for (const e of ends) s += `<text class="end-name" x="${f.x(Q[n]) + 8}" y="${e.yy + 4}">${esc(endLab(e.l))}</text>`;
   s += `<line class="cross" y1="${f.m.t - 14}" y2="${f.H - f.m.b}" visibility="hidden"/>`;
   svg.setAttribute("viewBox", `0 0 ${f.W} ${f.H}`); svg.setAttribute("height", f.H); svg.innerHTML = s;
   stockGeom = { f, layer, Q, lines, cn };
@@ -1166,36 +1212,86 @@ function scatterHover(id) {
   svg.addEventListener("pointerleave", hideTip);
 }
 
-// ---------- compute: chips and training ----------
+// ---------- compute: deployed chips, training and spec sheets ----------
+const DEP = { perf: { label: "16-bit performance", unit: "TFLOP/s (16-bit, per chip)", f: (v) => Math.round(v / 1e12).toLocaleString("en-GB") + " TFLOP/s", tick: (v) => (v / 1e12).toLocaleString("en-GB"), end: (v) => Math.round(v / 1e12).toLocaleString("en-GB") },
+              bw: { label: "Memory bandwidth", unit: "GB/s (memory bandwidth, per chip)", f: (v) => Math.round(v / 1e9).toLocaleString("en-GB") + " GB/s", tick: (v) => (v / 1e9).toLocaleString("en-GB"), end: (v) => Math.round(v / 1e9).toLocaleString("en-GB") } };
+state.depMetric = "perf";
+const qtr = (s) => { const d = day(s); return `Q${Math.floor(d.getMonth() / 3) + 1} ${d.getFullYear()}`; };
+function depFact(label, l, metric) {
+  if (!l) return `<div><span class="k">${label}</span><b>Not measurable</b></div>`;
+  const at = l.floor ? "at least " : "", q = DEP[metric];
+  return `<div><span class="k">${label}</span><b>${l.m < 0 ? `${one(l.m)} months ahead` : `${at}${one(l.m)} months behind`}</b><br>${esc(l.trail[2])} (${q.f(l.trail[1])}, deployed from ${qtr(l.trail[0])})` +
+    (l.match && l.m >= 0 ? `; the US companies had deployed ${esc(l.match[2])} (${q.f(l.match[1])}) by ${qtr(l.match[0])}` : "") + `</div>`;
+}
+function drawDeployed() {
+  const D = C.deployed, mt = state.depMetric, q = DEP[mt];
+  $("dep-threshold").textContent = `${D.threshold.toLocaleString("en-GB")} units`;
+  $("dep-metric").innerHTML = Object.entries(DEP).map(([k, v]) => `<button type="button" data-m="${k}" aria-pressed="${k === mt}">${v.label}</button>`).join("");
+  const us = D.best.us[mt], last = us[us.length - 1];
+  $("dep-facts").innerHTML = depFact("Best chip deployed in China, any designer", D["cn_any_" + mt], mt) +
+    depFact("Best Chinese-designed chip deployed in China", D["cn_cn_" + mt], mt) +
+    `<div><span class="k">Best chip deployed by seven US companies</span><b>${q.f(last[1])}</b><br>${esc(last[2])}, deployed from ${qtr(last[0])}. Lags are measured to ${fmt(day(D.asof))}, Epoch's last complete quarter</div>`;
+  $("dep-key").innerHTML = `<span><i style="width:18px;border-top:2px solid var(--us)"></i>Seven US companies</span><span><i style="width:18px;border-top:2px solid var(--cn)"></i>China, any designer (includes Nvidia's China-specific chips)</span><span><i style="width:18px;border-top:2px dashed var(--cn)"></i>China, Chinese-designed</span>`;
+  stepChart("deployed", [
+    { label: "Seven US companies", short: "US", colour: "--us", pts: D.best.us[mt] },
+    { label: "China, any designer", short: "China", colour: "--cn", pts: D.best.cn_any[mt] },
+    { label: "Chinese-designed", short: "CN design", colour: "--cn", pts: D.best.cn_cn[mt], dash: true },
+  ], { t0: day("2022-01-01"), t1: day(D.asof), thin: false, fmt: q.f, endFmt: q.end, tick: q.tick, unit: q.unit, l: 52 });
+  $("dep-note").innerHTML = `Each step is a chip type passing ${D.threshold.toLocaleString("en-GB")} cumulative units for that group, dated to the quarter end it did so, or to the first quarter end after its release if Epoch allocates units earlier. ` +
+    `Per-chip figures come from Epoch's hardware table, matched to the owner data's chip types by a hand-kept table. Epoch's owner data starts in ${qtr(D.first_quarter)}, so chips already in service then (the A100) appear from that quarter, and its Huawei and Cambricon estimates start in 2024. ` +
+    `Epoch counts the H100 and H200 as one type; the H100's figures are used, so US bandwidth for that type is a lower bound.`;
+  $("dep-bw-why").hidden = mt !== "bw";
+  $("dep-scale").innerHTML = `<b>Per-chip comparisons understate Huawei's systems.</b> Huawei makes up for weaker chips by linking many of them: its Atlas 900 A3 SuperPoD, sold as the CloudMatrix 384 cloud service, joins up to 384 Ascend 910C chips (<a href="https://www.huawei.com/en/news/2025/9/hc-xu-keynote-speech">Huawei, September 2025</a>). SemiAnalysis estimates the full system delivers about 300 PFLOP/s of dense BF16, almost double Nvidia's 72-chip GB200 NVL72, but uses about 4.1 times the power (<a href="https://newsletter.semianalysis.com/p/huawei-ai-cloudmatrix-384-chinas-answer-to-nvidia-gb200-nvl72">SemiAnalysis, April 2025</a>).`;
+  const sm = (v) => v == null ? "–" : v < 0 ? `${one(v)} ahead` : one(v);
+  $("dep-sens").innerHTML = `<thead><tr><th>Units to count as deployed</th><th class="num">China, any designer: 16-bit</th><th class="num">Chinese-designed: 16-bit</th><th class="num">China, any designer: bandwidth</th><th class="num">Chinese-designed: bandwidth</th></tr></thead><tbody>` +
+    D.sensitivity.map((r) => `<tr${r.t === D.threshold ? ' style="font-weight:700"' : ""}><td>${r.t.toLocaleString("en-GB")}${r.t === D.threshold ? " (used)" : ""}</td><td class="num">${sm(r.cn_any_perf)}</td><td class="num">${sm(r.cn_cn_perf)}</td><td class="num">${sm(r.cn_any_bw)}</td><td class="num">${sm(r.cn_cn_bw)}</td></tr>`).join("") +
+    `</tbody>`;
+  $("dep-sens").style.minWidth = "560px";
+  const G = { us: "Seven US companies", cn_any: "China, any designer", cn_cn: "China, Chinese-designed" };
+  $("dep-table").innerHTML = `<thead><tr><th>Owner group</th><th>Chip type</th><th>Deployed from</th><th class="num">Units then</th><th class="num">Units at ${qtr(D.asof)}</th><th class="num">TFLOP/s (16-bit)</th><th class="num">GB/s</th></tr></thead><tbody>` +
+    D.table.map((r) => `<tr><td>${G[r.group]}</td><td>${esc(r.designer)} ${esc(r.chip_type)}${r.flag ? `<span class="flagged" title="${esc(r.flag)}">check</span>` : ""}</td><td class="date">${qtr(r.deployed_from)}</td><td class="num">${big(r.units_then)}</td><td class="num">${big(r.units_latest)}</td>` +
+      `<td class="num">${r.perf_16bit_flop_s ? Math.round(r.perf_16bit_flop_s / 1e12).toLocaleString("en-GB") : "–"}</td><td class="num">${r.memory_bandwidth_byte_s ? Math.round(r.memory_bandwidth_byte_s / 1e9).toLocaleString("en-GB") : "–"}</td></tr>`).join("") + `</tbody>`;
+  $("dep-table").style.minWidth = "680px";
+  $("dep-flags").innerHTML = D.flags.map((x) => `<b>${esc(x.type)}</b> (${esc(x.flag)}): ${esc(x.notes)}.`).join(" ") +
+    (D.unmapped.length ? ` <b>Not mapped, left out:</b> ${esc(D.unmapped.join(", "))}.` : "");
+}
+$("dep-metric").addEventListener("click", (ev) => { const b = ev.target.closest("button"); if (b) { state.depMetric = b.dataset.m; drawDeployed(); } });
+
 function drawCompute() {
   drawStock();
+  drawDeployed();
   const ch = C.chips, tr = C.training, old = day("2017-01-01");
   const gapOf = (l) => l && l.match && l.m >= 0 ? { level: l.trail[1], from: l.match[0], to: l.trail[0] } : null;
   const fact = (label, l, extra) => `<div><span class="k">${label}</span>` + (l ? `<b>${monthsText(l.m)}</b>: ${who(l.trail)} (${fmt(day(l.trail[0]))}) ${l.m >= 0 && l.match ? `was matched by ${who(l.match)} on ${fmt(day(l.match[0]))}` : "is ahead of every rival"}` : "<b>Not measurable</b>") + (extra || "") + `</div>`;
-  $("chip-facts").innerHTML = fact("Best chip from any Chinese designer", ch.lag) + fact("Best Huawei chip", ch.lag_huawei) +
-    `<div><span class="k">Chips compared</span>${ch.n_nvidia} Nvidia and ${ch.n_china} Chinese chips with a release date and a 16-bit figure</div>`;
+  $("chip-facts").innerHTML = fact("Best announced design from any Chinese designer", ch.lag) + fact("Best announced Huawei design", ch.lag_huawei) +
+    `<div><span class="k">Designs compared</span>${ch.n_nvidia} Nvidia and ${ch.n_china} Chinese chips with a release date and a 16-bit figure</div>`;
   stepChart("chips", [
     { label: "Nvidia", short: "Nvidia", colour: "--us", pts: ch.nvidia },
     { label: "Chinese designers", short: "China", colour: "--cn", pts: ch.china },
     { label: "Huawei only", short: "Huawei", colour: "--cn", pts: ch.huawei, dash: true },
-  ], { t0: old, log: true, thin: false, fmt: tflop, endFmt: (v) => Math.round(v / 1e12).toLocaleString("en-GB"), tick: (v) => (v / 1e12).toLocaleString("en-GB"), gap: gapOf(ch.lag), l: 52 });
-  $("chip-note").innerHTML = `The vertical axis is trillions of 16-bit floating-point operations per second (TFLOP/s). This compares published specifications, not how many chips were made: a design that was announced but produced in small numbers counts the same as one produced in millions. ` +
-    `Huawei's line is drawn separately because Huawei chips make up most of the Chinese-designed chips in the stock estimate above. ` +
-    (ch.undated.length ? `${ch.undated.length} Chinese chips in Epoch's table have no release date and are left out: ${esc(ch.undated.join(", "))}.` : "");
+  ], { t0: old, log: true, thin: false, fmt: tflop, endFmt: (v) => Math.round(v / 1e12).toLocaleString("en-GB"), tick: (v) => (v / 1e12).toLocaleString("en-GB"), gap: gapOf(ch.lag), l: 52, unit: "TFLOP/s (16-bit, per chip, log scale)" });
+  $("chip-note").innerHTML = `This compares published specifications, not chips in use. Biren's BR100, for example, sets the Chinese line from 2022, yet Epoch's chip-owner data shows no Biren chips in China's stock. Use the deployed view above for what each side can actually run. ` +
+    (ch.added.length ? `Added by hand from Huawei's roadmap: ${ch.added.map((a) => `${esc(a.name)} (<a href="${esc(a.url)}">source</a>; ${esc(a.flag)}; Huawei published no 16-bit figure, so it is not on this chart)`).join(", ")}. ` : "") +
+    (ch.announced.length ? `Announced, not released, and kept out of every comparison: ${ch.announced.map((a) => `${esc(a.name)} (planned ${esc(a.planned)})`).join(", ")}. ` : "") +
+    (ch.undated.length ? `${ch.undated.length} other Chinese chips in Epoch's table have no release date and are left out: ${esc(ch.undated.join(", "))}.` : "");
 
-  $("train-facts").innerHTML = fact("Largest disclosed Chinese training run", tr.lag) +
-    `<div><span class="k">Largest disclosed US run</span>${tr.lag ? `${who(tr.lag.lead)}, ${sci(tr.lag.lead[1])} FLOP, ${fmt(day(tr.lag.lead[0]))}` : "none"}</div>` +
-    `<div><span class="k">Ratio</span>${tr.lag ? `The largest US run is about ${Math.round(tr.lag.lead[1] / tr.lag.trail[1])} times the largest Chinese one` : ""}</div>`;
-  stepChart("train", [
-    { label: "US", short: "US", colour: "--us", pts: tr.us },
-    { label: "China", short: "China", colour: "--cn", pts: tr.cn },
-  ], { log: true, thin: false, fmt: sci, tick: (v, e) => pow10(e), gap: gapOf(tr.lag), l: 52 });
   const pct = (c) => c[1] ? `${c[0]} of ${c[1]} <span style="color:var(--ink-3)">(${Math.round(c[0] / c[1] * 100)}%)</span>` : "none scored";
   $("train-cover").innerHTML = `<thead><tr><th>Release year</th><th class="num">US models with an estimate</th><th class="num">Chinese models with an estimate</th></tr></thead><tbody>` +
     tr.coverage.map((r) => `<tr><td>${r.year}</td><td class="num">${pct(r.us)}</td><td class="num">${pct(r.cn)}</td></tr>`).join("") +
     `</tbody>`;
+  const cov = tr.coverage[tr.coverage.length - 1];
+  const caveat = `<span class="caveat">Disclosed runs only. In ${cov.year}, ${cov.us[0]} of ${cov.us[1]} US models have an estimate against ${cov.cn[0]} of ${cov.cn[1]} Chinese ones.</span>`;
+  $("train-facts").innerHTML = tr.lag
+    ? `<div><span class="k">Largest disclosed Chinese run</span>${who(tr.lag.trail)}, ${sci(tr.lag.trail[1])} FLOP, ${fmt(day(tr.lag.trail[0]))}</div>` +
+      `<div><span class="k">Largest disclosed US run</span>${who(tr.lag.lead)}, ${sci(tr.lag.lead[1])} FLOP, ${fmt(day(tr.lag.lead[0]))}${caveat}</div>` +
+      (tr.lag.match ? `<div><span class="k">First disclosed US run as large as China's largest</span>${who(tr.lag.match)}, ${fmt(day(tr.lag.match[0]))}${caveat}</div>` : "")
+    : `<div><span class="k">Largest disclosed run</span>Not measurable</div>`;
+  stepChart("train", [
+    { label: "US, disclosed", short: "US", colour: "--us", pts: tr.us },
+    { label: "China, disclosed", short: "China", colour: "--cn", pts: tr.cn },
+  ], { log: true, thin: false, fmt: sci, tick: (v, e) => pow10(e), l: 52, unit: "Training compute, FLOP (log scale)" });
   scatter("tscatter", tr.scatter.map((p) => ({ x: p[0], y: p[1], c: p[2], label: p[3], who: `${p[2]}, released ${fmt(day(p[4]))}`, detail: `ECI ${p[1].toFixed(1)}<br>${sci(p[0])} FLOP` })),
-    { logX: true, xLabel: "Training compute, floating-point operations (log scale)", yLabel: "ECI score", fmtX: (v) => pow10(Math.round(Math.log10(v))), fmtY: (v) => String(v) });
+    { logX: true, xLabel: "Training compute, FLOP (log scale)", yLabel: "Epoch Capabilities Index score", fmtX: (v) => pow10(Math.round(Math.log10(v))), fmtY: (v) => String(v) });
 }
 
 // ---------- cost ----------
@@ -1210,6 +1306,9 @@ function drawCost() {
   scatter("cscatter", COST.points.map((p) => ({ x: p[0], y: p[1], c: p[2], label: p[3], who: `${p[4]}, ${p[2]}`, detail: `Index ${p[0].toFixed(1)}<br>${usd(p[1])} per million tokens` })),
     { logY: true, xLabel: "Artificial Analysis Intelligence Index", yLabel: "US dollars per million tokens (log scale)", fmtX: (v) => String(v), fmtY: (v) => usd(v),
       lines: [{ pts: line("US"), colour: "--us" }, { pts: line("China"), colour: "--cn" }] });
+  const noted = (COST.notes || []).filter((n) => COST.table.some((r) => [r.us, r.cn].some((p) => p && p[3].startsWith(n.model))));
+  $("cost-extra").innerHTML = noted.map((n) => `<b>${esc(n.model)}.</b> ${esc(n.note)}`).join(" ");
+  $("cost-extra").hidden = !noted.length;
   $("cost-note").textContent = `${COST.n_us} US and ${COST.n_cn} Chinese model configurations have both a list price and an index score. The price trend starts on ${fmt(day(COST.history_start))}: the source gives only current prices, so this site records them at every daily refresh and a history will build from that date.`;
 }
 
@@ -1218,11 +1317,11 @@ let polGeom = null;
 function drawPolicy() {
   const svg = $("pstrip"), series = V().heat.Overall || [], pts = series.map((c, i) => c && [day(DATA.months[i]), c.m]).filter(Boolean);
   const hi = Math.max(12, Math.ceil(Math.max(...pts.map((p) => p[1]), 6) / 6) * 6);
-  const f = frame(svg, 0, hi, { lanes: true, h: 250, t0: day("2022-07-01"), thin: false }), layer = eventLayer(f);
+  const f = frame(svg, 0, hi, { lanes: true, h: 270, t0: day("2022-07-01"), thin: false, unit: "Overall capability lag, months behind the US" }), layer = eventLayer(f);
   let s = f.s;
   for (let v = 0; v <= hi; v += 6) s += `<line class="${v === 0 ? "zero" : "grid"}" x1="${f.m.l}" x2="${f.W - f.m.r}" y1="${f.y(v)}" y2="${f.y(v)}"/><text x="${f.m.l - 8}" y="${f.y(v) + 4}" text-anchor="end">${v}</text>`;
   s += layer.s;
-  if (pts.length) s += `<path class="line" style="stroke:var(--us)" d="${pts.map((p, i) => `${i ? "L" : "M"}${f.x(p[0]).toFixed(1)},${f.y(p[1]).toFixed(1)}`).join("")}"/><text x="${f.m.l + 6}" y="${f.m.t + 14}">Overall capability lag, months</text>`;
+  if (pts.length) s += `<path class="line" style="stroke:var(--us)" d="${pts.map((p, i) => `${i ? "L" : "M"}${f.x(p[0]).toFixed(1)},${f.y(p[1]).toFixed(1)}`).join("")}"/>`;
   svg.setAttribute("viewBox", `0 0 ${f.W} ${f.H}`); svg.setAttribute("height", f.H); svg.innerHTML = s;
   polGeom = { f, layer };
 
@@ -1270,7 +1369,9 @@ function drawMethods() {
   const fe = events.filter((e) => e.flag), fa = DATA.assessments.filter((a) => a.flag), fm = DATA.flagged_models;
   $("checklist").innerHTML =
     `<li><b>Chip stock.</b> Epoch gives no US total; seven named US companies stand in for it. The smuggling estimate is Epoch's own and described as speculative.</li>` +
-    (C.chips.undated.length ? `<li><b>Chips without a release date</b> (left out of the chip comparison): ${esc(C.chips.undated.join(", "))}.</li>` : "") +
+    C.deployed.flags.map((x) => `<li><b>Chip type ${esc(x.type)}</b> (${esc(x.flag)}). ${esc(x.notes)}.</li>`).join("") +
+    C.chips.added.map((a) => `<li><b>${esc(a.name)}</b>, added by hand (${esc(a.flag)}). ${esc(a.notes)}</li>`).join("") +
+    (C.chips.undated.length ? `<li><b>Chips without a release date</b> (left out of the spec-sheet comparison): ${esc(C.chips.undated.join(", "))}.</li>` : "") +
     `<li><b>Training compute.</b> ${C.training.coverage.map((r) => `${r.year}: ${r.us[0]} of ${r.us[1]} US and ${r.cn[0]} of ${r.cn[1]} Chinese scored models have an estimate`).join("; ")}.</li>` +
     fb.map((b) => `<li><b>${esc(b.name)}</b>. ${esc([b.notes, b.basis].filter(Boolean).join(". "))}</li>`).join("") +
     fa.map((a) => `<li><b>${esc(a.publisher)}</b> (${a.date}). ${esc(a.flag)}: ${esc(a.notes)}</li>`).join("") +
@@ -1311,7 +1412,7 @@ $("seg").innerHTML = ["All", "US", "China"].map((c) => `<button type="button" ar
 $("seg").addEventListener("click", (ev) => { const b = ev.target.closest("button"); if (!b) return; state.country = b.textContent; state.limit = 15;
   $("seg").querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", x === b)); drawReleases(); });
 $("more").addEventListener("click", () => { state.limit += 15; drawReleases(); });
-["steps", "open", "chips", "train"].forEach(stepHover);
+["steps", "open", "deployed", "chips", "train"].forEach(stepHover);
 ["tscatter", "cscatter"].forEach(scatterHover);
 
 $("asof").textContent = "As of " + fmt(TODAY);

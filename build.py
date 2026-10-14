@@ -1,6 +1,7 @@
 """Build index.html from the tables in data/.
 
-Usage:  python build.py        (standard library only)
+Usage:  python build.py                      (standard library only)
+        python build.py --as-of 2026-10-21  (compute everything as if today were that date)
 
 Computes every lag with gap.py as of today, for two views of the data
 (independent sources only, and all sources), and writes one self-contained
@@ -13,6 +14,7 @@ check that no area moved implausibly far in one run.
 
 from __future__ import annotations
 
+import argparse
 import csv
 import json
 from datetime import date, timedelta
@@ -199,6 +201,11 @@ def compare(a: dict, benches: dict[str, Bench], by_domain: dict[str, list[str]],
 # The seven companies Epoch names individually are all headquartered in the US.
 US_CHIP_OWNERS = ["Amazon", "CoreWeave", "Google", "Meta", "Microsoft", "Oracle", "xAI"]
 PRICE_THRESHOLDS = [20, 30, 40, 45]
+# Pricing terms the blended list price hides, shown when the model sets a row of the cost table.
+PRICE_NOTES = [
+    {"model": "Claude Haiku 5.5", "note": "Its list price ($0.10 input and $0.50 output per million tokens) applies to prompts under 100K tokens; "
+     "longer prompts are charged five times as much, so the blended price understates the cost of long-context use."},
+]
 
 
 def stock_view() -> dict:
@@ -254,15 +261,115 @@ def stock_view() -> dict:
     }
 
 
+# A chip type counts as deployed at scale for an owner group once the group's cumulative
+# units pass this threshold (see DECISIONS); the page also shows the lag at the others.
+DEPLOYED_UNITS = 10_000
+DEPLOYED_SENSITIVITY = [1_000, 5_000, 10_000, 25_000, 50_000, 100_000]
+DEPLOYED_GROUPS = {"us": "Seven US companies", "cn_any": "China, any designer", "cn_cn": "China, Chinese-designed"}
+METRICS = {"perf": "perf_16bit_flop_s", "bw": "memory_bandwidth_byte_s"}
+
+
+def deployed_view() -> dict:
+    """Best chip actually deployed at scale by each owner group, quarter by quarter.
+
+    Uses Epoch's cumulative units by chip type. A chip type is deployed for a group
+    from the first complete quarter end at which the group's cumulative units pass
+    the threshold and the chip has been released. The months-behind rule is then
+    applied to the best per-chip 16-bit performance and memory bandwidth among
+    deployed types.
+    """
+    rows = read_csv("chip_deployment.csv")
+    mapping = {(r["chip_designer"], r["chip_type"]): r for r in read_csv("chip_type_map.csv")}
+    specs = {r["name"]: r for r in read_csv("chips.csv")}
+    partial = {r["quarter_end"] for r in rows if r["incomplete"] == "True"}
+    quarters = sorted({r["quarter_end"] for r in rows} - partial)
+    owners = {"us": set(US_CHIP_OWNERS), "cn_any": {"China"}, "cn_cn": {"China"}}
+    unmapped = sorted({f"{r['chip_designer']} {r['chip_type']}" for r in rows if (r["chip_designer"], r["chip_type"]) not in mapping
+                       or mapping[(r["chip_designer"], r["chip_type"])]["chip_name"] not in specs})
+
+    # Cumulative units per group and chip type at each complete quarter end, carried forward.
+    latest: dict[tuple, float] = {}
+    by_quarter: dict[str, list[dict]] = {}
+    for r in rows:
+        by_quarter.setdefault(r["quarter_end"], []).append(r)
+    units: dict[str, dict[tuple, list[float]]] = {g: {} for g in owners}
+    for i, q in enumerate(quarters):
+        for r in by_quarter[q]:
+            latest[(r["owner"], r["chip_designer"], r["chip_type"])] = number(r["units"]) or 0
+        for g, who in owners.items():
+            for (o, d, t), u in latest.items():
+                if o in who and (d, t) in mapping and mapping[(d, t)]["chip_name"] in specs:
+                    if g == "cn_cn" and specs[mapping[(d, t)]["chip_name"]]["country"] != "China":
+                        continue
+                    units[g].setdefault((d, t), [0.0] * len(quarters))[i] += u
+
+    def spec(key: tuple, metric: str) -> float | None:
+        m = mapping[key]
+        if metric == "bw" and m["use_bandwidth"] != "yes":
+            return None
+        return number(specs[m["chip_name"]][METRICS[metric]])
+
+    def deployed(threshold: int) -> dict[str, dict[tuple, str]]:
+        out = {g: {} for g in owners}
+        for g, types in units.items():
+            for key, series in types.items():
+                released = day(specs[mapping[key]["chip_name"]]["release_date"])
+                for q, u in zip(quarters, series):
+                    if u >= threshold and released and released <= day(q):
+                        out[g][key] = q
+                        break
+        return out
+
+    def frontier(dep: dict[tuple, str], metric: str) -> list[Point]:
+        return gap.records([Point(day(q), v, model=key[1], lab=key[0]) for key, q in dep.items() if (v := spec(key, metric))])
+
+    asof = day(quarters[-1])
+
+    def lags(threshold: int) -> dict:
+        dep = deployed(threshold)
+        out = {}
+        for metric in METRICS:
+            us = frontier(dep["us"], metric)
+            for g in ("cn_any", "cn_cn"):
+                hit = gap.lag_at(us, frontier(dep[g], metric), asof)
+                out[f"{g}_{metric}"] = lag_out(hit)
+                # Epoch's data starts in 2022 Q1, so a match in that quarter means "at least".
+                if out[f"{g}_{metric}"] and hit["match"] and hit["match"].day == day(quarters[0]):
+                    out[f"{g}_{metric}"]["floor"] = True
+        return out
+
+    dep = deployed(DEPLOYED_UNITS)
+    table = []
+    for g, types in dep.items():
+        for key, q in sorted(types.items(), key=lambda kv: (kv[1], kv[0])):
+            m = mapping[key]
+            table.append({"group": g, "chip_type": key[1], "designer": key[0], "chip_name": m["chip_name"], "deployed_from": q,
+                          "units_then": round(units[g][key][quarters.index(q)]), "units_latest": round(units[g][key][-1]),
+                          "perf_16bit_flop_s": spec(key, "perf"), "memory_bandwidth_byte_s": spec(key, "bw"), "flag": m["flag"]})
+    best = {g: {metric: [pt(p) for p in frontier(dep[g], metric)] for metric in METRICS} for g in owners}
+    return {
+        "threshold": DEPLOYED_UNITS, "asof": asof.isoformat(), "first_quarter": quarters[0], "best": best, **lags(DEPLOYED_UNITS),
+        "sensitivity": [{"t": t, **{k: (v and v["m"]) for k, v in lags(t).items()}} for t in DEPLOYED_SENSITIVITY],
+        "table": table, "unmapped": unmapped,
+        "flags": [{"type": f"{r['chip_designer']} {r['chip_type']}", "chip": r["chip_name"], "flag": r["flag"], "notes": r["notes"]}
+                  for r in read_csv("chip_type_map.csv") if r["flag"]],
+    }
+
+
 def chip_view() -> dict:
-    """Best 16-bit performance to date: Nvidia against Chinese designers."""
+    """Announced specifications: best 16-bit performance to date, Nvidia against Chinese designers."""
     rows = [r for r in read_csv("chips.csv") if day(r["release_date"]) and number(r["perf_16bit_flop_s"])]
     side = lambda keep: gap.records([Point(day(r["release_date"]), float(r["perf_16bit_flop_s"]), model=r["name"], lab=r["designer"])
                                      for r in rows if keep(r)])
     nvidia, china = side(lambda r: r["designer"] == "NVIDIA"), side(lambda r: r["country"] == "China")
     huawei = side(lambda r: r["designer"] == "Huawei")
-    undated = sorted(r["name"] for r in read_csv("chips.csv") if r["country"] == "China" and not day(r["release_date"]))
-    return {"nvidia": [pt(p) for p in nvidia], "china": [pt(p) for p in china], "huawei": [pt(p) for p in huawei],
+    every = read_csv("chips.csv")
+    announced = [{"name": r["name"], "planned": r["planned"], "notes": r["notes"], "url": r["source_url"]}
+                 for r in every if r["status"] == "announced, not released"]
+    undated = sorted(r["name"] for r in every if r["country"] == "China" and not day(r["release_date"]) and r["status"] != "announced, not released")
+    added = [{"name": r["name"], "date": r["release_date"], "flag": r["flag"], "notes": r["notes"], "url": r["source_url"]}
+             for r in every if r["added_by"] == "manual" and r["status"] == "released"]
+    return {"announced": announced, "added": added,"nvidia": [pt(p) for p in nvidia], "china": [pt(p) for p in china], "huawei": [pt(p) for p in huawei],
             "lag": lag_out(gap.lag_at(nvidia, china, TODAY)), "lag_huawei": lag_out(gap.lag_at(nvidia, huawei, TODAY)),
             "undated": undated, "n_china": sum(r["country"] == "China" for r in rows), "n_nvidia": sum(r["designer"] == "NVIDIA" for r in rows)}
 
@@ -312,7 +419,18 @@ def cost_view() -> dict | None:
     history = read_csv("price_history.csv") if (DATA / "price_history.csv").exists() else []
     return {"points": pts, "frontier": frontier, "table": table, "n_priced": len(read_csv("prices.csv")),
             "n_us": sum(p[2] == "US" for p in pts), "n_cn": sum(p[2] == "China" for p in pts),
-            "history_start": min((r["date"] for r in history), default=TODAY.isoformat())}
+            "history_start": min((r["date"] for r in history), default=TODAY.isoformat()), "notes": PRICE_NOTES}
+
+
+def write_deployed(d: dict) -> None:
+    """The deployed-chip table behind the page, for checking against the sources."""
+    cols = ["group", "chip_type", "designer", "chip_name", "deployed_from", "units_then", "units_latest",
+            "perf_16bit_flop_s", "memory_bandwidth_byte_s", "flag"]
+    with open(DATA / "deployed_chips.csv", "w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=cols)
+        w.writeheader()
+        for r in d["table"]:
+            w.writerow({k: ("" if r[k] is None else r[k]) for k in cols})
 
 
 def main() -> None:
@@ -360,8 +478,10 @@ def main() -> None:
     events = [{"date": r["date"], "title": r["event"], "kind": r["category"], "text": r["description"],
                "src": r["source_url"], "flag": r["flag"], "notes": r["notes"]} for r in read_csv("events.csv") if r["date"]]
     stock = stock_view()
+    deployed = deployed_view()
+    write_deployed(deployed)
     data = {
-        "compute": {"stock": stock, "chips": chip_view(), "training": training_view(models, eci)},
+        "compute": {"stock": stock, "deployed": deployed, "chips": chip_view(), "training": training_view(models, eci)},
         "cost": cost_view(),
         "built": TODAY.isoformat(), "start": START.isoformat(), "thin_until": THIN_UNTIL.isoformat(),
         "months": [t.isoformat() for t in months], "domains": domains, "overall": OVERALL, "why": WHY,
@@ -399,8 +519,14 @@ def main() -> None:
     c = data["compute"]
     print(f"\ncompute stock at {stock['asof']}: China {stock['china'][-1]:,.0f} H100e, seven US companies {stock['us_named'][-1]:,.0f} "
           f"({stock['ratio']}x); lag {stock['lag']['m']} months, {stock['lag_smuggled']['m']} with the smuggling estimate ({stock['ratio_smuggled']}x)")
-    print(f"chips (16-bit): all Chinese designers {c['chips']['lag']['m']} months behind Nvidia; Huawei {c['chips']['lag_huawei']['m']}")
-    print(f"training compute: {c['training']['lag']['m']} months")
+    dp = c["deployed"]
+    for metric, unit in (("perf", "16-bit"), ("bw", "bandwidth")):
+        print(f"deployed chips ({unit}, {dp['threshold']:,} units, to {dp['asof']}): China any designer "
+              f"{(dp['cn_any_' + metric] or {}).get('m')} months; Chinese-designed {(dp['cn_cn_' + metric] or {}).get('m')}")
+    if dp["unmapped"]:
+        print("WARNING: chip types with no row in data/chip_type_map.csv or no match in chips.csv:", ", ".join(dp["unmapped"]))
+    print(f"spec sheets (16-bit): all Chinese designers {c['chips']['lag']['m']} months behind Nvidia; Huawei {c['chips']['lag_huawei']['m']}")
+    print(f"largest disclosed training run: {c['training']['lag']['m']} months (disclosure-limited; not a headline)")
     if data["cost"]:
         for row in data["cost"]["table"]:
             print(f"  index >= {row['t']}: US {row['us'] and (row['us'][3], row['us'][1])}  China {row['cn'] and (row['cn'][3], row['cn'][1])}  ratio {row['ratio']}")
@@ -412,4 +538,7 @@ def main() -> None:
 
 
 if __name__ == "__main__":
+    ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    ap.add_argument("--as-of", type=date.fromisoformat, help="build as if today were this date (YYYY-MM-DD)")
+    TODAY = ap.parse_args().as_of or TODAY
     main()

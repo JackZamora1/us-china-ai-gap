@@ -1,0 +1,26 @@
+chip_type,chip_designer,chip_name,use_bandwidth,flag,notes
+A100,Nvidia,NVIDIA A100 SXM4 80 GB,yes,,"Epoch's owner data does not split A100 variants; 16-bit is the same for all (312 TFLOP/s). The 80 GB SXM bandwidth (2.0 TB/s) is the highest variant, so A100 bandwidth may be overstated by up to 30%"
+A800,Nvidia,NVIDIA A800 SXM,yes,,"China-specific A100 with reduced chip-to-chip bandwidth; SXM variant used"
+H800,Nvidia,NVIDIA H800 SXM5,yes,,"China-specific H100 with reduced chip-to-chip bandwidth; same 16-bit performance as the H100"
+H20,Nvidia,NVIDIA HGX H20,yes,,"China-specific Hopper chip, cut to 148 TFLOP/s 16-bit"
+H100/H200,Nvidia,NVIDIA H100 SXM5 80GB,yes,combined type,"Epoch counts H100 and H200 together. Both have 989 TFLOP/s 16-bit; the H100's 3.35 TB/s is used for bandwidth (the H200 has 4.8 TB/s), so US bandwidth for this type is a lower bound"
+B200,Nvidia,NVIDIA B200,yes,,
+B300,Nvidia,NVIDIA B300 (Blackwell Ultra),yes,,
+Instinct MI250X,AMD,AMD Radeon Instinct MI250X,yes,,
+Instinct MI300A,AMD,AMD Instinct MI300A,yes,,
+Instinct MI300X,AMD,AMD Instinct MI300X,yes,,
+Instinct MI308X,AMD,AMD Radeon Instinct MI308X,no,bandwidth not used,"Epoch lists 10.3 TB/s, double the 5.3 TB/s it lists for the MI300X this China-specific chip is cut down from; third-party databases give 5.32 TB/s and AMD publishes no datasheet. Bandwidth left out; 16-bit (654 TFLOP/s) used"
+Instinct MI325X,AMD,AMD Instinct MI325X,yes,,
+Instinct MI350X,AMD,AMD Instinct MI350X,yes,,
+Instinct MI355X,AMD,AMD Instinct MI355X,yes,,
+Trainium1,Amazon,Amazon Trainium1,yes,,
+Trainium2,Amazon,Amazon Trainium2,yes,,
+TPU v4,Google,Google TPU v4,yes,,
+TPU v4i,Google,Google TPU v4i,yes,,
+TPU v5e,Google,Google TPU v5e,yes,,
+TPU v5p,Google,Google TPU v5p,yes,,
+TPU v6e,Google,Google TPU v6e Trillium,yes,,
+TPU v7,Google,Google TPU v7 Ironwood,yes,,
+Ascend 910B,Huawei,Huawei Ascend 910B,yes,variant mix unknown,"Epoch's owner data does not split 910B variants. Epoch's generic 910B row (376 TFLOP/s, 1.2 TB/s) is used; its 910B1 to 910B4 rows range from 280 to 400 TFLOP/s and 0.8 to 1.6 TB/s"
+Ascend 910C,Huawei,Huawei Ascend 910C,yes,,
+Siyuan 590,Cambricon,Cambricon Siyuan 590,yes,no bandwidth in source,Epoch's table has no memory bandwidth for this chip
