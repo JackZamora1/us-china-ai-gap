@@ -704,7 +704,7 @@ Qwen3 VL 4B Instruct,Alibaba,China,2025-10-14,unknown,,,,Artificial Analysis API
 Qwen3 VL 8B,Alibaba,China,2025-10-14,unknown,,,Qwen3 VL 8B (Reasoning),Artificial Analysis API,,,refresh
 Qwen3 VL 8B Instruct,Alibaba,China,2025-10-14,unknown,,,,Artificial Analysis API,,,refresh
 Claude 4.5 Haiku,Anthropic,US,2025-10-15,unknown,,,Claude 4.5 Haiku (Non-reasoning)|Claude 4.5 Haiku (Reasoning),Artificial Analysis API,,,refresh
-Claude Haiku 4.5,Anthropic,US,2025-10-15,closed,,https://www.anthropic.com/news/claude-haiku-4-5,claude-haiku-4-5-20251001|claude-haiku-4-5-20251001_16K|claude-haiku-4-5-20251001_1K|claude-haiku-4-5-20251001_32K|claude-haiku-4-5-20251001_8K|claude-haiku-4-5-20251001_low|claude-haiku-4-5-20251001_unknown,Epoch model_metadata,,,refresh
+Claude Haiku 4.5,Anthropic,US,2025-10-15,closed,,https://www.anthropic.com/news/claude-haiku-4-5,claude-haiku-4-5-20251001|claude-haiku-4-5-20251001_16K|claude-haiku-4-5-20251001_1K|claude-haiku-4-5-20251001_32K|claude-haiku-4-5-20251001_59K|claude-haiku-4-5-20251001_8K|claude-haiku-4-5-20251001_low|claude-haiku-4-5-20251001_unknown,Epoch model_metadata,,,refresh
 ibm-granite-h-small,IBM,US,2025-10-16,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 Qwen3 VL 32B,Alibaba,China,2025-10-21,unknown,,,Qwen3 VL 32B (Reasoning),Artificial Analysis API,,,refresh
 Qwen3 VL 32B Instruct,Alibaba,China,2025-10-21,unknown,,,,Artificial Analysis API,,,refresh
@@ -982,7 +982,7 @@ Claude Fable 5.1,Anthropic,US,2026-09-01,closed,,https://www.anthropic.com/claud
 Qwen3.8 Max (0902),Alibaba,China,2026-09-01,closed,,,qwen3.8-max-0902|qwen3.8-max-0902_unknown|qwen3.8-max-0902_xhigh,Epoch model_metadata,,,refresh
 Gemini 3.8 Flash,Google DeepMind,US,2026-09-02,closed,,https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash,Gemini 3.8 Flash (High)|Gemini 3.8 Flash (Low)|Gemini 3.8 Flash (Medium)|gemini-3.8-flash-high|gemini-3.8-flash_high|gemini-3.8-flash_low|gemini-3.8-flash_medium|gemini-3.8-flash_unknown,Epoch model_metadata,,,refresh
 Muse Spark 1.3,Meta AI,US,2026-09-02,closed,,https://research.meta.ai/blog/introducing-muse-spark-1-3,Muse Spark 1.3 (Max)|Muse Spark 1.3 (Xhigh)|muse-spark-1.3 (xHigh)|muse-spark-1.3-max|muse-spark-1.3_high|muse-spark-1.3_low|muse-spark-1.3_max|muse-spark-1.3_medium|muse-spark-1.3_minimal|muse-spark-1.3_unknown|muse-spark-1.3_xhigh,Epoch model_metadata,,,refresh
-GPT-6 Astra,OpenAI,US,2026-09-03,closed,1e+27,,GPT 6 Astra (Max)|GPT-6 Astra (High)|GPT-6 Astra (Low)|GPT-6 Astra (Max)|GPT-6 Astra (Medium)|GPT-6 Astra (Xhigh)|gpt-6-astra-max|gpt-6-astra_high|gpt-6-astra_low|gpt-6-astra_max|gpt-6-astra_medium|gpt-6-astra_none|gpt-6-astra_promax|gpt-6-astra_unknown|gpt-6-astra_xhigh,Epoch model_metadata,,,refresh
+GPT-6 Astra,OpenAI,US,2026-09-03,closed,9.4e+26,,GPT 6 Astra (Max)|GPT-6 Astra (High)|GPT-6 Astra (Low)|GPT-6 Astra (Max)|GPT-6 Astra (Medium)|GPT-6 Astra (Xhigh)|gpt-6-astra-max|gpt-6-astra_high|gpt-6-astra_low|gpt-6-astra_max|gpt-6-astra_medium|gpt-6-astra_none|gpt-6-astra_promax|gpt-6-astra_unknown|gpt-6-astra_xhigh,Epoch model_metadata,,,refresh
 K2 Horizon 0.9B,Institute of Foundation Models,Other,2026-09-03,unknown,,,,Artificial Analysis API,,,refresh
 K2 Horizon 3.7B,Institute of Foundation Models,Other,2026-09-03,unknown,,,,Artificial Analysis API,,,refresh
 K2 Horizon 375B A23B,Institute of Foundation Models,Other,2026-09-03,unknown,,,,Artificial Analysis API,,,refresh
