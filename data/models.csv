@@ -786,7 +786,7 @@ LongCat Flash Lite,Meituan,China,2026-01-28,unknown,,,,Artificial Analysis API,,
 kimi-k2.5-instant,Moonshot,China,2026-01-29,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 Step 3.5 Flash,StepFun,China,2026-02-02,open,,https://static.stepfun.com/blog/step-3.5-flash/,Step 3.5 Flash 2603|step-3.5-flash,Epoch model_metadata,,,refresh
 qwen3-coder-next,,Unknown,2026-02-02,unknown,,,Qwen3 Coder Next|qwen3-coder-next,Epoch model_metadata,,,refresh
-Claude Opus 4.6,Anthropic,US,2026-02-05,closed,,https://www.anthropic.com/news/claude-opus-4-6,"Claude Opus 4.6 (Max)|Claude Opus 4.6 (Non-reasoning, High)|claude-opus-4-6|claude-opus-4-6-high|claude-opus-4-6-thinking|claude-opus-4-6_120K|claude-opus-4-6_32K|claude-opus-4-6_64K|claude-opus-4-6_high|claude-opus-4-6_low|claude-opus-4-6_max|claude-opus-4-6_medium|claude-opus-4-6_unknown",Epoch model_metadata,,,refresh
+Claude Opus 4.6,Anthropic,US,2026-02-05,closed,,https://www.anthropic.com/news/claude-opus-4-6,"Claude Opus 4.6 (High)|Claude Opus 4.6 (Max)|Claude Opus 4.6 (Non-reasoning, High)|claude-opus-4-6|claude-opus-4-6-high|claude-opus-4-6-thinking|claude-opus-4-6_120K|claude-opus-4-6_32K|claude-opus-4-6_64K|claude-opus-4-6_high|claude-opus-4-6_low|claude-opus-4-6_max|claude-opus-4-6_medium|claude-opus-4-6_unknown",Epoch model_metadata,,,refresh
 GPT-5.3 Codex,OpenAI,US,2026-02-05,closed,,https://openai.com/index/introducing-gpt-5-3-codex/,GPT-5.3 Codex (Xhigh)|gpt-5.3-codex|gpt-5.3-codex (codex-harness)|gpt-5.3-codex_high|gpt-5.3-codex_xhigh,Epoch model_metadata,,,refresh
 Tri-21B-think Preview,Trillion Labs,Other,2026-02-10,unknown,,,Tri-21B-Think,Artificial Analysis API,,,refresh
 GLM-5,Z.ai (Zhipu AI),China,2026-02-11,open,6.84e+24,"https://arxiv.org/pdf/2602.15763 
@@ -964,7 +964,7 @@ DeepSeek V4 Pro 0813,DeepSeek,China,2026-08-13,open,9.7e+24,,DeepSeek V4 Pro 081
 Gemini 3.7 Flash,Google DeepMind,US,2026-08-13,closed,,"https://x.com/GoogleAIStudio/status/2087953811931320341
 
 https://ai.google.dev/gemini-api/docs/models/gemini-3.7-flash",Gemini 3.7 Flash (High)|Gemini 3.7 Flash (Low)|Gemini 3.7 Flash (Medium)|gemini-3.7-flash-high|gemini-3.7-flash_high|gemini-3.7-flash_low|gemini-3.7-flash_medium|gemini-3.7-flash_unknown,Epoch model_metadata,,,refresh
-GLM-5.3,Z.ai (Zhipu AI),China,2026-08-14,closed,,https://z.ai/blog/glm-5.3,GLM 5.3 (Max)|GLM-5.3 (Low)|GLM-5.3 (Max)|glm-5.3-max|glm-5.3_high|glm-5.3_low|glm-5.3_max|glm-5.3_unknown,Epoch model_metadata,,,refresh
+GLM-5.3,Z.ai (Zhipu AI),China,2026-08-14,open,,https://z.ai/blog/glm-5.3,GLM 5.3 (Max)|GLM-5.3 (Low)|GLM-5.3 (Max)|glm-5.3-max|glm-5.3_high|glm-5.3_low|glm-5.3_max|glm-5.3_unknown,Epoch model_metadata,,,refresh
 Qwen 3.8 27B,Alibaba,China,2026-08-14,open,,"https://x.com/Alibaba_Qwen/status/2088280182356611304
 https://huggingface.co/Qwen/Qwen3.8-27B",Qwen3.8 27B (Low)|Qwen3.8 27B (Medium)|Qwen3.8 27B (Non-reasoning)|Qwen3.8 27B (Xhigh)|qwen3.8-27b|qwen3.8-27b_low|qwen3.8-27b_medium|qwen3.8-27b_none|qwen3.8-27b_xhigh,Epoch model_metadata,,,refresh
 G9v3-39A5B,AI9Stars,Unknown,2026-08-20,unknown,,,,Artificial Analysis API,,,refresh
@@ -1012,3 +1012,9 @@ Mistral Large 4,Mistral AI,Other,2026-10-06,closed,,,Mistral Large 4 Preview|mis
 Claude Haiku 5.5,Anthropic,US,2026-10-07,closed,,,Claude Haiku 5.5 (High)|Claude Haiku 5.5 (Low)|Claude Haiku 5.5 (Max)|Claude Haiku 5.5 (Medium)|Claude Haiku 5.5 (Xhigh)|claude-haiku-5-5_high|claude-haiku-5-5_low|claude-haiku-5-5_max|claude-haiku-5-5_medium|claude-haiku-5-5_unknown|claude-haiku-5-5_xhigh|claude-haiku-5.5-high,Epoch model_metadata,,,refresh
 Muse Wonder,Meta AI,US,2026-10-12,closed,,,Muse Wonder (Max)|muse-wonder-1.0_high|muse-wonder-1.0_low|muse-wonder-1.0_max|muse-wonder-1.0_medium|muse-wonder-1.0_minimal|muse-wonder-1.0_unknown|muse-wonder-1.0_xhigh|muse-wonder-max,Epoch model_metadata,,,refresh
 Muse Wonder Full,Meta,US,2026-10-12,unknown,,,Muse Wonder Full (Max),Artificial Analysis API,,,refresh
+Muse Spark Open,Meta AI,US,2026-10-15,open,,"https://research.meta.ai/blog/muse-spark-open
+https://dev.meta.ai/docs/muse-spark-open",Muse Spark Open (Xhigh)|Muse-Spark-Open-816B-A42B_high|Muse-Spark-Open-816B-A42B_low|Muse-Spark-Open-816B-A42B_medium|Muse-Spark-Open-816B-A42B_unknown|Muse-Spark-Open-816B-A42B_xhigh,Epoch model_metadata,,,refresh
+Nemotron 3.5 Bolt 74B-A9B,Nvidia,US,2026-10-15,unknown,,,,Artificial Analysis API,,,refresh
+Nemotron 3.5 Super VL,Nvidia,US,2026-10-15,unknown,,,,Artificial Analysis API,,,refresh
+nvidia-nemotron-3.5-super-vl-120b-a12b-nvfp4,Nvidia,US,2026-10-15,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
+Reflection Beam,Reflection,Unknown,2026-10-16,unknown,,,,Artificial Analysis API,,,refresh
