@@ -17,7 +17,7 @@ aa_livecodebench,LiveCodeBench (AA),Coding,Artificial Analysis,capability,1.0,sa
 aa_terminalbench_4,Terminal-Bench 4.0 (AA),Coding,Artificial Analysis,capability,1.0,,,yes,,43,29,29,2026-10-01,yes,Run by Artificial Analysis,,https://artificialanalysis.ai/
 aider_polyglot,Aider Polyglot,Coding,Epoch AI,capability,100.0,,,stale,,35,16,1,2025-12-01,stale,Aider leaderboard (Source column),,https://epoch.ai/benchmarks
 ale_bench,ALE-Bench,Coding,Epoch AI,capability,,,,yes,,66,41,34,2026-09-21,yes,Epoch says it takes these from the benchmark's public leaderboard,Algorithm-engineering contests; score has no ceiling,https://epoch.ai/benchmarks
-arena_webdev,Arena WebDev,Coding,Arena,preference,,,,yes,,66,49,46,2026-09-21,yes,Arena's published leaderboards; each model's most recent rating,"Human preference votes, not a capability test; No style-controlled variant",https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset
+arena_webdev,Arena WebDev,Coding,Arena,preference,,,,yes,,68,49,46,2026-10-16,yes,Arena's published leaderboards; each model's most recent rating,"Human preference votes, not a capability test; No style-controlled variant",https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset
 cursorbench,CursorBench,Coding,Epoch AI,capability,,,,stale,,15,2,2,2026-08-20,stale,Cursor's leaderboard (Source column),,https://epoch.ai/benchmarks
 deepswe,DeepSWE,Coding,Epoch AI,capability,1.0,,,yes,,20,6,6,2026-08-20,yes,Datacurve leaderboard (Source column),,https://epoch.ai/benchmarks
 frontiercode,FrontierCode,Coding,Epoch AI,capability,1.0,,,yes,,33,11,11,2026-09-09,yes,Cognition's leaderboard (Source column),,https://epoch.ai/benchmarks

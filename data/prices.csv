@@ -1,9 +1,9 @@
 model,aa_name,lab,country,release_date,aa_intelligence_index,price_blended_usd_per_1m,price_input_usd_per_1m,price_output_usd_per_1m,output_tokens_per_second,source_url
-Agnes 2.5 Pro Beta,Agnes 2.5 Pro Beta,Sapiens AI,Unknown,2026-08-26,35.2,0.15,0.1,0.3,119.653,https://artificialanalysis.ai/
-Apertus 70B Instruct,Apertus 70B Instruct,Swiss AI Initiative,Other,2025-09-02,5.1,1.345,0.82,2.92,,https://artificialanalysis.ai/
-Apertus 8B Instruct,Apertus 8B Instruct,Swiss AI Initiative,Other,2025-09-02,4.8,0.125,0.1,0.2,,https://artificialanalysis.ai/
+Agnes 2.5 Pro Beta,Agnes 2.5 Pro Beta,Sapiens AI,Unknown,2026-08-26,35.2,0.15,0.1,0.3,118.967,https://artificialanalysis.ai/
+Apertus 8B Instruct,Apertus 8B Instruct,Swiss AI Initiative,Other,2025-09-02,4.8,0.125,0.1,0.2,152.819,https://artificialanalysis.ai/
 Apodex 1.1,Apodex 1.1,Apodex,US,2026-08-30,26.4,0.975,0.3,3,,https://artificialanalysis.ai/
-Celeris-1,Celeris-1,Celeris,US,2026-07-24,6.3,0.325,0.2,0.7,1991.336,https://artificialanalysis.ai/
+Beam 1.0,Beam 1.0,Reflection,Unknown,2026-10-16,30.3,1.05,0.7,2.1,178.528,https://artificialanalysis.ai/
+Celeris-1,Celeris-1,Celeris,US,2026-07-24,6.3,0.325,0.2,0.7,1926.603,https://artificialanalysis.ai/
 Claude 3 Haiku,Claude 3 Haiku,Anthropic,US,2024-03-07,5.6,0.5,0.25,1.25,,https://artificialanalysis.ai/
 Claude 3 Opus,Claude 3 Opus,Anthropic,US,2024-02-29,8.7,30,15,75,,https://artificialanalysis.ai/
 Claude 3.5 Sonnet,Claude 3.5 Sonnet (June '24),Anthropic,US,2024-06-20,7.2,6,3,15,,https://artificialanalysis.ai/
@@ -18,16 +18,16 @@ Claude 4.5 Haiku,Claude 4.5 Haiku (Reasoning),Anthropic,US,2025-10-15,16.9,2,1,5
 Claude 4.5 Sonnet,Claude 4.5 Sonnet (Non-reasoning),Anthropic,US,2025-09-29,19.3,6,3,15,,https://artificialanalysis.ai/
 Claude 4.5 Sonnet,Claude 4.5 Sonnet (Reasoning),Anthropic,US,2025-09-29,20.7,6,3,15,,https://artificialanalysis.ai/
 Claude Fable 5,"Claude Fable 5 (Max, Opus 4.8 Fallback)",Anthropic,US,2026-06-09,49.6,20,10,50,,https://artificialanalysis.ai/
-Claude Fable 5.1,"Claude Fable 5.1 (High, Default Fallback)",Anthropic,US,2026-09-01,51.2,20,10,50,56.585,https://artificialanalysis.ai/
-Claude Fable 5.1,"Claude Fable 5.1 (Low, Default Fallback)",Anthropic,US,2026-09-01,46.8,20,10,50,59.669,https://artificialanalysis.ai/
-Claude Fable 5.1,"Claude Fable 5.1 (Max, Default Fallback)",Anthropic,US,2026-09-01,53.4,20,10,50,66.524,https://artificialanalysis.ai/
-Claude Fable 5.1,"Claude Fable 5.1 (Medium, Default Fallback)",Anthropic,US,2026-09-01,48.9,20,10,50,55.758,https://artificialanalysis.ai/
-Claude Fable 5.1,"Claude Fable 5.1 (Xhigh, Default Fallback)",Anthropic,US,2026-09-01,53.2,20,10,50,57.912,https://artificialanalysis.ai/
-Claude Haiku 5.5,Claude Haiku 5.5 (High),Anthropic,US,2026-10-07,37.8,0.2,0.1,0.5,177.59,https://artificialanalysis.ai/
-Claude Haiku 5.5,Claude Haiku 5.5 (Low),Anthropic,US,2026-10-07,29.5,0.2,0.1,0.5,176.045,https://artificialanalysis.ai/
-Claude Haiku 5.5,Claude Haiku 5.5 (Max),Anthropic,US,2026-10-07,43.4,0.2,0.1,0.5,241.13,https://artificialanalysis.ai/
-Claude Haiku 5.5,Claude Haiku 5.5 (Medium),Anthropic,US,2026-10-07,34.5,0.2,0.1,0.5,175.763,https://artificialanalysis.ai/
-Claude Haiku 5.5,Claude Haiku 5.5 (Xhigh),Anthropic,US,2026-10-07,41.2,0.2,0.1,0.5,188.34,https://artificialanalysis.ai/
+Claude Fable 5.1,"Claude Fable 5.1 (High, Default Fallback)",Anthropic,US,2026-09-01,51.2,20,10,50,61.144,https://artificialanalysis.ai/
+Claude Fable 5.1,"Claude Fable 5.1 (Low, Default Fallback)",Anthropic,US,2026-09-01,46.8,20,10,50,62.193,https://artificialanalysis.ai/
+Claude Fable 5.1,"Claude Fable 5.1 (Max, Default Fallback)",Anthropic,US,2026-09-01,53.4,20,10,50,68.924,https://artificialanalysis.ai/
+Claude Fable 5.1,"Claude Fable 5.1 (Medium, Default Fallback)",Anthropic,US,2026-09-01,48.9,20,10,50,59.458,https://artificialanalysis.ai/
+Claude Fable 5.1,"Claude Fable 5.1 (Xhigh, Default Fallback)",Anthropic,US,2026-09-01,53.2,20,10,50,60.407,https://artificialanalysis.ai/
+Claude Haiku 5.5,Claude Haiku 5.5 (High),Anthropic,US,2026-10-07,37.8,0.2,0.1,0.5,172.441,https://artificialanalysis.ai/
+Claude Haiku 5.5,Claude Haiku 5.5 (Low),Anthropic,US,2026-10-07,29.5,0.2,0.1,0.5,177.103,https://artificialanalysis.ai/
+Claude Haiku 5.5,Claude Haiku 5.5 (Max),Anthropic,US,2026-10-07,43.4,0.2,0.1,0.5,241.172,https://artificialanalysis.ai/
+Claude Haiku 5.5,Claude Haiku 5.5 (Medium),Anthropic,US,2026-10-07,34.5,0.2,0.1,0.5,179.038,https://artificialanalysis.ai/
+Claude Haiku 5.5,Claude Haiku 5.5 (Xhigh),Anthropic,US,2026-10-07,41.2,0.2,0.1,0.5,190.178,https://artificialanalysis.ai/
 Claude Opus 4.5,Claude Opus 4.5 (Non-reasoning),Anthropic,US,2025-11-24,23.7,10,5,25,,https://artificialanalysis.ai/
 Claude Opus 4.5,Claude Opus 4.5 (Reasoning),Anthropic,US,2025-11-24,29.1,10,5,25,,https://artificialanalysis.ai/
 Claude Opus 4.6,Claude Opus 4.6 (Max),Anthropic,US,2026-02-05,31.9,10,5,25,,https://artificialanalysis.ai/
@@ -40,11 +40,11 @@ Claude Opus 5,Claude Opus 5 (Low),Anthropic,US,2026-07-24,39.4,10,5,25,,https://
 Claude Opus 5,Claude Opus 5 (Max),Anthropic,US,2026-07-24,50.8,10,5,25,,https://artificialanalysis.ai/
 Claude Opus 5,Claude Opus 5 (Medium),Anthropic,US,2026-07-24,44.8,10,5,25,,https://artificialanalysis.ai/
 Claude Opus 5,Claude Opus 5 (Xhigh),Anthropic,US,2026-07-24,49.7,10,5,25,,https://artificialanalysis.ai/
-Claude Opus 5.5,"Claude Opus 5.5 (High, Default Fallback)",Anthropic,US,2026-09-22,53.6,8,4,20,79.136,https://artificialanalysis.ai/
-Claude Opus 5.5,"Claude Opus 5.5 (Low, Default Fallback)",Anthropic,US,2026-09-22,42.3,8,4,20,79.133,https://artificialanalysis.ai/
-Claude Opus 5.5,"Claude Opus 5.5 (Max, Default Fallback)",Anthropic,US,2026-09-22,57.6,8,4,20,97.868,https://artificialanalysis.ai/
-Claude Opus 5.5,"Claude Opus 5.5 (Medium, Default Fallback)",Anthropic,US,2026-09-22,51.2,8,4,20,79.38,https://artificialanalysis.ai/
-Claude Opus 5.5,"Claude Opus 5.5 (Xhigh, Default Fallback)",Anthropic,US,2026-09-22,56,8,4,20,80.593,https://artificialanalysis.ai/
+Claude Opus 5.5,"Claude Opus 5.5 (High, Default Fallback)",Anthropic,US,2026-09-22,53.6,8,4,20,82.945,https://artificialanalysis.ai/
+Claude Opus 5.5,"Claude Opus 5.5 (Low, Default Fallback)",Anthropic,US,2026-09-22,42.3,8,4,20,84.434,https://artificialanalysis.ai/
+Claude Opus 5.5,"Claude Opus 5.5 (Max, Default Fallback)",Anthropic,US,2026-09-22,57.6,8,4,20,96.575,https://artificialanalysis.ai/
+Claude Opus 5.5,"Claude Opus 5.5 (Medium, Default Fallback)",Anthropic,US,2026-09-22,51.2,8,4,20,83.309,https://artificialanalysis.ai/
+Claude Opus 5.5,"Claude Opus 5.5 (Xhigh, Default Fallback)",Anthropic,US,2026-09-22,56,8,4,20,83.838,https://artificialanalysis.ai/
 Claude Sonnet 4.6,Claude Sonnet 4.6 (Max),Anthropic,US,2026-02-17,30.1,6,3,15,,https://artificialanalysis.ai/
 Claude Sonnet 4.6,"Claude Sonnet 4.6 (Non-reasoning, High)",Anthropic,US,2026-02-17,24.7,6,3,15,,https://artificialanalysis.ai/
 Claude Sonnet 4.6,"Claude Sonnet 4.6 (Non-reasoning, Low)",Anthropic,US,2026-02-17,23.3,6,3,15,,https://artificialanalysis.ai/
@@ -54,13 +54,12 @@ Claude Sonnet 5,Claude Sonnet 5 (Max),Anthropic,US,2026-06-30,38.2,4,2,10,,https
 Claude Sonnet 5,Claude Sonnet 5 (Medium),Anthropic,US,2026-06-30,28.1,4,2,10,,https://artificialanalysis.ai/
 Claude Sonnet 5,"Claude Sonnet 5 (Non-reasoning, High)",Anthropic,US,2026-06-30,23.2,4,2,10,,https://artificialanalysis.ai/
 Claude Sonnet 5,Claude Sonnet 5 (Xhigh),Anthropic,US,2026-06-30,34.4,4,2,10,,https://artificialanalysis.ai/
-Claude Sonnet 5.5,"Claude Sonnet 5.5 (High, Default Fallback)",Anthropic,US,2026-09-28,46.8,4,2,10,107.612,https://artificialanalysis.ai/
-Claude Sonnet 5.5,"Claude Sonnet 5.5 (Low, Default Fallback)",Anthropic,US,2026-09-28,35.9,4,2,10,97.259,https://artificialanalysis.ai/
-Claude Sonnet 5.5,"Claude Sonnet 5.5 (Max, Default Fallback)",Anthropic,US,2026-09-28,56,4,2,10,143.235,https://artificialanalysis.ai/
-Claude Sonnet 5.5,"Claude Sonnet 5.5 (Medium, Default Fallback)",Anthropic,US,2026-09-28,40.8,4,2,10,104.966,https://artificialanalysis.ai/
-Claude Sonnet 5.5,"Claude Sonnet 5.5 (Xhigh, Default Fallback)",Anthropic,US,2026-09-28,51.9,4,2,10,109.917,https://artificialanalysis.ai/
-Cogito v2.1,Cogito v2.1 (Reasoning),Deep Cogito,Unknown,2025-11-19,,1.25,1.25,1.25,,https://artificialanalysis.ai/
-Command A+,Command A,"Cohere,Cohere Labs (formerly Cohere for AI)",Other,2026-05-20,7,4.375,2.5,10,57.787,https://artificialanalysis.ai/
+Claude Sonnet 5.5,"Claude Sonnet 5.5 (High, Default Fallback)",Anthropic,US,2026-09-28,46.8,4,2,10,113.804,https://artificialanalysis.ai/
+Claude Sonnet 5.5,"Claude Sonnet 5.5 (Low, Default Fallback)",Anthropic,US,2026-09-28,35.9,4,2,10,109.265,https://artificialanalysis.ai/
+Claude Sonnet 5.5,"Claude Sonnet 5.5 (Max, Default Fallback)",Anthropic,US,2026-09-28,56,4,2,10,143.761,https://artificialanalysis.ai/
+Claude Sonnet 5.5,"Claude Sonnet 5.5 (Medium, Default Fallback)",Anthropic,US,2026-09-28,40.8,4,2,10,109.338,https://artificialanalysis.ai/
+Claude Sonnet 5.5,"Claude Sonnet 5.5 (Xhigh, Default Fallback)",Anthropic,US,2026-09-28,51.9,4,2,10,109.472,https://artificialanalysis.ai/
+Command A+,Command A,"Cohere,Cohere Labs (formerly Cohere for AI)",Other,2026-05-20,7,4.375,2.5,10,57.053,https://artificialanalysis.ai/
 DeepSeek-R1,DeepSeek R1 (Jan '25),DeepSeek,China,2025-01-20,11.4,2.5,2,4,,https://artificialanalysis.ai/
 DeepSeek-R1 (May 2025),DeepSeek R1 0528 (May '25),DeepSeek,China,2025-05-28,13.1,1.763,1.35,3,,https://artificialanalysis.ai/
 DeepSeek-R1-Distill-Llama-70B,DeepSeek R1 Distill Llama 70B,DeepSeek,China,2025-01-20,7.9,0.8,0.7,1.1,,https://artificialanalysis.ai/
@@ -78,15 +77,14 @@ DeepSeek-V4-Flash,DeepSeek V4 Flash 0420 (High),DeepSeek,China,2026-04-24,24.4,0
 DeepSeek-V4-Flash,DeepSeek V4 Flash 0420 (Max),DeepSeek,China,2026-04-24,24.2,0.142,0.112,0.234,,https://artificialanalysis.ai/
 DeepSeek-V4-Flash,DeepSeek V4 Flash 0420 (Non-reasoning),DeepSeek,China,2026-04-24,18.9,0.117,0.094,0.188,,https://artificialanalysis.ai/
 DeepSeek V4 Flash 0731,DeepSeek V4 Flash 0731 (Max),DeepSeek,China,2026-07-31,34.3,0.66,0.44,1.32,,https://artificialanalysis.ai/
-DeepSeek V4 Flash Vision,DeepSeek V4 Flash Vision (Max),DeepSeek,China,2026-08-21,34.8,0.66,0.44,1.32,178.253,https://artificialanalysis.ai/
+DeepSeek V4 Flash Vision,DeepSeek V4 Flash Vision (Max),DeepSeek,China,2026-08-21,34.8,0.66,0.44,1.32,179.183,https://artificialanalysis.ai/
 DeepSeek-V4-Pro,DeepSeek V4 Pro 0424 (High),DeepSeek,China,2026-04-24,30.1,0.544,0.435,0.87,,https://artificialanalysis.ai/
 DeepSeek-V4-Pro,DeepSeek V4 Pro 0424 (Max),DeepSeek,China,2026-04-24,30.4,0.544,0.435,0.87,,https://artificialanalysis.ai/
 DeepSeek-V4-Pro,DeepSeek V4 Pro 0424 (Non-reasoning),DeepSeek,China,2026-04-24,20.8,0.544,0.435,0.87,,https://artificialanalysis.ai/
-DeepSeek V4 Pro 0813,DeepSeek V4 Pro 0813 (Max),DeepSeek,China,2026-08-13,36,1.98,1.32,3.96,93.075,https://artificialanalysis.ai/
-DeepSeek V4 Pro 0813,DeepSeek V4 Pro 0813 (Non-reasoning),DeepSeek,China,2026-08-13,20.4,1.98,1.32,3.96,94.312,https://artificialanalysis.ai/
-DeepSeek V4.1 Flash,DeepSeek V4.1 Flash (Max),DeepSeek,China,2026-09-09,39.5,0.525,0.3,1.2,180.082,https://artificialanalysis.ai/
-DeepSeek V4.1 Flash,DeepSeek V4.1 Flash (Non-reasoning),DeepSeek,China,2026-09-09,24.7,0.525,0.3,1.2,172.28,https://artificialanalysis.ai/
-ERNIE 4.5 300B A47B,ERNIE 4.5 300B A47B,Baidu,China,2025-06-30,7.5,0.485,0.28,1.1,,https://artificialanalysis.ai/
+DeepSeek V4 Pro 0813,DeepSeek V4 Pro 0813 (Max),DeepSeek,China,2026-08-13,36,1.98,1.32,3.96,93.168,https://artificialanalysis.ai/
+DeepSeek V4 Pro 0813,DeepSeek V4 Pro 0813 (Non-reasoning),DeepSeek,China,2026-08-13,20.4,1.98,1.32,3.96,94.724,https://artificialanalysis.ai/
+DeepSeek V4.1 Flash,DeepSeek V4.1 Flash (Max),DeepSeek,China,2026-09-09,39.5,0.525,0.3,1.2,185.76,https://artificialanalysis.ai/
+DeepSeek V4.1 Flash,DeepSeek V4.1 Flash (Non-reasoning),DeepSeek,China,2026-09-09,24.7,0.525,0.3,1.2,201.164,https://artificialanalysis.ai/
 GLM-4.5-Air,GLM-4.5-Air,"Z.ai (Zhipu AI),Tsinghua University",China,2025-07-20,11.1,0.372,0.17,0.98,,https://artificialanalysis.ai/
 GLM-4.5V,GLM-4.5V (Non-reasoning),Zhipu AI,China,2025-08-11,6.7,0.9,0.6,1.8,,https://artificialanalysis.ai/
 GLM-4.5V,GLM-4.5V (Reasoning),Zhipu AI,China,2025-08-11,7.6,0.9,0.6,1.8,,https://artificialanalysis.ai/
@@ -104,9 +102,9 @@ GLM-5.1,GLM-5.1 (Non-reasoning),Z.ai (Zhipu AI),China,2026-04-07,24.2,2.135,1.38
 GLM-5.1,GLM-5.1 (Reasoning),Z.ai (Zhipu AI),China,2026-04-07,26.1,1.981,1.285,4.07,,https://artificialanalysis.ai/
 GLM-5.2,GLM-5.2 (Max),Z.ai (Zhipu AI),China,2026-06-16,33.7,2.15,1.4,4.4,,https://artificialanalysis.ai/
 GLM-5.2,GLM-5.2 (Non-reasoning),Z.ai (Zhipu AI),China,2026-06-16,22.4,2.15,1.4,4.4,,https://artificialanalysis.ai/
-GLM-5.3,GLM-5.3 (Low),Z.ai (Zhipu AI),China,2026-08-14,34.3,2.15,1.4,4.4,76.284,https://artificialanalysis.ai/
-GLM-5.3,GLM-5.3 (Max),Z.ai (Zhipu AI),China,2026-08-14,44.8,2.15,1.4,4.4,71.333,https://artificialanalysis.ai/
-GLM-5.3-Flash,GLM-5.3-Flash,Z.ai (Zhipu AI),China,2026-08-20,41.8,0.237,0.15,0.5,63.808,https://artificialanalysis.ai/
+GLM-5.3,GLM-5.3 (Low),Z.ai (Zhipu AI),China,2026-08-14,34.3,2.15,1.4,4.4,84.948,https://artificialanalysis.ai/
+GLM-5.3,GLM-5.3 (Max),Z.ai (Zhipu AI),China,2026-08-14,44.8,2.15,1.4,4.4,75.909,https://artificialanalysis.ai/
+GLM-5.3-Flash,GLM-5.3-Flash,Z.ai (Zhipu AI),China,2026-08-20,41.8,0.237,0.15,0.5,76.517,https://artificialanalysis.ai/
 GPT-3.5 Turbo (Jan 2024),GPT-3.5 Turbo,OpenAI,US,2024-01-25,5.5,0.75,0.5,1.5,,https://artificialanalysis.ai/
 GPT-4 (Jun 2023),GPT-4,OpenAI,US,2023-06-13,6.7,37.5,30,60,,https://artificialanalysis.ai/
 GPT-4 Turbo (Apr 2024),GPT-4 Turbo,OpenAI,US,2024-04-09,7,15,10,30,,https://artificialanalysis.ai/
@@ -136,7 +134,7 @@ GPT-5.2,GPT-5.2 (Medium),OpenAI,US,2025-12-11,26.5,4.813,1.75,14,,https://artifi
 GPT-5.2,GPT-5.2 (Non-reasoning),OpenAI,US,2025-12-11,17,4.813,1.75,14,,https://artificialanalysis.ai/
 GPT-5.2,GPT-5.2 (Xhigh),OpenAI,US,2025-12-11,30.4,4.813,1.75,14,,https://artificialanalysis.ai/
 GPT-5.2 Codex,GPT-5.2 Codex (Xhigh),OpenAI,US,2025-12-18,28.5,4.813,1.75,14,,https://artificialanalysis.ai/
-GPT-5.3 Codex,GPT-5.3 Codex (Xhigh),OpenAI,US,2026-02-05,32.5,4.813,1.75,14,96.931,https://artificialanalysis.ai/
+GPT-5.3 Codex,GPT-5.3 Codex (Xhigh),OpenAI,US,2026-02-05,32.5,4.813,1.75,14,105.361,https://artificialanalysis.ai/
 GPT-5.4,GPT-5.4 (Low),OpenAI,US,2026-03-05,27.6,5.625,2.5,15,,https://artificialanalysis.ai/
 GPT-5.4,GPT-5.4 (Non-reasoning),OpenAI,US,2026-03-05,18.2,5.625,2.5,15,,https://artificialanalysis.ai/
 GPT-5.4,GPT-5.4 (Xhigh),OpenAI,US,2026-03-05,39,5.625,2.5,15,,https://artificialanalysis.ai/
@@ -152,7 +150,7 @@ GPT-5.5,GPT-5.5 (Low),OpenAI,US,2026-04-23,30.7,11.25,5,30,,https://artificialan
 GPT-5.5,GPT-5.5 (Medium),OpenAI,US,2026-04-23,33.8,11.25,5,30,,https://artificialanalysis.ai/
 GPT-5.5,GPT-5.5 (Non-reasoning),OpenAI,US,2026-04-23,23.2,11.25,5,30,,https://artificialanalysis.ai/
 GPT-5.5,GPT-5.5 (Xhigh),OpenAI,US,2026-04-23,38.4,11.25,5,30,,https://artificialanalysis.ai/
-GPT-5.5 Instant,GPT-5.5 Instant (June 2026),OpenAI,US,2026-05-05,26,11.25,5,30,164.623,https://artificialanalysis.ai/
+GPT-5.5 Instant,GPT-5.5 Instant (June 2026),OpenAI,US,2026-05-05,26,11.25,5,30,173.608,https://artificialanalysis.ai/
 GPT-5.5 Instant,GPT-5.5 Instant (May 2026),OpenAI,US,2026-05-05,22.7,11.25,5,30,,https://artificialanalysis.ai/
 GPT-5.6 Luna,GPT-5.6 Luna (High),OpenAI,US,2026-07-09,32.1,0.45,0.2,1.2,,https://artificialanalysis.ai/
 GPT-5.6 Luna,GPT-5.6 Luna (Low),OpenAI,US,2026-07-09,21,0.45,0.2,1.2,,https://artificialanalysis.ai/
@@ -166,23 +164,23 @@ GPT-5.6 Sol,GPT-5.6 Sol (Max),OpenAI,US,2026-07-09,47,8,4,20,,https://artificial
 GPT-5.6 Sol,GPT-5.6 Sol (Medium),OpenAI,US,2026-07-09,39.2,8,4,20,,https://artificialanalysis.ai/
 GPT-5.6 Sol,GPT-5.6 Sol (Non-reasoning),OpenAI,US,2026-07-09,28.3,8,4,20,,https://artificialanalysis.ai/
 GPT-5.6 Sol,GPT-5.6 Sol (Xhigh),OpenAI,US,2026-07-09,44,8,4,20,,https://artificialanalysis.ai/
-GPT-5.6 Terra,GPT-5.6 Terra (High),OpenAI,US,2026-07-09,34.2,4.5,2,12,111.307,https://artificialanalysis.ai/
-GPT-5.6 Terra,GPT-5.6 Terra (Low),OpenAI,US,2026-07-09,27.5,4.5,2,12,107.942,https://artificialanalysis.ai/
-GPT-5.6 Terra,GPT-5.6 Terra (Max),OpenAI,US,2026-07-09,42.1,4.5,2,12,118.287,https://artificialanalysis.ai/
-GPT-5.6 Terra,GPT-5.6 Terra (Medium),OpenAI,US,2026-07-09,30.1,4.5,2,12,110.492,https://artificialanalysis.ai/
-GPT-5.6 Terra,GPT-5.6 Terra (Non-reasoning),OpenAI,US,2026-07-09,20.8,4.5,2,12,109.77,https://artificialanalysis.ai/
-GPT-5.6 Terra,GPT-5.6 Terra (Xhigh),OpenAI,US,2026-07-09,38,4.5,2,12,115.638,https://artificialanalysis.ai/
-GPT-6 Astra,GPT-6 Astra (High),OpenAI,US,2026-09-03,50.9,20,10,50,47.867,https://artificialanalysis.ai/
-GPT-6 Astra,GPT-6 Astra (Low),OpenAI,US,2026-09-03,45.8,20,10,50,48.203,https://artificialanalysis.ai/
-GPT-6 Astra,GPT-6 Astra (Max),OpenAI,US,2026-09-03,52.7,20,10,50,53.968,https://artificialanalysis.ai/
-GPT-6 Astra,GPT-6 Astra (Medium),OpenAI,US,2026-09-03,49.6,20,10,50,50.237,https://artificialanalysis.ai/
-GPT-6 Astra,GPT-6 Astra (Xhigh),OpenAI,US,2026-09-03,52.4,20,10,50,50.074,https://artificialanalysis.ai/
-GPT-6 Luna,GPT-6 Luna (High),OpenAI,US,2026-09-22,32.9,0.2,0.1,0.5,123.454,https://artificialanalysis.ai/
-GPT-6 Luna,GPT-6 Luna (Low),OpenAI,US,2026-09-22,21.5,0.2,0.1,0.5,116.263,https://artificialanalysis.ai/
-GPT-6 Luna,GPT-6 Luna (Max),OpenAI,US,2026-09-22,38.1,0.2,0.1,0.5,129.29,https://artificialanalysis.ai/
+GPT-5.6 Terra,GPT-5.6 Terra (High),OpenAI,US,2026-07-09,34.2,4.5,2,12,119.341,https://artificialanalysis.ai/
+GPT-5.6 Terra,GPT-5.6 Terra (Low),OpenAI,US,2026-07-09,27.5,4.5,2,12,114.665,https://artificialanalysis.ai/
+GPT-5.6 Terra,GPT-5.6 Terra (Max),OpenAI,US,2026-07-09,42.1,4.5,2,12,127.632,https://artificialanalysis.ai/
+GPT-5.6 Terra,GPT-5.6 Terra (Medium),OpenAI,US,2026-07-09,30.1,4.5,2,12,116.99,https://artificialanalysis.ai/
+GPT-5.6 Terra,GPT-5.6 Terra (Non-reasoning),OpenAI,US,2026-07-09,20.8,4.5,2,12,114.543,https://artificialanalysis.ai/
+GPT-5.6 Terra,GPT-5.6 Terra (Xhigh),OpenAI,US,2026-07-09,38,4.5,2,12,124.726,https://artificialanalysis.ai/
+GPT-6 Astra,GPT-6 Astra (High),OpenAI,US,2026-09-03,50.9,20,10,50,55.508,https://artificialanalysis.ai/
+GPT-6 Astra,GPT-6 Astra (Low),OpenAI,US,2026-09-03,45.8,20,10,50,56.851,https://artificialanalysis.ai/
+GPT-6 Astra,GPT-6 Astra (Max),OpenAI,US,2026-09-03,52.7,20,10,50,61.431,https://artificialanalysis.ai/
+GPT-6 Astra,GPT-6 Astra (Medium),OpenAI,US,2026-09-03,49.6,20,10,50,56.296,https://artificialanalysis.ai/
+GPT-6 Astra,GPT-6 Astra (Xhigh),OpenAI,US,2026-09-03,52.4,20,10,50,56.046,https://artificialanalysis.ai/
+GPT-6 Luna,GPT-6 Luna (High),OpenAI,US,2026-09-22,32.9,0.2,0.1,0.5,128.952,https://artificialanalysis.ai/
+GPT-6 Luna,GPT-6 Luna (Low),OpenAI,US,2026-09-22,21.5,0.2,0.1,0.5,114.548,https://artificialanalysis.ai/
+GPT-6 Luna,GPT-6 Luna (Max),OpenAI,US,2026-09-22,38.1,0.2,0.1,0.5,130.346,https://artificialanalysis.ai/
 GPT-6 Luna,GPT-6 Luna (Medium),OpenAI,US,2026-09-22,29.9,0.2,0.1,0.5,,https://artificialanalysis.ai/
-GPT-6 Luna,GPT-6 Luna (Non-reasoning),OpenAI,US,2026-09-22,18.5,0.2,0.1,0.5,128.145,https://artificialanalysis.ai/
-GPT-6 Luna,GPT-6 Luna (Xhigh),OpenAI,US,2026-09-22,34.6,0.2,0.1,0.5,122.412,https://artificialanalysis.ai/
+GPT-6 Luna,GPT-6 Luna (Non-reasoning),OpenAI,US,2026-09-22,18.5,0.2,0.1,0.5,128.839,https://artificialanalysis.ai/
+GPT-6 Luna,GPT-6 Luna (Xhigh),OpenAI,US,2026-09-22,34.6,0.2,0.1,0.5,125.239,https://artificialanalysis.ai/
 GPT-6 Sol,"GPT-6 Sol (Daybreak Blue, max)",OpenAI,US,2026-09-22,,4,2,10,,https://artificialanalysis.ai/
 GPT-6 Sol,GPT-6 Sol (High),OpenAI,US,2026-09-22,42.4,4,2,10,,https://artificialanalysis.ai/
 GPT-6 Sol,GPT-6 Sol (Low),OpenAI,US,2026-09-22,34.2,4,2,10,,https://artificialanalysis.ai/
@@ -190,11 +188,11 @@ GPT-6 Sol,GPT-6 Sol (Max),OpenAI,US,2026-09-22,47.6,4,2,10,,https://artificialan
 GPT-6 Sol,GPT-6 Sol (Medium),OpenAI,US,2026-09-22,39.8,4,2,10,,https://artificialanalysis.ai/
 GPT-6 Sol,GPT-6 Sol (Non-reasoning),OpenAI,US,2026-09-22,28.5,4,2,10,,https://artificialanalysis.ai/
 GPT-6 Sol,GPT-6 Sol (Xhigh),OpenAI,US,2026-09-22,44.2,4,2,10,,https://artificialanalysis.ai/
-GPT-6.1 Sol,GPT-6.1 Sol (High),OpenAI,US,2026-09-29,50.2,4,2,10,56.106,https://artificialanalysis.ai/
-GPT-6.1 Sol,GPT-6.1 Sol (Low),OpenAI,US,2026-09-29,42.1,4,2,10,56.01,https://artificialanalysis.ai/
-GPT-6.1 Sol,GPT-6.1 Sol (Max),OpenAI,US,2026-09-29,51.8,4,2,10,60.289,https://artificialanalysis.ai/
-GPT-6.1 Sol,GPT-6.1 Sol (Medium),OpenAI,US,2026-09-29,47.8,4,2,10,57.216,https://artificialanalysis.ai/
-GPT-6.1 Sol,GPT-6.1 Sol (Xhigh),OpenAI,US,2026-09-29,51,4,2,10,55.915,https://artificialanalysis.ai/
+GPT-6.1 Sol,GPT-6.1 Sol (High),OpenAI,US,2026-09-29,50.2,4,2,10,58.767,https://artificialanalysis.ai/
+GPT-6.1 Sol,GPT-6.1 Sol (Low),OpenAI,US,2026-09-29,42.1,4,2,10,58.238,https://artificialanalysis.ai/
+GPT-6.1 Sol,GPT-6.1 Sol (Max),OpenAI,US,2026-09-29,51.8,4,2,10,57.583,https://artificialanalysis.ai/
+GPT-6.1 Sol,GPT-6.1 Sol (Medium),OpenAI,US,2026-09-29,47.8,4,2,10,55.295,https://artificialanalysis.ai/
+GPT-6.1 Sol,GPT-6.1 Sol (Xhigh),OpenAI,US,2026-09-29,51,4,2,10,57.706,https://artificialanalysis.ai/
 Gemini 2.5 Flash (Jun 2025),Gemini 2.5 Flash (Non-reasoning),Google DeepMind,US,2025-06-17,9.9,0.85,0.3,2.5,,https://artificialanalysis.ai/
 Gemini 2.5 Flash (Jun 2025),Gemini 2.5 Flash (Reasoning),Google DeepMind,US,2025-06-17,13.1,0.85,0.3,2.5,,https://artificialanalysis.ai/
 Gemini 2.5 Flash-Lite Preview,Gemini 2.5 Flash-Lite (Non-reasoning),Google DeepMind,US,2025-09-25,6.7,0.175,0.1,0.4,,https://artificialanalysis.ai/
@@ -208,31 +206,30 @@ Gemini 3 Flash,Gemini 3 Flash Preview (Reasoning),Google DeepMind,US,2025-12-17,
 Gemini 3 Pro,Gemini 3 Pro Preview (High),Google DeepMind,US,2025-11-18,28,4.5,2,12,,https://artificialanalysis.ai/
 Gemini 3 Pro,Gemini 3 Pro Preview (Low),Google DeepMind,US,2025-11-18,22.3,4.5,2,12,,https://artificialanalysis.ai/
 Gemini 3.1 Flash-Lite,Gemini 3.1 Flash-Lite,Google,US,2026-03-03,15.6,0.563,0.25,1.5,,https://artificialanalysis.ai/
-Gemini 3.1 Pro,Gemini 3.1 Pro Preview,Google DeepMind,US,2026-02-19,29.7,4.5,2,12,138.913,https://artificialanalysis.ai/
+Gemini 3.1 Pro,Gemini 3.1 Pro Preview,Google DeepMind,US,2026-02-19,29.7,4.5,2,12,138.615,https://artificialanalysis.ai/
 Gemini 3.5 Flash,Gemini 3.5 Flash (High),Google DeepMind,US,2026-05-19,32.6,3.375,1.5,9,,https://artificialanalysis.ai/
 Gemini 3.5 Flash,Gemini 3.5 Flash (Medium),Google DeepMind,US,2026-05-19,33.6,3.375,1.5,9,,https://artificialanalysis.ai/
 Gemini 3.5 Flash,Gemini 3.5 Flash (Minimal),Google DeepMind,US,2026-05-19,23.8,3.375,1.5,9,,https://artificialanalysis.ai/
-Gemini 3.5 Flash-Lite,Gemini 3.5 Flash-Lite,Google DeepMind,US,2026-07-21,22.2,0.85,0.3,2.5,422.584,https://artificialanalysis.ai/
+Gemini 3.5 Flash-Lite,Gemini 3.5 Flash-Lite,Google DeepMind,US,2026-07-21,22.2,0.85,0.3,2.5,393.945,https://artificialanalysis.ai/
 Gemini 3.6 Flash,Gemini 3.6 Flash (High),Google DeepMind,US,2026-07-21,34,1.5,0.75,3.75,,https://artificialanalysis.ai/
 Gemini 3.7 Flash,Gemini 3.7 Flash (High),Google DeepMind,US,2026-08-13,39.1,1.5,0.75,3.75,,https://artificialanalysis.ai/
 Gemini 3.7 Flash,Gemini 3.7 Flash (Low),Google DeepMind,US,2026-08-13,36.9,1.5,0.75,3.75,,https://artificialanalysis.ai/
 Gemini 3.7 Flash,Gemini 3.7 Flash (Medium),Google DeepMind,US,2026-08-13,39.6,1.5,0.75,3.75,,https://artificialanalysis.ai/
-Gemini 3.8 Flash,Gemini 3.8 Flash (High),Google DeepMind,US,2026-09-02,40.9,1.5,0.75,3.75,137.797,https://artificialanalysis.ai/
+Gemini 3.8 Flash,Gemini 3.8 Flash (High),Google DeepMind,US,2026-09-02,40.9,1.5,0.75,3.75,145.027,https://artificialanalysis.ai/
 Gemini 3.8 Flash,Gemini 3.8 Flash (Low),Google DeepMind,US,2026-09-02,33.5,1.5,0.75,3.75,,https://artificialanalysis.ai/
 Gemini 3.8 Flash,Gemini 3.8 Flash (Medium),Google DeepMind,US,2026-09-02,39.8,1.5,0.75,3.75,,https://artificialanalysis.ai/
-Gemini 4 Argon,Gemini 4 Argon (High),Google DeepMind,US,2026-09-30,52.6,4,2,10,98.873,https://artificialanalysis.ai/
-Gemma 4 12B,Gemma 4 12B (Non-reasoning),Google DeepMind,US,2026-06-03,9.4,0.15,0.1,0.3,152.533,https://artificialanalysis.ai/
+Gemini 4 Argon,Gemini 4 Argon (High),Google DeepMind,US,2026-09-30,52.6,4,2,10,,https://artificialanalysis.ai/
+Gemma 4 12B,Gemma 4 12B (Non-reasoning),Google DeepMind,US,2026-06-03,9.4,0.15,0.1,0.3,149.897,https://artificialanalysis.ai/
 Gemma 4 12B,Gemma 4 12B (Reasoning),Google DeepMind,US,2026-06-03,14.2,0.15,0.1,0.3,145.885,https://artificialanalysis.ai/
-Gemma 4 26B A4B,Gemma 4 26B A4B (Non-reasoning),Google DeepMind,US,2026-04-02,13.1,0.198,0.13,0.4,83.701,https://artificialanalysis.ai/
-Gemma 4 26B A4B,Gemma 4 26B A4B (Reasoning),Google DeepMind,US,2026-04-02,16.7,0.175,0.1,0.4,59.027,https://artificialanalysis.ai/
-Gemma 4 31B,Gemma 4 31B (Non-reasoning),Google DeepMind,US,2026-04-02,13.9,0.224,0.165,0.4,53.24,https://artificialanalysis.ai/
-Gemma 4 E4B,Gemma 4 E4B (Non-reasoning),Google DeepMind,US,2026-04-03,7.5,0.04,0.02,0.1,41.365,https://artificialanalysis.ai/
-Gemma 4 E4B,Gemma 4 E4B (Reasoning),Google DeepMind,US,2026-04-03,8.9,0.04,0.02,0.1,43.501,https://artificialanalysis.ai/
+Gemma 4 26B A4B,Gemma 4 26B A4B (Non-reasoning),Google DeepMind,US,2026-04-02,13.1,0.198,0.13,0.4,83.742,https://artificialanalysis.ai/
+Gemma 4 26B A4B,Gemma 4 26B A4B (Reasoning),Google DeepMind,US,2026-04-02,16.7,0.168,0.1,0.37,52.839,https://artificialanalysis.ai/
+Gemma 4 31B,Gemma 4 31B (Non-reasoning),Google DeepMind,US,2026-04-02,13.9,0.224,0.165,0.4,52.036,https://artificialanalysis.ai/
+Gemma 4 E4B,Gemma 4 E4B (Non-reasoning),Google DeepMind,US,2026-04-03,7.5,0.04,0.02,0.1,38.468,https://artificialanalysis.ai/
+Gemma 4 E4B,Gemma 4 E4B (Reasoning),Google DeepMind,US,2026-04-03,8.9,0.04,0.02,0.1,40.733,https://artificialanalysis.ai/
 Granite 3.3 8B,Granite 3.3 8B (Non-reasoning),IBM,US,2025-04-16,4.9,0.085,0.03,0.25,,https://artificialanalysis.ai/
-Granite 4.0 H Small,Granite 4.0 H Small,IBM,US,2025-09-22,6,0.107,0.06,0.25,,https://artificialanalysis.ai/
-Granite 4.2 30B,Granite 4.2 30B,IBM,US,2026-08-25,12.7,0.282,0.16,0.65,76.974,https://artificialanalysis.ai/
-Granite 4.2 3B,Granite 4.2 3B,IBM,US,2026-08-25,9.1,0.052,0.03,0.12,231.077,https://artificialanalysis.ai/
-Granite 4.2 8B,Granite 4.2 8B,IBM,US,2026-08-25,11.1,0.107,0.06,0.25,135.135,https://artificialanalysis.ai/
+Granite 4.2 30B,Granite 4.2 30B,IBM,US,2026-08-25,12.7,0.282,0.16,0.65,77.31,https://artificialanalysis.ai/
+Granite 4.2 3B,Granite 4.2 3B,IBM,US,2026-08-25,9.1,0.052,0.03,0.12,231.554,https://artificialanalysis.ai/
+Granite 4.2 8B,Granite 4.2 8B,IBM,US,2026-08-25,11.1,0.107,0.06,0.25,135.217,https://artificialanalysis.ai/
 Grok 3,Grok 3,xAI,US,2025-04-09,12.1,6,3,15,,https://artificialanalysis.ai/
 Grok-3 mini,Grok 3 mini Reasoning (High),xAI,US,2025-06-24,14.6,0.35,0.3,0.5,,https://artificialanalysis.ai/
 Grok 4,Grok 4,xAI,US,2025-07-09,22.5,6,3,15,,https://artificialanalysis.ai/
@@ -251,21 +248,20 @@ Grok 4.6,Grok 4.6 (High),xAI,US,2026-08-12,44.3,3,2,6,,https://artificialanalysi
 Grok 4.6,Grok 4.6 (Low),xAI,US,2026-08-12,35.1,3,2,6,,https://artificialanalysis.ai/
 Grok 4.6,Grok 4.6 (Medium),xAI,US,2026-08-12,42.8,3,2,6,,https://artificialanalysis.ai/
 Grok 4.6,Grok 4.6 (Xhigh),xAI,US,2026-08-12,44.2,3,2,6,,https://artificialanalysis.ai/
-Grok 4.7,Grok 4.7 (High),xAI,US,2026-09-21,46.3,3,2,6,82.28,https://artificialanalysis.ai/
-Grok 4.7,Grok 4.7 (Low),xAI,US,2026-09-21,42.2,3,2,6,75.688,https://artificialanalysis.ai/
-Grok 4.7,Grok 4.7 (Xhigh),xAI,US,2026-09-21,46.4,3,2,6,83.477,https://artificialanalysis.ai/
+Grok 4.7,Grok 4.7 (High),xAI,US,2026-09-21,46.3,3,2,6,78.36,https://artificialanalysis.ai/
+Grok 4.7,Grok 4.7 (Low),xAI,US,2026-09-21,42.2,3,2,6,76.695,https://artificialanalysis.ai/
+Grok 4.7,Grok 4.7 (Xhigh),xAI,US,2026-09-21,46.4,3,2,6,83.291,https://artificialanalysis.ai/
 Grok Build 0.1,Grok Build 0.1 0616,xAI,US,2026-05-29,27.2,1.25,1,2,,https://artificialanalysis.ai/
 Hermes 3 - Llama-3.1 70B,Hermes 3 - Llama-3.1 70B,Nous Research,US,2024-08-15,6,0.7,0.7,0.7,,https://artificialanalysis.ai/
 Hermes 4 - Llama-3.1 405B,Hermes 4 - Llama-3.1 405B (Non-reasoning),Nous Research,US,2025-08-27,7.4,1.5,1,3,29.963,https://artificialanalysis.ai/
-Hermes 4 - Llama-3.1 405B,Hermes 4 - Llama-3.1 405B (Reasoning),Nous Research,US,2025-08-27,7.5,1.5,1,3,30.429,https://artificialanalysis.ai/
-Hy3,Hy3,Tencent,China,2026-07-06,25.3,0.241,0.136,0.555,87.496,https://artificialanalysis.ai/
+Hermes 4 - Llama-3.1 405B,Hermes 4 - Llama-3.1 405B (Reasoning),Nous Research,US,2025-08-27,7.5,1.5,1,3,31.325,https://artificialanalysis.ai/
+Hy3,Hy3,Tencent,China,2026-07-06,25.3,0.241,0.136,0.555,86.422,https://artificialanalysis.ai/
 Hy3,Hy3-preview (Non-reasoning),Tencent,China,2026-07-06,17,0.1,0.063,0.21,,https://artificialanalysis.ai/
 Hy3,Hy3-preview (Reasoning),Tencent,China,2026-07-06,22.7,0.1,0.063,0.21,,https://artificialanalysis.ai/
-Inkling,Inkling (Xhigh),Thinking Machines,US,2026-07-15,25,1.762,1,4.05,213.797,https://artificialanalysis.ai/
-Inkling-Small,Inkling Small,Thinking Machines,US,2026-07-15,25.7,0.525,0.3,1.2,197.23,https://artificialanalysis.ai/
+Inkling,Inkling (Xhigh),Thinking Machines,US,2026-07-15,25,1.762,1,4.05,205.445,https://artificialanalysis.ai/
+Inkling-Small,Inkling Small,Thinking Machines,US,2026-07-15,25.7,0.525,0.3,1.2,192.987,https://artificialanalysis.ai/
 Jamba 1.5 Large,Jamba 1.5 Large,AI21 Labs,Other,2024-08-22,6,3.5,2,8,,https://artificialanalysis.ai/
 Jamba 1.5 Mini,Jamba 1.5 Mini,AI21 Labs,Other,2024-08-22,5.2,0.25,0.2,0.4,,https://artificialanalysis.ai/
-KAT Coder Pro V2,KAT Coder Pro V2,Kuaishou,China,2026-03-27,21.7,0.525,0.3,1.2,,https://artificialanalysis.ai/
 Kimi K2,Kimi K2,Moonshot,China,2025-07-11,12.7,1.002,0.57,2.3,,https://artificialanalysis.ai/
 Kimi K2 (Sep 2025),Kimi K2 0905,Moonshot,China,2025-09-05,15.3,1.075,0.6,2.5,,https://artificialanalysis.ai/
 Kimi K2 Thinking,Kimi K2 Thinking,Moonshot,China,2025-11-06,22,1.075,0.6,2.5,,https://artificialanalysis.ai/
@@ -273,90 +269,86 @@ Kimi K2.5,Kimi K2.5 (Non-reasoning),Moonshot,China,2026-01-27,19.4,1.2,0.6,3,,ht
 Kimi K2.5,Kimi K2.5 (Reasoning),Moonshot,China,2026-01-27,23.5,1.137,0.6,2.75,,https://artificialanalysis.ai/
 Kimi K2.6,Kimi K2.6 (Non-reasoning),Moonshot,China,2026-04-20,23.6,1.712,0.95,4,,https://artificialanalysis.ai/
 Kimi K2.6,Kimi K2.6 (Reasoning),Moonshot,China,2026-04-20,27,1.712,0.95,4,,https://artificialanalysis.ai/
-Kimi K2.7 Code,Kimi K2.7 Code,Moonshot,China,2026-06-12,25.8,1.712,0.95,4,49.583,https://artificialanalysis.ai/
+Kimi K2.7 Code,Kimi K2.7 Code,Moonshot,China,2026-06-12,25.8,1.712,0.95,4,51.795,https://artificialanalysis.ai/
 Kimi K3,Kimi K3 (Low),Moonshot,China,2026-07-16,30.1,6,3,15,42.813,https://artificialanalysis.ai/
-Kimi K3,Kimi K3 (Max),Moonshot,China,2026-07-16,43.6,6,3,15,45.018,https://artificialanalysis.ai/
+Kimi K3,Kimi K3 (Max),Moonshot,China,2026-07-16,43.6,6,3,15,41.856,https://artificialanalysis.ai/
 Ling 3.0 Flash,Ling 3.0 Flash,Ant Group,China,2026-08-04,20.1,0.111,0.075,0.22,,https://artificialanalysis.ai/
-Ling 3.1 Flash,Ling 3.1 Flash,Ant Group,China,2026-10-01,41.1,0.45,0.3,0.9,217.334,https://artificialanalysis.ai/
+Ling 3.1 Flash,Ling 3.1 Flash,Ant Group,China,2026-10-01,41.1,0.45,0.3,0.9,217.01,https://artificialanalysis.ai/
 Ling-2.6-1T,Ling-2.6-1T,Ant Group,China,2026-04-23,17,0.85,0.3,2.5,,https://artificialanalysis.ai/
-Ling-3.0-flash-Fin,Ling-3.0-flash-Fin,Ant Group,China,2026-09-11,22.6,0.111,0.075,0.22,264.478,https://artificialanalysis.ai/
+Ling-3.0-flash-Fin,Ling-3.0-flash-Fin,Ant Group,China,2026-09-11,22.6,0.111,0.075,0.22,249.69,https://artificialanalysis.ai/
 Ling-flash-2.0,Ling-flash-2.0,Ant Group,China,2025-09-17,7.8,0.247,0.14,0.57,,https://artificialanalysis.ai/
 Llama 2 Chat 7B,Llama 2 Chat 7B,Meta,US,2023-07-18,5.7,0.1,0.05,0.25,,https://artificialanalysis.ai/
 Llama 3 Instruct 70B,Llama 3 Instruct 70B,Meta,US,2024-04-18,5.5,1.175,0.65,2.75,,https://artificialanalysis.ai/
 Llama 3 Instruct 8B,Llama 3 Instruct 8B,Meta,US,2024-04-18,4.8,0.07,0.045,0.145,,https://artificialanalysis.ai/
 Llama 3.1 Instruct 70B,Llama 3.1 Instruct 70B,Meta,US,2024-07-23,6.6,0.56,0.56,0.56,,https://artificialanalysis.ai/
 Llama 3.1 Instruct 8B,Llama 3.1 Instruct 8B,Meta,US,2024-07-23,6.9,0.043,0.035,0.065,,https://artificialanalysis.ai/
-Llama 3.2 Instruct 11B,Llama 3.2 Instruct 11B (Vision),Meta,US,2024-09-25,5.4,0.345,0.345,0.345,23.109,https://artificialanalysis.ai/
-Llama 3.3 Instruct 70B,Llama 3.3 Instruct 70B,Meta,US,2024-12-06,7.7,0.712,0.71,0.72,96.342,https://artificialanalysis.ai/
-Llama 4 Maverick,Llama 4 Maverick,Meta AI,US,2025-04-06,9.3,0.405,0.25,0.87,51.755,https://artificialanalysis.ai/
-Llama 4 Scout,Llama 4 Scout,Meta AI,US,2025-04-05,6.5,0.3,0.18,0.66,99.534,https://artificialanalysis.ai/
-LongCat 2.0,LongCat 2.0,Meituan,China,2026-06-29,19.1,1.3,0.75,2.95,66.871,https://artificialanalysis.ai/
-Magistral Small 1.2,Magistral Small 1.2,Mistral AI,Other,2025-09-18,8.6,0.75,0.5,1.5,78.355,https://artificialanalysis.ai/
+Llama 3.2 Instruct 11B,Llama 3.2 Instruct 11B (Vision),Meta,US,2024-09-25,5.4,0.345,0.345,0.345,21.957,https://artificialanalysis.ai/
+Llama 3.3 Instruct 70B,Llama 3.3 Instruct 70B,Meta,US,2024-12-06,7.7,0.712,0.71,0.72,99.495,https://artificialanalysis.ai/
+Llama 4 Maverick,Llama 4 Maverick,Meta AI,US,2025-04-06,9.3,0.417,0.25,0.92,48.495,https://artificialanalysis.ai/
+Llama 4 Scout,Llama 4 Scout,Meta AI,US,2025-04-05,6.5,0.3,0.18,0.66,102.728,https://artificialanalysis.ai/
+LongCat 2.0,LongCat 2.0,Meituan,China,2026-06-29,19.1,1.3,0.75,2.95,65.799,https://artificialanalysis.ai/
+Magistral Small 1.2,Magistral Small 1.2,Mistral AI,Other,2025-09-18,8.6,0.75,0.5,1.5,79.317,https://artificialanalysis.ai/
 Mercury 2,Mercury 2,Inception Labs,US,2026-02-20,10.8,0.375,0.25,0.75,,https://artificialanalysis.ai/
-Mercury 2.5,Mercury 2.5,Inception Labs,US,2026-09-08,12.3,0.375,0.25,0.75,790.797,https://artificialanalysis.ai/
+Mercury 2.5,Mercury 2.5,Inception Labs,US,2026-09-08,12.3,0.375,0.25,0.75,849.605,https://artificialanalysis.ai/
 MiMo-V2-Flash,MiMo-V2-Flash (Reasoning),Xiaomi Corp,China,2025-12-16,20.8,0.15,0.1,0.3,,https://artificialanalysis.ai/
 MiMo-V2.5,MiMo-V2.5,Xiaomi Corp,China,2026-04-23,21.8,0.175,0.14,0.28,,https://artificialanalysis.ai/
 MiMo-V2.5-Pro,MiMo-V2.5-Pro (Non-reasoning),Xiaomi Corp,China,2026-04-23,18.3,0.544,0.435,0.87,,https://artificialanalysis.ai/
 MiMo-V2.5-Pro,MiMo-V2.5-Pro (Reasoning),Xiaomi Corp,China,2026-04-23,26,0.544,0.435,0.87,,https://artificialanalysis.ai/
-MiMo-V2.6 Flash,MiMo-V2.6-Flash,Xiaomi Corp,China,2026-09-21,37.9,0.175,0.14,0.28,50.776,https://artificialanalysis.ai/
-MiMo-V2.6 Pro,MiMo-V2.6-Pro,Xiaomi Corp,China,2026-09-21,46.3,0.544,0.435,0.87,49.904,https://artificialanalysis.ai/
+MiMo-V2.6 Flash,MiMo-V2.6-Flash,Xiaomi Corp,China,2026-09-21,37.9,0.175,0.14,0.28,60.377,https://artificialanalysis.ai/
+MiMo-V2.6 Pro,MiMo-V2.6-Pro,Xiaomi Corp,China,2026-09-21,46.3,0.544,0.435,0.87,47.483,https://artificialanalysis.ai/
 MiniMax-M1-80k,MiniMax M1 80k,MiniMax,China,2025-06-13,11.7,0.963,0.55,2.2,,https://artificialanalysis.ai/
 MiniMax-M2,MiniMax-M2,MiniMax,China,2025-10-27,18.6,0.525,0.3,1.2,,https://artificialanalysis.ai/
 MiniMax-M2.1,MiniMax-M2.1,MiniMax,China,2025-12-23,20.9,0.525,0.3,1.2,,https://artificialanalysis.ai/
 MiniMax-M2.5,MiniMax-M2.5,MiniMax,China,2026-02-12,22.8,0.525,0.3,1.2,,https://artificialanalysis.ai/
 MiniMax-M2.7,MiniMax-M2.7,MiniMax,China,2026-03-18,22.8,0.525,0.3,1.2,,https://artificialanalysis.ai/
-MiniMax-M3,MiniMax-M3,MiniMax,China,2026-06-01,29.2,0.525,0.3,1.2,106.282,https://artificialanalysis.ai/
-Ministral 3 14B,Ministral 3 14B,Mistral AI,Other,2025-12-02,6,0.2,0.2,0.2,84.405,https://artificialanalysis.ai/
-Ministral 3 3B,Ministral 3 3B,Mistral AI,Other,2025-12-02,4.8,0.1,0.1,0.1,219.543,https://artificialanalysis.ai/
-Ministral 3 8B,Ministral 3 8B,Mistral AI,Other,2025-12-02,5.5,0.15,0.15,0.15,100.225,https://artificialanalysis.ai/
+MiniMax-M3,MiniMax-M3,MiniMax,China,2026-06-01,29.2,0.525,0.3,1.2,131.194,https://artificialanalysis.ai/
+Ministral 3 14B,Ministral 3 14B,Mistral AI,Other,2025-12-02,6,0.2,0.2,0.2,80.037,https://artificialanalysis.ai/
+Ministral 3 3B,Ministral 3 3B,Mistral AI,Other,2025-12-02,4.8,0.1,0.1,0.1,212.94,https://artificialanalysis.ai/
+Ministral 3 8B,Ministral 3 8B,Mistral AI,Other,2025-12-02,5.5,0.15,0.15,0.15,99.894,https://artificialanalysis.ai/
 Mistral 7B Instruct,Mistral 7B Instruct,Mistral AI,Other,2023-09-27,5,0.162,0.15,0.2,,https://artificialanalysis.ai/
 Mistral Large,Mistral Large (Feb '24),Mistral AI,Other,2024-02-26,5.8,6,4,12,,https://artificialanalysis.ai/
 Mistral Large 2,Mistral Large 2 (Jul '24),Mistral AI,Other,2024-11-18,6.8,3,2,6,,https://artificialanalysis.ai/
 Mistral Large 3,Mistral Large 3,Mistral AI,Other,2025-12-02,9.3,0.75,0.5,1.5,,https://artificialanalysis.ai/
-Mistral Large 4,Mistral Large 4 Preview,Mistral AI,Other,2026-10-06,38.4,2.065,1.36,4.18,81.596,https://artificialanalysis.ai/
+Mistral Large 4,Mistral Large 4 Preview,Mistral AI,Other,2026-10-06,38.4,2.065,1.36,4.18,46.258,https://artificialanalysis.ai/
 Mistral Medium 3,Mistral Medium 3,Mistral AI,Other,2025-05-07,9,0.8,0.4,2,,https://artificialanalysis.ai/
-Mistral Medium 3.5,Mistral Medium 3.5,Mistral AI,Other,2026-04-28,14.2,3,1.5,7.5,167.694,https://artificialanalysis.ai/
+Mistral Medium 3.5,Mistral Medium 3.5,Mistral AI,Other,2026-04-28,14.2,3,1.5,7.5,166.611,https://artificialanalysis.ai/
 Mistral Small 3,Mistral Small 3,Mistral AI,Other,2025-01-30,6.7,0.058,0.05,0.08,,https://artificialanalysis.ai/
 Mistral Small 3.1,Mistral Small 3.1,Mistral AI,Other,2025-03-17,7.1,0.094,0.08,0.135,,https://artificialanalysis.ai/
 Mistral Small 3.2,Mistral Small 3.2,Mistral AI,Other,2025-06-20,7,0.106,0.075,0.2,,https://artificialanalysis.ai/
-Mistral Small 4,Mistral Small 4 (Non-reasoning),Mistral AI,Other,2026-03-16,9,0.262,0.15,0.6,190.282,https://artificialanalysis.ai/
-Mistral Small 4,Mistral Small 4 (Reasoning),Mistral AI,Other,2026-03-16,11.3,0.262,0.15,0.6,190.923,https://artificialanalysis.ai/
+Mistral Small 4,Mistral Small 4 (Non-reasoning),Mistral AI,Other,2026-03-16,9,0.262,0.15,0.6,189.219,https://artificialanalysis.ai/
+Mistral Small 4,Mistral Small 4 (Reasoning),Mistral AI,Other,2026-03-16,11.3,0.262,0.15,0.6,194.352,https://artificialanalysis.ai/
 Mixtral 8x7B Instruct,Mixtral 8x7B Instruct,Mistral AI,Other,2023-12-11,5.1,0.512,0.45,0.7,,https://artificialanalysis.ai/
-Muse Glimmer,Muse Glimmer (High),Meta AI,US,2026-08-10,17.5,0.525,0.3,1.2,146.491,https://artificialanalysis.ai/
+Muse Glimmer,Muse Glimmer (High),Meta AI,US,2026-08-10,17.5,0.525,0.3,1.2,144.024,https://artificialanalysis.ai/
 Muse Spark 1.1,Muse Spark 1.1 (Xhigh),Meta AI,US,2026-07-09,33.7,2,1.25,4.25,,https://artificialanalysis.ai/
 Muse Spark 1.2,Muse Spark 1.2 (Xhigh),Meta AI,US,2026-08-05,39.6,2,1.25,4.25,,https://artificialanalysis.ai/
-Muse Spark 1.3,Muse Spark 1.3 (Max),Meta AI,US,2026-09-02,48.1,2,1.25,4.25,134.067,https://artificialanalysis.ai/
-Muse Spark 1.3,Muse Spark 1.3 (Xhigh),Meta AI,US,2026-09-02,45.1,2,1.25,4.25,375.654,https://artificialanalysis.ai/
-Muse Spark Open,Muse Spark Open (Xhigh),Meta AI,US,2026-10-15,38.9,2,1.25,4.25,117.134,https://artificialanalysis.ai/
-Muse Wonder,Muse Wonder (Max),Meta AI,US,2026-10-12,52.4,8,4,20,184.343,https://artificialanalysis.ai/
-NVIDIA Nemotron 3 Nano 30B A3B,NVIDIA Nemotron 3 Nano 30B A3B (Non-reasoning),Nvidia,US,2025-12-15,6.8,0.088,0.05,0.2,239.191,https://artificialanalysis.ai/
-NVIDIA Nemotron 3 Nano 30B A3B,NVIDIA Nemotron 3 Nano 30B A3B (Reasoning),Nvidia,US,2025-12-15,8.9,0.088,0.05,0.2,221.287,https://artificialanalysis.ai/
-NVIDIA Nemotron Nano 12B v2 VL,NVIDIA Nemotron Nano 12B v2 VL (Non-reasoning),Nvidia,US,2025-10-28,5.8,0.3,0.2,0.6,205.694,https://artificialanalysis.ai/
-nvidia-nemotron-nano-9b-v2,NVIDIA Nemotron Nano 9B V2 (Non-reasoning),,Unknown,2025-08-18,6.8,0.086,0.05,0.195,171.161,https://artificialanalysis.ai/
-nvidia-nemotron-nano-9b-v2,NVIDIA Nemotron Nano 9B V2 (Reasoning),,Unknown,2025-08-18,7.4,0.07,0.04,0.16,229.373,https://artificialanalysis.ai/
-Nemotron 3 Nano Omni 30B A3B Reasoning,Nemotron 3 Nano Omni 30B A3B Reasoning,Nvidia,US,2026-04-29,10.3,0.45,0.3,0.9,242.355,https://artificialanalysis.ai/
-Nemotron 3 Super 120B A12B,Nemotron 3 Super 120B A12B (Reasoning),Nvidia,US,2026-03-11,12.8,0.45,0.3,0.9,142.438,https://artificialanalysis.ai/
-Nemotron 3 Ultra 550B A55B,Nemotron 3 Ultra 550B A55B (Reasoning),Nvidia,US,2026-06-04,22.9,1.075,0.6,2.5,141.375,https://artificialanalysis.ai/
-Nemotron 3.5 Lightning,Nemotron 3.5 Lightning,Nvidia,US,2026-08-11,12.9,0.095,0.06,0.2,294.568,https://artificialanalysis.ai/
-Nemotron 3.5 Super VL,Nemotron 3.5 Super VL,Nvidia,US,2026-10-15,26.5,0.294,0.2,0.575,206.122,https://artificialanalysis.ai/
-Nova 2.0 Lite,Nova 2.0 Lite (High),Amazon,US,2025-10-29,13.4,0.85,0.3,2.5,227.96,https://artificialanalysis.ai/
-Nova 2.0 Lite,Nova 2.0 Lite (Low),Amazon,US,2025-10-29,11.8,0.85,0.3,2.5,231.361,https://artificialanalysis.ai/
-Nova 2.0 Lite,Nova 2.0 Lite (Medium),Amazon,US,2025-10-29,12.5,0.85,0.3,2.5,226.645,https://artificialanalysis.ai/
-Nova 2.0 Lite,Nova 2.0 Lite (Non-reasoning),Amazon,US,2025-10-29,8.7,0.85,0.3,2.5,231.458,https://artificialanalysis.ai/
-Nova 2.0 Omni,Nova 2.0 Omni (Low),Amazon,US,2025-11-26,11.1,0.85,0.3,2.5,,https://artificialanalysis.ai/
-Nova 2.0 Omni,Nova 2.0 Omni (Medium),Amazon,US,2025-11-26,13.6,0.85,0.3,2.5,,https://artificialanalysis.ai/
-Nova 2.0 Omni,Nova 2.0 Omni (Non-reasoning),Amazon,US,2025-11-26,8.2,0.85,0.3,2.5,,https://artificialanalysis.ai/
-Nova 2.0 Pro Preview,Nova 2.0 Pro Preview (Low),Amazon,US,2025-12-02,12.8,3.438,1.25,10,144.934,https://artificialanalysis.ai/
-Nova 2.0 Pro Preview,Nova 2.0 Pro Preview (Medium),Amazon,US,2025-12-02,14.2,3.438,1.25,10,139.323,https://artificialanalysis.ai/
-Nova 2.0 Pro Preview,Nova 2.0 Pro Preview (Non-reasoning),Amazon,US,2025-12-02,10,3.438,1.25,10,125.696,https://artificialanalysis.ai/
+Muse Spark 1.3,Muse Spark 1.3 (Max),Meta AI,US,2026-09-02,48.1,2,1.25,4.25,115.809,https://artificialanalysis.ai/
+Muse Spark 1.3,Muse Spark 1.3 (Xhigh),Meta AI,US,2026-09-02,45.1,2,1.25,4.25,250.806,https://artificialanalysis.ai/
+Muse Spark Open,Muse Spark Open (Xhigh),Meta AI,US,2026-10-15,38.9,2,1.25,4.25,141.296,https://artificialanalysis.ai/
+Muse Wonder,Muse Wonder (Max),Meta AI,US,2026-10-12,52.4,8,4,20,184.259,https://artificialanalysis.ai/
+NVIDIA Nemotron 3 Nano 30B A3B,NVIDIA Nemotron 3 Nano 30B A3B (Non-reasoning),Nvidia,US,2025-12-15,6.8,0.088,0.05,0.2,260.33,https://artificialanalysis.ai/
+NVIDIA Nemotron 3 Nano 30B A3B,NVIDIA Nemotron 3 Nano 30B A3B (Reasoning),Nvidia,US,2025-12-15,8.9,0.088,0.05,0.2,218.483,https://artificialanalysis.ai/
+NVIDIA Nemotron Nano 12B v2 VL,NVIDIA Nemotron Nano 12B v2 VL (Non-reasoning),Nvidia,US,2025-10-28,5.8,0.3,0.2,0.6,206.383,https://artificialanalysis.ai/
+nvidia-nemotron-nano-9b-v2,NVIDIA Nemotron Nano 9B V2 (Non-reasoning),,Unknown,2025-08-18,6.8,0.086,0.05,0.195,169.784,https://artificialanalysis.ai/
+nvidia-nemotron-nano-9b-v2,NVIDIA Nemotron Nano 9B V2 (Reasoning),,Unknown,2025-08-18,7.4,0.07,0.04,0.16,181.009,https://artificialanalysis.ai/
+Nemotron 3 Nano Omni 30B A3B Reasoning,Nemotron 3 Nano Omni 30B A3B Reasoning,Nvidia,US,2026-04-29,10.3,0.45,0.3,0.9,240.619,https://artificialanalysis.ai/
+Nemotron 3 Super 120B A12B,Nemotron 3 Super 120B A12B (Reasoning),Nvidia,US,2026-03-11,12.8,0.45,0.3,0.9,142.265,https://artificialanalysis.ai/
+Nemotron 3 Ultra 550B A55B,Nemotron 3 Ultra 550B A55B (Reasoning),Nvidia,US,2026-06-04,22.9,1.125,0.6,2.7,133.256,https://artificialanalysis.ai/
+Nemotron 3.5 Lightning,Nemotron 3.5 Lightning,Nvidia,US,2026-08-11,12.9,0.095,0.06,0.2,292.241,https://artificialanalysis.ai/
+Nemotron 3.5 Super VL,Nemotron 3.5 Super VL,Nvidia,US,2026-10-15,26.5,0.313,0.225,0.575,391.42,https://artificialanalysis.ai/
+Nova 2.0 Lite,Nova 2.0 Lite (High),Amazon,US,2025-10-29,13.4,0.85,0.3,2.5,222.445,https://artificialanalysis.ai/
+Nova 2.0 Lite,Nova 2.0 Lite (Low),Amazon,US,2025-10-29,11.8,0.85,0.3,2.5,223.337,https://artificialanalysis.ai/
+Nova 2.0 Lite,Nova 2.0 Lite (Medium),Amazon,US,2025-10-29,12.5,0.85,0.3,2.5,220.25,https://artificialanalysis.ai/
+Nova 2.0 Lite,Nova 2.0 Lite (Non-reasoning),Amazon,US,2025-10-29,8.7,0.85,0.3,2.5,241.903,https://artificialanalysis.ai/
+Nova 2.0 Pro Preview,Nova 2.0 Pro Preview (Low),Amazon,US,2025-12-02,12.8,3.438,1.25,10,141.368,https://artificialanalysis.ai/
+Nova 2.0 Pro Preview,Nova 2.0 Pro Preview (Medium),Amazon,US,2025-12-02,14.2,3.438,1.25,10,133.923,https://artificialanalysis.ai/
+Nova 2.0 Pro Preview,Nova 2.0 Pro Preview (Non-reasoning),Amazon,US,2025-12-02,10,3.438,1.25,10,134.87,https://artificialanalysis.ai/
 Nova Lite,Nova Lite,Amazon,US,2024-12-03,6.7,0.105,0.06,0.24,,https://artificialanalysis.ai/
-Nova Micro,Nova Micro,Amazon,US,2024-12-03,5.9,0.061,0.035,0.14,258.975,https://artificialanalysis.ai/
+Nova Micro,Nova Micro,Amazon,US,2024-12-03,5.9,0.061,0.035,0.14,282.976,https://artificialanalysis.ai/
 Nova Pro,Nova Pro,Amazon,US,2024-12-03,7,1.4,0.8,3.2,,https://artificialanalysis.ai/
-Olmo 3 7B Instruct,Olmo 3 7B Instruct,Allen Institute for AI,US,2025-11-20,5.2,0.125,0.1,0.2,,https://artificialanalysis.ai/
-Phi-4,Phi-4,Microsoft Research,US,2024-12-12,5.9,0.219,0.125,0.5,43.364,https://artificialanalysis.ai/
-Phi-4 Mini,Phi-4 Mini Instruct,Microsoft,US,2025-02-27,6.3,0.131,0.075,0.3,47.468,https://artificialanalysis.ai/
+Phi-4,Phi-4,Microsoft Research,US,2024-12-12,5.9,0.219,0.125,0.5,43.836,https://artificialanalysis.ai/
+Phi-4 Mini,Phi-4 Mini Instruct,Microsoft,US,2025-02-27,6.3,0.131,0.075,0.3,47.354,https://artificialanalysis.ai/
 Phi-4 Multimodal Instruct,Phi-4 Multimodal Instruct,Microsoft,US,2025-02-26,5.8,0.14,0.08,0.32,17.998,https://artificialanalysis.ai/
-Quasar 438B,"Quasar 438B (Max, Based on GLM-5.2)",Multiverse Computing,Other,2026-08-10,26.7,0.9,0.6,1.8,134.942,https://artificialanalysis.ai/
+Quasar 438B,"Quasar 438B (Max, Based on GLM-5.2)",Multiverse Computing,Other,2026-08-10,26.7,0.9,0.6,1.8,162.768,https://artificialanalysis.ai/
 Qwen2.5 Instruct 72B,Qwen2.5 Instruct 72B,Alibaba,China,2024-09-19,7.7,0.48,0.475,0.495,,https://artificialanalysis.ai/
 Qwen2.5 Turbo,Qwen2.5 Turbo,Alibaba,China,2024-11-18,6.4,0.088,0.05,0.2,,https://artificialanalysis.ai/
 Qwen3-14B,Qwen3 14B (Non-reasoning),Alibaba,China,2025-04-28,6.7,0.15,0.12,0.24,,https://artificialanalysis.ai/
@@ -372,67 +364,65 @@ Qwen3-32B,Qwen3 32B (Reasoning),Alibaba,China,2025-04-28,7.2,0.315,0.24,0.54,,ht
 Qwen3-8B,Qwen3 8B (Non-reasoning),Alibaba,China,2025-04-28,6,0.2,0.2,0.2,,https://artificialanalysis.ai/
 Qwen3 Coder 30B A3B Instruct,Qwen3 Coder 30B A3B Instruct,Alibaba,China,2025-07-31,9.6,0.3,0.15,0.748,,https://artificialanalysis.ai/
 Qwen3-Coder-480B-A35B,Qwen3 Coder 480B A35B Instruct,Alibaba,China,2025-07-31,11.9,0.675,0.3,1.8,,https://artificialanalysis.ai/
-qwen3-coder-next,Qwen3 Coder Next,,Unknown,2026-02-02,9.2,0.675,0.5,1.2,58.806,https://artificialanalysis.ai/
-Qwen3 Next 80B A3B,Qwen3 Next 80B A3B (Reasoning),Alibaba,China,2025-09-11,11.2,0.412,0.15,1.2,166.614,https://artificialanalysis.ai/
-Qwen3 Next 80B A3B Instruct,Qwen3 Next 80B A3B Instruct,Alibaba,China,2025-09-11,9.6,0.388,0.15,1.1,142.832,https://artificialanalysis.ai/
-Qwen3 Omni 30B A3B,Qwen3 Omni 30B A3B (Reasoning),Alibaba,China,2025-09-22,7.8,0.43,0.25,0.97,110.008,https://artificialanalysis.ai/
-Qwen3 Omni 30B A3B Instruct,Qwen3 Omni 30B A3B Instruct,Alibaba,China,2025-09-22,6,0.43,0.25,0.97,107.976,https://artificialanalysis.ai/
+qwen3-coder-next,Qwen3 Coder Next,,Unknown,2026-02-02,9.2,0.482,0.31,1,62.676,https://artificialanalysis.ai/
+Qwen3 Next 80B A3B,Qwen3 Next 80B A3B (Reasoning),Alibaba,China,2025-09-11,11.2,0.412,0.15,1.2,159.818,https://artificialanalysis.ai/
+Qwen3 Next 80B A3B Instruct,Qwen3 Next 80B A3B Instruct,Alibaba,China,2025-09-11,9.6,0.381,0.125,1.15,136.724,https://artificialanalysis.ai/
+Qwen3 Omni 30B A3B,Qwen3 Omni 30B A3B (Reasoning),Alibaba,China,2025-09-22,7.8,0.43,0.25,0.97,110.507,https://artificialanalysis.ai/
+Qwen3 Omni 30B A3B Instruct,Qwen3 Omni 30B A3B Instruct,Alibaba,China,2025-09-22,6,0.43,0.25,0.97,108.068,https://artificialanalysis.ai/
 Qwen3 VL 235B A22B Instruct,Qwen3 VL 235B A22B Instruct,Alibaba,China,2025-09-23,9.9,0.509,0.215,1.39,,https://artificialanalysis.ai/
 Qwen3 VL 30B A3B,Qwen3 VL 30B A3B (Reasoning),Alibaba,China,2025-10-03,9.5,0.5,0.5,0.5,,https://artificialanalysis.ai/
 Qwen3 VL 30B A3B Instruct,Qwen3 VL 30B A3B Instruct,Alibaba,China,2025-10-03,7.9,0.412,0.35,0.6,,https://artificialanalysis.ai/
-Qwen3.5-122B-A10B,Qwen3.5 122B A10B (Non-reasoning),Alibaba,China,2026-02-24,17.7,1.1,0.4,3.2,147.172,https://artificialanalysis.ai/
-Qwen3.5-122B-A10B,Qwen3.5 122B A10B (Reasoning),Alibaba,China,2026-02-24,15.6,1.1,0.4,3.2,133.77,https://artificialanalysis.ai/
+Qwen3.5-122B-A10B,Qwen3.5 122B A10B (Non-reasoning),Alibaba,China,2026-02-24,17.7,1.1,0.4,3.2,146.283,https://artificialanalysis.ai/
+Qwen3.5-122B-A10B,Qwen3.5 122B A10B (Reasoning),Alibaba,China,2026-02-24,15.6,1.1,0.4,3.2,134.121,https://artificialanalysis.ai/
 Qwen3.5-27B,Qwen3.5 27B (Non-reasoning),Alibaba,China,2026-02-24,19.4,0.825,0.3,2.4,,https://artificialanalysis.ai/
 Qwen3.5-27B,Qwen3.5 27B (Reasoning),Alibaba,China,2026-02-24,22.9,0.825,0.3,2.4,,https://artificialanalysis.ai/
 Qwen3.5-35B-A3B,Qwen3.5 35B A3B (Non-reasoning),Alibaba,China,2026-02-24,15.1,0.688,0.25,2,,https://artificialanalysis.ai/
 Qwen3.5-35B-A3B,Qwen3.5 35B A3B (Reasoning),Alibaba,China,2026-02-24,19.3,0.688,0.25,2,,https://artificialanalysis.ai/
-Qwen3.5 397B-A17B,Qwen3.5 397B A17B (Non-reasoning),Alibaba,China,2026-02-13,21.4,1.35,0.6,3.6,54.433,https://artificialanalysis.ai/
-Qwen3.5 397B-A17B,Qwen3.5 397B A17B (Reasoning),Alibaba,China,2026-02-13,18.4,1.35,0.6,3.6,54.847,https://artificialanalysis.ai/
-Qwen3.5-4B,Qwen3.5 4B (Non-reasoning),Alibaba,China,2026-02-24,10.8,0.06,0.03,0.15,8.043,https://artificialanalysis.ai/
-Qwen3.5-4B,Qwen3.5 4B (Reasoning),Alibaba,China,2026-02-24,13.1,0.06,0.03,0.15,11.755,https://artificialanalysis.ai/
-Qwen3.5-9B,Qwen3.5 9B (Non-reasoning),Alibaba,China,2026-02-24,13.3,0.19,0.17,0.25,99.265,https://artificialanalysis.ai/
+Qwen3.5 397B-A17B,Qwen3.5 397B A17B (Non-reasoning),Alibaba,China,2026-02-13,21.4,1.35,0.6,3.6,54.088,https://artificialanalysis.ai/
+Qwen3.5 397B-A17B,Qwen3.5 397B A17B (Reasoning),Alibaba,China,2026-02-13,18.4,1.35,0.6,3.6,54.883,https://artificialanalysis.ai/
+Qwen3.5-4B,Qwen3.5 4B (Non-reasoning),Alibaba,China,2026-02-24,10.8,0.06,0.03,0.15,7.955,https://artificialanalysis.ai/
+Qwen3.5-4B,Qwen3.5 4B (Reasoning),Alibaba,China,2026-02-24,13.1,0.06,0.03,0.15,11.608,https://artificialanalysis.ai/
+Qwen3.5-9B,Qwen3.5 9B (Non-reasoning),Alibaba,China,2026-02-24,13.3,0.19,0.17,0.25,105.396,https://artificialanalysis.ai/
 Qwen3.5-9B,Qwen3.5 9B (Reasoning),Alibaba,China,2026-02-24,11.2,0.151,0.135,0.2,69.707,https://artificialanalysis.ai/
-Qwen3.5 Omni Flash,Qwen3.5 Omni Flash,Alibaba,China,2026-03-30,12.5,0.275,0.1,0.8,246.189,https://artificialanalysis.ai/
-Qwen3.5 Omni Plus,Qwen3.5 Omni Plus,Alibaba,China,2026-03-30,20.4,1.5,0.4,4.8,75.683,https://artificialanalysis.ai/
+Qwen3.5 Omni Flash,Qwen3.5 Omni Flash,Alibaba,China,2026-03-30,12.5,0.275,0.1,0.8,266.152,https://artificialanalysis.ai/
+Qwen3.5 Omni Plus,Qwen3.5 Omni Plus,Alibaba,China,2026-03-30,20.4,1.5,0.4,4.8,72.728,https://artificialanalysis.ai/
 Qwen3.6 27B,Qwen3.6 27B (Non-reasoning),Alibaba,China,2026-04-22,19.8,1.35,0.6,3.6,,https://artificialanalysis.ai/
 Qwen3.6 27B,Qwen3.6 27B (Reasoning),Alibaba,China,2026-04-22,21.4,1.35,0.6,3.6,,https://artificialanalysis.ai/
-Qwen 3.6 35B-A3B,Qwen3.6 35B A3B (Non-reasoning),Alibaba,China,2026-04-14,15.2,0.844,0.375,2.25,155.144,https://artificialanalysis.ai/
-Qwen 3.6 35B-A3B,Qwen3.6 35B A3B (Reasoning),Alibaba,China,2026-04-14,18.2,0.844,0.375,2.25,142.886,https://artificialanalysis.ai/
+Qwen 3.6 35B-A3B,Qwen3.6 35B A3B (Non-reasoning),Alibaba,China,2026-04-14,15.2,0.844,0.375,2.25,154.748,https://artificialanalysis.ai/
+Qwen 3.6 35B-A3B,Qwen3.6 35B A3B (Reasoning),Alibaba,China,2026-04-14,18.2,0.844,0.375,2.25,142.794,https://artificialanalysis.ai/
 Qwen 3.6 Plus,Qwen3.6 Plus,Alibaba,China,2026-03-31,27,1.125,0.5,3,,https://artificialanalysis.ai/
 Qwen3.7-Max,Qwen3.7 Max,Alibaba,China,2026-05-19,29.5,3.75,2.5,7.5,,https://artificialanalysis.ai/
-Qwen3.7-Plus,Qwen3.7 Plus,Alibaba,China,2026-06-02,25.2,0.7,0.4,1.6,55.058,https://artificialanalysis.ai/
-Qwen3.8 2.4T A95B,Qwen3.8 2.4T A95B,Alibaba,China,2026-08-12,39.9,3,2,6,38.173,https://artificialanalysis.ai/
-Qwen 3.8 27B,Qwen3.8 27B (Low),Alibaba,China,2026-08-14,26.2,1.125,0.5,3,41.366,https://artificialanalysis.ai/
-Qwen 3.8 27B,Qwen3.8 27B (Medium),Alibaba,China,2026-08-14,27.6,1.125,0.5,3,45.468,https://artificialanalysis.ai/
-Qwen 3.8 27B,Qwen3.8 27B (Non-reasoning),Alibaba,China,2026-08-14,20.2,1.125,0.5,3,42.132,https://artificialanalysis.ai/
-Qwen 3.8 27B,Qwen3.8 27B (Xhigh),Alibaba,China,2026-08-14,33.7,1.125,0.5,3,38.435,https://artificialanalysis.ai/
+Qwen3.7-Plus,Qwen3.7 Plus,Alibaba,China,2026-06-02,25.2,0.7,0.4,1.6,55.932,https://artificialanalysis.ai/
+Qwen3.8 2.4T A95B,Qwen3.8 2.4T A95B,Alibaba,China,2026-08-12,39.9,3,2,6,36.621,https://artificialanalysis.ai/
+Qwen 3.8 27B,Qwen3.8 27B (Low),Alibaba,China,2026-08-14,26.2,1.125,0.5,3,45.884,https://artificialanalysis.ai/
+Qwen 3.8 27B,Qwen3.8 27B (Medium),Alibaba,China,2026-08-14,27.6,1.125,0.5,3,42.852,https://artificialanalysis.ai/
+Qwen 3.8 27B,Qwen3.8 27B (Non-reasoning),Alibaba,China,2026-08-14,20.2,1.125,0.5,3,43.041,https://artificialanalysis.ai/
+Qwen 3.8 27B,Qwen3.8 27B (Xhigh),Alibaba,China,2026-08-14,33.7,1.125,0.5,3,40.399,https://artificialanalysis.ai/
 Qwen 3.8 Max,Qwen3.8 Max,Alibaba,China,2026-08-02,40.2,3,2,6,,https://artificialanalysis.ai/
-Qwen3.8 Max (0902),Qwen3.8 Max (0902),Alibaba,China,2026-09-01,45.4,3,2,6,38.022,https://artificialanalysis.ai/
-Qwen3.8-Flash-Next,Qwen3.8-Flash-Next,Alibaba,China,2026-08-26,39.8,0.23,0.15,0.47,47.251,https://artificialanalysis.ai/
+Qwen3.8 Max (0902),Qwen3.8 Max (0902),Alibaba,China,2026-09-01,45.4,3,2,6,37.122,https://artificialanalysis.ai/
+Qwen3.8-Flash-Next,Qwen3.8-Flash-Next,Alibaba,China,2026-08-26,39.8,0.23,0.15,0.47,50.524,https://artificialanalysis.ai/
 Reka Flash,Reka Flash (Sep '24),Reka AI,US,2024-10-04,6.4,0.35,0.2,0.8,,https://artificialanalysis.ai/
-Reka Flash 3,Reka Flash 3,Reka AI,US,2025-03-10,5.6,0.35,0.2,0.8,87.385,https://artificialanalysis.ai/
-Ring-2.6-1T,Ring-2.6-1T,Ant Group,China,2026-05-14,16.6,0.85,0.3,2.5,111.051,https://artificialanalysis.ai/
-Ring-flash-2.0,Ring-flash-2.0,Ant Group,China,2025-09-19,7.2,0.247,0.14,0.57,,https://artificialanalysis.ai/
-Sarvam 105B,Sarvam 105B (High),Sarvam,Other,2026-03-06,8.8,0.074,0.042,0.17,,https://artificialanalysis.ai/
-Sarvam 30B,Sarvam 30B (High),Sarvam,Other,2026-03-06,6.6,0.047,0.026,0.11,,https://artificialanalysis.ai/
+Reka Flash 3,Reka Flash 3,Reka AI,US,2025-03-10,5.6,0.35,0.2,0.8,85.427,https://artificialanalysis.ai/
+Ring-2.6-1T,Ring-2.6-1T,Ant Group,China,2026-05-14,16.6,0.85,0.3,2.5,116.282,https://artificialanalysis.ai/
+Sarvam 105B,Sarvam 105B (High),Sarvam,Other,2026-03-06,8.8,0.074,0.042,0.17,229.831,https://artificialanalysis.ai/
 seed-oss-36b-instruct,Seed-OSS-36B-Instruct,,Unknown,2025-08-20,12.1,0.3,0.21,0.57,,https://artificialanalysis.ai/
 Solar Mini,Solar Mini,Upstage,Other,2024-01-25,6.4,0.15,0.15,0.15,,https://artificialanalysis.ai/
-Solar Mini 4,Solar Mini 4,Upstage,Other,2026-09-22,24.1,0.175,0.1,0.4,75.27,https://artificialanalysis.ai/
+Solar Mini 4,Solar Mini 4,Upstage,Other,2026-09-22,24.1,0.175,0.1,0.4,80.556,https://artificialanalysis.ai/
 Solar Pro 3,Solar Pro 3,Upstage,Other,2026-01-27,7.8,0.262,0.15,0.6,,https://artificialanalysis.ai/
-Solar Pro 4,Solar Pro 4,Upstage,Other,2026-08-06,26.6,0.525,0.3,1.2,84.157,https://artificialanalysis.ai/
+Solar Pro 4,Solar Pro 4,Upstage,Other,2026-08-06,26.6,0.525,0.3,1.2,120.228,https://artificialanalysis.ai/
 Step 3.5 Flash,Step 3.5 Flash,StepFun,China,2026-02-02,16.6,0.15,0.1,0.3,,https://artificialanalysis.ai/
 Step 3.5 Flash,Step 3.5 Flash 2603,StepFun,China,2026-02-02,17,0.15,0.1,0.3,,https://artificialanalysis.ai/
 Step 3.7 Flash,Step 3.7 Flash,StepFun,China,2026-05-29,19.5,0.438,0.2,1.15,,https://artificialanalysis.ai/
-Step 5 Preview,Step 5 Preview,StepFun,China,2026-09-18,43.7,1.425,1,2.7,87.71,https://artificialanalysis.ai/
-Trinity Large Thinking,Trinity Large Thinking,Arcee AI,US,2026-04-01,10.8,0.388,0.25,0.8,367.907,https://artificialanalysis.ai/
-gpt-oss-120b,gpt-oss-120b (High),OpenAI,US,2025-08-05,11.6,0.26,0.15,0.59,204.224,https://artificialanalysis.ai/
-gpt-oss-120b,gpt-oss-120b (Low),OpenAI,US,2025-08-05,10.2,0.237,0.15,0.5,215.826,https://artificialanalysis.ai/
-gpt-oss-20b,gpt-oss-20b (High),OpenAI,US,2025-08-05,9,0.098,0.07,0.18,237.038,https://artificialanalysis.ai/
-gpt-oss-20b,gpt-oss-20b (Low),OpenAI,US,2025-08-05,10,0.106,0.07,0.215,286.845,https://artificialanalysis.ai/
+Step 5 Preview,Step 5 Preview,StepFun,China,2026-09-18,43.7,1.425,1,2.7,91.21,https://artificialanalysis.ai/
+Trinity Large Thinking,Trinity Large Thinking,Arcee AI,US,2026-04-01,10.8,0.388,0.25,0.8,368.617,https://artificialanalysis.ai/
+gpt-oss-120b,gpt-oss-120b (High),OpenAI,US,2025-08-05,11.6,0.242,0.125,0.595,204.531,https://artificialanalysis.ai/
+gpt-oss-120b,gpt-oss-120b (Low),OpenAI,US,2025-08-05,10.2,0.223,0.1,0.59,209.999,https://artificialanalysis.ai/
+gpt-oss-20b,gpt-oss-20b (High),OpenAI,US,2025-08-05,9,0.097,0.058,0.215,255.339,https://artificialanalysis.ai/
+gpt-oss-20b,gpt-oss-20b (Low),OpenAI,US,2025-08-05,10,0.115,0.07,0.25,286.845,https://artificialanalysis.ai/
 o1,o1,OpenAI,US,2024-12-17,15.2,26.25,15,60,,https://artificialanalysis.ai/
 o1-preview,o1-preview,OpenAI,US,2024-09-12,11.4,28.875,16.5,66,,https://artificialanalysis.ai/
 o1-pro,o1-pro,OpenAI,US,2025-03-19,12.4,262.5,150,600,,https://artificialanalysis.ai/
-o3,o3,OpenAI,US,2025-04-16,20.2,3.5,2,8,136.374,https://artificialanalysis.ai/
+o3,o3,OpenAI,US,2025-04-16,20.2,3.5,2,8,142.08,https://artificialanalysis.ai/
 o3-mini,o3-mini,OpenAI,US,2025-01-31,12.5,1.925,1.1,4.4,,https://artificialanalysis.ai/
 o3-mini,o3-mini (High),OpenAI,US,2025-01-31,11,1.925,1.1,4.4,,https://artificialanalysis.ai/
 o3-pro,o3-pro,OpenAI,US,2025-06-10,21.9,35,20,80,,https://artificialanalysis.ai/
