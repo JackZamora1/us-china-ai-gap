@@ -457,3 +457,5 @@ date,aa_name,price_blended_usd_per_1m,price_input_usd_per_1m,price_output_usd_pe
 2026-10-17,gpt-oss-20b (High),0.097,0.058,0.215
 2026-10-17,gpt-oss-20b (Low),0.115,0.07,0.25
 2026-10-18,DeepSeek V4 Flash 0731 (Max),0.175,0.14,0.28
+2026-10-19,DeepSeek V4.1 Flash 1017 (Max),0.525,0.3,1.2
+2026-10-19,MiniMax-M3.1-Flash,0.262,0.15,0.6

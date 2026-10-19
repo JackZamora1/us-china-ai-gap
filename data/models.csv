@@ -991,7 +991,7 @@ MiniCPM5-2B,OpenBMB,China,2026-09-07,unknown,,,,Artificial Analysis API,,,refres
 Mercury 2.5,Inception Labs,US,2026-09-08,closed,,,mercury-2.5_high|mercury-2.5_unknown,Epoch model_metadata,,,refresh
 DeepSeek V4.1 Flash,DeepSeek,China,2026-09-09,open,4.32e+24,"https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf 
 
-https://www.deepseek.com/en/news/deepseek-v4-1-flash/",DeepSeek V4.1 Flash (Max)|DeepSeek V4.1 Flash (Non-reasoning)|DeepSeek-V4.1-Flash (Max)|Deepseek V4.1 Flash (Max)|deepseek-v4.1-flash-max|deepseek-v4.1-flash_high|deepseek-v4.1-flash_low|deepseek-v4.1-flash_max|deepseek-v4.1-flash_none|deepseek-v4.1-flash_unknown,Epoch model_metadata,,,refresh
+https://www.deepseek.com/en/news/deepseek-v4-1-flash/",DeepSeek V4.1 Flash (Max)|DeepSeek V4.1 Flash (Non-reasoning)|DeepSeek V4.1 Flash 1017 (Max)|DeepSeek-V4.1-Flash (Max)|DeepSeek-V4.1-Flash-20260910 (Max)|DeepSeek-V4.1-Flash-20261017 (Max)|Deepseek V4.1 Flash (Max)|deepseek-v4.1-flash-max|deepseek-v4.1-flash_high|deepseek-v4.1-flash_low|deepseek-v4.1-flash_max|deepseek-v4.1-flash_none|deepseek-v4.1-flash_unknown,Epoch model_metadata,,,refresh
 Ling-3.0-flash-VL,Ant Group,China,2026-09-10,unknown,,,,Artificial Analysis API,,,refresh
 SWE-2,Cognition,US,2026-09-10,closed,,https://cognition.com/blog/swe-2,swe-2_max,Epoch model_metadata,,,refresh
 Ling-3.0-flash-Fin,Ant Group,China,2026-09-11,unknown,,,,Artificial Analysis API,,,refresh
@@ -1020,3 +1020,4 @@ Beam 1.0,Reflection,Unknown,2026-10-16,unknown,,,,Artificial Analysis API,,,refr
 Beam 1.0 501B A23B,reflection,Unknown,2026-10-16,open,,,beam-1.0-501b-a23b,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 Grok 4.20 Beta,xAI,US,2026-10-16,closed,,,"Grok 4.20 Beta (Reasoning, 0309)",First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 Seed2.1 Pro Preview,ByteDance,China,2026-10-16,closed,,,seed-2.1-pro-preview,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
+MiniMax-M3.1-Flash,MiniMax,China,2026-10-19,unknown,,,,Artificial Analysis API,,,refresh

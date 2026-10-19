@@ -1,6 +1,6 @@
 {
- "built": "2026-10-18",
- "scores": 6303,
+ "built": "2026-10-19",
+ "scores": 6308,
  "compute": {
   "asof": "2025-12-31",
   "china_h100e": 1155114.0
@@ -14,7 +14,7 @@
    "Research math": 7.5,
    "Knowledge and hallucination": 9.2,
    "Long context": 1.4,
-   "Multimodal": 10.2,
+   "Multimodal": 10.3,
    "Cyber and security": 8.0,
    "Puzzles and games": 9.1
   },
@@ -26,7 +26,7 @@
    "Research math": 7.5,
    "Knowledge and hallucination": 9.2,
    "Long context": 1.4,
-   "Multimodal": 10.2,
+   "Multimodal": 10.3,
    "Cyber and security": 8.0,
    "Puzzles and games": 9.1
   }
