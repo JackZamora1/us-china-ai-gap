@@ -166,7 +166,7 @@ Gemini 1.0 Pro Vision,Google DeepMind,US,2024-01-04,closed,,,gemini-1.0-pro-visi
 gemini-pro-dev-api,Google DeepMind,US,2024-01-09,closed,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 llama2-70b-steerlm-chat,Nvidia,US,2024-01-09,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 GLM-4,Z.ai (Zhipu AI),China,2024-01-17,closed,,https://arxiv.org/abs/2406.12793,glm-4,Epoch model_metadata,,,refresh
-Qwen-VL-Max,,Unknown,2024-01-18,closed,,https://qwenlm.github.io/blog/qwen-vl/,Qwen-VL-Max|qwen-vl-max-1119|qwen-vl-max-2025-08-13,Epoch model_metadata,,,refresh
+Qwen-VL-Max,,Unknown,2024-01-18,closed,,https://qwenlm.github.io/blog/qwen-vl/,Qwen-VL-Max|Qwen-VL-Max (1119)|Qwen-VL-Max (2025-08-13)|qwen-vl-max-1119|qwen-vl-max-2025-08-13,Epoch model_metadata,,,refresh
 stripedhyena-nous-7b,Together AI,US,2024-01-18,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 VideoLLAMA3-7B,,Unknown,2024-01-22,unknown,,,VideoLLAMA3-7B,Epoch model_metadata,,,refresh
 GPT-3.5 Turbo (Jan 2024),OpenAI,US,2024-01-25,closed,,,GPT-3.5 Turbo|gpt-3.5-turbo-0125,Epoch model_metadata,,,refresh
@@ -193,12 +193,12 @@ StarCoder 2 3B,"Hugging Face,ServiceNow,Nvidia,BigCode",US,2024-02-22,open,5.94e
 Mistral Large,Mistral AI,Other,2024-02-26,closed,,https://mistral.ai/news/mistral-large/,Mistral Large (Feb '24)|mistral-large-2402,Epoch model_metadata,,,refresh
 Nemotron-4 15B,Nvidia,US,2024-02-26,closed,7.5e+23,https://arxiv.org/abs/2402.16819,Nemotron-4 15B,Epoch model_metadata,,,refresh
 mistral-small-2402,,Unknown,2024-02-26,unknown,,,mistral-small-2402,Epoch model_metadata,,,refresh
-Claude 3 Opus,Anthropic,US,2024-02-29,closed,,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,claude-3-opus-20240229,Epoch model_metadata,,,refresh
-Claude 3 Sonnet,Anthropic,US,2024-02-29,closed,,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,claude-3-sonnet-20240229,Epoch model_metadata,,,refresh
+Claude 3 Opus,Anthropic,US,2024-02-29,closed,,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,Claude 3 Opus (20240229)|claude-3-opus-20240229,Epoch model_metadata,,,refresh
+Claude 3 Sonnet,Anthropic,US,2024-02-29,closed,,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,Claude 3 Sonnet (20240229)|claude-3-sonnet-20240229,Epoch model_metadata,,,refresh
 Yi-9B,,Unknown,2024-03-01,unknown,,,Yi-9B,Epoch model_metadata,,,refresh
 gemma-2b-it,Google DeepMind,US,2024-03-05,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 gemma-7b-it,Google DeepMind,US,2024-03-05,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
-Claude 3 Haiku,Anthropic,US,2024-03-07,closed,,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,claude-3-haiku-20240307,Epoch model_metadata,,,refresh
+Claude 3 Haiku,Anthropic,US,2024-03-07,closed,,https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf,Claude 3 Haiku (20240307)|claude-3-haiku-20240307,Epoch model_metadata,,,refresh
 codellama-70b-instruct,Meta,US,2024-03-07,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 olmo-7b-instruct,Allen Institute for AI,US,2024-03-07,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 MM1-3B-Chat,,Unknown,2024-03-14,unknown,,,MM1-3B-Chat,Epoch model_metadata,,,refresh
@@ -208,7 +208,7 @@ openhands-lm-32b-v0.1,,Unknown,2024-03-26,unknown,,,openhands-lm-32b-v0.1,Epoch 
 starling-lm-7b-beta,NexusFlow,US,2024-03-26,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 DBRX,Databricks,US,2024-03-27,open,2.6e+24,https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm,DBRX Instruct|dbrx-base|dbrx-instruct|dbrx-instruct-preview,Epoch model_metadata,,,refresh
 ST-LLM,,Unknown,2024-03-28,unknown,,,ST-LLM,Epoch model_metadata,,,refresh
-GPT-4 Turbo (Apr 2024),OpenAI,US,2024-04-09,closed,,https://x.com/OpenAI/status/1778574613813006610,GPT-4 Turbo|gpt-4-turbo-2024-04-09,Epoch model_metadata,,,refresh
+GPT-4 Turbo (Apr 2024),OpenAI,US,2024-04-09,closed,,https://x.com/OpenAI/status/1778574613813006610,GPT-4 Turbo|GPT-4 Turbo (2024-04-09)|gpt-4-turbo-2024-04-09,Epoch model_metadata,,,refresh
 command-r-plus,Cohere,Other,2024-04-09,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 gemma-1.1-7b-it,Google DeepMind,US,2024-04-09,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 LiveCC-7B-Instruct,,Unknown,2024-04-12,unknown,,,LiveCC-7B-Instruct,Epoch model_metadata,,,refresh
@@ -240,13 +240,13 @@ snowflake-arctic-instruct,Snowflake,US,2024-05-01,open,,,,First Arena appearance
 DeepSeek-V2-Chat,DeepSeek,China,2024-05-06,unknown,,,,Artificial Analysis API,,,refresh
 "DeepSeek-V2 (MoE-236B, May 2024)",DeepSeek,China,2024-05-07,open,1.02e+24,,DeepSeek-V2,Epoch model_metadata,,,refresh
 Falcon 2 11B,Technology Innovation Institute,Other,2024-05-09,open,3.6e+23,https://huggingface.co/tiiuae/falcon-11B,falcon-11b,Epoch model_metadata,,,refresh
-GPT-4o (May 2024),OpenAI,US,2024-05-13,closed,,,gpt-4o-2024-05-13,Epoch model_metadata,,,refresh
+GPT-4o (May 2024),OpenAI,US,2024-05-13,closed,,,GPT-4o (2024-05-13)|gpt-4o-2024-05-13,Epoch model_metadata,,,refresh
 Yi-1.5-34B,01.AI,China,2024-05-13,open,7.34e+23,https://huggingface.co/01-ai/Yi-1.5-34B,Yi-1.5-34B|Yi-1.5-34B-Chat|yi-1.5-34b-chat,Epoch model_metadata,,,refresh
 Yi-Large,01.AI,China,2024-05-13,closed,1.8e+24,,Yi-large,Epoch model_metadata,,,refresh
-Gemini 1.5 Pro (May 2024),Google DeepMind,US,2024-05-14,closed,,,gemini-1.5-pro-001,Epoch model_metadata,,,refresh
+Gemini 1.5 Pro (May 2024),Google DeepMind,US,2024-05-14,closed,,,Gemini 1.5 Pro (001)|gemini-1.5-pro-001,Epoch model_metadata,,,refresh
 GLM-4 (0520),Z.ai (Zhipu AI),China,2024-05-20,closed,,https://arxiv.org/abs/2406.12793,glm-4-0520,Epoch model_metadata,,,refresh
 falcon-11B-vlm,,Unknown,2024-05-21,unknown,,,falcon-11B-vlm,Epoch model_metadata,,,refresh
-Gemini 1.5 Flash (May 2024),Google DeepMind,US,2024-05-23,closed,,,Gemini 1.5 Flash (May '24)|Gemini 1.5 Flash (Sep '24)|gemini-1.5-flash-001|gemini-1.5-flash-0514,Epoch model_metadata,,,refresh
+Gemini 1.5 Flash (May 2024),Google DeepMind,US,2024-05-23,closed,,,Gemini 1.5 Flash (001)|Gemini 1.5 Flash (May '24)|Gemini 1.5 Flash (Sep '24)|gemini-1.5-flash-001|gemini-1.5-flash-0514,Epoch model_metadata,,,refresh
 Mistral 7B v0.3,Mistral AI,Other,2024-05-27,open,,,Mistral-7B-Instruct-v0.3|Mistral-7B-v0.3|open-mistral-7b,Epoch model_metadata,,,refresh
 gemini-1.5-flash-api-0514,Google DeepMind,US,2024-05-27,closed,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 gemini-1.5-pro-api-0514,Google DeepMind,US,2024-05-27,closed,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
@@ -265,7 +265,7 @@ Nemotron-4 340B,Nvidia,US,2024-06-14,open,1.8e+25,https://blogs.nvidia.com/blog/
 DeepSeek-Coder-V2,DeepSeek,China,2024-06-17,open,,,deepseek-coder-v2,Artificial Analysis API,,,refresh
 DeepSeek-Coder-V2 236B,DeepSeek,China,2024-06-17,open,1.29e+24,https://github.com/deepseek-ai/DeepSeek-Coder-V2,DeepSeek-Coder-V2-Base|DeepSeek-Coder-V2-Instruct,Epoch model_metadata,,,refresh
 Chat-Uni-Vi-7B-v1.5 + 100k SG-WV,,Unknown,2024-06-20,unknown,,,Chat-Uni-Vi-7B-v1.5 + 100k SG-WV,Epoch model_metadata,,,refresh
-Claude 3.5 Sonnet,Anthropic,US,2024-06-20,closed,2.7e+25,https://www-cdn.anthropic.com/fed9cc193a14b84131812372d8d5857f8f304c52/Model_Card_Claude_3_Addendum.pdf,Claude 3.5 Sonnet (June '24)|Claude 3.5 Sonnet (Oct '24)|claude-3-5-sonnet-20240620,Epoch model_metadata,,,refresh
+Claude 3.5 Sonnet,Anthropic,US,2024-06-20,closed,2.7e+25,https://www-cdn.anthropic.com/fed9cc193a14b84131812372d8d5857f8f304c52/Model_Card_Claude_3_Addendum.pdf,Claude 3.5 Sonnet (20240620)|Claude 3.5 Sonnet (June '24)|Claude 3.5 Sonnet (Oct '24)|claude-3-5-sonnet-20240620,Epoch model_metadata,,,refresh
 Hermes 2 Theta Llama-3 70B,"Nous Research,Arcee AI",US,2024-06-20,open,,https://huggingface.co/NousResearch/Hermes-2-Theta-Llama-3-70B,Hermes-2-Theta-Llama-3-70B,Epoch model_metadata,,,refresh
 Gemma 2 27B,Google DeepMind,US,2024-06-24,open,2.11e+24,https://storage.googleapis.com/deepmind-media/gemma/gemma-2-report.pdf,gemma-2-27b|gemma-2-27b-it|gemma2:27b-instruct-q8_0,Epoch model_metadata,,,refresh
 Gemma 2 9B,Google DeepMind,US,2024-06-24,open,4.32e+23,https://storage.googleapis.com/deepmind-media/gemma/gemma-2-report.pdf,gemma-2-9b|gemma-2-9b-it,Epoch model_metadata,,,refresh
@@ -274,7 +274,7 @@ phi-3-mini-4k-instruct-june-2024,Microsoft,US,2024-07-06,open,,,,First Arena app
 InternVL2-40B,Shanghai AI Lab,China,2024-07-08,open,,https://internvl.github.io/blog/2024-07-02-InternVL-2.0/,InternVL2-40B,Epoch model_metadata,,,refresh
 Codestral Mamba,Mistral AI,Other,2024-07-16,open,,https://mistral.ai/news/codestral-mamba/,open-codestral-mamba,Epoch model_metadata,,,refresh
 mathstral,,Unknown,2024-07-16,unknown,,,mathstral,Epoch model_metadata,,,refresh
-GPT-4o mini,OpenAI,US,2024-07-18,closed,,https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/,gpt-4o-mini-2024-07-18,Epoch model_metadata,,,refresh
+GPT-4o mini,OpenAI,US,2024-07-18,closed,,https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/,GPT-4o mini (2024-07-18)|gpt-4o-mini-2024-07-18,Epoch model_metadata,,,refresh
 Mistral NeMo,Mistral AI,Other,2024-07-18,open,,https://mistral.ai/news/mistral-nemo/,Mistral-Nemo-Base-2407|Mistral-Nemo-Instruct-2407|open-mistral-nemo-2407,Epoch model_metadata,,,refresh
 Llama 3.1 Instruct 405B,Meta,US,2024-07-23,unknown,,,,Artificial Analysis API,,,refresh
 Llama 3.1 Instruct 70B,Meta,US,2024-07-23,unknown,,,,Artificial Analysis API,,,refresh
@@ -285,8 +285,8 @@ Llama 3.1-8B,Meta AI,US,2024-07-23,open,1.22e+24,https://ai.meta.com/research/pu
 Mistral Large 2 (Jul 2024),Mistral AI,Other,2024-07-24,open,,,Mistral-Large-Instruct-2407|mistral-large-2407,Epoch model_metadata,,,refresh
 athene-70b-0725,NexusFlow,US,2024-07-30,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 gemma-2-2b-it,Google DeepMind,US,2024-07-31,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
-MiniCPM-V-2_6,,Unknown,2024-08-03,open,,,MiniCPM-V-2_6|minicpm-v-2_6,Epoch model_metadata,,,refresh
-GPT-4o (Aug 2024),OpenAI,US,2024-08-06,closed,,https://help.openai.com/en/articles/9624314-model-release-notes,"GPT-4o (Aug '24)|GPT-4o (ChatGPT)|GPT-4o (March 2025, chatgpt-4o-latest)|GPT-4o (May '24)|GPT-4o (Nov '24)|gpt-4o-2024-08-06",Epoch model_metadata,,,refresh
+MiniCPM-V-2_6,,Unknown,2024-08-03,open,,,MiniCPM-V 2.6|MiniCPM-V-2_6|minicpm-v-2_6,Epoch model_metadata,,,refresh
+GPT-4o (Aug 2024),OpenAI,US,2024-08-06,closed,,https://help.openai.com/en/articles/9624314-model-release-notes,"GPT-4o (2024-08-06)|GPT-4o (Aug '24)|GPT-4o (ChatGPT)|GPT-4o (March 2025, chatgpt-4o-latest)|GPT-4o (May '24)|GPT-4o (Nov '24)|gpt-4o-2024-08-06",Epoch model_metadata,,,refresh
 LLaVA-OneVision 72B,,Unknown,2024-08-06,unknown,,,LLaVA-OneVision 72B,Epoch model_metadata,,,refresh
 VITA,,Unknown,2024-08-12,unknown,,,VITA,Epoch model_metadata,,,refresh
 Grok Beta,xAI,US,2024-08-13,unknown,,,,Artificial Analysis API,,,refresh
@@ -297,11 +297,11 @@ DeepSeek-Prover-V1.5,DeepSeek,China,2024-08-15,open,,https://arxiv.org/abs/2408.
 Hermes 3 - Llama-3.1 70B,Nous Research,US,2024-08-15,unknown,,,,Artificial Analysis API,,,refresh
 InternVL-Chat-ViT-6B-Vicuna-13B,,Unknown,2024-08-16,unknown,,,InternVL-Chat-ViT-6B-Vicuna-13B,Epoch model_metadata,,,refresh
 Phi-3.5-mini,Microsoft,US,2024-08-16,open,3.71e+22,https://arxiv.org/abs/2404.14219,Phi-3.5-mini-instruct,Epoch model_metadata,,,refresh
-Phi-3.5-vision-instruct,,Unknown,2024-08-16,open,,,Phi-3.5-vision-instruct|phi-3.5-vision-instruct,Epoch model_metadata,,,refresh
+Phi-3.5-vision-instruct,,Unknown,2024-08-16,open,,,Phi-3.5 Vision Instruct|Phi-3.5-vision-instruct|phi-3.5-vision-instruct,Epoch model_metadata,,,refresh
 Phi-3.5-MoE,Microsoft,US,2024-08-17,open,3.02e+23,https://arxiv.org/abs/2404.14219,Phi-3.5-MoE-instruct,Epoch model_metadata,,,refresh
 Jamba 1.5 Large,AI21 Labs,Other,2024-08-22,open,,,jamba-1.5-large,Artificial Analysis API,,,refresh
 Jamba 1.5 Mini,AI21 Labs,Other,2024-08-22,open,,https://arxiv.org/abs/2408.12570,jamba-1.5-mini,Artificial Analysis API,,,refresh
-chatgpt-4o-latest,OpenAI,US,2024-08-22,closed,,,chatgpt-4o-latest-20250326,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
+chatgpt-4o-latest,OpenAI,US,2024-08-22,closed,,,ChatGPT-4o Latest (20250326)|chatgpt-4o-latest-20250326,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 Qwen2-VL-72B-Instruct,,Unknown,2024-08-29,unknown,,,Qwen2-VL-72B-Instruct,Epoch model_metadata,,,refresh
 Qwen2-VL-7B-Instruct,,Unknown,2024-08-29,open,,,Qwen2-VL-7B-Instruct|qwen2-vl-7b-instruct,Epoch model_metadata,,,refresh
 Command R+,"Cohere,Cohere Labs (formerly Cohere for AI)",Other,2024-08-30,open,,https://txt.cohere.com/command-r-plus-microsoft-azure/,Command-R (Mar '24)|Command-R+ (Apr '24)|c4ai-command-r-plus-08-2024|command-r,Epoch model_metadata,,,refresh
@@ -319,7 +319,7 @@ llama-3.1-405b-instruct-bf16,Meta,US,2024-09-15,open,,,,First Arena appearance,r
 llama-3.1-405b-instruct-fp8,Meta,US,2024-09-15,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 Mistral Small,Mistral AI,Other,2024-09-17,unknown,,,Mistral Small (Feb '24)|Mistral Small (Sep '24),Artificial Analysis API,,,refresh
 Mistral Small v24.09,Mistral AI,Other,2024-09-17,open,,https://mistral.ai/news/september-24-release/,mistral-small-2409,Epoch model_metadata,,,refresh
-Pixtral 12B,Mistral AI,Other,2024-09-17,open,,https://mistral.ai/news/pixtral-12b/,Pixtral-12B-2409|pixtral-12b-2409,Epoch model_metadata,,,refresh
+Pixtral 12B,Mistral AI,Other,2024-09-17,open,,https://mistral.ai/news/pixtral-12b/,Pixtral 12B (2409)|Pixtral-12B-2409|pixtral-12b-2409,Epoch model_metadata,,,refresh
 Qwen2.5-32B,Alibaba,China,2024-09-17,open,3.51e+24,https://qwenlm.github.io/blog/qwen2.5/,Qwen2.5-Coder-32B-Instruct-Q8_0-GGUF|qwen2.5-32b-instruct,Epoch model_metadata,,,refresh
 Qwen2.5-Coder (1.5B),Alibaba,China,2024-09-18,open,5.08e+22,https://arxiv.org/abs/2409.12186,Qwen2.5-Coder-1.5B,Epoch model_metadata,,,refresh
 Qwen2.5-Coder (7B),Alibaba,China,2024-09-18,open,2.51e+23,https://arxiv.org/abs/2409.12186,Qwen2.5-Coder-7B|Qwen2.5-Coder-7B-Instruct,Epoch model_metadata,,,refresh
@@ -336,48 +336,40 @@ Qwen2.5-3B,Alibaba,China,2024-09-19,open,3.34e+23,https://qwenlm.github.io/blog/
 Qwen2.5-72B,Alibaba,China,2024-09-19,open,7.8e+24,https://qwenlm.github.io/blog/qwen2.5/,Qwen2.5-72B|Qwen2.5-VL-72B-Instruct|qwen2.5-72b-instruct|qwen2.5-vl-72b-instruct,Epoch model_metadata,,,refresh
 Qwen2.5-7B,Alibaba,China,2024-09-19,open,8.22e+23,https://qwenlm.github.io/blog/qwen2.5/,qwen2.5-7b-instruct,Epoch model_metadata,,,refresh
 qwen2.5-0.5b-instruct,,Unknown,2024-09-19,unknown,,,qwen2.5-0.5b-instruct,Epoch model_metadata,,,refresh
-Gemini 1.5 Flash (Sep 2024),Google DeepMind,US,2024-09-24,closed,,,gemini-1.5-flash-002|gemini-1.5-flash-exp-0827,Epoch model_metadata,,,refresh
+Gemini 1.5 Flash (Sep 2024),Google DeepMind,US,2024-09-24,closed,,,Gemini 1.5 Flash (002)|gemini-1.5-flash-002|gemini-1.5-flash-exp-0827,Epoch model_metadata,,,refresh
 Gemini 1.5 Pro,Google DeepMind,US,2024-09-24,unknown,,https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf,Gemini 1.5 Pro (May '24)|Gemini 1.5 Pro (Sep '24),Artificial Analysis API,,,refresh
-Gemini 1.5 Pro (Sept 2024),Google DeepMind,US,2024-09-24,closed,,,gemini-1.5-pro-002,Epoch model_metadata,,,refresh
-Llama 3.2 11B,Meta AI,US,2024-09-24,open,5.79e+23,https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/,Llama-3.2-11B-Vision-Instruct,Epoch model_metadata,,,refresh
+Gemini 1.5 Pro (Sept 2024),Google DeepMind,US,2024-09-24,closed,,,Gemini 1.5 Pro (002)|gemini-1.5-pro-002,Epoch model_metadata,,,refresh
+Llama 3.2 11B,Meta AI,US,2024-09-24,open,5.79e+23,https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/,Llama 3.2 11B Vision Instruct|Llama-3.2-11B-Vision-Instruct,Epoch model_metadata,,,refresh
 Llama 3.2 1B,Meta AI,US,2024-09-24,open,6.64e+22,https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/,Llama-3.2-1B-Instruct|llama-3.2-1b-instruct,Epoch model_metadata,,,refresh
 Llama 3.2 3B,Meta AI,US,2024-09-24,open,1.73e+23,https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/,Llama-3.2-3B-Instruct|llama-3.2-3b-instruct,Epoch model_metadata,,,refresh
-Llama 3.2 90B,Meta AI,US,2024-09-24,open,,https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/,Llama-3.2-90B-Vision-Instruct,Epoch model_metadata,,,refresh
+Llama 3.2 90B,Meta AI,US,2024-09-24,open,,https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/,Llama 3.2 90B Vision Instruct|Llama-3.2-90B-Vision-Instruct,Epoch model_metadata,,,refresh
 Llama 3.2 Instruct 11B,Meta,US,2024-09-25,unknown,,,Llama 3.2 Instruct 11B (Vision),Artificial Analysis API,,,refresh
 Llama 3.2 Instruct 1B,Meta,US,2024-09-25,unknown,,,,Artificial Analysis API,,,refresh
 Llama 3.2 Instruct 3B,Meta,US,2024-09-25,unknown,,,,Artificial Analysis API,,,refresh
 Llama 3.2 Instruct 90B,Meta,US,2024-09-25,unknown,,,Llama 3.2 Instruct 90B (Vision),Artificial Analysis API,,,refresh
-Molmo 7B-D,Allen Institute for AI,US,2024-09-25,open,,,molmo-7b-d-0924,Artificial Analysis API,,,refresh
+Molmo 7B-D,Allen Institute for AI,US,2024-09-25,open,,,Molmo 7B-D (0924)|molmo-7b-d-0924,Artificial Analysis API,,,refresh
 internlm2_5-20b-chat,Shanghai AI Lab,China,2024-09-27,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 Video-CCAM-7B-v1.2,,Unknown,2024-09-29,unknown,,,Video-CCAM-7B-v1.2,Epoch model_metadata,,,refresh
 Aria,,Unknown,2024-09-30,unknown,,https://arxiv.org/abs/2410.05993,Aria,Epoch model_metadata,,,refresh
 Dracarys2-72B-Instruct,,Unknown,2024-09-30,unknown,,,Dracarys2-72B-Instruct,Epoch model_metadata,,,refresh
 LFM 40B,Liquid AI,US,2024-09-30,unknown,,https://www.liquid.ai/liquid-foundation-models,,Artificial Analysis API,,,refresh
-Gemini 1.5 Flash 8B,Google DeepMind,US,2024-10-03,closed,,https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf,Gemini 1.5 Flash-8B|gemini-1.5-flash-8b-001,Epoch model_metadata,,,refresh
+Gemini 1.5 Flash 8B,Google DeepMind,US,2024-10-03,closed,,https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf,Gemini 1.5 Flash-8B|Gemini 1.5 Flash-8B (001)|gemini-1.5-flash-8b-001,Epoch model_metadata,,,refresh
 Reka Flash,Reka AI,US,2024-10-04,closed,,https://arxiv.org/abs/2404.12387,Reka Flash (Sep '24)|reka-flash-20240904,Artificial Analysis API,,,refresh
 ByteVideoLLM-14B,,Unknown,2024-10-13,unknown,,,ByteVideoLLM-14B,Epoch model_metadata,,,refresh
 Llama 3.1 Nemotron Instruct 70B,Nvidia,US,2024-10-15,unknown,,,,Artificial Analysis API,,,refresh
-cogvlm2-llama3-chat-19b,Zhipu AI,China,2024-10-15,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 glm-4-plus,Zhipu AI,China,2024-10-15,closed,,,glm-4-plus-0111,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
-internvl2-26b,Shanghai AI Lab,China,2024-10-15,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
-internvl2-4b,Shanghai AI Lab,China,2024-10-15,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 llama-3.2-vision-11b-instruct,Meta,US,2024-10-15,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 llama-3.2-vision-90b-instruct,Meta,US,2024-10-15,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
-llava-onevision-qwen2-72b-ov,Stanford,US,2024-10-15,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 llava-v1.6-34b,Stanford,US,2024-10-15,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
-phi-3-vision-128k-instruct,Microsoft,US,2024-10-15,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
-qwen2-vl-72b,Alibaba,China,2024-10-15,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
-yi-vision,01.AI,China,2024-10-15,closed,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 Ministral 3B,Mistral AI,Other,2024-10-16,closed,,https://mistral.ai/news/ministraux/,Ministral-3B|ministral-3b-2410,Epoch model_metadata,,,refresh
 Ministral 8B,Mistral AI,Other,2024-10-16,open,,https://mistral.ai/news/ministraux/,Ministral-8B-Instruct-2410|ministral-8b-2410,Epoch model_metadata,,,refresh
 Video-XL-7B,,Unknown,2024-10-17,unknown,,,Video-XL-7B,Epoch model_metadata,,,refresh
-Claude 3.5 Haiku,Anthropic,US,2024-10-22,closed,,https://www.anthropic.com/news/3-5-models-and-computer-use,claude-3-5-haiku-20241022,Epoch model_metadata,,,refresh
-Claude 3.5 Sonnet (October 2024),Anthropic,US,2024-10-22,closed,,,claude-3-5-sonnet-20241022,Epoch model_metadata,,,refresh
+Claude 3.5 Haiku,Anthropic,US,2024-10-22,closed,,https://www.anthropic.com/news/3-5-models-and-computer-use,Claude 3.5 Haiku (20241022)|claude-3-5-haiku-20241022,Epoch model_metadata,,,refresh
+Claude 3.5 Sonnet (October 2024),Anthropic,US,2024-10-22,closed,,,Claude 3.5 Sonnet (20241022)|claude-3-5-sonnet-20241022,Epoch model_metadata,,,refresh
 Oryx-1.5-32B,,Unknown,2024-10-22,unknown,,,Oryx-1.5-32B,Epoch model_metadata,,,refresh
 Doubao-pro,ByteDance,China,2024-10-28,closed,2.5e+25,https://www.volcengine.com/docs/6360/1264663,doubao-pro-32k,Epoch model_metadata,,,refresh
 llama-3.1-nemotron-51b-instruct,Nvidia,US,2024-10-28,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 Qwen-Turbo,Alibaba,China,2024-11-01,closed,,https://help.aliyun.com/zh/model-studio/models?scm=20140722.S_help%40%40%E6%96%87%E6%A1%A3%40%402840914.S_BB1%40bl%2BBB2%40bl%2BRQW%40ag0%2Bos0.ID_2840914-RL_plus-LOC_doc%7EUND%7Eab-OR_ser-PAR1_2102029c17437872399601371d08f3-V_4-P0_0-P1_0&spm=a2c4g.11186623.help-search.i20,qwen-turbo-2024-11-01,Epoch model_metadata,,,refresh
-molmo-72b-0924,Allen Institute for AI,US,2024-11-04,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 reka-core-20240904,Reka AI,US,2024-11-04,closed,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 Qwen2.5-Coder-14B-Instruct,,Unknown,2024-11-06,unknown,,,Qwen2.5-Coder-14B-Instruct,Epoch model_metadata,,,refresh
 Qwen2.5-Coder-3B-Instruct,,Unknown,2024-11-06,unknown,,,Qwen2.5-Coder-3B-Instruct,Epoch model_metadata,,,refresh
@@ -385,7 +377,7 @@ Qwen2.5 Coder Instruct 32B,Alibaba,China,2024-11-11,unknown,,,,Artificial Analys
 kangaroo,,Unknown,2024-11-13,unknown,,,kangaroo,Epoch model_metadata,,,refresh
 Mistral Large 2,Mistral AI,Other,2024-11-18,unknown,,https://mistral.ai/news/mistral-large-2407/,Mistral Large 2 (Jul '24)|Mistral Large 2 (Nov '24),Artificial Analysis API,,,refresh
 Mistral Large 2 (Nov 2024),Mistral AI,Other,2024-11-18,open,,,Mistral-Large-Instruct-2411|mistral-large-2411,Epoch model_metadata,,,refresh
-Pixtral Large,Mistral AI,Other,2024-11-18,open,,https://mistral.ai/news/pixtral-large/,pixtral-large-2411,Epoch model_metadata,,,refresh
+Pixtral Large,Mistral AI,Other,2024-11-18,open,,https://mistral.ai/news/pixtral-large/,Pixtral Large (2411)|pixtral-large-2411,Epoch model_metadata,,,refresh
 Qwen2.5 Turbo,Alibaba,China,2024-11-18,unknown,,,,Artificial Analysis API,,,refresh
 GPT-4o (Nov 2024),OpenAI,US,2024-11-20,closed,,https://help.openai.com/en/articles/9624314-model-release-notes,chatgpt-4o-11-20-2024|gpt-4o-2024-11-20,Epoch model_metadata,,,refresh
 granite-3.0-2b-instruct,IBM,US,2024-11-20,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
@@ -394,7 +386,6 @@ Qwen2.5-Coder-32B-Instruct,Alibaba,China,2024-11-21,open,1.07e+24,,Qwen2.5-Coder
 Tulu 3 (Tülu 3) 70B,"Allen Institute for AI,University of Washington",US,2024-11-21,open,,"https://arxiv.org/abs/2411.15124
 
 https://allenai.org/blog/tulu-3-technical",Llama-3.1-Tulu-3-70B-DPO,Epoch model_metadata,,,refresh
-step-1v-32k,StepFun,China,2024-11-21,closed,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 athene-v2-chat,NexusFlow,US,2024-11-22,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 c4ai-aya-expanse-32b,Cohere,Other,2024-11-22,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 OLMo 2 7B,Allen Institute for AI,US,2024-11-26,unknown,,,,Artificial Analysis API,,,refresh
@@ -432,7 +423,7 @@ Phi-4,Microsoft Research,US,2024-12-12,open,9.32e+23,https://arxiv.org/abs/2412.
 c4ai-aya-expanse-8b,Cohere,Other,2024-12-15,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 GPT-4o Realtime,OpenAI,US,2024-12-17,unknown,,,GPT-4o Realtime (Dec '24),Artificial Analysis API,,,refresh
 GPT-4o mini Realtime,OpenAI,US,2024-12-17,unknown,,,GPT-4o mini Realtime (Dec '24),Artificial Analysis API,,,refresh
-o1,OpenAI,US,2024-12-17,closed,,https://openai.com/index/introducing-chatgpt-pro/,o1-2024-12-17|o1-2024-12-17_high|o1-2024-12-17_low|o1-2024-12-17_medium|o1-2024-12-17_unknown,Epoch model_metadata,,,refresh
+o1,OpenAI,US,2024-12-17,closed,,https://openai.com/index/introducing-chatgpt-pro/,o1 (2024-12-17)|o1-2024-12-17|o1-2024-12-17_high|o1-2024-12-17_low|o1-2024-12-17_medium|o1-2024-12-17_unknown,Epoch model_metadata,,,refresh
 Llama-3.1-Nemotron-70B-Instruct,"Nvidia,Meta AI",US,2024-12-18,open,7.93e+24,https://catalog.ngc.nvidia.com/orgs/nim/teams/nvidia/containers/llama-3.1-nemotron-70b-instruct,llama-3.1-nemotron-70b-instruct,Epoch model_metadata,,,refresh
 Gemini 2.0 Flash Thinking (Dec 2024),"Google DeepMind,Google",US,2024-12-19,closed,,,gemini-2.0-flash-thinking-exp-1219,Epoch model_metadata,,,refresh
 VITA-1.5,,Unknown,2024-12-20,unknown,,,VITA-1.5,Epoch model_metadata,,,refresh
@@ -454,7 +445,6 @@ step-2-16k-exp-202412,StepFun,China,2025-01-15,closed,,,,First Arena appearance,
 INTELLECT-MATH,Prime Intellect,US,2025-01-17,open,,"https://huggingface.co/PrimeIntellect/INTELLECT-MATH
 https://www.primeintellect.ai/blog/intellect-math",INTELLECT-MATH,Epoch model_metadata,,,refresh
 LLaVA-Video-7B-Qwen2-TPO,,Unknown,2025-01-19,unknown,,,LLaVA-Video-7B-Qwen2-TPO,Epoch model_metadata,,,refresh
-step-1o-vision-32k-highres,StepFun,China,2025-01-19,closed,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 DeepSeek-R1,DeepSeek,China,2025-01-20,open,3.5e+24,https://api-docs.deepseek.com/news/news250120,DeepSeek R1 (Jan '25)|DeepSeek-R1|deepseek-r1,Epoch model_metadata,,,refresh
 DeepSeek-R1-Distill-Llama-70B,DeepSeek,China,2025-01-20,open,,https://arxiv.org/abs/2501.12948,DeepSeek R1 Distill Llama 70B|DeepSeek-R1-Distill-Llama-70B,Epoch model_metadata,,,refresh
 DeepSeek-R1-Distill-Llama-8B,DeepSeek,China,2025-01-20,open,,https://arxiv.org/abs/2501.12948,DeepSeek R1 Distill Llama 8B|DeepSeek-R1-Distill-Llama-8B,Epoch model_metadata,,,refresh
@@ -473,10 +463,10 @@ GPT-4o (Jan 2025),OpenAI,US,2025-01-29,closed,,https://help.openai.com/en/articl
 Llama 3.1 Tulu3 405B,Allen Institute for AI,US,2025-01-30,unknown,,,,Artificial Analysis API,,,refresh
 Mistral Small 3,Mistral AI,Other,2025-01-30,open,1.15e+24,https://mistral.ai/news/mistral-small-3/,mistral-small-2501|mistral-small-3-2501,Epoch model_metadata,,,refresh
 o3-mini,OpenAI,US,2025-01-31,closed,,https://openai.com/index/openai-o3-mini/,o3-mini (High)|o3-mini-2025-01-31_high|o3-mini-2025-01-31_low|o3-mini-2025-01-31_medium|o3-mini-2025-01-31_unknown|o3-mini-high,Epoch model_metadata,,,refresh
-Gemini 2.0 Flash (Feb 2025),"Google DeepMind,Google",US,2025-02-05,closed,,,gemini-2.0-flash-001|gemini-2.0-flash-02-05,Epoch model_metadata,,,refresh
+Gemini 2.0 Flash (Feb 2025),"Google DeepMind,Google",US,2025-02-05,closed,,,Gemini 2.0 Flash (001)|gemini-2.0-flash-001|gemini-2.0-flash-02-05,Epoch model_metadata,,,refresh
 Gemini 2.0 Flash-Lite,Google DeepMind,US,2025-02-05,closed,,"https://deepmind.google/models/gemini/flash-lite/
 
-https://storage.googleapis.com/model-cards/documents/gemini-2-flash-lite.pdf",Gemini 2.0 Flash-Lite (Feb '25)|Gemini 2.0 Flash-Lite (Preview)|gemini-2.0-flash-lite|gemini-2.0-flash-lite-001|gemini-2.0-flash-lite-preview-02-05,Epoch model_metadata,,,refresh
+https://storage.googleapis.com/model-cards/documents/gemini-2-flash-lite.pdf",Gemini 2.0 Flash-Lite (Feb '25)|Gemini 2.0 Flash-Lite (Preview)|Gemini 2.0 Flash-Lite Preview (02-05)|gemini-2.0-flash-lite|gemini-2.0-flash-lite-001|gemini-2.0-flash-lite-preview-02-05,Epoch model_metadata,,,refresh
 Gemini 2.0 Pro,Google DeepMind,US,2025-02-05,closed,,https://deepmind.google/technologies/gemini/pro/,gemini-2.0-pro-exp-02-05,Epoch model_metadata,,,refresh
 Gemini 2.0 Pro Experimental,Google DeepMind,US,2025-02-05,unknown,,,Gemini 2.0 Pro Experimental (Feb '25),Artificial Analysis API,,,refresh
 mistral-small-24b-instruct-2501,Mistral AI,Other,2025-02-11,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
@@ -484,20 +474,19 @@ DeepHermes 3 - Llama-3.1 8B Preview,Nous Research,US,2025-02-13,unknown,,,DeepHe
 Mistral Saba,Mistral AI,Other,2025-02-17,closed,,https://mistral.ai/news/mistral-saba,mistral-saba-2502,Epoch model_metadata,,,refresh
 R1 1776,Perplexity,US,2025-02-18,unknown,,https://www.perplexity.ai/hub/blog/open-sourcing-r1-1776,,Artificial Analysis API,,,refresh
 Grok 3 Reasoning Beta,xAI,US,2025-02-19,unknown,,,,Artificial Analysis API,,,refresh
-Claude 3.7 Sonnet,Anthropic,US,2025-02-24,closed,3.35e+25,https://www.anthropic.com/news/claude-3-7-sonnet,Claude 3.7 Sonnet (Non-reasoning)|Claude 3.7 Sonnet (Reasoning)|claude-3-7-sonnet-20250219|claude-3-7-sonnet-20250219-thinking-32k|claude-3-7-sonnet-20250219_12K|claude-3-7-sonnet-20250219_15K|claude-3-7-sonnet-20250219_16K|claude-3-7-sonnet-20250219_1K|claude-3-7-sonnet-20250219_2K|claude-3-7-sonnet-20250219_32K|claude-3-7-sonnet-20250219_64K|claude-3-7-sonnet-20250219_8K|claude-3-7-sonnet-20250219_unknown,Epoch model_metadata,,,refresh
+Claude 3.7 Sonnet,Anthropic,US,2025-02-24,closed,3.35e+25,https://www.anthropic.com/news/claude-3-7-sonnet,"Claude 3.7 Sonnet (20250219)|Claude 3.7 Sonnet (Non-reasoning)|Claude 3.7 Sonnet (Reasoning)|Claude 3.7 Sonnet (Thinking 32K, 20250219)|claude-3-7-sonnet-20250219|claude-3-7-sonnet-20250219-thinking-32k|claude-3-7-sonnet-20250219_12K|claude-3-7-sonnet-20250219_15K|claude-3-7-sonnet-20250219_16K|claude-3-7-sonnet-20250219_1K|claude-3-7-sonnet-20250219_2K|claude-3-7-sonnet-20250219_32K|claude-3-7-sonnet-20250219_64K|claude-3-7-sonnet-20250219_8K|claude-3-7-sonnet-20250219_unknown",Epoch model_metadata,,,refresh
 Phi-4 Multimodal Instruct,Microsoft,US,2025-02-26,unknown,,,,Artificial Analysis API,,,refresh
-GPT-4.5,OpenAI,US,2025-02-27,closed,3.8e+26,https://openai.com/index/introducing-gpt-4-5/,GPT-4.5 (Preview)|gpt-4.5-preview-2025-02-27,Epoch model_metadata,,,refresh
+GPT-4.5,OpenAI,US,2025-02-27,closed,3.8e+26,https://openai.com/index/introducing-gpt-4-5/,GPT-4.5 (Preview)|GPT-4.5 Preview (2025-02-27)|gpt-4.5-preview-2025-02-27,Epoch model_metadata,,,refresh
 Phi-4 Mini,Microsoft,US,2025-02-27,open,9.96e+22,https://arxiv.org/abs/2503.01743,Phi-4 Mini Instruct|Phi-4-mini-instruct,Epoch model_metadata,,,refresh
 hunyuan-large-2025-02-10,Tencent,China,2025-02-27,closed,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 hunyuan-standard-2025-02-10,Tencent,China,2025-02-27,closed,,,hunyuan-standard-256k,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
-hunyuan-standard-vision-2024-12-31,Tencent,China,2025-02-27,closed,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 grok-3-preview-02-24,xAI,US,2025-03-03,closed,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 QwQ-32B,Alibaba,China,2025-03-05,open,3.51e+24,https://qwenlm.github.io/blog/qwq-32b/,QwQ 32B|QwQ-32B|QwQ-32B (16K thinking)|chutes/QwQ-32B|qwq-32b,Epoch model_metadata,,,refresh
 Jamba 1.6 Large,AI21 Labs,Other,2025-03-06,unknown,,https://www.ai21.com/blog/introducing-jamba-1-6/,,Artificial Analysis API,,,refresh
 Jamba 1.6 Mini,AI21 Labs,Other,2025-03-06,unknown,,https://www.ai21.com/blog/introducing-jamba-1-6/,,Artificial Analysis API,,,refresh
 Mistral OCR (Mar 2025),Mistral AI,Other,2025-03-06,closed,,,mistral-ocr-2503,Epoch model_metadata,,,refresh
 Reka Flash 3,Reka AI,US,2025-03-10,open,,https://www.reka.ai/news/introducing-reka-flash,reka-flash-3,Epoch model_metadata,,,refresh
-Gemma 3 27B,Google DeepMind,US,2025-03-11,open,2.27e+24,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,chutes/Gemma-3-27b-It|gemma-3-27b-it,Epoch model_metadata,,,refresh
+Gemma 3 27B,Google DeepMind,US,2025-03-11,open,2.27e+24,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,Gemma 3 27B IT|chutes/Gemma-3-27b-It|gemma-3-27b-it,Epoch model_metadata,,,refresh
 c4ai-aya-vision-32b,Cohere,Other,2025-03-11,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 computer-use-preview-2025-03-11,,Unknown,2025-03-11,unknown,,,computer-use-preview-2025-03-11,Epoch model_metadata,,,refresh
 Gemma 3 12B,Google DeepMind,US,2025-03-12,open,8.64e+23,https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf,gemma-3-12b-it,Epoch model_metadata,,,refresh
@@ -523,20 +512,19 @@ DeepSeek-V3 (Mar 2025),DeepSeek,China,2025-03-24,open,3.3e+24,https://arxiv.org/
 Gemini 2.5 Pro (Mar 2025),Google DeepMind,US,2025-03-25,closed,,https://blog.google/technology/google-deepmind/gemini-model-thinking-updates-march-2025/#gemini-2-5-thinking,gemini-2.5-pro-exp-03-25|gemini-2.5-pro-preview-03-25,Epoch model_metadata,,,refresh
 QVQ-Max,Alibaba,China,2025-03-25,unknown,,https://qwenlm.github.io/blog/qvq-max-preview/,qvq-max-2025-03-25,Epoch model_metadata,,,refresh
 GPT-4o (Mar 2025),OpenAI,US,2025-03-27,closed,,https://help.openai.com/en/articles/6825453-chatgpt-release-notes,chatgpt-4o-03-27-2025,Epoch model_metadata,,,refresh
-Llama 4 Scout,Meta AI,US,2025-04-05,open,4.08e+24,https://ai.meta.com/blog/llama-4-multimodal-intelligence/,Llama-4-Scout-17B-16E-Instruct|chutes/Llama-4-Scout-17B-16E Instruct|llama-4-scout-17b-16e-instruct,Epoch model_metadata,,,refresh
-Llama 4 Maverick,Meta AI,US,2025-04-06,open,2.24e+24,https://ai.meta.com/blog/llama-4-multimodal-intelligence/,Llama-4-Maverick-17B-128E-Instruct|Llama-4-Maverick-17B-128E-Instruct-FP8|chutes/Llama-4-Maverick-17B-128E-Instruct|llama-4-maverick-17b-128e-instruct,Epoch model_metadata,,,refresh
+Llama 4 Scout,Meta AI,US,2025-04-05,open,4.08e+24,https://ai.meta.com/blog/llama-4-multimodal-intelligence/,Llama 4 Scout 17B 16E Instruct|Llama-4-Scout-17B-16E-Instruct|chutes/Llama-4-Scout-17B-16E Instruct|llama-4-scout-17b-16e-instruct,Epoch model_metadata,,,refresh
+Llama 4 Maverick,Meta AI,US,2025-04-06,open,2.24e+24,https://ai.meta.com/blog/llama-4-multimodal-intelligence/,Llama 4 Maverick 17B 128E Instruct|Llama-4-Maverick-17B-128E-Instruct|Llama-4-Maverick-17B-128E-Instruct-FP8|chutes/Llama-4-Maverick-17B-128E-Instruct|llama-4-maverick-17b-128e-instruct,Epoch model_metadata,,,refresh
 Llama 3.1 Nemotron Ultra 253B v1,Nvidia,US,2025-04-07,open,,,Llama 3.1 Nemotron Ultra 253B v1 (Reasoning)|llama-3.1-nemotron-ultra-253b-v1,Artificial Analysis API,,,refresh
 QWQ-Plus,Alibaba,China,2025-04-08,closed,,https://www.alibabacloud.com/help/en/model-studio/qwq,qwq-plus,Epoch model_metadata,,,refresh
 c4ai-aya-vision-8b,Cohere,Other,2025-04-08,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
-qwen2.5-vl-32b-instruct,Alibaba,China,2025-04-08,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 Grok 3,xAI,US,2025-04-09,closed,3.5e+26,https://x.ai/blog/grok-3,grok-3|grok-3-beta,Epoch model_metadata,,,refresh
 GLM-Z1-Rumination-32B-0414,Tsinghua University,China,2025-04-14,open,2.88e+24,https://huggingface.co/THUDM/GLM-Z1-Rumination-32B-0414,glm-z1-rumination-32b-0414,Epoch model_metadata,,,refresh
-GPT-4.1,OpenAI,US,2025-04-14,closed,,https://openai.com/index/gpt-4-1/,gpt-4.1-2025-04-14,Epoch model_metadata,,,refresh
-GPT-4.1 mini,OpenAI,US,2025-04-14,closed,,https://openai.com/index/gpt-4-1/,gpt-4.1-mini-2025-04-14,Epoch model_metadata,,,refresh
-GPT-4.1 nano,OpenAI,US,2025-04-14,closed,,https://openai.com/index/gpt-4-1/,gpt-4.1-nano-2025-04-14,Epoch model_metadata,,,refresh
+GPT-4.1,OpenAI,US,2025-04-14,closed,,https://openai.com/index/gpt-4-1/,GPT-4.1 (2025-04-14)|gpt-4.1-2025-04-14,Epoch model_metadata,,,refresh
+GPT-4.1 mini,OpenAI,US,2025-04-14,closed,,https://openai.com/index/gpt-4-1/,GPT-4.1 mini (2025-04-14)|gpt-4.1-mini-2025-04-14,Epoch model_metadata,,,refresh
+GPT-4.1 nano,OpenAI,US,2025-04-14,closed,,https://openai.com/index/gpt-4-1/,GPT-4.1 nano (2025-04-14)|gpt-4.1-nano-2025-04-14,Epoch model_metadata,,,refresh
 Granite 3.3 8B,IBM,US,2025-04-16,unknown,,,Granite 3.3 8B (Non-reasoning),Artificial Analysis API,,,refresh
-o3,OpenAI,US,2025-04-16,closed,,https://openai.com/index/introducing-o3-and-o4-mini/,o3-2025-04-16|o3-2025-04-16_high|o3-2025-04-16_low|o3-2025-04-16_medium|o3-2025-04-16_unknown,Epoch model_metadata,,,refresh
-o4-mini,OpenAI,US,2025-04-16,closed,,https://openai.com/index/introducing-o3-and-o4-mini/,o4-mini (High)|o4-mini-2025-04-16|o4-mini-2025-04-16_high|o4-mini-2025-04-16_low|o4-mini-2025-04-16_medium|o4-mini-2025-04-16_unknown,Epoch model_metadata,,,refresh
+o3,OpenAI,US,2025-04-16,closed,,https://openai.com/index/introducing-o3-and-o4-mini/,o3 (2025-04-16)|o3-2025-04-16|o3-2025-04-16_high|o3-2025-04-16_low|o3-2025-04-16_medium|o3-2025-04-16_unknown,Epoch model_metadata,,,refresh
+o4-mini,OpenAI,US,2025-04-16,closed,,https://openai.com/index/introducing-o3-and-o4-mini/,o4-mini (2025-04-16)|o4-mini (High)|o4-mini-2025-04-16|o4-mini-2025-04-16_high|o4-mini-2025-04-16_low|o4-mini-2025-04-16_medium|o4-mini-2025-04-16_unknown,Epoch model_metadata,,,refresh
 Gemini 2.5 Flash (Apr 2025),Google DeepMind,US,2025-04-17,closed,,,Gemini 2.5 Flash Preview (Non-reasoning)|Gemini 2.5 Flash Preview (Reasoning)|Gemini 2.5 Flash Preview (Sep '25) (Non-reasoning)|Gemini 2.5 Flash Preview (Sep '25) (Reasoning)|gemini-2.5-flash-preview-04-17|gemini-2.5-flash-preview-04-17 (16K thinking)|gemini-2.5-flash-preview-04-17 (24K thinking),Epoch model_metadata,,,refresh
 Qwen Plus (Apr 2025),Alibaba,China,2025-04-28,closed,,,qwen-plus-0125|qwen-plus-2025-04-28,Epoch model_metadata,,,refresh
 Qwen3-14B,Alibaba,China,2025-04-28,open,3.2e+24,https://qwenlm.github.io/blog/qwen3/,Qwen3 14B (Non-reasoning)|Qwen3 14B (Reasoning)|chutes/Qwen3-14B|qwen3-14b|qwen3-14b_none,Epoch model_metadata,,,refresh
@@ -554,9 +542,9 @@ Phi-4-Reasoning-plus,Microsoft,US,2025-04-30,open,,https://arxiv.org/abs/2504.21
 ViLAMP-llava-qwen,,Unknown,2025-05-01,unknown,,,ViLAMP-llava-qwen,Epoch model_metadata,,,refresh
 olmo-2-0325-32b-instruct,Allen Institute for AI,US,2025-05-05,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 Gemini 2.5 Pro (May 2025),Google DeepMind,US,2025-05-06,closed,,https://blog.google/technology/google-deepmind/gemini-model-thinking-updates-march-2025/#gemini-2-5-thinking,gemini-2.5-pro-preview-05-06,Epoch model_metadata,,,refresh
-Mistral Medium 3,Mistral AI,Other,2025-05-07,closed,,https://mistral.ai/news/mistral-medium-3,mistral-medium-2505,Epoch model_metadata,,,refresh
+Mistral Medium 3,Mistral AI,Other,2025-05-07,closed,,https://mistral.ai/news/mistral-medium-3,Mistral Medium 3 (2505)|mistral-medium-2505,Epoch model_metadata,,,refresh
 codex-mini-2025-05-16,,Unknown,2025-05-16,unknown,,,codex-mini-2025-05-16,Epoch model_metadata,,,refresh
-mistral-small-3.1-24b-instruct-2503,Mistral AI,Other,2025-05-19,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
+mistral-small-3.1-24b-instruct-2503,Mistral AI,Other,2025-05-19,open,,,Mistral Small 3.1 24B Instruct (2503),First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 Gemini 2.5 Flash (May 2025),Google DeepMind,US,2025-05-20,closed,,,gemini-2.5-flash-preview-05-20|gemini-2.5-flash-preview-05-20_16K|gemini-2.5-flash-preview-05-20_1K|gemini-2.5-flash-preview-05-20_23K|gemini-2.5-flash-preview-05-20_8K,Epoch model_metadata,,,refresh
 Gemma 3n E4B Instruct Preview,Google DeepMind,US,2025-05-20,unknown,,,Gemma 3n E4B Instruct|Gemma 3n E4B Instruct Preview (May '25),Artificial Analysis API,,,refresh
 Llama 3.1 Nemotron Nano 4B v1.1,Nvidia,US,2025-05-20,unknown,,,Llama 3.1 Nemotron Nano 4B v1.1 (Reasoning),Artificial Analysis API,,,refresh
@@ -567,10 +555,10 @@ Claude 4 Opus,Anthropic,US,2025-05-22,unknown,,,Claude 4 Opus (Non-reasoning)|Cl
 Claude 4 Sonnet,Anthropic,US,2025-05-22,unknown,,,Claude 4 Sonnet (Non-reasoning)|Claude 4 Sonnet (Reasoning),Artificial Analysis API,,,refresh
 Claude Opus 4,Anthropic,US,2025-05-22,closed,,"https://www.anthropic.com/claude/opus
 
-https://www.anthropic.com/news/claude-4",claude-opus-4-20250514|claude-opus-4-20250514-thinking-16k|claude-opus-4-20250514_12K|claude-opus-4-20250514_16K|claude-opus-4-20250514_1K|claude-opus-4-20250514_27K|claude-opus-4-20250514_2K|claude-opus-4-20250514_32K|claude-opus-4-20250514_8K|claude-opus-4-20250514_unknown,Epoch model_metadata,,,refresh
+https://www.anthropic.com/news/claude-4","Claude Opus 4 (20250514)|Claude Opus 4 (Thinking 16K, 20250514)|claude-opus-4-20250514|claude-opus-4-20250514-thinking-16k|claude-opus-4-20250514_12K|claude-opus-4-20250514_16K|claude-opus-4-20250514_1K|claude-opus-4-20250514_27K|claude-opus-4-20250514_2K|claude-opus-4-20250514_32K|claude-opus-4-20250514_8K|claude-opus-4-20250514_unknown",Epoch model_metadata,,,refresh
 Claude Sonnet 4,Anthropic,US,2025-05-22,closed,,"https://www.anthropic.com/claude/sonnet
 
-https://www.anthropic.com/news/claude-4",claude-sonnet-4-20250514|claude-sonnet-4-20250514-thinking-32k|claude-sonnet-4-20250514_12K|claude-sonnet-4-20250514_16K|claude-sonnet-4-20250514_1K|claude-sonnet-4-20250514_2K|claude-sonnet-4-20250514_32K|claude-sonnet-4-20250514_59K|claude-sonnet-4-20250514_64K|claude-sonnet-4-20250514_8K|claude-sonnet-4-20250514_unknown|claude-strudel-v8-p|claude-strudel-v8-p_max,Epoch model_metadata,,,refresh
+https://www.anthropic.com/news/claude-4","Claude Sonnet 4 (20250514)|Claude Sonnet 4 (Thinking 32K, 20250514)|claude-sonnet-4-20250514|claude-sonnet-4-20250514-thinking-32k|claude-sonnet-4-20250514_12K|claude-sonnet-4-20250514_16K|claude-sonnet-4-20250514_1K|claude-sonnet-4-20250514_2K|claude-sonnet-4-20250514_32K|claude-sonnet-4-20250514_59K|claude-sonnet-4-20250514_64K|claude-sonnet-4-20250514_8K|claude-sonnet-4-20250514_unknown|claude-strudel-v8-p|claude-strudel-v8-p_max",Epoch model_metadata,,,refresh
 Mistral OCR (May 2025),Mistral AI,Other,2025-05-22,closed,,,mistral-ocr-2505,Epoch model_metadata,,,refresh
 claude-strudel-v4-p,Anthropic,US,2025-05-22,closed,,,claude-strudel-v4-p,Epoch model_metadata,,,refresh
 claude-strudel-v4-p_high,Anthropic,US,2025-05-22,closed,,,claude-strudel-v4-p_high,Epoch model_metadata,,,refresh
@@ -587,20 +575,20 @@ Magistral Small 1.0,Mistral AI,Other,2025-06-10,open,,https://mistral.ai/news/ma
 o3-pro,OpenAI,US,2025-06-10,closed,,,o3-pro-2025-06-10_high|o3-pro-2025-06-10_low|o3-pro-2025-06-10_medium|o3-pro-2025-06-10_unknown,Epoch model_metadata,,,refresh
 MiniMax-M1-80k,MiniMax,China,2025-06-13,open,4.32e+24,https://arxiv.org/abs/2506.13585,MiniMax M1 80k|MiniMax-M1-80k,Epoch model_metadata,,,refresh
 Kimi Dev 72b,Moonshot,China,2025-06-16,open,,https://moonshotai.github.io/Kimi-Dev/,Kimi-Dev-72B,Epoch model_metadata,,,refresh
-Gemini 2.5 Flash (Jun 2025),Google DeepMind,US,2025-06-17,closed,,,Gemini 2.5 Flash (Non-reasoning)|Gemini 2.5 Flash (Reasoning)|gemini-2.5-flash,Epoch model_metadata,,,refresh
+Gemini 2.5 Flash (Jun 2025),Google DeepMind,US,2025-06-17,closed,,,Gemini 2.5 Flash|Gemini 2.5 Flash (Non-reasoning)|Gemini 2.5 Flash (Reasoning)|gemini-2.5-flash,Epoch model_metadata,,,refresh
 Gemini 2.5 Flash-Lite (Jun 2025),Google DeepMind,US,2025-06-17,closed,,,gemini-2.5-flash-lite-preview-06-17-thinking|gemini-2.5-flash-lite-preview-06-17_16K,Epoch model_metadata,,,refresh
 MiniMax M1 40k,MiniMax,China,2025-06-17,unknown,,,,Artificial Analysis API,,,refresh
 qwen3-235b-a22b-no-thinking,Alibaba,China,2025-06-17,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 video-SALMONN 2+,ByteDance,China,2025-06-18,unknown,,https://github.com/bytedance/video-SALMONN-2,video-SALMONN-2plus,Epoch model_metadata,,,refresh
-Mistral Small 3.2,Mistral AI,Other,2025-06-20,open,,https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506,mistral-small-2506|mistral-small-3.2-2506,Epoch model_metadata,,,refresh
+Mistral Small 3.2,Mistral AI,Other,2025-06-20,open,,https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506,Mistral Small 3.2 (2506)|mistral-small-2506|mistral-small-3.2-2506,Epoch model_metadata,,,refresh
 Grok-3 mini,xAI,US,2025-06-24,closed,,https://x.ai/news/grok-3,Grok 3 mini Reasoning (High)|grok-3-mini-beta|grok-3-mini-beta_high|grok-3-mini-beta_low|grok-3-mini-beta_medium|grok-3-mini-beta_unknown|grok-3-mini-high|grok-3-mini_high|grok-3-mini_low|grok-3-mini_unknown,Epoch model_metadata,,,refresh
-hunyuan-large-vision,Tencent,China,2025-06-24,closed,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
+hunyuan-large-vision,Tencent,China,2025-06-24,closed,,,Hunyuan Large Vision,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 minimax-m1,MiniMax,China,2025-06-24,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 Gemma 3n E2B Instruct,Google DeepMind,US,2025-06-26,unknown,,,,Artificial Analysis API,,,refresh
 ERNIE 4.5 300B A47B,Baidu,China,2025-06-30,unknown,,,,Artificial Analysis API,,,refresh
 Jamba 1.7 Large,AI21 Labs,Other,2025-07-07,unknown,,,,Artificial Analysis API,,,refresh
 Jamba 1.7 Mini,AI21 Labs,Other,2025-07-07,unknown,,,,Artificial Analysis API,,,refresh
-Grok 4,xAI,US,2025-07-09,closed,5e+26,https://x.ai/news/grok-4,grok-4-0709|grok-4-0709_high,Epoch model_metadata,,,refresh
+Grok 4,xAI,US,2025-07-09,closed,5e+26,https://x.ai/news/grok-4,Grok 4 (0709)|grok-4-0709|grok-4-0709_high,Epoch model_metadata,,,refresh
 Devstral Medium,Mistral AI,Other,2025-07-10,closed,,https://mistral.ai/news/devstral-2507,Devstral Medium (2507)|devstral-medium-2507,Artificial Analysis API,,,refresh
 Grok 4 Heavy,xAI,US,2025-07-10,closed,,https://x.ai/news/grok-4,grok-4-heavy-web-app,Epoch model_metadata,,,refresh
 LFM2 1.2B,Liquid AI,US,2025-07-10,unknown,,,,Artificial Analysis API,,,refresh
@@ -632,15 +620,15 @@ Qwen3 4B 2507 Instruct,Alibaba,China,2025-08-06,unknown,,,,Artificial Analysis A
 qwen3-4b-instruct-2507,,Unknown,2025-08-06,unknown,,,qwen3-4b-instruct-2507,Epoch model_metadata,,,refresh
 ChatGPT Latest,OpenAI,US,2025-08-07,unknown,,,alpine-alpha_high|alpine-alpha_xhigh|galapagos-alpha|galapagos-alpha_xhigh|galapagos-pro-alpha_xhigh,Epoch model_metadata,,,refresh
 GPT-5,OpenAI,US,2025-08-07,closed,6.6e+25,"https://cdn.openai.com/gpt-5-system-card.pdf
-https://openai.com/index/introducing-gpt-5/",GPT-5 (ChatGPT)|GPT-5 (High)|GPT-5 (Low)|GPT-5 (Medium)|GPT-5 (Minimal)|gpt-5-2025-08-07_high|gpt-5-2025-08-07_low|gpt-5-2025-08-07_medium|gpt-5-2025-08-07_minimal|gpt-5-2025-08-07_unknown|gpt-5-chat|gpt-5-high|gpt-5-medium,Epoch model_metadata,,,refresh
+https://openai.com/index/introducing-gpt-5/",GPT-5 (ChatGPT)|GPT-5 (High)|GPT-5 (Low)|GPT-5 (Medium)|GPT-5 (Minimal)|GPT-5 Chat|gpt-5-2025-08-07_high|gpt-5-2025-08-07_low|gpt-5-2025-08-07_medium|gpt-5-2025-08-07_minimal|gpt-5-2025-08-07_unknown|gpt-5-chat|gpt-5-high|gpt-5-medium,Epoch model_metadata,,,refresh
 GPT-5 mini,OpenAI,US,2025-08-07,closed,,https://cdn.openai.com/gpt-5-system-card.pdf,GPT-5 mini (High)|GPT-5 mini (Medium)|GPT-5 mini (Minimal)|gpt-5-mini-2025-08-07_high|gpt-5-mini-2025-08-07_low|gpt-5-mini-2025-08-07_medium|gpt-5-mini-2025-08-07_minimal|gpt-5-mini-2025-08-07_unknown|gpt-5-mini-high,Epoch model_metadata,,,refresh
 GPT-5 nano,OpenAI,US,2025-08-07,closed,,https://cdn.openai.com/gpt-5-system-card.pdf,GPT-5 nano (High)|GPT-5 nano (Medium)|GPT-5 nano (Minimal)|gpt-5-nano-2025-08-07_high|gpt-5-nano-2025-08-07_low|gpt-5-nano-2025-08-07_medium|gpt-5-nano-2025-08-07_minimal|gpt-5-nano-2025-08-07_unknown|gpt-5-nano-high,Epoch model_metadata,,,refresh
-step-1o-turbo-202506,StepFun,China,2025-08-07,closed,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
+step-1o-turbo-202506,StepFun,China,2025-08-07,closed,,,Step-1o Turbo (202506),First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 GLM-4.5V,Zhipu AI,China,2025-08-11,open,,https://arxiv.org/abs/2507.01006,GLM-4.5V (Non-reasoning)|GLM-4.5V (Reasoning)|glm-4.5v,Artificial Analysis API,,,refresh
-Mistral Medium 3.1,Mistral AI,Other,2025-08-12,closed,,https://x.com/MistralAI/status/1955316715417382979?lang=en,mistral-medium-2508,Epoch model_metadata,,,refresh
+Mistral Medium 3.1,Mistral AI,Other,2025-08-12,closed,,https://x.com/MistralAI/status/1955316715417382979?lang=en,Mistral Medium 3.1 (2508)|mistral-medium-2508,Epoch model_metadata,,,refresh
 Gemma 3 270M,Google DeepMind,US,2025-08-14,open,9.72e+21,https://developers.googleblog.com/en/introducing-gemma-3-270m/,gemma-3-270m-it,Epoch model_metadata,,,refresh
 hunyuan-t1-20250711,Tencent,China,2025-08-14,closed,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
-step-3,StepFun,China,2025-08-14,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
+step-3,StepFun,China,2025-08-14,open,,,Step-3,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 nvidia-nemotron-nano-9b-v2,,Unknown,2025-08-18,unknown,,,NVIDIA Nemotron Nano 9B V2 (Non-reasoning)|NVIDIA Nemotron Nano 9B V2 (Reasoning)|nvidia-nemotron-nano-9b-v2,Epoch model_metadata,,,refresh
 seed-oss-36b-instruct,,Unknown,2025-08-20,unknown,,,Seed-OSS-36B-Instruct|seed-oss-36b-instruct,Epoch model_metadata,,,refresh
 DeepSeek-V3.1,DeepSeek,China,2025-08-21,open,3.59e+24,"https://api-docs.deepseek.com/news/news250821
@@ -670,15 +658,15 @@ Granite 4.0 H Small,IBM,US,2025-09-22,unknown,,,,Artificial Analysis API,,,refre
 Qwen3 Omni 30B A3B,Alibaba,China,2025-09-22,unknown,,,Qwen3 Omni 30B A3B (Reasoning),Artificial Analysis API,,,refresh
 Qwen3 Omni 30B A3B Instruct,Alibaba,China,2025-09-22,unknown,,,,Artificial Analysis API,,,refresh
 LFM2 2.6B,Liquid AI,US,2025-09-23,unknown,,,,Artificial Analysis API,,,refresh
-Qwen3 VL 235B A22B,Alibaba,China,2025-09-23,open,,,Qwen3 VL 235B A22B (Reasoning)|qwen3-vl-235b-a22b-thinking,Artificial Analysis API,,,refresh
-Qwen3 VL 235B A22B Instruct,Alibaba,China,2025-09-23,open,,,qwen3-vl-235b-a22b-instruct,Artificial Analysis API,,,refresh
+Qwen3 VL 235B A22B,Alibaba,China,2025-09-23,open,,,Qwen3 VL 235B A22B (Reasoning)|Qwen3-VL-235B-A22B-Thinking|qwen3-vl-235b-a22b-thinking,Artificial Analysis API,,,refresh
+Qwen3 VL 235B A22B Instruct,Alibaba,China,2025-09-23,open,,,Qwen3-VL-235B-A22B-Instruct|qwen3-vl-235b-a22b-instruct,Artificial Analysis API,,,refresh
 qwen3-coder-plus,,Unknown,2025-09-23,unknown,,,qwen3-coder-plus,Epoch model_metadata,,,refresh
 Qwen3-Max,Alibaba,China,2025-09-24,closed,1.51e+25,"https://modelstudio.console.alibabacloud.com/?tab=doc#/doc/?type=model&url=2840914_2&modelId=qwen3-max-preview
 
 https://qwen.ai/blog?id=87dc93fc8a590dc718c77e1f6e84c07b474f6c5a&from=home.latest-research-list",Qwen3 Max|Qwen3 Max (Preview)|Qwen3 Max Thinking|Qwen3 Max Thinking (Preview)|qwen3-max-2025-09-23|qwen3-max-preview,Epoch model_metadata,,,refresh
-Gemini 2.5 Flash (Sep 2025),Google DeepMind,US,2025-09-25,closed,,,gemini-2.5-flash-preview-09-2025|gemini-2.5-flash-preview-09-2025_16k,Epoch model_metadata,,,refresh
+Gemini 2.5 Flash (Sep 2025),Google DeepMind,US,2025-09-25,closed,,,Gemini 2.5 Flash Preview (09-2025)|gemini-2.5-flash-preview-09-2025|gemini-2.5-flash-preview-09-2025_16k,Epoch model_metadata,,,refresh
 Gemini 2.5 Flash-Lite (Sep 2025),Google DeepMind,US,2025-09-25,closed,,,gemini-2.5-flash-lite-preview-09-2025,Epoch model_metadata,,,refresh
-Gemini 2.5 Flash-Lite Preview,Google DeepMind,US,2025-09-25,unknown,,,Gemini 2.5 Flash-Lite (Non-reasoning)|Gemini 2.5 Flash-Lite (Reasoning)|Gemini 2.5 Flash-Lite Preview (Sep '25) (Non-reasoning)|Gemini 2.5 Flash-Lite Preview (Sep '25) (Reasoning),Artificial Analysis API,,,refresh
+Gemini 2.5 Flash-Lite Preview,Google DeepMind,US,2025-09-25,closed,,,"Gemini 2.5 Flash-Lite (Non-reasoning)|Gemini 2.5 Flash-Lite (Reasoning)|Gemini 2.5 Flash-Lite Preview (Non-Thinking, 09-2025)|Gemini 2.5 Flash-Lite Preview (Sep '25) (Non-reasoning)|Gemini 2.5 Flash-Lite Preview (Sep '25) (Reasoning)|Gemini 2.5 Flash-Lite Preview (Thinking, 06-17)",Artificial Analysis API,,,refresh
 gemini-robotics-er-1.5-preview,,Unknown,2025-09-26,unknown,,,gemini-robotics-er-1.5-preview,Epoch model_metadata,,,refresh
 Claude 4.5 Sonnet,Anthropic,US,2025-09-29,unknown,,,Claude 4.5 Sonnet (Non-reasoning)|Claude 4.5 Sonnet (Reasoning),Artificial Analysis API,,,refresh
 Claude Sonnet 4.5,Anthropic,US,2025-09-29,closed,,https://www.anthropic.com/news/claude-sonnet-4-5,"Claude Sonnet 4.5 (20250929)|Claude Sonnet 4.5 (High, 32K, 20250929)|claude-sonnet-4-5-20250929|claude-sonnet-4-5-20250929-high-32k|claude-sonnet-4-5-20250929-thinking-32k|claude-sonnet-4-5-20250929_12K|claude-sonnet-4-5-20250929_16K|claude-sonnet-4-5-20250929_1K|claude-sonnet-4-5-20250929_27K|claude-sonnet-4-5-20250929_2K|claude-sonnet-4-5-20250929_32K|claude-sonnet-4-5-20250929_48K|claude-sonnet-4-5-20250929_59K|claude-sonnet-4-5-20250929_8K|claude-sonnet-4-5-20250929_low|claude-sonnet-4-5-20250929_unknown",Epoch model_metadata,,,refresh
@@ -694,7 +682,7 @@ tiny-recursion-model,,Unknown,2025-10-06,unknown,,,tiny-recursion-model,Epoch mo
 GPT-5 Pro,OpenAI,US,2025-10-07,closed,,https://cdn.openai.com/gpt-5-system-card.pdf,gpt-5-pro-2025-10-06_high|gpt-5-pro-2025-10-06_medium|gpt-5-pro-2025-10-06_unknown,Epoch model_metadata,,,refresh
 LFM2 8B A1B,Liquid AI,US,2025-10-07,unknown,,,,Artificial Analysis API,,,refresh
 gemini-2.5-flash-lite-preview-09-2025-no-thinking,Google DeepMind,US,2025-10-07,closed,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
-hunyuan-vision-1.5-thinking,Tencent,China,2025-10-07,closed,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
+hunyuan-vision-1.5-thinking,Tencent,China,2025-10-07,closed,,,Hunyuan Vision 1.5 Thinking,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 Jamba Reasoning 3B,AI21 Labs,Other,2025-10-08,unknown,,,,Artificial Analysis API,,,refresh
 Ling-1T,Ant Group,China,2025-10-08,unknown,,"https://huggingface.co/inclusionAI/Ling-1T
 https://arxiv.org/pdf/2510.22115",,Artificial Analysis API,,,refresh
@@ -753,10 +741,10 @@ GLM-4.6V,Zhipu AI,China,2025-12-08,open,,,GLM-4.6V (Non-reasoning)|GLM-4.6V (Rea
 nova-2-lite,Amazon,US,2025-12-08,closed,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 Devstral 2,Mistral AI,Other,2025-12-09,open,,,devstral-2,Artificial Analysis API,,,refresh
 Devstral Small 2,Mistral AI,Other,2025-12-09,open,,https://mistral.ai/news/devstral-2-vibe-cli/,devstral-small-2512,Epoch model_metadata,,,refresh
-GPT-5.2,OpenAI,US,2025-12-11,closed,,,GPT-5.2 (Medium)|GPT-5.2 (Non-reasoning)|GPT-5.2 (Xhigh)|gpt-5.2|gpt-5.2-2025-12-11_high|gpt-5.2-2025-12-11_low|gpt-5.2-2025-12-11_medium|gpt-5.2-2025-12-11_none|gpt-5.2-2025-12-11_unknown|gpt-5.2-2025-12-11_xhigh|gpt-5.2-high|robin-alpha-next-2025-11-24_high|robin-alpha-next-2025-11-24_xhigh,Epoch model_metadata,,,refresh
+GPT-5.2,OpenAI,US,2025-12-11,closed,,,GPT-5.2 (High)|GPT-5.2 (Medium)|GPT-5.2 (Non-reasoning)|GPT-5.2 (Xhigh)|gpt-5.2|gpt-5.2-2025-12-11_high|gpt-5.2-2025-12-11_low|gpt-5.2-2025-12-11_medium|gpt-5.2-2025-12-11_none|gpt-5.2-2025-12-11_unknown|gpt-5.2-2025-12-11_xhigh|gpt-5.2-high|robin-alpha-next-2025-11-24_high|robin-alpha-next-2025-11-24_xhigh,Epoch model_metadata,,,refresh
 GPT-5.2 Pro,OpenAI,US,2025-12-11,closed,,https://openai.com/index/introducing-gpt-5-2/,gpt-5.2-pro-2025-12-11|gpt-5.2-pro-2025-12-11-webapp|gpt-5.2-pro-2025-12-11_high|gpt-5.2-pro-2025-12-11_medium|gpt-5.2-pro-2025-12-11_xhigh|robin-alpha-pro-2025-11-24|robin-alpha-pro-2025-11-24_high|robin-alpha-pro-2025-11-24_xhigh,Epoch model_metadata,,,refresh
 Mi:dm K 2.5 Pro,Korea Telecom,Other,2025-12-11,unknown,,,Mi:dm K 2.5 Pro Preview,Artificial Analysis API,,,refresh
-Molmo2-8B,Allen Institute for AI,US,2025-12-11,open,,,molmo-2-8b,Artificial Analysis API,,,refresh
+Molmo2-8B,Allen Institute for AI,US,2025-12-11,open,,,Molmo 2 8B|molmo-2-8b,Artificial Analysis API,,,refresh
 Olmo 3.1 32B Think,Allen Institute for AI,US,2025-12-12,open,,https://arxiv.org/abs/2512.13961,olmo-3.1-32b-think,Artificial Analysis API,,,refresh
 K2 Think V2,Institute of Foundation Models,Other,2025-12-15,unknown,,,,Artificial Analysis API,,,refresh
 NVIDIA Nemotron 3 Nano 30B A3B,Nvidia,US,2025-12-15,unknown,,,NVIDIA Nemotron 3 Nano 30B A3B (Non-reasoning)|NVIDIA Nemotron 3 Nano 30B A3B (Reasoning),Artificial Analysis API,,,refresh
@@ -774,7 +762,6 @@ K-EXAONE,LG AI Research,Other,2025-12-31,unknown,,https://huggingface.co/LGAI-EX
 Falcon-H1R-7B,Technology Innovation Institute,Other,2026-01-04,unknown,,,,Artificial Analysis API,,,refresh
 LFM2.5-1.2B-Instruct,Liquid AI,US,2026-01-05,unknown,,,,Artificial Analysis API,,,refresh
 LFM2.5-VL-1.6B,Liquid AI,US,2026-01-05,unknown,,,,Artificial Analysis API,,,refresh
-ernie-5.0-preview-1220,Baidu,China,2026-01-06,closed,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 Olmo 3.1 32B Instruct,Allen Institute for AI,US,2026-01-13,open,,,olmo-3.1-32b-instruct,Artificial Analysis API,,,refresh
 LFM2.5-1.2B-Thinking,Liquid AI,US,2026-01-20,unknown,,,,Artificial Analysis API,,,refresh
 Step3 VL 10B,StepFun,China,2026-01-20,unknown,,,,Artificial Analysis API,,,refresh
@@ -798,7 +785,7 @@ Gemini 3 Deep Think,Google DeepMind,US,2026-02-12,closed,,https://blog.google/in
 MiniMax-M2.5,MiniMax,China,2026-02-12,open,,https://www.minimax.io/news/minimax-m25,MiniMax-M2.5|minimax-m2.5,Epoch model_metadata,,,refresh
 Qwen3.5 397B-A17B,Alibaba,China,2026-02-13,open,,https://qwen.ai/blog?id=qwen3.5,Qwen3.5 397B A17B (Non-reasoning)|Qwen3.5 397B A17B (Reasoning)|Qwen3.5-397B-A17B|qwen3.5-397b-a17b|qwen3.5-397b-a17b_none,Epoch model_metadata,,,refresh
 Qwen 3.5 Plus (hosted 397B-A17B),Alibaba,China,2026-02-16,unknown,,,qwen3.5-plus|qwen3.5-plus_none,Epoch model_metadata,,,refresh
-gpt-5.2-chat-latest-20260210,OpenAI,US,2026-02-16,closed,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
+gpt-5.2-chat-latest-20260210,OpenAI,US,2026-02-16,closed,,,GPT-5.2 Chat (20260210),First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 Claude Sonnet 4.6,Anthropic,US,2026-02-17,closed,,https://www.anthropic.com/news/claude-sonnet-4-6,"Claude Sonnet 4.6 (Max)|Claude Sonnet 4.6 (Non-reasoning, High)|Claude Sonnet 4.6 (Non-reasoning, Low)|claude-sonnet-4-6|claude-sonnet-4-6_16K|claude-sonnet-4-6_32K|claude-sonnet-4-6_60K|claude-sonnet-4-6_high|claude-sonnet-4-6_low|claude-sonnet-4-6_max|claude-sonnet-4-6_medium|claude-sonnet-4-6_unknown",Epoch model_metadata,,,refresh
 Grok 4.20,xAI,US,2026-02-17,closed,,https://docs.x.ai/developers/models,Grok 4.20 0309 (Non-reasoning)|Grok 4.20 0309 (Reasoning)|grok-4-20|grok-4.20-0309-reasoning,Epoch model_metadata,,,refresh
 Tiny Aya Global,Cohere,Other,2026-02-17,unknown,,,,Artificial Analysis API,,,refresh
@@ -831,10 +818,10 @@ GLM-5-Turbo,Zhipu AI,China,2026-03-15,unknown,,,,Artificial Analysis API,,,refre
 Mistral Small 4,Mistral AI,Other,2026-03-16,open,,https://mistral.ai/news/mistral-small-4/,Mistral Small 4 (Non-reasoning)|Mistral Small 4 (Reasoning)|mistral-small-2603,Epoch model_metadata,,,refresh
 NVIDIA Nemotron 3 Nano 4B,Nvidia,US,2026-03-16,unknown,,,,Artificial Analysis API,,,refresh
 grok-4.20-beta-0309-reasoning,xAI,US,2026-03-16,closed,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
-grok-4.20-multi-agent-beta-0309,xAI,US,2026-03-16,closed,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
+grok-4.20-multi-agent-beta-0309,xAI,US,2026-03-16,closed,,,Grok 4.20 Multi-Agent Beta (0309),First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 qwen3.5-max-preview,Alibaba,China,2026-03-16,closed,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 GPT-5.4 Mini,OpenAI,US,2026-03-17,closed,,https://openai.com/index/introducing-gpt-5-4-mini-and-nano/,GPT-5.4 mini (High)|GPT-5.4 mini (Medium)|GPT-5.4 mini (Non-reasoning)|GPT-5.4 mini (Xhigh)|gpt-5.4-mini-2026-03-17_high|gpt-5.4-mini-2026-03-17_low|gpt-5.4-mini-2026-03-17_medium|gpt-5.4-mini-2026-03-17_none|gpt-5.4-mini-2026-03-17_unknown|gpt-5.4-mini-2026-03-17_xhigh|gpt-5.4-mini-high,Epoch model_metadata,,,refresh
-GPT-5.4 Nano,OpenAI,US,2026-03-17,closed,,https://openai.com/index/introducing-gpt-5-4-mini-and-nano/,GPT-5.4 nano (Medium)|GPT-5.4 nano (Non-reasoning)|GPT-5.4 nano (Xhigh)|gpt-5.4-nano-2026-03-17_high|gpt-5.4-nano-2026-03-17_low|gpt-5.4-nano-2026-03-17_medium|gpt-5.4-nano-2026-03-17_none|gpt-5.4-nano-2026-03-17_unknown|gpt-5.4-nano-2026-03-17_xhigh|gpt-5.4-nano-high,Epoch model_metadata,,,refresh
+GPT-5.4 Nano,OpenAI,US,2026-03-17,closed,,https://openai.com/index/introducing-gpt-5-4-mini-and-nano/,GPT-5.4 nano (High)|GPT-5.4 nano (Medium)|GPT-5.4 nano (Non-reasoning)|GPT-5.4 nano (Xhigh)|gpt-5.4-nano-2026-03-17_high|gpt-5.4-nano-2026-03-17_low|gpt-5.4-nano-2026-03-17_medium|gpt-5.4-nano-2026-03-17_none|gpt-5.4-nano-2026-03-17_unknown|gpt-5.4-nano-2026-03-17_xhigh|gpt-5.4-nano-high,Epoch model_metadata,,,refresh
 MiMo-V2-Pro,Xiaomi Corp,China,2026-03-18,closed,,https://mimo.xiaomi.com/mimo-v2-pro,mimo-v2-pro,Epoch model_metadata,,,refresh
 MiniMax-M2.7,MiniMax,China,2026-03-18,open,,https://www.minimax.io/news/minimax-m27-en,MiniMax-M2.7|Minimax M2.7|minimax-m2.7,Epoch model_metadata,,,refresh
 Composer 2,Cursor,US,2026-03-19,closed,2.32e+25,https://arxiv.org/abs/2603.24477,Composer 2,Epoch model_metadata,,,refresh
@@ -851,7 +838,7 @@ Gemma 4 26B A4B,Google DeepMind,US,2026-04-02,open,,https://ai.google.dev/gemma/
 Gemma 4 31B,Google DeepMind,US,2026-04-02,open,,,Gemma 4 31B (Non-reasoning)|Gemma 4 31B (Reasoning)|gemma-4-31b,Artificial Analysis API,,,refresh
 Gemma 4 31B IT,Google DeepMind,US,2026-04-02,open,,,gemma-4-31b-it|gemma-4-31b-it_minimal,Epoch model_metadata,,,refresh
 Gemma 4 E2B,Google DeepMind,US,2026-04-02,unknown,,,Gemma 4 E2B (Non-reasoning)|Gemma 4 E2B (Reasoning),Artificial Analysis API,,,refresh
-dola-seed-2.0-pro,ByteDance,China,2026-04-02,closed,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
+dola-seed-2.0-pro,ByteDance,China,2026-04-02,closed,,,Dola Seed 2.0 Pro,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 Gemma 4 E4B,Google DeepMind,US,2026-04-03,unknown,,,Gemma 4 E4B (Non-reasoning)|Gemma 4 E4B (Reasoning),Artificial Analysis API,,,refresh
 Claude Mythos Preview,Anthropic,US,2026-04-07,closed,,"https://www-cdn.anthropic.com/7624816413e9b4d2e3ba620c5a5e091b98b190a5/Claude%20Mythos%20Preview%20System%20Card.pdf
 https://www.anthropic.com/glasswing",claude-mythos-preview|claude-mythos-preview-early,Epoch model_metadata,,,refresh
@@ -991,7 +978,7 @@ MiniCPM5-2B,OpenBMB,China,2026-09-07,unknown,,,,Artificial Analysis API,,,refres
 Mercury 2.5,Inception Labs,US,2026-09-08,closed,,,mercury-2.5_high|mercury-2.5_unknown,Epoch model_metadata,,,refresh
 DeepSeek V4.1 Flash,DeepSeek,China,2026-09-09,open,4.32e+24,"https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf 
 
-https://www.deepseek.com/en/news/deepseek-v4-1-flash/",DeepSeek V4.1 Flash (Max)|DeepSeek V4.1 Flash (Non-reasoning)|DeepSeek V4.1 Flash 1017 (Max)|DeepSeek-V4.1-Flash (Max)|DeepSeek-V4.1-Flash-20260910 (Max)|DeepSeek-V4.1-Flash-20261017 (Max)|Deepseek V4.1 Flash (Max)|deepseek-v4.1-flash-max|deepseek-v4.1-flash_high|deepseek-v4.1-flash_low|deepseek-v4.1-flash_max|deepseek-v4.1-flash_none|deepseek-v4.1-flash_unknown,Epoch model_metadata,,,refresh
+https://www.deepseek.com/en/news/deepseek-v4-1-flash/",DeepSeek V4.1 Flash (Max)|DeepSeek V4.1 Flash (Non-reasoning)|DeepSeek-V4.1-Flash (Max)|DeepSeek-V4.1-Flash-20260910 (Max)|DeepSeek-V4.1-Flash-20261017 (Max)|Deepseek V4.1 Flash (Max)|deepseek-v4.1-flash-max|deepseek-v4.1-flash_high|deepseek-v4.1-flash_low|deepseek-v4.1-flash_max|deepseek-v4.1-flash_none|deepseek-v4.1-flash_unknown,Epoch model_metadata,,,refresh
 Ling-3.0-flash-VL,Ant Group,China,2026-09-10,unknown,,,,Artificial Analysis API,,,refresh
 SWE-2,Cognition,US,2026-09-10,closed,,https://cognition.com/blog/swe-2,swe-2_max,Epoch model_metadata,,,refresh
 Ling-3.0-flash-Fin,Ant Group,China,2026-09-11,unknown,,,,Artificial Analysis API,,,refresh
@@ -1008,16 +995,34 @@ GPT-6.1 Sol,OpenAI,US,2026-09-29,closed,,https://openai.com/index/introducing-gp
 Gemini 4 Argon,Google DeepMind,US,2026-09-30,closed,,https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/,Gemini 4 Argon (High)|gemini-4-argon-high|gemini-4-argon_high|gemini-4-argon_low|gemini-4-argon_medium|gemini-4-argon_minimal|gemini-4-argon_unknown,Epoch model_metadata,,,refresh
 Ling 3.1 Flash,Ant Group,China,2026-10-01,unknown,,,,Artificial Analysis API,,,refresh
 Mistral Large 4,Mistral AI,Other,2026-10-06,closed,,,Mistral Large 4 Preview|mistral-large-4|mistral-large-4-0_high|mistral-large-4-0_none|mistral-large-4-0_unknown,Epoch model_metadata,,,refresh
-Claude Haiku 5.5,Anthropic,US,2026-10-07,closed,,,Claude Haiku 5.5 (High)|Claude Haiku 5.5 (Low)|Claude Haiku 5.5 (Max)|Claude Haiku 5.5 (Medium)|Claude Haiku 5.5 (Xhigh)|claude-haiku-5-5_high|claude-haiku-5-5_low|claude-haiku-5-5_max|claude-haiku-5-5_medium|claude-haiku-5-5_unknown|claude-haiku-5-5_xhigh|claude-haiku-5.5-high,Epoch model_metadata,,,refresh
+Claude Haiku 5.5,Anthropic,US,2026-10-07,closed,,,Claude Haiku 5.5 (High)|Claude Haiku 5.5 (Low)|Claude Haiku 5.5 (Max)|Claude Haiku 5.5 (Medium)|Claude Haiku 5.5 (Xhigh)|claude-haiku-5-5_high|claude-haiku-5-5_low|claude-haiku-5-5_max|claude-haiku-5-5_medium|claude-haiku-5-5_none|claude-haiku-5-5_unknown|claude-haiku-5-5_xhigh|claude-haiku-5.5-high,Epoch model_metadata,,,refresh
 Muse Wonder,Meta AI,US,2026-10-12,closed,,,Muse Wonder (Max)|muse-wonder-1.0_high|muse-wonder-1.0_low|muse-wonder-1.0_max|muse-wonder-1.0_medium|muse-wonder-1.0_minimal|muse-wonder-1.0_unknown|muse-wonder-1.0_xhigh|muse-wonder-max,Epoch model_metadata,,,refresh
-Muse Wonder Full,Meta,US,2026-10-12,unknown,,,Muse Wonder Full (Max),Artificial Analysis API,,,refresh
+Muse Wonder Full,Meta,US,2026-10-12,closed,,,Muse Wonder Full (Max),Artificial Analysis API,,,refresh
 Muse Spark Open,Meta AI,US,2026-10-15,open,,"https://research.meta.ai/blog/muse-spark-open
 https://dev.meta.ai/docs/muse-spark-open",Muse Spark Open (Max)|Muse Spark Open (Xhigh)|Muse-Spark-Open-816B-A42B_high|Muse-Spark-Open-816B-A42B_low|Muse-Spark-Open-816B-A42B_medium|Muse-Spark-Open-816B-A42B_unknown|Muse-Spark-Open-816B-A42B_xhigh,Epoch model_metadata,,,refresh
 Nemotron 3.5 Bolt 74B-A9B,Nvidia,US,2026-10-15,unknown,,,,Artificial Analysis API,,,refresh
 Nemotron 3.5 Super VL,Nvidia,US,2026-10-15,unknown,,,,Artificial Analysis API,,,refresh
-nvidia-nemotron-3.5-super-vl-120b-a12b-nvfp4,Nvidia,US,2026-10-15,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
+nvidia-nemotron-3.5-super-vl-120b-a12b-nvfp4,Nvidia,US,2026-10-15,open,,,NVIDIA-Nemotron-3.5-Super-VL-120B-A12B (NVFP4),First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 Beam 1.0,Reflection,Unknown,2026-10-16,unknown,,,,Artificial Analysis API,,,refresh
 Beam 1.0 501B A23B,reflection,Unknown,2026-10-16,open,,,beam-1.0-501b-a23b,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 Grok 4.20 Beta,xAI,US,2026-10-16,closed,,,"Grok 4.20 Beta (Reasoning, 0309)",First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 Seed2.1 Pro Preview,ByteDance,China,2026-10-16,closed,,,seed-2.1-pro-preview,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
-MiniMax-M3.1-Flash,MiniMax,China,2026-10-19,unknown,,,,Artificial Analysis API,,,refresh
+DeepSeek V4.1 Flash 1017,DeepSeek,China,2026-10-17,open,,https://api-docs.deepseek.com/news/news261017,DeepSeek V4.1 Flash 1017 (Max)|deepseek-v4.1-flash-1017_high|deepseek-v4.1-flash-1017_low|deepseek-v4.1-flash-1017_max|deepseek-v4.1-flash-1017_none|deepseek-v4.1-flash-1017_unknown,Epoch model_metadata,,,refresh
+Amazon Nova Lite 1.0,Amazon,US,2026-10-19,closed,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
+Amazon Nova Pro 1.0,Amazon,US,2026-10-19,closed,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
+Aya Vision 32B,Cohere,Other,2026-10-19,open,,https://cohere.com/blog/aya-vision,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
+CogVLM2 Llama3 Chat 19B,Zhipu AI,China,2026-10-19,open,,,cogvlm2-llama3-chat-19b,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
+ERNIE-5.0-Preview,Baidu,China,2026-10-19,closed,,,ERNIE-5.0-Preview (1220)|ernie-5.0-preview-1220,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
+Hunyuan Standard Vision,Tencent,China,2026-10-19,closed,,,Hunyuan Standard Vision (2024-12-31)|hunyuan-standard-vision-2024-12-31,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
+InternVL2 26B,,Unknown,2026-10-19,open,,https://internvl.github.io/blog/2024-07-02-InternVL-2.0/,internvl2-26b,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
+InternVL2 4B,,Unknown,2026-10-19,open,,,internvl2-4b,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
+LLaVA 1.6 34B,,Unknown,2026-10-19,open,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
+LLaVA-OneVision Qwen2 72B OV,,Unknown,2026-10-19,open,,,llava-onevision-qwen2-72b-ov,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
+MiniMax-M3.1-Flash,MiniMax,China,2026-10-19,open,,,,Artificial Analysis API,,,refresh
+Molmo 72B,Allen Institute for AI,US,2026-10-19,open,,https://arxiv.org/abs/2409.17146,Molmo 72B (0924)|molmo-72b-0924,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
+Phi-3 Vision 128K Instruct,Microsoft,US,2026-10-19,open,,,phi-3-vision-128k-instruct,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
+Qwen2-VL-72B,Alibaba,China,2026-10-19,open,,https://arxiv.org/abs/2409.12191,qwen2-vl-72b,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
+Qwen2.5-VL-32B-Instruct,Alibaba,China,2026-10-19,open,,,qwen2.5-vl-32b-instruct,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
+Step-1V 32K,StepFun,China,2026-10-19,closed,,,step-1v-32k,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
+Step-1o Vision 32K,StepFun,China,2026-10-19,closed,,,Step-1o Vision 32K (High Res)|step-1o-vision-32k-highres,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
+Yi Vision,,Unknown,2026-10-19,closed,,https://platform.01.ai/docs#models-and-pricing,yi-vision,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
