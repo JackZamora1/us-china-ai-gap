@@ -1,17 +1,17 @@
 {
- "built": "2026-10-20",
- "scores": 6341,
+ "built": "2026-10-21",
+ "scores": 6350,
  "compute": {
   "asof": "2025-12-31",
   "china_h100e": 1155114.0
  },
  "medians": {
   "independent": {
-   "Overall": 7.5,
+   "Overall": 7.6,
    "Agentic and real-world work": 5.3,
    "Coding": 4.4,
-   "Frontier reasoning and science": 5.9,
-   "Research math": 7.5,
+   "Frontier reasoning and science": 6.0,
+   "Research math": 7.6,
    "Knowledge and hallucination": 9.3,
    "Long context": 1.4,
    "Multimodal": 10.3,
@@ -19,11 +19,11 @@
    "Puzzles and games": 9.2
   },
   "all": {
-   "Overall": 7.5,
+   "Overall": 7.6,
    "Agentic and real-world work": 5.3,
    "Coding": 4.4,
-   "Frontier reasoning and science": 7.5,
-   "Research math": 7.5,
+   "Frontier reasoning and science": 7.6,
+   "Research math": 7.6,
    "Knowledge and hallucination": 9.3,
    "Long context": 1.4,
    "Multimodal": 10.3,

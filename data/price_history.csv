@@ -459,3 +459,14 @@ date,aa_name,price_blended_usd_per_1m,price_input_usd_per_1m,price_output_usd_pe
 2026-10-18,DeepSeek V4 Flash 0731 (Max),0.175,0.14,0.28
 2026-10-19,DeepSeek V4.1 Flash 1017 (Max),0.525,0.3,1.2
 2026-10-19,MiniMax-M3.1-Flash,0.262,0.15,0.6
+2026-10-21,Gemini 3.7 Flash (High),0.75,0.375,1.875
+2026-10-21,Gemma 4 26B A4B (Non-reasoning),0.186,0.115,0.4
+2026-10-21,Gemma 4 26B A4B (Reasoning),0.16,0.1,0.34
+2026-10-21,Kimi K2.5 (Reasoning),1.2,0.6,3
+2026-10-21,Nemotron 3 Nano Omni 30B A3B Reasoning,0.641,0.4,1.365
+2026-10-21,Qwen3 30B A3B 2507 Instruct,0.15,0.1,0.3
+2026-10-21,Qwen3 Coder 30B A3B Instruct,0.334,0.19,0.765
+2026-10-21,gpt-oss-120b (High),0.262,0.15,0.6
+2026-10-21,gpt-oss-120b (Low),0.242,0.125,0.595
+2026-10-21,gpt-oss-20b (High),0.115,0.07,0.25
+2026-10-21,gpt-oss-20b (Low),0.121,0.07,0.275
