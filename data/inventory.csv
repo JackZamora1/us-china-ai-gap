@@ -1,7 +1,7 @@
 benchmark,source,file_or_field,us_models,cn_models,cn_models_last_12m,latest_cn_score_date,latest_us_score_date,us_top,cn_top,ceiling,top_vs_ceiling,source_types,selected_as,domain,reason_if_not_selected
-Arena text (style-controlled),Arena dataset,text_style_control,213,114,64,2026-10-20,2026-10-20,1524.768,1488.1047,,,independent 399,arena_text,Overall,
-Arena text factuality,Arena dataset,text_factuality,97,60,50,2026-10-20,2026-10-20,1511.4736,1483.9355,,,independent 166,arena_text_factuality,Knowledge and hallucination,
-Arena WebDev,Arena dataset,webdev,69,50,47,2026-10-19,2026-10-19,1811.1492,1682.0082,,,independent 127,arena_webdev,Coding,
+Arena text (style-controlled),Arena dataset,text_style_control,214,114,64,2026-10-20,2026-10-20,1524.768,1488.0951,,,independent 400,arena_text,Overall,
+Arena text factuality,Arena dataset,text_factuality,98,60,50,2026-10-20,2026-10-20,1511.4736,1483.9277,,,independent 167,arena_text_factuality,Knowledge and hallucination,
+Arena WebDev,Arena dataset,webdev,69,50,47,2026-10-19,2026-10-19,1811.1492,1682.0082,,,independent 128,arena_webdev,Coding,
 Arena vision (style-controlled),Arena dataset,vision_style_control,106,36,32,2026-10-20,2026-10-19,1309.5032,1300.674,,,independent 163,arena_vision,Multimodal,
 Arena agent,Arena dataset,agent,41,24,24,2026-09-21,2026-10-12,0.2092,0.0971,,,independent 69,arena_agent,Agentic and real-world work,
 Arena document (style-controlled),Arena dataset,document_style_control,33,5,5,2026-06-02,2026-10-16,1498.8779,1452.5438,,,independent 38,arena_document,Multimodal,

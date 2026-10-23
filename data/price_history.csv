@@ -473,3 +473,4 @@ date,aa_name,price_blended_usd_per_1m,price_input_usd_per_1m,price_output_usd_pe
 2026-10-22,Beam 1.0,0.6,0.4,1.2
 2026-10-22,Gemini 3.7 Flash (High),1.5,0.75,3.75
 2026-10-22,Ling 3.1 Flash 1019,0.45,0.3,0.9
+2026-10-23,"Quasar 438B (Max, Based on GLM-5.2)",0.165,0.11,0.33

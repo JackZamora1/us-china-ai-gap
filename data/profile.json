@@ -1,6 +1,6 @@
 {
- "built": "2026-10-22",
- "scores": 6362,
+ "built": "2026-10-23",
+ "scores": 6365,
  "compute": {
   "asof": "2025-12-31",
   "china_h100e": 1155114.0
@@ -8,27 +8,27 @@
  "medians": {
   "independent": {
    "Overall": 7.6,
-   "Agentic and real-world work": 5.3,
-   "Coding": 4.4,
+   "Agentic and real-world work": 5.4,
+   "Coding": 4.5,
    "Frontier reasoning and science": 6.0,
    "Research math": 7.6,
-   "Knowledge and hallucination": 9.3,
+   "Knowledge and hallucination": 9.4,
    "Long context": 1.4,
-   "Multimodal": 10.3,
+   "Multimodal": 10.4,
    "Cyber and security": null,
-   "Puzzles and games": 9.2
+   "Puzzles and games": 9.3
   },
   "all": {
    "Overall": 7.6,
-   "Agentic and real-world work": 5.3,
-   "Coding": 4.4,
+   "Agentic and real-world work": 5.4,
+   "Coding": 4.5,
    "Frontier reasoning and science": 7.6,
    "Research math": 7.6,
-   "Knowledge and hallucination": 9.3,
+   "Knowledge and hallucination": 9.4,
    "Long context": 1.4,
-   "Multimodal": 10.3,
+   "Multimodal": 10.4,
    "Cyber and security": null,
-   "Puzzles and games": 9.2
+   "Puzzles and games": 9.3
   }
  }
 }
