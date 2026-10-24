@@ -1,22 +1,22 @@
 benchmark,source,file_or_field,us_models,cn_models,cn_models_last_12m,latest_cn_score_date,latest_us_score_date,us_top,cn_top,ceiling,top_vs_ceiling,source_types,selected_as,domain,reason_if_not_selected
 Arena text (style-controlled),Arena dataset,text_style_control,214,114,64,2026-10-20,2026-10-20,1524.768,1488.0951,,,independent 400,arena_text,Overall,
 Arena text factuality,Arena dataset,text_factuality,98,60,50,2026-10-20,2026-10-20,1511.4736,1483.9277,,,independent 167,arena_text_factuality,Knowledge and hallucination,
-Arena WebDev,Arena dataset,webdev,69,50,47,2026-10-19,2026-10-19,1811.1492,1682.0082,,,independent 128,arena_webdev,Coding,
+Arena WebDev,Arena dataset,webdev,69,51,48,2026-10-23,2026-10-19,1811.1492,1691.6446,,,independent 129,arena_webdev,Coding,
 Arena vision (style-controlled),Arena dataset,vision_style_control,106,36,32,2026-10-20,2026-10-19,1309.5032,1300.674,,,independent 163,arena_vision,Multimodal,
-Arena agent,Arena dataset,agent,41,24,24,2026-09-21,2026-10-12,0.2092,0.0971,,,independent 69,arena_agent,Agentic and real-world work,
+Arena agent,Arena dataset,agent,42,24,24,2026-09-21,2026-10-19,0.2077,0.0971,,,independent 70,arena_agent,Agentic and real-world work,
 Arena document (style-controlled),Arena dataset,document_style_control,33,5,5,2026-06-02,2026-10-16,1498.8779,1452.5438,,,independent 38,arena_document,Multimodal,
-AA Intelligence Index,Artificial Analysis API,artificial_analysis_intelligence_index,222,158,87,2026-10-22,2026-10-15,57.6,46.3,,,independent 467,aa_index,Overall,
-Humanity's Last Exam (AA),Artificial Analysis API,hle,206,150,87,2026-10-22,2026-10-15,0.614,0.494,1.0,0.614,independent 443,aa_hle,Frontier reasoning and science,
-AA-LCR long-context reasoning,Artificial Analysis API,lcr,145,124,84,2026-10-22,2026-10-15,0.8533,0.8867,1.0,0.887,independent 329,aa_lcr,Long context,
+AA Intelligence Index,Artificial Analysis API,artificial_analysis_intelligence_index,222,159,88,2026-10-23,2026-10-15,57.6,55.1,,,independent 468,aa_index,Overall,
+Humanity's Last Exam (AA),Artificial Analysis API,hle,206,151,88,2026-10-23,2026-10-15,0.614,0.525,1.0,0.614,independent 444,aa_hle,Frontier reasoning and science,
+AA-LCR long-context reasoning,Artificial Analysis API,lcr,145,125,85,2026-10-23,2026-10-15,0.8533,0.8867,1.0,0.887,independent 330,aa_lcr,Long context,
 gpqa,Artificial Analysis API,gpqa,197,144,78,2026-09-10,2026-10-15,0.963,0.935,1.0,0.963,independent 425,,,"Not needed: older or saturated evaluation, or covered by another source"
-ifbench,Artificial Analysis API,ifbench,140,117,61,2026-07-06,2026-07-09,0.8333,0.8286,1.0,0.833,independent 315,,,"Not needed: older or saturated evaluation, or covered by another source"
+ifbench,Artificial Analysis API,ifbench,141,117,61,2026-07-06,2026-10-23,0.8333,0.8286,1.0,0.833,independent 316,,,"Not needed: older or saturated evaluation, or covered by another source"
 terminalbench_hard,Artificial Analysis API,terminalbench_hard,135,111,60,2026-07-06,2026-07-09,0.6591,0.5076,1.0,0.659,independent 301,,,"Not needed: older or saturated evaluation, or covered by another source"
 tau2-bench (AA),Artificial Analysis API,tau2,123,108,59,2026-07-06,2026-07-09,0.9854,0.9912,1.0,0.991,independent 285,aa_tau2,Agentic and real-world work,
 artificial_analysis_coding_index,Artificial Analysis API,artificial_analysis_coding_index,99,63,52,2026-09-11,2026-09-03,81.6,76.2,,,independent 195,,,"Not needed: older or saturated evaluation, or covered by another source"
 terminalbench_v2_1,Artificial Analysis API,terminalbench_v2_1,84,63,52,2026-09-11,2026-10-15,0.9139,0.8876,1.0,0.914,independent 182,,,"Not needed: older or saturated evaluation, or covered by another source"
-SciCode (AA),Artificial Analysis API,scicode,71,56,47,2026-10-22,2026-10-15,0.669,0.609,1.0,0.669,independent 158,aa_scicode,Frontier reasoning and science,
+SciCode (AA),Artificial Analysis API,scicode,71,57,48,2026-10-23,2026-10-15,0.669,0.609,1.0,0.669,independent 159,aa_scicode,Frontier reasoning and science,
 tau_banking,Artificial Analysis API,tau_banking,68,56,45,2026-09-11,2026-09-03,0.5072,0.5134,1.0,0.513,independent 155,,,"Not needed: older or saturated evaluation, or covered by another source"
-Terminal-Bench 4.0 (AA),Artificial Analysis API,terminalbench_v4_0,43,32,32,2026-10-22,2026-10-15,0.6364,0.4192,1.0,0.636,independent 83,aa_terminalbench_4,Coding,
+Terminal-Bench 4.0 (AA),Artificial Analysis API,terminalbench_v4_0,43,33,33,2026-10-23,2026-10-15,0.6364,0.6717,1.0,0.672,independent 84,aa_terminalbench_4,Coding,
 aime_25,Artificial Analysis API,aime_25,90,68,12,2025-12-23,2025-12-17,0.99,0.9667,1.0,0.99,independent 198,,,"Not needed: older or saturated evaluation, or covered by another source"
 artificial_analysis_math_index,Artificial Analysis API,artificial_analysis_math_index,90,68,12,2025-12-23,2025-12-17,99.0,96.7,,,independent 198,,,"Not needed: older or saturated evaluation, or covered by another source"
 LiveCodeBench (AA),Artificial Analysis API,livecodebench,124,76,12,2025-12-23,2025-12-17,0.917,0.896,1.0,0.917,independent 253,aa_livecodebench,Coding,
