@@ -1,5 +1,5 @@
 {
- "built": "2026-10-25",
+ "built": "2026-10-26",
  "scores": 6372,
  "compute": {
   "asof": "2025-12-31",
@@ -8,27 +8,27 @@
  "medians": {
   "independent": {
    "Overall": 7.7,
-   "Agentic and real-world work": 5.4,
-   "Coding": 4.5,
+   "Agentic and real-world work": 5.5,
+   "Coding": 4.6,
    "Frontier reasoning and science": 6.1,
    "Research math": 7.7,
-   "Knowledge and hallucination": 9.4,
+   "Knowledge and hallucination": 9.5,
    "Long context": 1.4,
-   "Multimodal": 10.4,
+   "Multimodal": 10.5,
    "Cyber and security": null,
-   "Puzzles and games": 9.3
+   "Puzzles and games": 9.4
   },
   "all": {
    "Overall": 7.7,
-   "Agentic and real-world work": 5.4,
-   "Coding": 4.5,
+   "Agentic and real-world work": 5.5,
+   "Coding": 4.6,
    "Frontier reasoning and science": 7.7,
    "Research math": 7.7,
-   "Knowledge and hallucination": 9.4,
+   "Knowledge and hallucination": 9.5,
    "Long context": 1.4,
-   "Multimodal": 10.4,
+   "Multimodal": 10.5,
    "Cyber and security": null,
-   "Puzzles and games": 9.3
+   "Puzzles and games": 9.4
   }
  }
 }
