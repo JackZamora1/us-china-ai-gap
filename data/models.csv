@@ -578,7 +578,9 @@ Ling-flash-2.0,Ant Group,China,2025-09-17,open,,,ling-flash-2.0,Artificial Analy
 Magistral Medium 1.2,Mistral AI,Other,2025-09-18,closed,,,magistral-medium-2509,Epoch model_metadata,,,refresh
 Magistral Small 1.2,Mistral AI,Other,2025-09-18,open,,https://huggingface.co/mistralai/Magistral-Small-2509,magistral-small-2509,Epoch model_metadata,,,refresh
 Grok 4 Fast,xAI,US,2025-09-19,closed,,https://x.ai/news/grok-4-fast,Grok 4 Fast (Non-Reasoning)|Grok 4 Fast (Non-reasoning)|Grok 4 Fast (Reasoning)|grok-4-fast|grok-4-fast-reasoning,Epoch model_metadata,,,refresh
-Ring-flash-2.0,Ant Group,China,2025-09-19,open,,,ring-flash-2.0,Artificial Analysis API,,,refresh
+Ring-flash-2.0,Ant Group,China,2025-09-19,open,,"https://arxiv.org/abs/2510.18855 
+
+https://huggingface.co/inclusionAI/Ring-flash-2.0",ring-flash-2.0,Artificial Analysis API,,,refresh
 DeepSeek-V3.1-Terminus,DeepSeek,China,2025-09-22,open,3.59e+24,https://api-docs.deepseek.com/news/news250922,DeepSeek V3.1 Terminus (Non-reasoning)|DeepSeek V3.1 Terminus (Reasoning)|DeepSeek-V3.1-Terminus|DeepSeek-V3.1-Terminus (Thinking)|deepseek-v3.1-terminus|deepseek-v3.1-terminus-thinking,Epoch model_metadata,,,refresh
 Granite 4.0 H Small,IBM,US,2025-09-22,open,,,Granite-4.0-H-Small,Artificial Analysis API,,,refresh
 Qwen3 Omni 30B A3B,Alibaba,China,2025-09-22,unknown,,,Qwen3 Omni 30B A3B (Reasoning),Artificial Analysis API,,,refresh
@@ -749,8 +751,8 @@ Trinity Large Thinking,Arcee AI,US,2026-04-01,open,,,trinity-large-thinking,Epoc
 Gemma 4 26B A4B,Google DeepMind,US,2026-04-02,open,,https://ai.google.dev/gemma/docs/core/model_card_4,Gemma 4 26B A4B (Non-reasoning)|Gemma 4 26B A4B (Reasoning)|gemma-4-26b-a4b|gemma-4-26b-a4b-it_minimal|gemma-4-26b-a4b_minimal,Epoch model_metadata,,,refresh
 Gemma 4 31B,Google DeepMind,US,2026-04-02,open,,,Gemma 4 31B (Non-reasoning)|Gemma 4 31B (Reasoning)|gemma-4-31b,Artificial Analysis API,,,refresh
 Gemma 4 31B IT,Google DeepMind,US,2026-04-02,open,,,gemma-4-31b-it|gemma-4-31b-it_minimal,Epoch model_metadata,,,refresh
-Gemma 4 E2B,Google DeepMind,US,2026-04-02,unknown,,,Gemma 4 E2B (Non-reasoning)|Gemma 4 E2B (Reasoning),Artificial Analysis API,,,refresh
-Gemma 4 E4B,Google DeepMind,US,2026-04-03,unknown,,,Gemma 4 E4B (Non-reasoning)|Gemma 4 E4B (Reasoning),Artificial Analysis API,,,refresh
+Gemma 4 E2B,Google DeepMind,US,2026-04-02,unknown,,https://arxiv.org/abs/2607.02770,Gemma 4 E2B (Non-reasoning)|Gemma 4 E2B (Reasoning),Artificial Analysis API,,,refresh
+Gemma 4 E4B,Google DeepMind,US,2026-04-03,unknown,,https://arxiv.org/abs/2607.02770,Gemma 4 E4B (Non-reasoning)|Gemma 4 E4B (Reasoning),Artificial Analysis API,,,refresh
 Claude Mythos Preview,Anthropic,US,2026-04-07,closed,,"https://www-cdn.anthropic.com/7624816413e9b4d2e3ba620c5a5e091b98b190a5/Claude%20Mythos%20Preview%20System%20Card.pdf
 https://www.anthropic.com/glasswing",claude-mythos-preview|claude-mythos-preview-early,Epoch model_metadata,,,refresh
 GLM-5.1,Z.ai (Zhipu AI),China,2026-04-07,open,,https://z.ai/blog/glm-5.1,GLM 5.1|GLM-5.1 (Non-reasoning)|GLM-5.1 (Reasoning)|glm-5.1|glm-5.1_none,Epoch model_metadata,,,refresh
@@ -909,7 +911,7 @@ Muse Wonder,Meta AI,US,2026-10-12,closed,,https://research.meta.ai/blog/muse-won
 Muse Wonder Full,Meta,US,2026-10-12,closed,,"https://research.meta.ai/blog/muse-wonder
 
 https://research.meta.ai/static/muse-wonder-model-card",Muse Wonder Full (Max),Artificial Analysis API,,,refresh
-Jev,TypeSafe.ai,Unknown,2026-10-14,unknown,,,jev-1.14.0,Epoch model_metadata,,,refresh
+Jev,TypeSafe.ai,US,2026-10-14,closed,,https://typesafe.ai/blog/introducing-system-one-models-and-jev,jev-1.14.0,Epoch model_metadata,,,refresh
 Muse Spark Open,Meta AI,US,2026-10-15,open,,"https://research.meta.ai/blog/muse-spark-open
 https://dev.meta.ai/docs/muse-spark-open",Muse Spark Open (Max)|Muse Spark Open (Xhigh)|Muse-Spark-Open-816B-A42B_high|Muse-Spark-Open-816B-A42B_low|Muse-Spark-Open-816B-A42B_medium|Muse-Spark-Open-816B-A42B_unknown|Muse-Spark-Open-816B-A42B_xhigh,Epoch model_metadata,,,refresh
 Nemotron 3.5 Bolt 74B-A9B,Nvidia,US,2026-10-15,unknown,,,,Artificial Analysis API,,,refresh
@@ -1046,3 +1048,4 @@ Ling 3.1 Flash 1019,Ant Group,China,2026-10-22,unknown,,,,Artificial Analysis AP
 Spark-X2.6,synlan,Unknown,2026-10-22,closed,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 Kimi K3.1 Pro,Moonshot,China,2026-10-23,closed,,https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart,Kimi K3.1 Pro (Max)|kimi-k3.1-pro_high|kimi-k3.1-pro_low|kimi-k3.1-pro_max|kimi-k3.1-pro_unknown,Epoch model_metadata,,,refresh
 Nemotron 3.5 Bolt E4B 4GB,Nvidia,US,2026-10-23,unknown,,,Nemotron 3.5 Bolt E4B 4GB (Reasoning),Artificial Analysis API,,,refresh
+GPT-6.1 Terra,OpenAI,US,2026-10-26,closed,,https://developers.openai.com/api/docs/models/gpt-6.1-terra,GPT-6.1 Terra (High)|GPT-6.1 Terra (Low)|GPT-6.1 Terra (Max)|GPT-6.1 Terra (Medium)|GPT-6.1 Terra (Non-reasoning)|GPT-6.1 Terra (Xhigh)|gpt-6.1-terra_high|gpt-6.1-terra_low|gpt-6.1-terra_max|gpt-6.1-terra_medium|gpt-6.1-terra_none|gpt-6.1-terra_unknown|gpt-6.1-terra_xhigh,Epoch model_metadata,,,refresh

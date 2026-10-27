@@ -5,18 +5,18 @@ Arena WebDev,Arena dataset,webdev,69,51,48,2026-10-23,2026-10-19,1811.1492,1691.
 Arena vision (style-controlled),Arena dataset,vision_style_control,106,36,32,2026-10-20,2026-10-19,1309.5032,1300.674,,,independent 163,arena_vision,Multimodal,
 Arena agent,Arena dataset,agent,42,24,24,2026-09-21,2026-10-19,0.2077,0.0971,,,independent 70,arena_agent,Agentic and real-world work,
 Arena document (style-controlled),Arena dataset,document_style_control,33,5,5,2026-06-02,2026-10-16,1498.8779,1452.5438,,,independent 38,arena_document,Multimodal,
-AA Intelligence Index,Artificial Analysis API,artificial_analysis_intelligence_index,222,159,88,2026-10-23,2026-10-15,57.6,55.1,,,independent 468,aa_index,Overall,
-Humanity's Last Exam (AA),Artificial Analysis API,hle,206,151,88,2026-10-23,2026-10-15,0.614,0.525,1.0,0.614,independent 444,aa_hle,Frontier reasoning and science,
-AA-LCR long-context reasoning,Artificial Analysis API,lcr,145,125,85,2026-10-23,2026-10-15,0.8533,0.8867,1.0,0.887,independent 330,aa_lcr,Long context,
+AA Intelligence Index,Artificial Analysis API,artificial_analysis_intelligence_index,223,159,88,2026-10-23,2026-10-26,57.6,55.1,,,independent 469,aa_index,Overall,
+Humanity's Last Exam (AA),Artificial Analysis API,hle,207,151,88,2026-10-23,2026-10-26,0.614,0.525,1.0,0.614,independent 445,aa_hle,Frontier reasoning and science,
+AA-LCR long-context reasoning,Artificial Analysis API,lcr,146,125,85,2026-10-23,2026-10-26,0.8533,0.8867,1.0,0.887,independent 331,aa_lcr,Long context,
 gpqa,Artificial Analysis API,gpqa,197,144,78,2026-09-10,2026-10-15,0.963,0.935,1.0,0.963,independent 425,,,"Not needed: older or saturated evaluation, or covered by another source"
 ifbench,Artificial Analysis API,ifbench,141,117,61,2026-07-06,2026-10-23,0.8333,0.8286,1.0,0.833,independent 316,,,"Not needed: older or saturated evaluation, or covered by another source"
 terminalbench_hard,Artificial Analysis API,terminalbench_hard,135,111,60,2026-07-06,2026-07-09,0.6591,0.5076,1.0,0.659,independent 301,,,"Not needed: older or saturated evaluation, or covered by another source"
 tau2-bench (AA),Artificial Analysis API,tau2,123,108,59,2026-07-06,2026-07-09,0.9854,0.9912,1.0,0.991,independent 285,aa_tau2,Agentic and real-world work,
 artificial_analysis_coding_index,Artificial Analysis API,artificial_analysis_coding_index,99,63,52,2026-09-11,2026-09-03,81.6,76.2,,,independent 195,,,"Not needed: older or saturated evaluation, or covered by another source"
 terminalbench_v2_1,Artificial Analysis API,terminalbench_v2_1,84,63,52,2026-09-11,2026-10-15,0.9139,0.8876,1.0,0.914,independent 182,,,"Not needed: older or saturated evaluation, or covered by another source"
-SciCode (AA),Artificial Analysis API,scicode,71,57,48,2026-10-23,2026-10-15,0.669,0.609,1.0,0.669,independent 159,aa_scicode,Frontier reasoning and science,
+SciCode (AA),Artificial Analysis API,scicode,72,57,48,2026-10-23,2026-10-26,0.669,0.609,1.0,0.669,independent 160,aa_scicode,Frontier reasoning and science,
 tau_banking,Artificial Analysis API,tau_banking,68,56,45,2026-09-11,2026-09-03,0.5072,0.5134,1.0,0.513,independent 155,,,"Not needed: older or saturated evaluation, or covered by another source"
-Terminal-Bench 4.0 (AA),Artificial Analysis API,terminalbench_v4_0,43,33,33,2026-10-23,2026-10-15,0.6364,0.6717,1.0,0.672,independent 84,aa_terminalbench_4,Coding,
+Terminal-Bench 4.0 (AA),Artificial Analysis API,terminalbench_v4_0,44,33,33,2026-10-23,2026-10-26,0.6364,0.6717,1.0,0.672,independent 85,aa_terminalbench_4,Coding,
 aime_25,Artificial Analysis API,aime_25,90,68,12,2025-12-23,2025-12-17,0.99,0.9667,1.0,0.99,independent 198,,,"Not needed: older or saturated evaluation, or covered by another source"
 artificial_analysis_math_index,Artificial Analysis API,artificial_analysis_math_index,90,68,12,2025-12-23,2025-12-17,99.0,96.7,,,independent 198,,,"Not needed: older or saturated evaluation, or covered by another source"
 LiveCodeBench (AA),Artificial Analysis API,livecodebench,124,76,12,2025-12-23,2025-12-17,0.917,0.896,1.0,0.917,independent 253,aa_livecodebench,Coding,

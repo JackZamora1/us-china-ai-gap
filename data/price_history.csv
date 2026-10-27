@@ -488,3 +488,11 @@ date,aa_name,price_blended_usd_per_1m,price_input_usd_per_1m,price_output_usd_pe
 2026-10-24,Qwen3 Next 80B A3B Instruct,0.35,0.1,1.1
 2026-10-24,gpt-oss-20b (High),0.092,0.05,0.22
 2026-10-24,gpt-oss-20b (Low),0.128,0.07,0.3
+2026-10-27,DeepSeek V4.1 Flash (Max),0.525,0.3,1.2
+2026-10-27,GPT-6.1 Terra (High),2,1,5
+2026-10-27,GPT-6.1 Terra (Low),2,1,5
+2026-10-27,GPT-6.1 Terra (Max),2,1,5
+2026-10-27,GPT-6.1 Terra (Medium),2,1,5
+2026-10-27,GPT-6.1 Terra (Non-reasoning),2,1,5
+2026-10-27,GPT-6.1 Terra (Xhigh),2,1,5
+2026-10-27,Llama 3.3 Instruct 70B,0.627,0.6,0.71
