@@ -317,7 +317,7 @@ Ministral 3B,Mistral AI,Other,2024-10-16,closed,,https://mistral.ai/news/ministr
 Ministral 8B,Mistral AI,Other,2024-10-16,open,,https://mistral.ai/news/ministraux/,Ministral 8B (2410)|Ministral-8B-Instruct-2410|ministral-8b-2410,Epoch model_metadata,,,refresh
 Video-XL-7B,,Unknown,2024-10-17,closed,,,Video-XL-7B,Epoch model_metadata,,,refresh
 Claude 3.5 Haiku,Anthropic,US,2024-10-22,closed,,https://www.anthropic.com/news/3-5-models-and-computer-use,Claude 3.5 Haiku (20241022)|claude-3-5-haiku-20241022,Epoch model_metadata,,,refresh
-Claude 3.5 Sonnet (October 2024),Anthropic,US,2024-10-22,closed,,,Claude 3.5 Sonnet (20241022)|claude-3-5-sonnet-20241022,Epoch model_metadata,,,refresh
+Claude 3.5 Sonnet (October 2024),Anthropic,US,2024-10-22,closed,,https://www.anthropic.com/news/3-5-models-and-computer-use,Claude 3.5 Sonnet (20241022)|claude-3-5-sonnet-20241022,Epoch model_metadata,,,refresh
 Oryx-1.5-32B,,Unknown,2024-10-22,closed,,,Oryx-1.5-32B,Epoch model_metadata,,,refresh
 Doubao-pro,ByteDance,China,2024-10-28,closed,2.5e+25,https://www.volcengine.com/docs/6360/1264663,doubao-pro-32k,Epoch model_metadata,,,refresh
 Qwen-Turbo,Alibaba,China,2024-11-01,closed,,https://help.aliyun.com/zh/model-studio/models?scm=20140722.S_help%40%40%E6%96%87%E6%A1%A3%40%402840914.S_BB1%40bl%2BBB2%40bl%2BRQW%40ag0%2Bos0.ID_2840914-RL_plus-LOC_doc%7EUND%7Eab-OR_ser-PAR1_2102029c17437872399601371d08f3-V_4-P0_0-P1_0&spm=a2c4g.11186623.help-search.i20,qwen-turbo-2024-11-01,Epoch model_metadata,,,refresh
@@ -904,7 +904,8 @@ Claude Sonnet 5.5,Anthropic,US,2026-09-28,closed,,https://www.anthropic.com/clau
 GPT-6.1 Sol,OpenAI,US,2026-09-29,closed,,https://openai.com/index/introducing-gpt-6-1-sol/,GPT 6.1 Sol (Max)|GPT-6.1 Sol (High)|GPT-6.1 Sol (Low)|GPT-6.1 Sol (Max)|GPT-6.1 Sol (Medium)|GPT-6.1 Sol (Xhigh)|gpt-6.1-sol-max|gpt-6.1-sol_high|gpt-6.1-sol_low|gpt-6.1-sol_max|gpt-6.1-sol_medium|gpt-6.1-sol_unknown|gpt-6.1-sol_xhigh,Epoch model_metadata,,,refresh
 Gemini 4 Argon,Google DeepMind,US,2026-09-30,closed,,https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/,Gemini 4 Argon (High)|gemini-4-argon-high|gemini-4-argon_high|gemini-4-argon_low|gemini-4-argon_medium|gemini-4-argon_minimal|gemini-4-argon_unknown,Epoch model_metadata,,,refresh
 Ling 3.1 Flash,Ant Group,China,2026-10-01,unknown,,,,Artificial Analysis API,,,refresh
-Mistral Large 4,Mistral AI,Other,2026-10-06,closed,,,Mistral Large 4 Preview|mistral-large-4|mistral-large-4-0_high|mistral-large-4-0_none|mistral-large-4-0_unknown,Epoch model_metadata,,,refresh
+Beam 1.0,Reflection,US,2026-10-05,open,,,beam-1.0_high|beam-1.0_low|beam-1.0_max|beam-1.0_medium|beam-1.0_unknown|beam-1.0_xhigh,Epoch model_metadata,,,refresh
+Mistral Large 4,Mistral AI,Other,2026-10-06,closed,,,Mistral Large 4 (High)|Mistral Large 4 (Medium)|Mistral Large 4 Preview|mistral-large-4|mistral-large-4-0_high|mistral-large-4-0_none|mistral-large-4-0_unknown,Epoch model_metadata,,,refresh
 Claude Haiku 5.5,Anthropic,US,2026-10-07,closed,,https://www.anthropic.com/claude-haiku-5-5,Claude Haiku 5.5 (High)|Claude Haiku 5.5 (Low)|Claude Haiku 5.5 (Max)|Claude Haiku 5.5 (Medium)|Claude Haiku 5.5 (Xhigh)|claude-haiku-5-5_high|claude-haiku-5-5_low|claude-haiku-5-5_max|claude-haiku-5-5_medium|claude-haiku-5-5_none|claude-haiku-5-5_unknown|claude-haiku-5-5_xhigh|claude-haiku-5.5-high,Epoch model_metadata,,,refresh
 Muse Wonder,Meta AI,US,2026-10-12,closed,,https://research.meta.ai/blog/muse-wonder,Muse Wonder (Max)|muse-wonder-1.0_high|muse-wonder-1.0_low|muse-wonder-1.0_max|muse-wonder-1.0_medium|muse-wonder-1.0_minimal|muse-wonder-1.0_unknown|muse-wonder-1.0_xhigh|muse-wonder-max,Epoch model_metadata,,,refresh
 Muse Wonder Full,Meta,US,2026-10-12,closed,,"https://research.meta.ai/blog/muse-wonder
@@ -915,11 +916,10 @@ Muse Spark Open,Meta AI,US,2026-10-15,open,,"https://research.meta.ai/blog/muse-
 https://dev.meta.ai/docs/muse-spark-open",Muse Spark Open (Max)|Muse Spark Open (Xhigh)|Muse-Spark-Open-816B-A42B_high|Muse-Spark-Open-816B-A42B_low|Muse-Spark-Open-816B-A42B_medium|Muse-Spark-Open-816B-A42B_unknown|Muse-Spark-Open-816B-A42B_xhigh,Epoch model_metadata,,,refresh
 Nemotron 3.5 Bolt 74B-A9B,Nvidia,US,2026-10-15,unknown,,,,Artificial Analysis API,,,refresh
 Nemotron 3.5 Super VL,Nvidia,US,2026-10-15,unknown,,,,Artificial Analysis API,,,refresh
-Beam 1.0,Reflection,Unknown,2026-10-16,unknown,,,,Artificial Analysis API,,,refresh
 Beam 1.0 501B A23B,reflection,Unknown,2026-10-16,open,,,beam-1.0-501b-a23b,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 Grok 4.20 Beta,xAI,US,2026-10-16,closed,,,"Grok 4.20 Beta (Reasoning, 0309)|grok-4.20-beta-0309-reasoning",First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 Seed2.1 Pro Preview,ByteDance,China,2026-10-16,closed,,,seed-2.1-pro-preview,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
-DeepSeek V4.1 Flash 1017,DeepSeek,China,2026-10-17,open,,https://api-docs.deepseek.com/news/news261017,DeepSeek V4.1 Flash 1017 (Max)|deepseek-v4.1-flash-1017_high|deepseek-v4.1-flash-1017_low|deepseek-v4.1-flash-1017_max|deepseek-v4.1-flash-1017_none|deepseek-v4.1-flash-1017_unknown,Epoch model_metadata,,,refresh
+DeepSeek V4.1 Flash 1017,DeepSeek,China,2026-10-17,open,,,DeepSeek V4.1 Flash 1017 (Max)|deepseek-v4.1-flash-1017_high|deepseek-v4.1-flash-1017_low|deepseek-v4.1-flash-1017_max|deepseek-v4.1-flash-1017_medium|deepseek-v4.1-flash-1017_none|deepseek-v4.1-flash-1017_unknown,Epoch model_metadata,,,refresh
 Amazon Nova Lite 1.0,Amazon,US,2026-10-19,closed,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 Amazon Nova Pro 1.0,Amazon,US,2026-10-19,closed,,,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
 Aya Vision 32B,Cohere,Other,2026-10-19,open,,https://cohere.com/blog/aya-vision,,First Arena appearance,release date approximate,Dated by first appearance on an Arena leaderboard,refresh
@@ -1048,3 +1048,4 @@ Spark-X2.6,synlan,Unknown,2026-10-22,closed,,,,First Arena appearance,release da
 Kimi K3.1 Pro,Moonshot,China,2026-10-23,closed,,https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart,Kimi K3.1 Pro (Max)|kimi-k3.1-pro_high|kimi-k3.1-pro_low|kimi-k3.1-pro_max|kimi-k3.1-pro_unknown,Epoch model_metadata,,,refresh
 Nemotron 3.5 Bolt E4B 4GB,Nvidia,US,2026-10-23,unknown,,,Nemotron 3.5 Bolt E4B 4GB (Reasoning),Artificial Analysis API,,,refresh
 GPT-6.1 Terra,OpenAI,US,2026-10-26,closed,,https://developers.openai.com/api/docs/models/gpt-6.1-terra,GPT-6.1 Terra (High)|GPT-6.1 Terra (Low)|GPT-6.1 Terra (Max)|GPT-6.1 Terra (Medium)|GPT-6.1 Terra (Non-reasoning)|GPT-6.1 Terra (Xhigh)|gpt-6.1-terra_high|gpt-6.1-terra_low|gpt-6.1-terra_max|gpt-6.1-terra_medium|gpt-6.1-terra_none|gpt-6.1-terra_unknown|gpt-6.1-terra_xhigh,Epoch model_metadata,,,refresh
+Gemini 4 Carbon,Google DeepMind,US,2026-10-28,closed,,https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/,Gemini 4 Carbon (High)|gemini-4-carbon_high|gemini-4-carbon_unknown,Epoch model_metadata,,,refresh

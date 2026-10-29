@@ -496,3 +496,7 @@ date,aa_name,price_blended_usd_per_1m,price_input_usd_per_1m,price_output_usd_pe
 2026-10-27,GPT-6.1 Terra (Non-reasoning),2,1,5
 2026-10-27,GPT-6.1 Terra (Xhigh),2,1,5
 2026-10-27,Llama 3.3 Instruct 70B,0.627,0.6,0.71
+2026-10-29,Gemini 4 Argon (High),8,4,20
+2026-10-29,Gemini 4 Carbon (High),8,4,20
+2026-10-29,Mistral Large 4 (High),1.05,0.7,2.1
+2026-10-29,Mistral Large 4 (Medium),1.05,0.7,2.1
