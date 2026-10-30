@@ -3,19 +3,19 @@ Arena text (style-controlled),Arena dataset,text_style_control,215,114,63,2026-1
 Arena text factuality,Arena dataset,text_factuality,99,60,49,2026-10-20,2026-10-28,1521.5854,1484.5005,,,independent 168,arena_text_factuality,Knowledge and hallucination,
 Arena WebDev,Arena dataset,webdev,71,51,47,2026-10-23,2026-10-28,1811.1492,1694.5824,,,independent 131,arena_webdev,Coding,
 Arena vision (style-controlled),Arena dataset,vision_style_control,106,36,32,2026-10-20,2026-10-19,1309.5032,1300.674,,,independent 163,arena_vision,Multimodal,
-Arena agent,Arena dataset,agent,43,24,24,2026-09-21,2026-10-28,0.2094,0.0971,,,independent 71,arena_agent,Agentic and real-world work,
+Arena agent,Arena dataset,agent,45,26,26,2026-10-23,2026-10-28,0.2094,0.0971,,,independent 76,arena_agent,Agentic and real-world work,
 Arena document (style-controlled),Arena dataset,document_style_control,33,5,5,2026-06-02,2026-10-16,1498.8779,1452.5438,,,independent 38,arena_document,Multimodal,
-Humanity's Last Exam (AA),Artificial Analysis API,hle,209,150,86,2026-10-23,2026-10-28,0.614,0.525,1.0,0.614,independent 445,aa_hle,Frontier reasoning and science,
+Humanity's Last Exam (AA),Artificial Analysis API,hle,208,150,86,2026-10-23,2026-10-26,0.614,0.525,1.0,0.614,independent 444,aa_hle,Frontier reasoning and science,
 AA-LCR long-context reasoning,Artificial Analysis API,lcr,148,124,83,2026-10-23,2026-10-28,0.8533,0.8867,1.0,0.887,independent 331,aa_lcr,Long context,
 gpqa,Artificial Analysis API,gpqa,197,143,76,2026-09-10,2026-10-15,0.963,0.935,1.0,0.963,independent 424,,,"Not needed: older or saturated evaluation, or covered by another source"
 ifbench,Artificial Analysis API,ifbench,141,116,59,2026-07-06,2026-10-23,0.8333,0.8286,1.0,0.833,independent 315,,,"Not needed: older or saturated evaluation, or covered by another source"
 terminalbench_hard,Artificial Analysis API,terminalbench_hard,135,110,58,2026-07-06,2026-07-09,0.6591,0.5076,1.0,0.659,independent 300,,,"Not needed: older or saturated evaluation, or covered by another source"
 tau2-bench (AA),Artificial Analysis API,tau2,123,107,57,2026-07-06,2026-07-09,0.9854,0.9912,1.0,0.991,independent 284,aa_tau2,Agentic and real-world work,
 terminalbench_v2_1,Artificial Analysis API,terminalbench_v2_1,84,63,52,2026-09-11,2026-10-15,0.9139,0.8876,1.0,0.914,independent 182,,,"Not needed: older or saturated evaluation, or covered by another source"
-SciCode (AA),Artificial Analysis API,scicode,74,57,48,2026-10-23,2026-10-28,0.669,0.609,1.0,0.669,independent 161,aa_scicode,Frontier reasoning and science,
+SciCode (AA),Artificial Analysis API,scicode,73,57,48,2026-10-23,2026-10-26,0.669,0.609,1.0,0.669,independent 160,aa_scicode,Frontier reasoning and science,
 tau_banking,Artificial Analysis API,tau_banking,68,56,45,2026-09-11,2026-09-03,0.5072,0.5134,1.0,0.513,independent 155,,,"Not needed: older or saturated evaluation, or covered by another source"
 Terminal-Bench 4.0 (AA),Artificial Analysis API,terminalbench_v4_0,46,33,33,2026-10-23,2026-10-28,0.6515,0.6717,1.0,0.672,independent 86,aa_terminalbench_4,Coding,
-AA Intelligence Index,Artificial Analysis API,artificial_analysis_intelligence_index,24,12,12,2026-10-23,2026-10-28,59.4,46.0,,,independent 39,aa_index,Overall,
+AA Intelligence Index,Artificial Analysis API,artificial_analysis_intelligence_index,26,14,14,2026-10-23,2026-10-28,59.4,46.0,,,independent 44,aa_index,Overall,
 aime_25,Artificial Analysis API,aime_25,90,68,11,2025-12-23,2025-12-17,0.99,0.9667,1.0,0.99,independent 198,,,"Not needed: older or saturated evaluation, or covered by another source"
 LiveCodeBench (AA),Artificial Analysis API,livecodebench,124,76,11,2025-12-23,2025-12-17,0.917,0.896,1.0,0.917,independent 253,aa_livecodebench,Coding,
 MMLU-Pro (AA),Artificial Analysis API,mmlu_pro,127,77,11,2025-12-23,2026-07-24,0.898,0.875,1.0,0.898,independent 258,aa_mmlu_pro,Knowledge and hallucination,
@@ -23,9 +23,9 @@ aime,Artificial Analysis API,aime,84,37,0,2025-08-03,2025-08-07,0.9567,0.94,1.0,
 math_500,Artificial Analysis API,math_500,88,39,0,2025-08-03,2025-08-07,0.994,0.984,1.0,0.994,independent 157,,,"Not needed: older or saturated evaluation, or covered by another source"
 critpt_external.csv,Epoch,critpt_external.csv,91,52,41,2026-10-23,2026-10-28,0.36,0.2657,,,independent 260,critpt,Frontier reasoning and science,
 scicode_external.csv,Epoch,scicode_external.csv,75,48,37,2026-10-23,2026-10-28,0.669,0.6088,,,unknown 235,,,Copy of Artificial Analysis data; pulled from their API instead
+Epoch Capabilities Index,Epoch,eci_scores.csv,163,73,37,2026-10-17,2026-10-26,168.92,158.65,,,independent 273,eci,Overall,
 ale_bench_external.csv,Epoch,ale_bench_external.csv,70,43,36,2026-10-23,2026-10-26,2951.32,1932.75,,,independent 132,ale_bench,Coding,
 webdev_arena_external.csv,Epoch,webdev_arena_external.csv,62,40,36,2026-09-21,2026-09-30,1820.31,1674.26,,,unknown 135,,,Copy of Arena data; pulled from the Arena dataset instead
-Epoch Capabilities Index,Epoch,eci_scores.csv,161,72,36,2026-09-09,2026-10-15,168.83,157.86,,,independent 270,eci,Overall,
 OTIS Mock AIME 2024-2025,Epoch,otis_mock_aime_2024_2025.csv,124,59,34,2026-10-17,2026-10-26,1.0,1.0,1.0,1.0,independent 306,otis_mock_aime,Research math,
 GPQA diamond,Epoch,gpqa_diamond.csv,128,66,33,2026-10-17,2026-10-26,0.964,0.9318,0.97,0.994,independent 326,gpqa_diamond,Frontier reasoning and science,
 DTBench,Epoch,dtbench_external.csv,108,45,28,2026-09-09,2026-10-12,0.9893,0.9387,1.0,0.989,unknown 235,,,Decision-theory multiple choice from the same Conceptual Reasoning Index as LMCA; dropped so one project is not counted twice
@@ -56,6 +56,7 @@ gdp_pdf_external.csv,Epoch,gdp_pdf_external.csv,33,6,6,2026-09-09,2026-10-12,0.3
 FrontierSWE,Epoch,frontierswe_external.csv,16,5,5,2026-09-01,2026-10-07,0.6551,0.3018,1.0,0.655,independent 21,frontierswe,Coding,
 forecastbench_external.csv,Epoch,forecastbench_external.csv,66,13,4,2026-07-16,2026-08-13,67.0,64.7,,,unknown 92,,,Forecasting is outside the domain list
 Furniture Assembly,Epoch,furniture_assembly.csv,30,4,4,2026-09-09,2026-10-26,0.8333,0.3417,1.0,0.833,independent 35,furniture_assembly,Multimodal,
+MirrorCode,Epoch,mirrorcode.csv,23,4,4,2026-09-01,2026-10-12,0.9778,0.5444,1.0,0.978,independent 29,,,Not selected
 cursorbench_external.csv,Epoch,cursorbench_external.csv,16,3,3,2026-10-17,2026-10-12,0.578,0.477,,,independent 82,cursorbench,Coding,
 EBR-bench,Epoch,ebr_bench.csv,25,3,3,2026-06-16,2026-10-26,0.781,0.0952,1.0,0.781,independent 28,,,Could not confirm what it measures
 ExploitBench,Epoch,exploitbench_external.csv,6,3,3,2026-04-20,2026-04-23,0.738,0.184,1.0,0.738,independent 20,exploitbench,Cyber and security,
@@ -67,7 +68,7 @@ PostTrainBench,Epoch,posttrainbench_external.csv,9,2,2,2026-07-16,2026-07-24,0.4
 Aider polyglot,Epoch,aider_polyglot_external.csv,35,16,1,2025-12-01,2025-08-07,88.0,74.2,100.0,0.88,independent 72,aider_polyglot,Coding,
 enigma_eval_external.csv,Epoch,enigma_eval_external.csv,39,1,1,2026-01-27,2026-07-09,0.3928,0.0338,,,independent 46,enigma_eval,Puzzles and games,
 Fiction.LiveBench,Epoch,fictionlivebench_external.csv,31,7,1,2026-01-27,2025-09-19,1.0,0.781,1.0,1.0,independent 42,fiction_livebench,Long context,
-frontiermath_erdos.csv,Epoch,frontiermath_erdos.csv,12,1,1,2026-07-16,2026-09-29,0.0441,0.0,,,independent 13,,,Fewer than 3 Chinese models in the last 12 months
+frontiermath_erdos.csv,Epoch,frontiermath_erdos.csv,13,1,1,2026-07-16,2026-09-30,0.0441,0.0,,,independent 14,,,Fewer than 3 Chinese models in the last 12 months
 hle_external.csv,Epoch,hle_external.csv,42,3,1,2026-01-27,2026-10-07,0.548,0.2437,,,unknown 56,,,Only 3 Chinese models; the Artificial Analysis API covers HLE far better
 METR Time Horizons,Epoch,metr_time_horizons_external.csv,32,7,1,2025-11-06,2026-04-07,0.852,0.5919,1.0,0.852,unknown 36; self_reported 13,,,Used only to add Chinese models to the METR historical series
 OSWorld,Epoch,os_world_external.csv,6,2,1,2026-01-27,2026-02-17,72.1,63.3,100.0,0.721,independent 19; self_reported 1,osworld,Agentic and real-world work,
@@ -91,7 +92,6 @@ Lech Mazur Writing,Epoch,lech_mazur_writing_external.csv,32,10,0,2025-08-03,2025
 live_bench_external.csv,Epoch,live_bench_external.csv,30,9,0,2025-03-24,2025-11-13,82.35,71.96,,,unknown 54,,,No Chinese model in the last 12 months
 MATH level 5,Epoch,math_level_5.csv,65,17,0,2025-09-24,2025-10-15,0.9813,0.9713,1.0,0.981,independent 108,math_level_5,Research math,
 mindcube_external.csv,Epoch,mindcube_external.csv,2,0,0,,2025-05-22,0.4667,,,,unknown 5,,,No Chinese model in the last 12 months
-MirrorCode,Epoch,mirrorcode.csv,15,0,0,,2026-09-30,0.774,,1.0,0.774,independent 15,,,No Chinese model in the last 12 months
 MMLU,Epoch,mmlu_external.csv,71,24,0,2024-12-26,2024-12-12,0.881,0.872,1.0,0.881,unknown 127; self_reported 90,mmlu,Knowledge and hallucination,
 OpenBookQA,Epoch,open_book_qa_external.csv,28,0,0,,2024-04-23,0.88,,1.0,0.88,self_reported 37; unknown 33,,,No Chinese model in the last 12 months
 PIQA,Epoch,piqa_external.csv,31,7,0,2024-12-26,2024-09-24,0.887,0.847,1.0,0.887,self_reported 57; unknown 56,,,No Chinese model in the last 12 months

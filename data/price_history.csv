@@ -500,3 +500,10 @@ date,aa_name,price_blended_usd_per_1m,price_input_usd_per_1m,price_output_usd_pe
 2026-10-29,Gemini 4 Carbon (High),8,4,20
 2026-10-29,Mistral Large 4 (High),1.05,0.7,2.1
 2026-10-29,Mistral Large 4 (Medium),1.05,0.7,2.1
+2026-10-30,DeepSeek V4 Pro 0424 (High),2.087,1.67,3.34
+2026-10-30,DeepSeek V4 Pro 0424 (Max),1.846,1.406,3.167
+2026-10-30,DeepSeek V4 Pro 0424 (Non-reasoning),2.178,1.74,3.49
+2026-10-30,DeepSeek V4.1 Flash 1017 (Non-reasoning),0.787,0.45,1.8
+2026-10-30,Mercury 2.5,0.338,0.2,0.75
+2026-10-30,Mistral Large 4 Preview,1.05,0.7,2.1
+2026-10-30,Reka Flash 3,0.125,0.1,0.2
