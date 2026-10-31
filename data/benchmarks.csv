@@ -1,7 +1,7 @@
 benchmark,name,domain,source,kind,ceiling,listed_status,history_until,eligible,saturated_from,us_models,cn_models,cn_models_last_12m,latest_cn_score_date,eligible_independent,source_type_basis,notes,source_url
 aa_index,AA Intelligence Index,Overall,Artificial Analysis,capability,,,,yes,,26,14,14,2026-10-23,yes,Run by Artificial Analysis,The API does not say which older scores are estimates; the website marks most pre-2026 models as estimated,https://artificialanalysis.ai/
 arena_text,Arena text (style-controlled),Overall,Arena,preference,,,,yes,,215,114,63,2026-10-20,yes,Arena's published leaderboards; each model's most recent rating,"Human preference votes, not a capability test",https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset
-eci,Epoch Capabilities Index,Overall,Epoch AI,capability,,,,yes,,163,73,37,2026-10-17,yes,Composite fitted by Epoch AI,90% confidence intervals; two anchor models have none,https://epoch.ai/benchmarks/eci
+eci,Epoch Capabilities Index,Overall,Epoch AI,capability,,,,yes,,161,73,37,2026-10-17,yes,Composite fitted by Epoch AI,90% confidence intervals; two anchor models have none,https://epoch.ai/benchmarks/eci
 aa_tau2,tau2-bench (AA),Agentic and real-world work,Artificial Analysis,capability,1.0,,,saturated,2026-02-17,123,107,57,2026-07-06,saturated,Run by Artificial Analysis,Tool-use customer-service tasks,https://artificialanalysis.ai/
 apex_agents,APEX-Agents,Agentic and real-world work,Epoch AI,capability,1.0,,,yes,,40,15,15,2026-10-17,yes,"Run by Mercor, the benchmark's maker, at maximum reasoning effort for every model (mercor.com/apex/methodology)",,https://epoch.ai/benchmarks
 arena_agent,Arena agent,Agentic and real-world work,Arena,preference,,,,yes,,45,26,26,2026-10-23,yes,Arena's published leaderboards; each model's most recent rating,"Human preference votes, not a capability test; Board started 2026-06-04; score definition not documented in the dataset",https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset
@@ -23,7 +23,7 @@ deepswe,DeepSWE,Coding,Epoch AI,capability,,,,yes,,20,6,6,2026-08-20,yes,Datacur
 frontiercode,FrontierCode,Coding,Epoch AI,capability,1.0,,,yes,,33,11,11,2026-09-09,yes,Cognition's leaderboard (Source column),,https://epoch.ai/benchmarks
 frontierswe,FrontierSWE,Coding,Epoch AI,capability,1.0,,,yes,,16,5,5,2026-09-01,yes,FrontierSWE leaderboard (Source column),,https://epoch.ai/benchmarks
 gso,GSO-Bench,Coding,Epoch AI,capability,1.0,,,stale,,27,3,0,2025-07-31,stale,GSO leaderboard (Source column),,https://epoch.ai/benchmarks
-swe_bench_verified,SWE-bench Verified,Coding,Epoch AI,capability,1.0,saturated,,saturated,,23,9,9,2026-06-16,saturated,Run by Epoch AI,,https://epoch.ai/benchmarks
+swe_bench_verified,SWE-bench Verified,Coding,Epoch AI,capability,,saturated,,saturated,,23,9,9,2026-06-16,saturated,Run by Epoch AI,,https://epoch.ai/benchmarks
 terminal_bench_2,Terminal-Bench 2.0,Coding,Epoch AI,capability,1.0,,,stale,,30,14,10,2026-04-14,stale,tbench.ai leaderboard; rows where the agent was built by the model's own developer are marked self-reported,,https://epoch.ai/benchmarks
 weirdml,WeirdML,Coding,Epoch AI,capability,1.0,,,yes,,93,32,17,2026-08-14,yes,WeirdML leaderboard (Source column),Machine-learning coding tasks,https://epoch.ai/benchmarks
 aa_hle,Humanity's Last Exam (AA),Frontier reasoning and science,Artificial Analysis,capability,1.0,,,yes,,208,150,85,2026-10-23,yes,Run by Artificial Analysis,,https://artificialanalysis.ai/

@@ -507,3 +507,6 @@ date,aa_name,price_blended_usd_per_1m,price_input_usd_per_1m,price_output_usd_pe
 2026-10-30,Mercury 2.5,0.338,0.2,0.75
 2026-10-30,Mistral Large 4 Preview,1.05,0.7,2.1
 2026-10-30,Reka Flash 3,0.125,0.1,0.2
+2026-10-31,DeepSeek V4.1 Flash 1017 (Non-reasoning),0.525,0.3,1.2
+2026-10-31,Nemotron 3 Nano Omni 30B A3B Reasoning,0.6,0.5,0.9
+2026-10-31,Nemotron 3.5 Super VL,0.275,0.2,0.5
